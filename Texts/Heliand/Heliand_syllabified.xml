@@ -1,0 +1,3033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI[
+<!ENTITY % menotaEntities SYSTEM "http://www.menota.org/menota-entities.txt"> %menotaEntities;
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> The Hêliand</title>
+                <subtitle> Fitt IV </subtitle>
+            </titleStmt>
+            <publicationStmt>
+                <p> Created by Peter DeVault towards completion of his Masters Degree at Signum
+                    University, 2024 </p>
+            </publicationStmt>
+            <sourceDesc>
+                <p> BSB Cgm 25 </p>
+                <markupLevel>syllabified</markupLevel>
+            </sourceDesc>
+        </fileDesc>
+        <profDesc>
+            <langUsage>
+                <language ident="osx">Old Saxon</language>
+            </langUsage>
+        </profDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="4r"/>
+            <lb n="4r;1"/>
+            <cb/>
+            <vg type="line" cid="243" A="">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="Þ" id="0" Σ="1"/>
+                    <s m="2" wt="h">Thô</s>
+                    <w wc="t" msa="xNX" A="N" id="1" Σ="1"/>
+                    <s m="1" wt="l">ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="2" Σ="1"/>
+                    <s m="2" wt="h">uuas</s>
+                    <w wc="s" msa="xAJ" A="L" id="3" Σ="1"/>
+                    <s m="3" wt="o">lang</s>
+                    <w wc="c" msa="xAP" A="Ø" id="4" Σ="2"/>
+                    <s m="2" wt="h">af</s>
+                    <s m="2" wt="h">tar</s>
+                    <w wc="t" msa="xPD" A="Þ" id="5" Σ="1"/>
+                    <s m="1" wt="l">thiu</s>
+                </v>
+                <pc>·</pc>
+                <!--interpunct-->
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="6" Σ="1"/>
+                    <s m="1" wt="l">ne</s>
+                    <w wc="t" msa="xPD" A="Ø" id="7" Σ="1"/>
+                    <s m="2" wt="h">it</s>
+                    <w wc="t" msa="xPD" A="Ø" id="8" Σ="1"/>
+                    <s m="2" wt="h">al</s>
+                    <w wc="t" msa="xAV" A="S" id="9" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="10" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fF" p="2" A="L" id="11" Σ="2"/>
+                    <s m="2" wt="h">lê</s>
+                    <s m="2" wt="h">stid</s>
+                    <w wc="t" msa="xVB fF" A="W" id="12" Σ="1"/>
+                    <s m="3" wt="o">uuarð</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="244" A="">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="S" id="13" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="t" msa="xPE" A="H" id="14" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <lb n="4r;2" after="6"/>
+                    <w wc="s" msa="xNC" c="1" A="M" id="15" Σ="1"/>
+                    <s m="2" wt="h">man</s>
+                    <w wc="s" msa="xNC" c="2" A="K" id="16" Σ="2"/>
+                    <s m="2" wt="h">cun</s>
+                    <s m="1" wt="l">nea</s>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="M" id="17" Σ="3"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="1" wt="l">na</s>
+                    <s m="1" wt="l">ga</s>
+                    <w wc="s" msa="xNC" A="H" id="18" Σ="2"/>
+                    <s m="1" wt="l">huî</s>
+                    <s m="1" wt="l">la</s>
+                </v>
+            </vg>
+            <vg type="line" cid="245" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="G" id="19" Σ="1"/>
+                    <s m="2" wt="h">god</s>
+                    <w wc="s" msa="xAJ" c="1" A="Ø" id="20" Σ="2"/>
+                    <s m="1" wt="l">a</s>
+                    <s m="1" wt="l">lo</s>
+                    <w wc="s" msa="xNC" c="2" A="M" id="21" Σ="2"/>
+                    <s m="2" wt="h">mah</s>
+                    <s m="2" wt="h">tig</s>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="F" id="22" Σ="1"/>
+                    <s m="2" wt="h">for</s>
+                    <w wc="t" msa="xVB fP" p="2" A="G" id="23" Σ="2"/>
+                    <s m="1" wt="l">ge</s>
+                    <s m="2" wt="h">ƀen</s>
+                    <w wc="t" msa="xVB fI" A="H" id="24" Σ="2"/>
+                    <s m="2" wt="h">hab</s>
+                    <s m="1" wt="l">da</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="246" A="">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="Þ" id="25" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="H" id="26" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <w wc="t" msa="xPE" A="Ø" id="27" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <lb n="4r;3"/>
+                    <w wc="s" msa="xAJ" A="H" id="28" Σ="3"/>
+                    <s m="1" wt="l">hi</s>
+                    <s m="1" wt="l">mi</s>
+                    <s m="3" wt="o">lisc</s>
+                    <w wc="s" msa="xNC" A="B" id="29" Σ="1"/>
+                    <s m="3" wt="o">barn</s>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="H" id="30" Σ="2"/>
+                    <s m="1" wt="l">he</s>
+                    <s m="2" wt="h">rod</s>
+                    <w wc="t" msa="xAP" A="T" id="31" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="s" msa="xNC" A="W" id="32" Σ="3"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="2" wt="h">rol</s>
+                    <s m="1" wt="l">di</s>
+                </v>
+            </vg>
+            <cb/>
+            <vg type="line" cid="247" A="">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="Ø" id="33" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <w wc="s" msa="xPP" A="S" id="34" Σ="2"/>
+                    <s m="2" wt="h">sel</s>
+                    <s m="2" wt="h">ƀes</s>
+                    <!-- reflexives get stress-->
+                    <w wc="s" msa="xNC" A="S" id="35" Σ="2"/>
+                    <s m="1" wt="l">su</s>
+                    <s m="1" wt="l">nu</s>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVF fI" A="S" id="36" Σ="2"/>
+                    <s m="2" wt="h">sen</s>
+                    <s m="2" wt="h">dean</s>
+                    <w wc="t" msa="xVB fF" A="W" id="37" Σ="2"/>
+                    <s m="2" wt="h">uuel</s>
+                    <s m="1" wt="l">di</s>
+                </v>
+            </vg>
+            <cb/>
+            <vg type="line" cid="248" A="">
+                <v role="on">
+                    <w wc="c" msa="xCC" A="T" id="38" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <!-- conjunctive phrase -->
+                    <lb n="4r;4"/>
+                    <w wc="c" msa="xCC" A="Þ" id="39" Σ="1"/>
+                    <s m="1" wt="l">thiu</s>
+                    <w wc="t" msa="xCC" A="Þ" id="40" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPP" A="H" id="41" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <w wc="s" msa="xNC" A="H" id="42" Σ="1"/>
+                    <s m="3" wt="o">hêr</s>
+                    <w wc="t" msa="xVB fF" A="Ø" id="43" Σ="3"/>
+                    <s m="1" wt="l">a</s>
+                    <s m="2" wt="h">lô</s>
+                    <s m="1" wt="l">sdi</s>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="Ø" id="44" Σ="1"/>
+                    <s m="2" wt="h">al</s>
+                    <w wc="s" msa="xNC" c="1" A="L" id="45" Σ="1"/>
+                    <s m="2" wt="h">liud</s>
+                    <w wc="s" msa="xNC" c="2" A="ST" id="46" Σ="2"/>
+                    <s m="2" wt="h">stam</s>
+                    <s m="1" wt="l">na</s>
+                </v>
+            </vg>
+            <vg type="line" cid="249" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W" id="47" Σ="2"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="2" wt="h">rod</s>
+                    <w wc="c" msa="xAP" A="F" id="48" Σ="1"/>
+                    <s m="2" wt="h">fon</s>
+                    <w wc="s" msa="xNC" A="W" id="49" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="1" wt="l">tea</s>
+                </v>
+                <pc>·</pc>
+                <pb n="4v"/>
+                <lb n="4v;1"/>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Þ" id="50" Σ="1"/>
+                    <s m="2" wt="h">Thô</s>
+                    <w wc="t" msa="xVB fF" A="W" id="51" Σ="1"/>
+                    <s m="3" wt="o">uuarð</s>
+                    <w wc="t" msa="xPE" A="Ø" id="52" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <w wc="s" msa="xNC" c="1" A="W" id="53" Σ="1"/>
+                    <s m="2" wt="h">uuis</s>
+                    <w wc="s" msa="xNC" c="2" A="B" id="54" Σ="2"/>
+                    <s m="1" wt="l">bo</s>
+                    <s m="1" wt="l">do</s>
+                </v>
+            </vg>
+            <vg type="line" cid="250" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø" id="55" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="s" msa="xNP" c="1" A="G" id="56" Σ="3"/>
+                    <s m="1" wt="l">Ga</s>
+                    <s m="1" wt="l">li</s>
+                    <s m="1" wt="l">lea</s>
+                    <w wc="s" msa="xNP" c="2" A="L" id="57" Σ="1"/>
+                    <s m="3" wt="o">land</s>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNP" A="G" id="58" Σ="2"/>
+                    <s m="2" wt="h">Gab</s>
+                    <s m="2" wt="h">riel</s>
+                    <w wc="t" msa="xVB fP" A="K" id="59" Σ="2"/>
+                    <s m="1" wt="l">cu</s>
+                    <s m="2" wt="h">man</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="251" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø" id="60" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="2" wt="h">gil</s>
+                    <w wc="c" msa="xPD" A="Þ" id="61" Σ="1"/>
+                    <s m="2" wt="h">thes</s>
+                    <lb n="4v;2"/>
+                    <w wc="s" msa="xAJ" c="1" A="Ø" id="62" Σ="2"/>
+                    <s m="1" wt="l">a</s>
+                    <s m="1" wt="l">lo</s>
+                    <w wc="s" msa="xNC" c="2" A="W" id="63" Σ="2"/>
+                    <s m="2" wt="h">uual</s>
+                    <s m="2" wt="h">don</s>
+                </v>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Þ" id="64" Σ="1"/>
+                    <s m="2" wt="h">thar</s>
+                    <w wc="t" msa="xPE" A="H" id="65" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <w wc="s" msa="xAJ" A="Ê" id="66" Σ="2"/>
+                    <s m="2" wt="h">ê</s>
+                    <s m="1" wt="l">ne</s>
+                    <w wc="s" msa="xNC" A="Ø" id="67" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="2" wt="h">dis</s>
+                    <w wc="t" msa="xVB fF" A="W" id="68" Σ="2"/>
+                    <s m="2" wt="h">uuis</s>
+                    <s m="1" wt="l">se</s>
+                </v>
+            </vg>
+            <cb/>
+            <vg type="line" cid="252" A="">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="M" id="69" Σ="4"/>
+                    <s m="1" wt="l">mu</s>
+                    <s m="1" wt="l">ni</s>
+                    <s m="2" wt="h">lî</s>
+                    <s m="1" wt="l">ca</s>
+                    <w wc="s" msa="xNC" A="M" id="70" Σ="2"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="2" wt="h">gað</s>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNP" A="M" id="71" Σ="2"/>
+                    <s m="1" wt="l">Ma</s>
+                    <s m="1" wt="l">ria</s>
+                    <w wc="t" msa="xVB fF" A="W" id="72" Σ="1"/>
+                    <s m="2" wt="h">uuas</s>
+                    <w wc="t" msa="xPE" A="S" id="73" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <lb n="4v;3"/>
+                    <w wc="t" msa="xVB fP" A="H" id="74" Σ="2"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="2" wt="h">ten</s>
+                </v>
+            </vg>
+            <cb/>
+            <vg type="line" cid="253" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="W" id="75" Σ="1"/>
+                    <s m="2" wt="h">uuas</s>
+                    <w wc="t" msa="xPP" A="Ø" id="76" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ru</s>
+                    <w wc="s" msa="xNC" A="Þ" id="77" Σ="2"/>
+                    <s m="2" wt="h">thior</s>
+                    <s m="1" wt="l">na</s>
+                    <w wc="t" msa="xPX" p="1" A="G" id="78" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fP" p="2" A="Þ" id="79" Σ="2"/>
+                    <s m="1" wt="l">thi</s>
+                    <s m="2" wt="h">gan</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="S" id="80" Σ="1"/>
+                    <s m="1" wt="l">Sea</s>
+                    <w wc="c" msa="xAP" A="Ê" id="81" Σ="1"/>
+                    <s m="3" wt="o">ên</s>
+                    <w wc="s" msa="xNC" A="Þ" id="82" Σ="2"/>
+                    <s m="1" wt="l">the</s>
+                    <s m="2" wt="h">gan</s>
+                    <w wc="t" msa="xVB fF" A="H" id="83" Σ="2"/>
+                    <s m="2" wt="h">hab</s>
+                    <s m="1" wt="l">da</s>
+                </v>
+            </vg>
+            <vg type="line" cid="254" A="">
+                <v role="on">
+                    <w wc="s" msa="xNP" A="Ø" id="84" Σ="2"/>
+                    <s m="1" wt="l">Io</s>
+                    <s m="3" wt="o">seph</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="85" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fP" p="2" A="M" id="86" Σ="2"/>
+                    <s m="2" wt="h">mah</s>
+                    <s m="2" wt="h">lit</s>
+                </v>
+                <lb n="4v;4"/>
+                <cb/>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="G" id="87" Σ="2"/>
+                    <s m="2" wt="h">gô</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="s" msa="xNC" A="K" id="88" Σ="2"/>
+                    <s m="2" wt="h">cun</s>
+                    <s m="2" wt="h">nies</s>
+                    <w wc="s" msa="xNC" A="M" id="89" Σ="1"/>
+                    <s m="2" wt="h">man</s>
+                </v>
+            </vg>
+            <vg type="line" cid="255" A="">
+                <v role="on">
+                    <w wc="t" msa="xPD" A="Þ" id="90" Σ="1"/>
+                    <s m="1" wt="l">thea</s>
+                    <w wc="s" msa="xNP" A="D" id="91" Σ="3"/>
+                    <s m="1" wt="l">Da</s>
+                    <s m="1" wt="l">ui</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="s" msa="xNC" A="D" id="92" Σ="2"/>
+                    <s m="2" wt="h">doh</s>
+                    <s m="2" wt="h">ter</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Þ" id="93" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xVB fF" A="W" id="94" Σ="1"/>
+                    <s m="2" wt="h">uuas</s>
+                    <w wc="t" msa="xAV" A="S" id="95" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="s" msa="xAJ" A="D" id="96" Σ="2"/>
+                    <s m="2" wt="h">diur</s>
+                    <s m="3" wt="o">lîc</s>
+                    <w wc="s" msa="xNC" A="W" id="97" Σ="1"/>
+                    <s m="3" wt="o">uuîf</s>
+                </v>
+            </vg>
+            <lb n="4v;5"/>
+            <vg type="line" cid="256" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø" id="98" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="2" wt="h">dis</s>
+                    <w wc="s" msa="xAJ" A="Ø" id="99" Σ="3"/>
+                    <s m="2" wt="h">an</s>
+                    <s m="2" wt="h">thê</s>
+                    <s m="1" wt="l">ti</s>
+                </v>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Þ" id="100" Σ="1"/>
+                    <s m="2" wt="h">Thar</s>
+                    <w wc="t" msa="xPE" A="S" id="101" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="t" msa="xPD" A="Þ" id="102" Σ="1"/>
+                    <s m="1" wt="l">the</s>
+                    <w wc="s" msa="xNC" A="Ø" id="103" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="2" wt="h">gil</s>
+                    <w wc="s" msa="xNC" A="G" id="104" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                </v>
+            </vg>
+            <vg type="line" cid="257" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø" id="105" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="s" msa="xNP" c="2" A="N" id="106" Σ="3"/>
+                    <s m="1" wt="l">Na</s>
+                    <s m="1" wt="l">za</s>
+                    <s m="3" wt="o">reth</s>
+                    <w wc="s" msa="xNP" c="2" A="B" id="107" Σ="1"/>
+                    <s m="3" wt="o">burg</s>
+                </v>
+                <pc>·</pc>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="B" id="108" Σ="1"/>
+                    <s m="1" wt="l">bi</s>
+                    <w wc="s" msa="NC" A="N" id="109" Σ="2"/>
+                    <s m="1" wt="l">na</s>
+                    <s m="2" wt="h">mon</s>
+                    <w wc="s" msa="xPE" A="S" id="110" Σ="2"/>
+                    <s m="2" wt="h">sel</s>
+                    <s m="1" wt="l">ƀo</s>
+                </v>
+            </vg>
+            <lb n="4v;6"/>
+            <vg type="line" cid="258" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="G" id="111" Σ="2"/>
+                    <s m="2" wt="h">grô</s>
+                    <s m="1" wt="l">tte</s>
+                    <w wc="t" msa="xAV" c="1" A="G" id="112" Σ="2"/>
+                    <s m="1" wt="l">ge</s>
+                    <s m="2" wt="h">gin</s>
+                    <w wc="t" msa="xAV" c="2" A="W" id="113" Σ="2"/>
+                    <s m="2" wt="h">uuar</s>
+                    <s m="1" wt="l">de</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Ø" id="114" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">di</s>
+                    <w wc="t" msa="xPE" A="S" id="115" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="c" msa="xAP" A="F" id="116" Σ="1"/>
+                    <s m="2" wt="h">fon</s>
+                    <w wc="s" msa="xNC" A="G" id="117" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="1" wt="l">de</s>
+                    <w wc="t" msa="xVB fF" A="Q" id="118" Σ="2"/>
+                    <s m="2" wt="h">qued</s>
+                    <s m="1" wt="l">da</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="259" A="">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="H" id="119" Σ="1"/>
+                    <s m="3" wt="o">Hêl</s>
+                    <w wc="t" msa="xVB fF" A="W" id="120" Σ="1"/>
+                    <s m="2" wt="h">uuis</s>
+                    <w wc="t" msa="xPE" A="Þ" id="121" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="s" msa="xNP" A="M" id="122" Σ="2"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="1" wt="l">ria</s>
+                    <lb n="4v;7"/>
+                    <cb/>
+                    <w wc="t" msa="xVB fF" A="Q" id="123" Σ="1"/>
+                    <s m="2" wt="h">quað</s>
+                    <w wc="t" msa="xPE" A="H" id="124" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Þ" id="125" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="t" msa="xVB fF" A="B" id="126" Σ="1"/>
+                    <s m="3" wt="o">bist</s>
+                    <w wc="t" msa="xPE" A="Þ" id="127" Σ="2"/>
+                    <s m="2" wt="h">thî</s>
+                    <s m="2" wt="h">nun</s>
+                    <w wc="s" msa="xNC" A="H" id="128" Σ="2"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="2" wt="h">rron</s>
+                    <w wc="t" msa="xVB fP" A="L" id="129" Σ="1"/>
+                    <s m="2" wt="h">liof</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="260" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W" id="130" Σ="3"/>
+                    <s m="2" wt="h">uual</s>
+                    <s m="2" wt="h">dan</s>
+                    <s m="1" wt="l">de</s>
+                    <w wc="s" msa="xAJ" A="W" id="131" Σ="2"/>
+                    <s m="2" wt="h">uuir</s>
+                    <s m="2" wt="h">ðig</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="H" id="132" Σ="1"/>
+                    <s m="3" wt="o">huuand</s>
+                    <lb n="4v;8"/>
+                    <w wc="t" msa="xPE" A="Þ" id="133" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="134" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xNC" p="2" A="W" id="135" Σ="1"/>
+                    <s m="2" wt="h">uuit</s>
+                    <w wc="t" msa="xVB fI" A="H" id="136" Σ="2"/>
+                    <s m="1" wt="l">ha</s>
+                    <s m="2" wt="h">ƀes</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="261" A="">
+                <v role="on">
+                    <w wc="" msa="xNC" A="Ø" id="137" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="2" wt="h">dis</s>
+                    <w wc="s" msa="xNC" A="Ø" id="138" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">stio</s>
+                    <w wc="s" msa="xAJ" A="F" id="139" Σ="1"/>
+                    <s m="2" wt="h">fol</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Þ" id="140" Σ="1"/>
+                    <s m="1" wt="l">Thu</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="141" Σ="1"/>
+                    <s m="3" wt="o">scalt</s>
+                    <w wc="c" msa="xAP" A="F" id="142" Σ="1"/>
+                    <s m="2" wt="h">for</s>
+                    <w wc="t" msa="xPI" A="Ø" id="143" Σ="2"/>
+                    <s m="2" wt="h">al</s>
+                    <s m="2" wt="h">lun</s>
+                    <w wc="t" msa="xVB fI" A="W" id="144" Σ="2"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="2" wt="h">san</s>
+                </v>
+            </vg>
+            <vg type="line" cid="262" A="">
+                <v role="on">
+                    <w wc="c" msa="xNC" A="W" id="145" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="2" wt="h">ƀun</s>
+                    <lb n="4v;9"/>
+                    <w wc="c" msa="xPX" p="1" A="G" id="146" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fP" p="2" A="W" id="147" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="2" wt="h">hit</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="148" Σ="1"/>
+                    <s m="1" wt="l">Ne</s>
+                    <w wc="t" msa="xVB fF" A="H" id="149" Σ="2"/>
+                    <s m="1" wt="l">ha</s>
+                    <s m="1" wt="l">ƀe</s>
+                    <w wc="t" msa="xPE" A="Þ" id="150" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="s" msa="xAJ" A="W" id="151" Σ="2"/>
+                    <s m="2" wt="h">uuê</s>
+                    <s m="2" wt="h">can</s>
+                </v>
+                <w wc="s" msa="xNC" A="H" id="152" Σ="2"/>
+                <s m="1" wt="l">hu</s>
+                <s m="1" wt="l">gi</s>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="263" A="">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="N" id="153" Σ="1"/>
+                    <s m="1" wt="l">ne</s>
+                    <w wc="t" msa="xVB fF" A="F" id="154" Σ="2"/>
+                    <s m="3" wt="o">forh</s>
+                    <s m="1" wt="l">ti</s>
+                    <w wc="t" msa="xPE" A="Þ" id="155" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="t" msa="xPE" A="Þ" id="156" Σ="2"/>
+                    <s m="2" wt="h">thî</s>
+                    <s m="2" wt="h">nun</s>
+                    <w wc="s" msa="xNC" A="F" id="157" Σ="2"/>
+                    <s m="2" wt="h">fer</s>
+                    <s m="1" wt="l">he</s>
+                </v>
+                <lb n="4v;10"/>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="158" Σ="1"/>
+                    <s m="1" wt="l">ne</s>
+                    <w wc="t" msa="xVB fF" A="Q" id="159" Σ="1"/>
+                    <s m="2" wt="h">quam</s>
+                    <w wc="t" msa="xPE" A="Ø" id="160" Σ="1"/>
+                    <s m="2" wt="h">ic</s>
+                    <w wc="t" msa="xPE" A="Þ" id="161" Σ="1"/>
+                    <s m="1" wt="l">thi</s>
+                    <w wc="c" msa="xAP" A="T" id="162" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="s" msa="xAJ" A="Ê" id="163" Σ="3"/>
+                    <s m="2" wt="h">ê</s>
+                    <s m="1" wt="l">ni</s>
+                    <s m="2" wt="h">gun</s>
+                    <w wc="s" msa="xNC" A="F" id="164" Σ="2"/>
+                    <s m="2" wt="h">frê</s>
+                    <s m="2" wt="h">son</s>
+                    <w wc="t" msa="xVB fF" A="H" id="165" Σ="2"/>
+                    <s m="1" wt="l">he</s>
+                    <s m="2" wt="h">rod</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="264" A="">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="N" id="166" Σ="1"/>
+                    <s m="1" wt="l">ne</s>
+                    <w wc="t" msa="xVB fF" A="D" id="167" Σ="2"/>
+                    <s m="1" wt="l">dra</s>
+                    <s m="1" wt="l">gu</s>
+                    <w wc="t" msa="xPE" A="Ø" id="168" Σ="1"/>
+                    <s m="2" wt="h">ic</s>
+                    <w wc="s" msa="xAJ" A="Ê" id="169" Σ="2"/>
+                    <s m="2" wt="h">ê</s>
+                    <s m="2" wt="h">nig</s>
+                    <w wc="s" msa="xNC" c="1" A="D" id="170" Σ="2"/>
+                    <s m="1" wt="l">dru</s>
+                    <s m="1" wt="l">gi</s>
+                    <lb n="4v;11"/>
+                    <w wc="s" msa="xNC" c="2" A="Þ" id="171" Σ="1"/>
+                    <s m="3" wt="o">thing</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Þ" id="172" Σ="1"/>
+                    <s m="1" wt="l">Thu</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="173" Σ="1"/>
+                    <s m="3" wt="o">scalt</s>
+                    <w wc="t" msa="xPE" A="Û" id="174" Σ="2"/>
+                    <s m="2" wt="h">û</s>
+                    <s m="2" wt="h">ses</s>
+                    <w wc="s" msa="xNC" A="D" id="175" Σ="3"/>
+                    <s m="2" wt="h">droh</s>
+                    <s m="1" wt="l">ti</s>
+                    <s m="2" wt="h">nes</s>
+                    <w wc="t" msa="xVB fI" A="W" id="176" Σ="2"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="2" wt="h">san</s>
+                </v>
+            </vg>
+            <vg type="line" cid="265" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="M" id="177" Σ="2"/>
+                    <s m="2" wt="h">mô</s>
+                    <s m="2" wt="h">dar</s>
+                    <w wc="c" msa="xAP" A="M" id="178" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="s" msa="xNC" A="M" id="179" Σ="2"/>
+                    <s m="2" wt="h">man</s>
+                    <s m="2" wt="h">nun</s>
+                </v>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Ø" id="180" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">di</s>
+                    <lb n="4v;12"/>
+                    <w wc="t" msa="xVB fF" A="SK" id="181" Σ="1"/>
+                    <s m="3" wt="o">scalt</s>
+                    <w wc="t" msa="xPE" A="Þ" id="182" Σ="2"/>
+                    <s m="1" wt="l">tha</s>
+                    <s m="1" wt="l">na</s>
+                    <w wc="s" msa="xNC" A="M" id="183" Σ="2"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="1" wt="l">gu</s>
+                    <w wc="t" msa="xVB fI" A="F" id="184" Σ="2"/>
+                    <s m="2" wt="h">fô</s>
+                    <s m="2" wt="h">dean</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="266" A="">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="Þ" id="185" Σ="1"/>
+                    <s m="2" wt="h">thes</s>
+                    <w wc="s" msa="xAJ" A="H" id="186" Σ="2"/>
+                    <s m="2" wt="h">hô</s>
+                    <s m="2" wt="h">hon</s>
+                    <w wc="s" msa="xNC" c="1" A="H" id="187" Σ="2"/>
+                    <s m="1" wt="l">he</s>
+                    <s m="2" wt="h">ƀan</s>
+                    <w wc="s" msa="xNC" c="2" A="K" id="188" Σ="3"/>
+                    <s m="1" wt="l">cu</s>
+                    <s m="2" wt="h">nin</s>
+                    <s m="2" wt="h">ges</s>
+                    <w wc="s" msa="xNC" c="2" emends="" A="S" id="189" Σ="2"/>
+                    <s m="1" wt="l">su</s>
+                    <s m="1" wt="l">no</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Þ" id="190" Σ="1"/>
+                    <s m="1" wt="l">The</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="191" Σ="1"/>
+                    <s m="2" wt="h">scal</s>
+                    <lb n="4v;13"/>
+                    <w wc="s" msa="xNP" A="H" id="192" Σ="2"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="3" wt="o">liand</s>
+                    <w wc="c" msa="xAP" A="T" id="193" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="s" msa="xNC" A="N" id="194" Σ="2"/>
+                    <s m="1" wt="l">na</s>
+                    <s m="2" wt="h">mon</s>
+                </v>
+            </vg>
+            <vg type="line" cid="267" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ê" id="195" Σ="2"/>
+                    <s m="2" wt="h">ê</s>
+                    <s m="2" wt="h">gan</s>
+                    <w wc="c" msa="xAP" A="M" id="196" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="s" msa="xNC" A="Ø" id="197" Σ="2"/>
+                    <s m="2" wt="h">el</s>
+                    <s m="2" wt="h">diun</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="N" id="198" Σ="1"/>
+                    <s m="1" wt="l">Neo</s>
+                    <w wc="t" msa="xNC" A="Ø" id="199" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">di</s>
+                    <w wc="t" msa="xNX" A="N" id="200" Σ="1"/>
+                    <s m="1" wt="l">ni</s>
+                    <w wc="t" msa="xVB fF" A="K" id="201" Σ="2"/>
+                    <s m="1" wt="l">ku</s>
+                    <s m="2" wt="h">mid</s>
+                </v>
+            </vg>
+            <vg type="line" cid="268" A="">
+                <v role="on">
+                    <w wc="t" msa="xPD" A="Þ" id="202" Σ="1"/>
+                    <s m="2" wt="h">thes</s>
+                    <lb n="4v;14" after="3"/>
+                    <w wc="s" msa="xAJ" A="W" id="203" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="2" wt="h">don</s>
+                    <w wc="s" msa="xNC" A="R" id="204" Σ="2"/>
+                    <s m="2" wt="h">rî</s>
+                    <s m="2" wt="h">keas</s>
+                    <pc>·</pc>
+                    <cb/>
+                    <w wc="c" msa="xPX" p="1" A="G" id="205" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xNC" p="2" A="W" id="206" Σ="1"/>
+                    <s m="3" wt="o">uuand</s>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Þ" id="207" Σ="1"/>
+                    <s m="1" wt="l">the</s>
+                    <w wc="t" msa="xPE" A="H" id="208" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <w wc="t" msa="xPX" p="1" A="G" id="209" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fI" p="2" A="W" id="210" Σ="2"/>
+                    <s m="2" wt="h">uual</s>
+                    <s m="2" wt="h">dan</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="211" Σ="1"/>
+                    <s m="2" wt="h">scal</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="269" A="">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="M" id="212" Σ="2"/>
+                    <s m="2" wt="h">mâ</s>
+                    <s m="1" wt="l">ri</s>
+                    <w wc="s" msa="xNC" A="Þ" id="213" Σ="2"/>
+                    <s m="1" wt="l">theo</s>
+                    <s m="2" wt="h">dan</s>
+                </v>
+                <pc>·</pc>
+                <lb n="4v;15"/>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Þ" id="214" Σ="1"/>
+                    <s m="2" wt="h">Thô</s>
+                    <w wc="t" msa="xVB fF" A="SP" id="215" Σ="1"/>
+                    <s m="2" wt="h">sprac</s>
+                    <w wc="t" msa="xPE" A="Ø" id="216" Σ="1"/>
+                    <s m="2" wt="h">im</s>
+                    <w wc="t" msa="xAV" A="Ø" id="217" Σ="1"/>
+                    <s m="3" wt="o">eft</s>
+                    <w wc="t" msa="xPE" A="Þ" id="218" Σ="1"/>
+                    <s m="1" wt="l">thiu</s>
+                    <w wc="s" msa="xNC" A="M" id="219" Σ="2"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="2" wt="h">gað</s>
+                    <w wc="t" msa="xAV" A="Ø" id="220" Σ="3"/>
+                    <s m="2" wt="h">an</s>
+                    <s m="1" wt="l">ge</s>
+                    <s m="2" wt="h">gin</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="270" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="W" id="221" Σ="1"/>
+                    <s m="2" wt="h">uuið</s>
+                    <w wc="c" msa="xPD" A="Þ" id="222" Σ="2"/>
+                    <s m="1" wt="l">tha</s>
+                    <s m="1" wt="l">na</s>
+                    <w wc="s" msa="xNC" A="Ø" id="223" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="2" wt="h">gil</s>
+                    <w wc="s" msa="xNC" A="G" id="224" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                </v>
+                <pc>·</pc>
+                <lb n="4v;16"/>
+                <cb/>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="Ø" id="225" Σ="3"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">di</s>
+                    <s m="1" wt="l">so</s>
+                    <w wc="s" msa="xAJ" A="SK" id="226" Σ="2"/>
+                    <s m="2" wt="h">scô</s>
+                    <s m="3" wt="o">niost</s>
+                </v>
+            </vg>
+            <vg type="line" cid="271" A="">
+                <v role="on">
+                    <w wc="t" msa="xPI" A="Ø" id="227" Σ="3"/>
+                    <s m="2" wt="h">al</s>
+                    <s m="1" wt="l">la</s>
+                    <s m="1" wt="l">ro</s>
+                    <w wc="s" msa="xNC" A="W" id="228" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="1" wt="l">ƀo</s>
+                    <w wc="s" msa="xAJ" A="W" id="229" Σ="3"/>
+                    <s m="1" wt="l">uuli</s>
+                    <s m="1" wt="l">ti</s>
+                    <s m="3" wt="o">gost</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPQ" A="H" id="230" Σ="1"/>
+                    <s m="1" wt="l">huô</s>
+                    <w wc="t" msa="xVB fF" A="M" id="231" Σ="1"/>
+                    <s m="2" wt="h">mag</s>
+                    <w wc="t" msa="xPD" A="Þ" id="232" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <lb n="4v;17" after="6"/>
+                    <w wc="c" msa="xPX" p="1" A="G" id="233" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fI" p="2" A="W" id="234" Σ="2"/>
+                    <s m="2" wt="h">uuer</s>
+                    <s m="2" wt="h">ðen</s>
+                    <w emends="sô" A="W" id="235"/>
+                    <!-- phrase is repeated in the manuscript -->
+                    <w emends="quað" A="W" id="236"/>
+                    <w wc="t" msa="xAV" A="S" id="237" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <cb/>
+                    <w wc="t" msa="xVB fF" A="Q" id="238" Σ="1"/>
+                    <s m="2" wt="h">quað</s>
+                    <w wc="t" msa="xPE" A="S" id="239" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                </v>
+            </vg>
+            <cb/>
+            <vg type="line" cid="272" A="">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="Þ" id="240" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="Ø" id="241" Σ="1"/>
+                    <s m="2" wt="h">ic</s>
+                    <w wc="s" msa="xNC" A="M" id="242" Σ="2"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="1" wt="l">gu</s>
+                    <w wc="s" msa="xVB fI" A="F" id="243" Σ="2"/>
+                    <s m="2" wt="h">fô</s>
+                    <s m="1" wt="l">die</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="244" Σ="1"/>
+                    <s m="1" wt="l">Ne</s>
+                    <w wc="t" msa="xPE" A="Ø" id="245" Σ="1"/>
+                    <s m="2" wt="h">ic</s>
+                    <w wc="t" msa="xAV" A="G" id="246" Σ="1"/>
+                    <s m="1" wt="l">gio</s>
+                    <w wc="s" msa="xNC" A="M" id="247" Σ="2"/>
+                    <s m="2" wt="h">man</s>
+                    <s m="2" wt="h">nes</s>
+                    <lb n="4v;18"/>
+                    <w wc="t" msa="xNX" A="N" id="248" Σ="1"/>
+                    <s m="1" wt="l">ni</s>
+                    <w wc="t" msa="xVB fP" A="W" id="249" Σ="1"/>
+                    <s m="3" wt="o">uuarð</s>
+                </v>
+            </vg>
+            <vg type="line" cid="273" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fP" A="W" id="250" Σ="1"/>
+                    <s m="3" wt="o">uuîs</s>
+                    <w wc="c" msa="xAP" A="Ø" id="251" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="c" msa="xPE" A="M" id="252" Σ="3"/>
+                    <s m="2" wt="h">mî</s>
+                    <s m="1" wt="l">ne</s>
+                    <s m="1" wt="l">ra</s>
+                    <w wc="s" msa="xNC" A="W" id="253" Σ="3"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="2" wt="h">rol</s>
+                    <s m="1" wt="l">di</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Þ" id="254" Σ="1"/>
+                    <s m="1" wt="l">Tho</s>
+                    <w wc="t" msa="xVB fF" A="H" id="255" Σ="2"/>
+                    <s m="2" wt="h">hab</s>
+                    <s m="1" wt="l">de</s>
+                    <w wc="t" msa="xAV" A="Ø" id="256" Σ="1"/>
+                    <s m="3" wt="o">eft</s>
+                    <w wc="t" msa="xPE" A="Ø" id="257" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <w wc="s" msa="xNC" A="W" id="258" Σ="1"/>
+                    <s m="3" wt="o">uuord</s>
+                    <lb n="4v;19"/>
+                    <w wc="s" msa="xAJ" A="G" id="259" Σ="2"/>
+                    <s m="1" wt="l">ga</s>
+                    <s m="1" wt="l">ru</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="274" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø" id="260" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="2" wt="h">gil</s>
+                    <w wc="c" msa="xPD" A="Þ" id="261" Σ="1"/>
+                    <s m="2" wt="h">thes</s>
+                    <w wc="s" msa="xAJ" c="1" A="Ø" id="262" Σ="2"/>
+                    <s m="1" wt="l">a</s>
+                    <s m="1" wt="l">lo</s>
+                    <w wc="s" msa="xNC" c="2" A="W" id="263" Σ="2"/>
+                    <s m="2" wt="h">uual</s>
+                    <s m="2" wt="h">don</s>
+                </v>
+                <pc>·</pc>
+                <v role="off">
+                    <w wc="c" msa="xPD" A="Þ" id="264" Σ="2"/>
+                    <s m="1" wt="l">the</s>
+                    <s m="1" wt="l">ro</s>
+                    <w wc="s" msa="xNC" A="Ø" id="265" Σ="3"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">di</s>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="t" msa="xAV" p="1" A="T" id="266" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="t" msa="xAV" p="2" A="G" id="267" Σ="2"/>
+                    <s m="2" wt="h">geg</s>
+                    <s m="2" wt="h">nes</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="275" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø" id="268" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="t" msa="xPE" A="Þ" id="269" Σ="1"/>
+                    <s m="1" wt="l">thi</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="270" Σ="1"/>
+                    <s m="2" wt="h">scal</s>
+                    <w wc="s" msa="xAJ" A="H" id="271" Σ="2"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="2" wt="h">lag</s>
+                    <lb n="4v;20"/>
+                    <w wc="s" msa="xNC" A="G" id="272" Σ="1"/>
+                    <s m="4" wt="o">gêst</s>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="F" id="273" Σ="1"/>
+                    <s m="2" wt="h">fon</s>
+                    <w wc="s" msa="xNC" c="1" A="H" id="274" Σ="2"/>
+                    <s m="1" wt="l">he</s>
+                    <s m="2" wt="h">ƀan</s>
+                    <w wc="s" msa="xNC" c="2" A="W" id="275" Σ="2"/>
+                    <s m="2" wt="h">uuan</s>
+                    <s m="1" wt="l">ge</s>
+                </v>
+            </vg>
+            <vg type="line" cid="276" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="K" id="276" Σ="2"/>
+                    <s m="1" wt="l">cu</s>
+                    <s m="2" wt="h">man</s>
+                    <pc>·</pc>
+                    <w wc="c" msa="xAP" A="Þ" id="277" Σ="1"/>
+                    <s m="3" wt="o">thurh</s>
+                    <w wc="s" msa="xNC" A="K" id="278" Σ="1"/>
+                    <s m="3" wt="o">craft</s>
+                    <w wc="s" msa="xNC" A="G" id="279" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xAV" emends="than" A="Þ" id="280" Σ="2"/>
+                    <s m="1" wt="l">tha</s>
+                    <s m="2" wt="h">nan</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="281" Σ="1"/>
+                    <s m="2" wt="h">scal</s>
+                    <w wc="t" msa="xPE" A="Þ" id="282" Σ="1"/>
+                    <s m="1" wt="l">thi</s>
+                    <w wc="s" msa="xNC" A="K" id="283" Σ="1"/>
+                    <s m="3" wt="o">kind</s>
+                    <lb n="4v;21"/>
+                    <w wc="s" msa="xAJ" A="Ô" id="284" Σ="2"/>
+                    <s m="2" wt="h">ô</s>
+                    <s m="2" wt="h">dan</s>
+                </v>
+            </vg>
+            <vg type="line" cid="277" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="W" id="285" Σ="2"/>
+                    <s m="2" wt="h">uuer</s>
+                    <s m="2" wt="h">ðan</s>
+                    <w wc="c" msa="xAP" A="Ø" id="286" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="c" msa="xPD" A="Þ" id="287" Σ="3"/>
+                    <s m="1" wt="l">the</s>
+                    <s m="1" wt="l">sa</s>
+                    <s m="1" wt="l">ro</s>
+                    <w wc="s" msa="xNC" A="W" id="288" Σ="3"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="2" wt="h">rol</s>
+                    <s m="1" wt="l">di</s>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="W" id="289" Σ="3"/>
+                    <s m="2" wt="h">uual</s>
+                    <s m="2" wt="h">dan</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="s" msa="xNC" A="K" id="290" Σ="1"/>
+                    <s m="3" wt="o">craft</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="278" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="SK" id="291" Σ="1"/>
+                    <s m="2" wt="h">scal</s>
+                    <w wc="t" msa="xPE" A="Þ" id="292" Σ="1"/>
+                    <s m="1" wt="l">thi</s>
+                    <w wc="c" msa="xAP" A="F" id="293" Σ="1"/>
+                    <s m="2" wt="h">fon</s>
+                    <w wc="c" msa="xPE" A="Þ" id="294" Σ="1"/>
+                    <s m="2" wt="h">them</s>
+                    <lb n="4v;22"/>
+                    <w wc="s" msa="xAJ" A="H" id="295" Σ="3"/>
+                    <s m="2" wt="h">hô</s>
+                    <s m="2" wt="h">hos</s>
+                    <s m="2" wt="h">ton</s>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="H" id="296" Σ="2"/>
+                    <s m="1" wt="l">he</s>
+                    <s m="2" wt="h">ƀan</s>
+                    <w wc="s" msa="xNC" c="2" A="K" id="297" Σ="3"/>
+                    <s m="1" wt="l">cu</s>
+                    <s m="2" wt="h">nin</s>
+                    <s m="1" wt="l">ge</s>
+                </v>
+            </vg>
+            <vg type="line" cid="279" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="SK" id="298" Σ="2"/>
+                    <s m="1" wt="l">sca</s>
+                    <s m="1" wt="l">do</s>
+                    <w wc="s" msa="xAJ" c="2" A="W" id="299" Σ="1"/>
+                    <s m="2" wt="h">uuan</s>
+                    <w wc="c" msa="xAP" A="M" id="300" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="s" msa="xNC" A="SK" id="301" Σ="2"/>
+                    <s m="1" wt="l">ski</s>
+                    <s m="2" wt="h">mon</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNC" A="N" id="302" Σ="1"/>
+                    <s m="1" wt="l">Ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="303" Σ="1"/>
+                    <s m="3" wt="o">uuarð</s>
+                    <w wc="s" msa="xAJ" A="SK" id="304" Σ="3"/>
+                    <s m="2" wt="h">scô</s>
+                    <s m="1" wt="l">nie</s>
+                    <s m="1" wt="l">ra</s>
+                    <lb n="4v;23"/>
+                    <w wc="c" msa="xPX" p="1" A="G" id="305" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xNC" p="2" A="B" id="306" Σ="1"/>
+                    <s m="3" wt="o">burd</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="280" A="">
+                <v role="on">
+                    <w wc="t" msa="xNX" A="N" id="307" Σ="1"/>
+                    <s m="1" wt="l">Ne</s>
+                    <w wc="t" msa="xAV" A="S" id="308" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="s" msa="xAJ" A="M" id="309" Σ="2"/>
+                    <s m="2" wt="h">mâ</s>
+                    <s m="1" wt="l">ri</s>
+                    <w wc="c" msa="xAP" A="M" id="310" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="s" msa="xNC" A="M" id="311" Σ="2"/>
+                    <s m="2" wt="h">man</s>
+                    <s m="2" wt="h">nun</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="H" id="312" Σ="1"/>
+                    <s m="3" wt="o">huand</s>
+                    <w wc="t" msa="xPE" A="S" id="313" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="t" msa="xVB fF" A="K" id="314" Σ="2"/>
+                    <s m="1" wt="l">ku</s>
+                    <s m="2" wt="h">mid</s>
+                    <pc>·</pc>
+                    <w wc="c" msa="xAP" A="Þ" id="315" Σ="1"/>
+                    <s m="3" wt="o">thurh</s>
+                    <w wc="s" msa="xNC" A="M" id="316" Σ="1"/>
+                    <s m="3" wt="o">maht</s>
+                    <w wc="s" msa="xNC" A="G" id="317" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                </v>
+            </vg>
+            <lb n="4v;24"/>
+            <vg type="line" cid="281" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø" id="318" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="c" msa="xPD" A="Þ" id="319" Σ="2"/>
+                    <s m="1" wt="l">the</s>
+                    <s m="1" wt="l">se</s>
+                    <w wc="s" msa="xAJ" A="W" id="320" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="2" wt="h">don</s>
+                    <w wc="s" msa="xNC" A="W" id="321" Σ="2"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="3" wt="o">rold</s>
+                </v>
+                <pb n="5r"/>
+                <lb n="5r;1"/>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Þ" id="322" Σ="1"/>
+                    <s m="2" wt="h">Thô</s>
+                    <w wc="t" msa="xVB fF" A="W" id="323" Σ="1"/>
+                    <s m="3" wt="o">uuarð</s>
+                    <w wc="t" msa="xAV" A="Ø" id="324" Σ="1"/>
+                    <s m="3" wt="o">eft</s>
+                    <w wc="c" msa="xPD" A="Þ" id="325" Σ="1"/>
+                    <s m="2" wt="h">thes</s>
+                    <w wc="s" msa="xNC" A="W" id="326" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="2" wt="h">bes</s>
+                    <w wc="s" msa="xNC" A="H" id="327" Σ="2"/>
+                    <s m="1" wt="l">hu</s>
+                    <s m="1" wt="l">gi</s>
+                </v>
+            </vg>
+            <vg type="line" cid="282" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø" id="328" Σ="2"/>
+                    <s m="2" wt="h">af</s>
+                    <s m="2" wt="h">tar</s>
+                    <w wc="c" msa="xPD" A="Þ" id="329" Σ="1"/>
+                    <s m="2" wt="h">them</s>
+                    <w wc="s" msa="xNC" A="Â" id="330" Σ="3"/>
+                    <s m="2" wt="h">â</s>
+                    <s m="2" wt="h">run</s>
+                    <s m="1" wt="l">die</s>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Ø" id="331" Σ="1"/>
+                    <s m="2" wt="h">al</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="332" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fI" p="2" A="H" id="333" Σ="2"/>
+                    <s m="2" wt="h">huor</s>
+                    <s m="2" wt="h">ƀen</s>
+                </v>
+            </vg>
+            <lb n="5r;2"/>
+            <vg type="line" cid="283" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø" id="334" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="s" msa="xNC" A="G" id="335" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="s" msa="xNC" A="W" id="336" Σ="2"/>
+                    <s m="2" wt="h">uuil</s>
+                    <s m="2" wt="h">leon</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" emends="Thanc" A="Þ" id="337" Σ="1"/>
+                    <s m="2" wt="h">Than</s>
+                    <w wc="t" msa="xPE" A="Ø" id="338" Σ="1"/>
+                    <s m="2" wt="h">ic</s>
+                    <w wc="t" msa="xAV" A="H" id="339" Σ="1"/>
+                    <s m="3" wt="o">hêr</s>
+                    <w wc="t" msa="xAV" A="G" id="340" Σ="2"/>
+                    <s m="1" wt="l">ga</s>
+                    <s m="1" wt="l">ru</s>
+                    <w wc="t" msa="xVB fI" A="ST" id="341" Σ="2"/>
+                    <s m="2" wt="h">stan</s>
+                    <s m="1" wt="l">du</s>
+                    <cb/>
+                    <w wc="t" msa="xVB fF" A="Q" id="342" Σ="1"/>
+                    <s m="2" wt="h">quað</s>
+                    <w wc="t" msa="xPE" A="S" id="343" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                </v>
+            </vg>
+            <cb/>
+            <vg type="line" cid="284" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="T" id="344" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="s" msa="xAJ" A="S" id="345" Σ="3"/>
+                    <s m="1" wt="l">su</s>
+                    <s m="1" wt="l">li</s>
+                    <s m="2" wt="h">cun</s>
+                    <lb n="5r;3"/>
+                    <w wc="s" msa="xNC" c="1" A="Ø" id="346" Σ="2"/>
+                    <s m="2" wt="h">am</s>
+                    <s m="3" wt="o">baht</s>
+                    <w wc="s" msa="xNC" c="2" A="SK" id="347" Σ="2"/>
+                    <s m="1" wt="l">ske</s>
+                    <s m="1" wt="l">pi</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="S" id="348" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="t" msa="xPE" A="H" id="349" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <w wc="t" msa="xPE" A="M" id="350" Σ="1"/>
+                    <s m="1" wt="l">mi</s>
+                    <w wc="t" msa="xVB fI" A="Ê" id="351" Σ="2"/>
+                    <s m="2" wt="h">ê</s>
+                    <s m="2" wt="h">gan</s>
+                    <w wc="t" msa="xVB fF" A="W" id="352" Σ="2"/>
+                    <s m="1" wt="l">uui</s>
+                    <s m="1" wt="l">li</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="285" A="">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="Þ" id="353" Σ="1"/>
+                    <s m="1" wt="l">Thiu</s>
+                    <w wc="t" msa="xVB fF" A="B" id="354" Σ="1"/>
+                    <s m="2" wt="h">bium</s>
+                    <w wc="t" msa="xPE" A="Ø" id="355" Σ="1"/>
+                    <s m="2" wt="h">ic</s>
+                    <w wc="s" msa="xNC" c="1" A="Þ" id="356" Σ="1"/>
+                    <s m="2" wt="h">theot</s>
+                    <w wc="s" msa="xNC" c="2" A="G" id="357" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="N" id="358" Σ="1"/>
+                    <s m="1" wt="l">Nu</s>
+                    <w wc="t" msa="xPE" A="Ø" id="359" Σ="1"/>
+                    <s m="2" wt="h">ik</s>
+                    <lb n="5r;4"/>
+                    <w wc="c" msa="xPD" A="Þ" id="360" Σ="2"/>
+                    <s m="1" wt="l">the</s>
+                    <s m="2" wt="h">ses</s>
+                    <w wc="s" msa="xNC" A="Þ" id="361" Σ="2"/>
+                    <s m="2" wt="h">thin</s>
+                    <s m="2" wt="h">ges</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="362" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fF" p="2" A="T" id="363" Σ="1"/>
+                    <s m="3" wt="o">trûon</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="286" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="W" id="364" Σ="2"/>
+                    <s m="2" wt="h">uuer</s>
+                    <s m="1" wt="l">ðe</s>
+                    <w wc="t" msa="xPE" A="M" id="365" Σ="1"/>
+                    <s m="1" wt="l">mi</s>
+                    <w wc="c" msa="xAP" A="Ø" id="366" Σ="2"/>
+                    <s m="2" wt="h">af</s>
+                    <s m="2" wt="h">tar</s>
+                    <w wc="c" msa="xPD" A="Þ" id="367" Σ="2"/>
+                    <s m="2" wt="h">thî</s>
+                    <s m="2" wt="h">nun</s>
+                    <w wc="s" msa="xNC" A="W" id="368" Σ="2"/>
+                    <s m="2" wt="h">uuor</s>
+                    <s m="2" wt="h">dun</s>
+                </v>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Ø" id="369" Σ="1"/>
+                    <s m="2" wt="h">al</s>
+                    <w wc="s" msa="xAJ" A="S" id="370" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="t" msa="xPE" A="Ø" id="371" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <lb n="5r;5"/>
+                    <w wc="s" msa="xNC" A="W" id="372" Σ="2"/>
+                    <s m="2" wt="h">uuil</s>
+                    <s m="1" wt="l">leo</s>
+                    <w wc="t" msa="xVB fF" A="S" id="373" Σ="1"/>
+                    <s m="2" wt="h">sî</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="287" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="H" id="374" Σ="2"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="2" wt="h">rron</s>
+                    <w wc="t" msa="xPE" A="M" id="375" Σ="2"/>
+                    <s m="2" wt="h">mî</s>
+                    <s m="2" wt="h">nes</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="N" id="376" Σ="1"/>
+                    <s m="2" wt="h">nis</s>
+                    <w wc="t" msa="xPE" A="M" id="377" Σ="1"/>
+                    <s m="1" wt="l">mi</s>
+                    <w wc="s" msa="xNC" A="H" id="378" Σ="2"/>
+                    <s m="1" wt="l">hu</s>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xAJ" A="T" id="379" Σ="2"/>
+                    <s m="2" wt="h">tuîf</s>
+                    <s m="1" wt="l">li</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="288" A="">
+                <v role="on">
+                    <w wc="t" msa="xNX" A="N" id="380" Σ="1"/>
+                    <s m="1" wt="l">ne</s>
+                    <w wc="s" msa="xNC" A="W" id="381" Σ="1"/>
+                    <s m="3" wt="o">uuord</s>
+                    <w wc="t" msa="xNC" A="N" id="382" Σ="1"/>
+                    <s m="1" wt="l">ne</s>
+                    <w wc="" msa="xNC" A="W" id="383" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="1" wt="l">sa</s>
+                </v>
+                <pc>·</pc>
+                <lb n="5r;6"/>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="S" id="384" Σ="1"/>
+                    <s m="2" wt="h">Sô</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="385" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fF" p="2" A="F" id="386" Σ="1"/>
+                    <s m="3" wt="o">fragn</s>
+                    <w wc="t" msa="xPE" A="Ø" id="387" Σ="1"/>
+                    <s m="2" wt="h">ik</s>
+                    <cb/>
+                    <w wc="t" msa="xCS" A="Þ" id="388" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="c" msa="xPD" A="Þ" id="389" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="s" msa="xNC" A="W" id="390" Σ="1"/>
+                    <s m="3" wt="o">uuîf</s>
+                    <w wc="c" msa="xPX" c="1" A="Ø" id="391" Σ="1"/>
+                    <s m="3" wt="o">ant</s>
+                    <w wc="t" msa="xVB fF" c="2" A="F" id="392" Σ="1"/>
+                    <s m="3" wt="o">feng</s>
+                </v>
+            </vg>
+            <vg type="line" cid="289" A="">
+                <v role="on">
+                    <w wc="c" msa="xPD" A="Þ" id="393" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="s" msa="xNC" A="G" id="394" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="s" msa="xNC" A="Â" id="395" Σ="3"/>
+                    <s m="2" wt="h">â</s>
+                    <s m="2" wt="h">run</s>
+                    <s m="1" wt="l">di</s>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="G" id="396" Σ="2"/>
+                    <s m="2" wt="h">ger</s>
+                    <s m="1" wt="l">no</s>
+                    <w wc="t" msa="xAV" A="S" id="397" Σ="2"/>
+                    <s m="1" wt="l">suî</s>
+                    <s m="1" wt="l">ðo</s>
+                </v>
+            </vg>
+            <lb n="5r;7"/>
+            <vg type="line" cid="290" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="M" id="398" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="s" msa="xAJ" A="L" id="399" Σ="2"/>
+                    <s m="2" wt="h">leoh</s>
+                    <s m="1" wt="l">tu</s>
+                    <w wc="s" msa="xNC" A="H" id="400" Σ="2"/>
+                    <s m="1" wt="l">hu</s>
+                    <s m="1" wt="l">gi</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Ø" id="401" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">di</s>
+                    <w wc="c" msa="xAP" A="M" id="402" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="s" msa="xNC" A="G" id="403" Σ="3"/>
+                    <s m="1" wt="l">gi</s>
+                    <s m="2" wt="h">lô</s>
+                    <s m="2" wt="h">ƀon</s>
+                    <w wc="s" msa="xAJ" A="G" id="404" Σ="2"/>
+                    <s m="2" wt="h">gô</s>
+                    <s m="2" wt="h">dun</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="291" A="">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="Ø" id="405" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">di</s>
+                    <w wc="c" msa="xAP" A="M" id="406" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="s" msa="xAJ" A="H" id="407" Σ="2"/>
+                    <s m="2" wt="h">hlut</s>
+                    <s m="2" wt="h">trun</s>
+                    <lb n="5r;8"/>
+                    <w wc="s" msa="xNC" A="T" id="408" Σ="1"/>
+                    <s m="3" wt="o">treuun</s>
+                </v>
+                <pc>·</pc>
+                <v role="off">
+                    <w wc="" msa="xVB fF" A="W" id="409" Σ="1"/>
+                    <s m="3" wt="o">uuard</s>
+                    <w wc="c" msa="xPD" A="Þ" id="410" Σ="1"/>
+                    <s m="1" wt="l">the</s>
+                    <w wc="s" msa="xAJ" A="H" id="411" Σ="3"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="1" wt="l">la</s>
+                    <s m="1" wt="l">go</s>
+                    <w wc="s" msa="xNC" A="G" id="412" Σ="1"/>
+                    <s m="4" wt="o">gêst</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="292" A="">
+                <v role="on">
+                    <w wc="c" msa="xPD" A="Þ" id="413" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="s" msa="xNC" A="B" id="414" Σ="1"/>
+                    <s m="3" wt="o">barn</s>
+                    <w wc="c" msa="xAP" A="Ø" id="415" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="c" msa="xPE" A="Ø" id="416" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ra</s>
+                    <w wc="s" msa="xNC" A="B" id="417" Σ="2"/>
+                    <s m="2" wt="h">bô</s>
+                    <s m="1" wt="l">sma</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Ø" id="418" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">di</s>
+                    <w wc="t" msa="xPE" A="S" id="419" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="t" msa="xPE" A="Ø" id="420" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ra</s>
+                    <lb n="5r;9"/>
+                    <w wc="s" msa="xNC" A="B" id="421" Σ="2"/>
+                    <s m="2" wt="h">breos</s>
+                    <s m="2" wt="h">tun</s>
+                    <w wc="c" msa="xVB fF" p="1" A="F" id="422" Σ="1"/>
+                    <s m="2" wt="h">for</s>
+                    <w wc="t" msa="xVB fF" p="2" A="ST" id="423" Σ="1"/>
+                    <s m="3" wt="o">stôd</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="293" A="">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="Ø" id="424" Σ="1"/>
+                    <s m="2" wt="h">iac</s>
+                    <w wc="c" msa="xAP" A="Ø" id="425" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="t" msa="xPE" A="Ø" id="426" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">re</s>
+                    <w wc="s" msa="xNC" A="S" id="427" Σ="2"/>
+                    <s m="1" wt="l">se</s>
+                    <s m="2" wt="h">ƀon</s>
+                    <w wc="s" msa="xPE" A="S" id="428" Σ="2"/>
+                    <s m="2" wt="h">sel</s>
+                    <s m="1" wt="l">ƀo</s>
+                </v>
+                <!-- reflexive is stressed -->
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="S" id="429" Σ="2"/>
+                    <s m="2" wt="h">sag</s>
+                    <s m="1" wt="l">da</s>
+                    <w wc="t" msa="xPI" A="Þ" id="430" Σ="1"/>
+                    <s m="2" wt="h">them</s>
+                    <w wc="t" msa="xPE" A="S" id="431" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="t" msa="xVB fF" A="W" id="432" Σ="2"/>
+                    <s m="2" wt="h">uuel</s>
+                    <s m="1" wt="l">da</s>
+                </v>
+            </vg>
+            <cb/>
+            <vg type="line" cid="294" A="">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="Þ" id="433" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <lb n="5r;10"/>
+                    <w wc="t" msa="xPE" A="S" id="434" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="t" msa="xVB fF" A="H" id="435" Σ="2"/>
+                    <s m="2" wt="h">hab</s>
+                    <s m="1" wt="l">de</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="436" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fI" p="2" A="Ô" id="437" Σ="3"/>
+                    <s m="2" wt="h">ô</s>
+                    <s m="1" wt="l">ca</s>
+                    <s m="1" wt="l">na</s>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPD" A="Þ" id="438" Σ="1"/>
+                    <s m="2" wt="h">thes</s>
+                    <w wc="s" msa="xAJ" p="1" A="Ø" id="439" Σ="2"/>
+                    <s m="1" wt="l">a</s>
+                    <s m="1" wt="l">lo</s>
+                    <w wc="s" msa="xNC" p="2" A="W" id="440" Σ="2"/>
+                    <s m="2" wt="h">uual</s>
+                    <s m="2" wt="h">don</s>
+                    <w wc="s" msa="xNC" A="K" id="441" Σ="1"/>
+                    <s m="3" wt="o">craft</s>
+                </v>
+            </vg>
+            <vg type="line" cid="295" A="">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="H" id="442" Σ="2"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="2" wt="h">lag</s>
+                    <w wc="c" msa="xAP" A="F" id="443" Σ="1"/>
+                    <s m="2" wt="h">fon</s>
+                    <w wc="s" msa="xNC" A="H" id="444" Σ="3"/>
+                    <s m="1" wt="l">hi</s>
+                    <s m="1" wt="l">mi</s>
+                    <s m="1" wt="l">le</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Þ" id="445" Σ="1"/>
+                    <s m="2" wt="h">Thô</s>
+                    <w wc="t" msa="xVB fF" A="W" id="446" Σ="1"/>
+                    <s m="3" wt="o">uuarð</s>
+                    <lb n="5r;11"/>
+                    <w wc="s" msa="xNC" A="H" id="447" Σ="2"/>
+                    <s m="1" wt="l">hu</s>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xNP" A="Ø" id="448" Σ="3"/>
+                    <s m="1" wt="l">Io</s>
+                    <s m="1" wt="l">se</s>
+                    <s m="2" wt="h">pes</s>
+                </v>
+            </vg>
+            <vg type="line" cid="296" A="">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="Ø" id="449" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <w wc="s" msa="xNC" A="M" id="450" Σ="1"/>
+                    <s m="3" wt="o">môd</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="451" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fP" p="2" emends="drobid" A="W" id="452" Σ="2"/>
+                    <s m="2" wt="h">uuor</s>
+                    <s m="2" wt="h">rid</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ" id="453" Σ="1"/>
+                    <s m="1" wt="l">the</s>
+                    <w wc="t" msa="xPE" A="Ø" id="454" Σ="1"/>
+                    <s m="2" wt="h">im</s>
+                    <w wc="t" msa="xAV" A="Ê" id="455" Σ="1"/>
+                    <s m="3" wt="o">êr</s>
+                    <w wc="c" msa="xPD" A="Þ" id="456" Σ="1"/>
+                    <s m="1" wt="l">thea</s>
+                    <w wc="s" msa="xNC" A="M" id="457" Σ="2"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="2" wt="h">gað</s>
+                    <w wc="t" msa="xVB fF" A="H" id="458" Σ="2"/>
+                    <s m="2" wt="h">hab</s>
+                    <s m="1" wt="l">da</s>
+                </v>
+            </vg>
+            <cb/>
+            <vg type="line" cid="297" A="">
+                <v role="on">
+                    <w wc="c" msa="xPD" A="Þ" id="459" Σ="1"/>
+                    <s m="1" wt="l">thea</s>
+                    <w wc="s" msa="xNC" A="Ø" id="460" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="2" wt="h">dis</s>
+                    <lb n="5r;12"/>
+                    <w wc="c" msa="xPX" p="1" A="Ø" id="461" Σ="1"/>
+                    <s m="3" wt="o">ant</s>
+                    <w wc="s" msa="xAJ" p="2" A="H" id="462" Σ="2"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="1" wt="l">ttea</s>
+                </v>
+                <pc>·</pc>
+                <v role="off">
+                    <w wc="s" msa="xAJ" c="1" A="Ø" id="463" Σ="2"/>
+                    <s m="1" wt="l">a</s>
+                    <s m="2" wt="h">ðal</s>
+                    <w wc="s" msa="xNC" c="2" A="K" id="464" Σ="2"/>
+                    <s m="2" wt="h">cnô</s>
+                    <s m="2" wt="h">sles</s>
+                    <pc>·</pc>
+                    <w wc="s" msa="xNC" A="W" id="465" Σ="1"/>
+                    <s m="3" wt="o">uuîf</s>
+                </v>
+            </vg>
+            <vg type="line" cid="298" A="">
+                <v role="on">
+                    <w wc="c" msa="xPX" p="1" A="G" id="466" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fP" p="2" A="B" id="467" Σ="1"/>
+                    <s m="3" wt="o">boht</s>
+                    <w wc="t" msa="xPE" A="Ø" id="468" Σ="1"/>
+                    <s m="2" wt="h">im</s>
+                    <w wc="c" msa="xAP" A="T" id="469" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="s" msa="xNC" A="B" id="470" Σ="2"/>
+                    <s m="2" wt="h">brû</s>
+                    <s m="1" wt="l">diu</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="H" id="471" Σ="1"/>
+                    <s m="1" wt="l">He</s>
+                    <w wc="t" msa="xVB fF" A="Ø" id="472" Σ="2"/>
+                    <s m="2" wt="h">af</s>
+                    <s m="3" wt="o">sôf</s>
+                    <w wc="t" msa="xCS" A="Þ" id="473" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="S" id="474" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <lb n="5r;13"/>
+                    <w wc="t" msa="xVB fF" A="H" id="475" Σ="2"/>
+                    <s m="2" wt="h">hab</s>
+                    <s m="1" wt="l">da</s>
+                    <w wc="s" msa="xNC" A="B" id="476" Σ="1"/>
+                    <s m="3" wt="o">barn</s>
+                    <w wc="c" msa="xAP" A="Ø" id="477" Σ="2"/>
+                    <s m="2" wt="h">un</s>
+                    <s m="2" wt="h">dar</s>
+                    <w wc="t" msa="xPE" A="Ø" id="478" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ru</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="299" A="">
+                <v role="on">
+                    <w wc="t" msa="xNX" A="N" id="479" Σ="1"/>
+                    <s m="1" wt="l">ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="480" Σ="2"/>
+                    <s m="3" wt="o">uuân</s>
+                    <s m="1" wt="l">da</s>
+                    <w wc="t" msa="xPI" A="Þ" id="481" Σ="1"/>
+                    <s m="2" wt="h">thes</s>
+                    <w wc="c" msa="xAP" A="M" id="482" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="s" msa="xNC" A="W" id="483" Σ="2"/>
+                    <s m="2" wt="h">uuih</s>
+                    <s m="1" wt="l">ti</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ" id="484" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="Ø" id="485" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ru</s>
+                    <w wc="c" msa="xPD" A="Þ" id="486" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="s" msa="xNC" A="W" id="487" Σ="1"/>
+                    <s m="3" wt="o">uuîf</s>
+                    <lb n="5r;14"/>
+                    <w wc="t" msa="xVB fF" A="H" id="488" Σ="2"/>
+                    <s m="2" wt="h">hab</s>
+                    <s m="1" wt="l">di</s>
+                </v>
+            </vg>
+            <vg type="line" cid="300" A="">
+                <v role="on">
+                    <w wc="c" msa="xPX" p="1" A="G" id="489" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fI" p="2" A="W" id="490" Σ="2"/>
+                    <s m="2" wt="h">uuar</s>
+                    <s m="2" wt="h">dod</s>
+                    <w wc="t" msa="xAV" A="S" id="491" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="t" msa="xAV" A="W" id="492" Σ="4"/>
+                    <s m="1" wt="l">uua</s>
+                    <s m="1" wt="l">ro</s>
+                    <s m="2" wt="h">lî</s>
+                    <s m="1" wt="l">co</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="493" Σ="1"/>
+                    <s m="1" wt="l">Ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="494" Σ="2"/>
+                    <s m="2" wt="h">uuis</s>
+                    <s m="1" wt="l">se</s>
+                    <w wc="s" msa="xNC" A="W" id="495" Σ="3"/>
+                    <s m="2" wt="h">uual</s>
+                    <s m="2" wt="h">dan</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="s" msa="xNC" A="Þ" id="496" Σ="1"/>
+                    <s m="2" wt="h">thô</s>
+                    <w wc="t" msa="xAV" A="N" id="497" Σ="1"/>
+                    <s m="2" wt="h">noh</s>
+                </v>
+            </vg>
+            <vg type="line" cid="301" A="">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="B" id="498" Σ="2"/>
+                    <s m="2" wt="h">blî</s>
+                    <s m="1" wt="l">ði</s>
+                    <lb n="5r;15"/>
+                    <w c="1" id="501"> </w>
+                    <w wc="c" msa="xPX" p="1" A="G" id="502" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xNC" p="2" A="B" id="503" Σ="1"/>
+                    <s m="2" wt="h">bod</s>
+                    <w wc="s" msa="xNC" c="2" A="SK" id="504" Σ="2"/>
+                    <s m="1" wt="l">ske</s>
+                    <s m="1" wt="l">pi</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="505" Σ="1"/>
+                    <s m="1" wt="l">Ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="506" Σ="2"/>
+                    <s m="2" wt="h">uuel</s>
+                    <s m="1" wt="l">da</s>
+                    <w wc="t" msa="xPE" A="S" id="507" Σ="1"/>
+                    <s m="1" wt="l">sia</s>
+                    <w wc="t" msa="xPE" A="Ø" id="508" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">mo</s>
+                    <w wc="c" msa="xAJ" A="T" id="509" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="s" msa="xNC" A="B" id="510" Σ="2"/>
+                    <s m="2" wt="h">brû</s>
+                    <s m="1" wt="l">di</s>
+                    <w wc="t" msa="xAV" A="Þ" id="511" Σ="1"/>
+                    <s m="2" wt="h">thô</s>
+                </v>
+            </vg>
+            <vg type="line" cid="302" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="H" id="512" Σ="2"/>
+                    <s m="1" wt="l">ha</s>
+                    <s m="2" wt="h">lon</s>
+                    <w wc="t" msa="xPE" A="Ø" id="513" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">mo</s>
+                    <w wc="c" msa="xIM" A="T" id="514" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="t" msa="xVB fI" A="H" id="515" Σ="2"/>
+                    <s m="2" wt="h">hî</s>
+                    <s m="2" wt="h">uuon</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Ø" id="516" Σ="1"/>
+                    <s m="2" wt="h">ac</s>
+                    <lb n="5r;16"/>
+                    <w wc="c" msa="xPX" p="1" A="B" id="517" Σ="1"/>
+                    <s m="1" wt="l">bi</s>
+                    <w wc="t" msa="xVB fF" p="2" A="G" id="518" Σ="1"/>
+                    <s m="2" wt="h">gan</s>
+                    <w wc="t" msa="xPE" A="Ø" id="519" Σ="1"/>
+                    <s m="2" wt="h">im</s>
+                    <w wc="t" msa="xAV" A="Þ" id="520" Σ="1"/>
+                    <s m="2" wt="h">thô</s>
+                    <w wc="c" msa="xAP" A="Ø" id="521" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="s" msa="xNC" A="H" id="522" Σ="2"/>
+                    <s m="1" wt="l">hu</s>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fI" A="Þ" id="523" Σ="2"/>
+                    <s m="2" wt="h">then</s>
+                    <s m="2" wt="h">kean</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="303" A="">
+                <v role="on">
+                    <w wc="t" msa="xPI" A="H" id="524" Σ="1"/>
+                    <s m="1" wt="l">huô</s>
+                    <w wc="t" msa="xPE" A="H" id="525" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <w wc="t" msa="xPE" A="S" id="526" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="t" msa="xAV" A="S" id="527" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="c" msa="xPX" p="1" A="F" id="528" Σ="1"/>
+                    <s m="2" wt="h">for</s>
+                    <w wc="t" msa="xVB fF" p="2" A="L" id="529" Σ="2"/>
+                    <s m="2" wt="h">lê</s>
+                    <s m="1" wt="l">ti</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="S" id="530" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="t" msa="xPE" A="Ø" id="531" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ru</s>
+                    <w wc="t" msa="xAV" A="Þ" id="532" Σ="1"/>
+                    <s m="2" wt="h">thar</s>
+                    <lb n="5r;17"/>
+                    <w wc="t" msa="xNX" A="N" id="533" Σ="1"/>
+                    <s m="1" wt="l">ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="534" Σ="1"/>
+                    <s m="1" wt="l">uurði</s>
+                    <w wc="s" msa="xNC" A="L" id="535" Σ="2"/>
+                    <s m="2" wt="h">lê</s>
+                    <s m="2" wt="h">ðes</s>
+                    <w wc="s" msa="xNC" A="W" id="536" Σ="1"/>
+                    <s m="3" wt="o">uuiht</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="304" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ô" id="537" Σ="2"/>
+                    <s m="2" wt="h">ô</s>
+                    <s m="2" wt="h">dan</s>
+                    <w wc="t" msa="xVB fI" A="Ø" id="538" Σ="3"/>
+                    <s m="2" wt="h">ar</s>
+                    <s m="1" wt="l">ƀi</s>
+                    <s m="2" wt="h">des</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="539" Σ="1"/>
+                    <s m="1" wt="l">Ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="540" Σ="2"/>
+                    <s m="2" wt="h">uuel</s>
+                    <s m="1" wt="l">da</s>
+                    <w wc="t" msa="xPE" A="S" id="541" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="c" msa="xAP" A="Ø" id="542" Σ="2"/>
+                    <s m="2" wt="h">af</s>
+                    <s m="2" wt="h">tar</s>
+                    <w wc="t" msa="xPE" A="Þ" id="543" Σ="1"/>
+                    <s m="1" wt="l">thiu</s>
+                </v>
+            </vg>
+            <lb n="5r;18" after="3"/>
+            <vg type="line" cid="305" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="M" id="544" Σ="2"/>
+                    <s m="2" wt="h">mel</s>
+                    <s m="2" wt="h">don</s>
+                    <w wc="c" msa="xAP" A="F" id="545" Σ="1"/>
+                    <s m="2" wt="h">for</s>
+                    <w wc="s" msa="xNC" A="M" id="546" Σ="3"/>
+                    <s m="1" wt="l">me</s>
+                    <s m="1" wt="l">ni</s>
+                    <s m="1" wt="l">gi</s>
+                </v>
+                <cb/>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="Ø" id="547" Σ="1"/>
+                    <s m="3" wt="o">ant</s>
+                    <w wc="t" msa="xVB fF" p="2" A="D" id="548" Σ="1"/>
+                    <s m="3" wt="o">drêd</s>
+                    <w wc="t" msa="xCS" A="Þ" id="549" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="S" id="550" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="s" msa="xNC" A="M" id="551" Σ="2"/>
+                    <s m="2" wt="h">man</s>
+                    <s m="1" wt="l">no</s>
+                    <w wc="s" msa="xNC" A="B" id="552" Σ="1"/>
+                    <s m="3" wt="o">barn</s>
+                </v>
+            </vg>
+            <vg type="line" cid="306" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="L" id="553" Σ="2"/>
+                    <s m="2" wt="h">lî</s>
+                    <s m="1" wt="l">ƀu</s>
+                    <w wc="c" msa="xPX" p="1" A="B" id="554" Σ="1"/>
+                    <s m="1" wt="l">bi</s>
+                    <w wc="t" msa="xVB fF" p="2" A="N" id="555" Σ="2"/>
+                    <s m="2" wt="h">nâ</s>
+                    <s m="2" wt="h">min</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="S" id="556" Σ="1"/>
+                    <s m="2" wt="h">Sô</s>
+                    <lb n="5r;19"/>
+                    <w wc="t" msa="xVB fF" A="W" id="557" Σ="1"/>
+                    <s m="2" wt="h">uuas</s>
+                    <w wc="t" msa="xAV" A="Þ" id="558" Σ="1"/>
+                    <s m="2" wt="h">than</s>
+                    <w wc="c" msa="xPD" A="Þ" id="559" Σ="2"/>
+                    <s m="1" wt="l">the</s>
+                    <s m="1" wt="l">ro</s>
+                    <w wc="s" msa="xNC" A="L" id="560" Σ="2"/>
+                    <s m="1" wt="l">liu</s>
+                    <s m="1" wt="l">deo</s>
+                    <w wc="s" msa="xNC" A="Þ" id="561" Σ="1"/>
+                    <s m="1" wt="l">thau</s>
+                </v>
+            </vg>
+            <vg type="line" cid="307" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Þ" id="562" Σ="1"/>
+                    <s m="3" wt="o">thurh</s>
+                    <w wc="c" msa="xPD" A="Þ" id="563" Σ="1"/>
+                    <s m="2" wt="h">then</s>
+                    <w wc="s" msa="xAJ" A="Ø" id="564" Σ="2"/>
+                    <s m="2" wt="h">al</s>
+                    <s m="2" wt="h">don</s>
+                    <w wc="s" msa="xNC" A="Ê" id="565" Σ="1"/>
+                    <s m="2" wt="h">êu</s>
+                </v>
+                <pc>·</pc>
+                <v role="off">
+                    <w wc="s" msa="xNP" A="Ø" id="566" Σ="2"/>
+                    <s m="2" wt="h">eb</s>
+                    <s m="1" wt="l">reo</s>
+                    <w wc="s" msa="xNC" A="F" id="567" Σ="2"/>
+                    <s m="2" wt="h">fol</s>
+                    <s m="2" wt="h">kes</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <lb n="5r;20"/>
+            <cb/>
+            <vg type="line" cid="308" A="">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="S" id="568" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <!-- conjunctive phrase so huilik so -->
+                    <w wc="t" msa="xPE" A="H" id="569" Σ="2"/>
+                    <s m="1" wt="l">hui</s>
+                    <s m="2" wt="h">lik</s>
+                    <w wc="t" msa="xAV" A="S" id="570" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="t" msa="xAV" A="Þ" id="571" Σ="1"/>
+                    <s m="2" wt="h">thar</s>
+                    <w wc="c" msa="xAP" A="Ø" id="572" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="s" msa="xNC" A="Ø" id="573" Σ="2"/>
+                    <s m="2" wt="h">un</s>
+                    <s m="3" wt="o">reht</s>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="Ø" id="574" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="2" wt="h">dis</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="575" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fF" p="2" A="H" id="576" Σ="3"/>
+                    <s m="2" wt="h">hî</s>
+                    <s m="1" wt="l">uui</s>
+                    <s m="1" wt="l">da</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="309" A="">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="Þ" id="577" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="S" id="578" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="s" msa="xAV" A="S" id="579" Σ="2"/>
+                    <s m="2" wt="h">sim</s>
+                    <s m="1" wt="l">bla</s>
+                    <w wc="c" msa="xPD" A="Þ" id="580" Σ="2"/>
+                    <s m="1" wt="l">tha</s>
+                    <s m="1" wt="l">na</s>
+                    <lb n="5r;21"/>
+                    <w wc="s" msa="xNC" A="B" id="581" Σ="3"/>
+                    <s m="2" wt="h">bed</s>
+                    <s m="1" wt="l">ske</s>
+                    <s m="1" wt="l">pi</s>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="B" id="582" Σ="2"/>
+                    <s m="2" wt="h">bug</s>
+                    <s m="2" wt="h">gean</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="583" Σ="2"/>
+                    <s m="2" wt="h">scol</s>
+                    <s m="1" wt="l">da</s>
+                    <cb/>
+                </v>
+            </vg>
+            <vg type="line" cid="310" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="F" id="584" Σ="1"/>
+                    <s m="2" wt="h">frî</s>
+                    <pc>·</pc>
+                    <w wc="c" msa="xAP" A="M" id="585" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="c" msa="xPE" A="Ø" id="586" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ra</s>
+                    <w wc="s" msa="xNC" A="F" id="587" Σ="2"/>
+                    <s m="2" wt="h">fer</s>
+                    <s m="1" wt="l">hu</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="588" Σ="1"/>
+                    <s m="1" wt="l">ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="589" Σ="1"/>
+                    <s m="2" wt="h">uuas</s>
+                    <w wc="t" msa="xAV" A="G" id="590" Σ="1"/>
+                    <s m="1" wt="l">gio</s>
+                    <w wc="t" msa="xPI" A="Þ" id="591" Σ="1"/>
+                    <s m="1" wt="l">thiu</s>
+                    <lb n="5r;22"/>
+                    <w wc="s" msa="xNC" A="F" id="592" Σ="2"/>
+                    <s m="2" wt="h">fê</s>
+                    <s m="1" wt="l">mea</s>
+                    <w wc="t" msa="xAV" A="S" id="593" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="s" msa="xAJ" A="G" id="594" Σ="1"/>
+                    <s m="3" wt="o">gôd</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="311" A="">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="Þ" id="595" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="S" id="596" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="c" msa="xAP" A="M" id="597" Σ="1"/>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="c" msa="xPD" A="Þ" id="598" Σ="1"/>
+                    <s m="2" wt="h">them</s>
+                    <w wc="s" msa="xNC" A="L" id="599" Σ="2"/>
+                    <s m="1" wt="l">liu</s>
+                    <s m="2" wt="h">diun</s>
+                    <w wc="t" msa="xAV" A="L" id="600" Σ="1"/>
+                    <s m="3" wt="o">leng</s>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="L" id="601" Σ="2"/>
+                    <s m="2" wt="h">lib</s>
+                    <s m="2" wt="h">bien</s>
+                    <w wc="t" msa="xVB fF" A="M" id="602" Σ="2"/>
+                    <s m="2" wt="h">mô</s>
+                    <s m="1" wt="l">sti</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <lb n="5r;23"/>
+            <cb/>
+            <vg type="line" cid="312" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="W" id="603" Σ="2"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="2" wt="h">san</s>
+                    <w wc="c" msa="xAP" A="Ø" id="604" Σ="2"/>
+                    <s m="2" wt="h">un</s>
+                    <s m="2" wt="h">dar</s>
+                    <w wc="c" msa="xDD" A="Þ" id="605" Σ="1"/>
+                    <s m="2" wt="h">them</s>
+                    <w wc="s" msa="xNC" A="W" id="606" Σ="3"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="1" wt="l">ro</s>
+                    <s m="1" wt="l">da</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="B" id="607" Σ="1"/>
+                    <s m="1" wt="l">Bi</s>
+                    <w wc="t" msa="xVB fF" p="2" A="G" id="608" Σ="1"/>
+                    <s m="2" wt="h">gan</s>
+                    <w wc="t" msa="xPE" A="Ø" id="609" Σ="1"/>
+                    <s m="2" wt="h">im</s>
+                    <w wc="c" msa="xPD" A="Þ" id="610" Σ="1"/>
+                    <s m="1" wt="l">the</s>
+                    <w wc="s" msa="xAJ" A="W" id="611" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="1" wt="l">so</s>
+                    <w wc="s" msa="xNC" A="M" id="612" Σ="1"/>
+                    <s m="3" wt="o">mann</s>
+                </v>
+            </vg>
+            <vg type="line" cid="313" A="">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="S" id="613" Σ="2"/>
+                    <s m="1" wt="l">suî</s>
+                    <s m="1" wt="l">ðo</s>
+                    <lb n="5r;24"/>
+                    <w wc="s" msa="xAJ" A="G" id="614" Σ="1"/>
+                    <s m="3" wt="o">gôd</s>
+                    <w wc="s" msa="xNC" A="G" id="615" Σ="2"/>
+                    <s m="1" wt="l">gu</s>
+                    <s m="1" wt="l">mo</s>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNP" A="Ø" id="616" Σ="2"/>
+                    <s m="1" wt="l">Io</s>
+                    <s m="3" wt="o">seph</s>
+                    <w wc="c" msa="xAP" A="Ø" id="617" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="c" msa="xPE" A="Ø" id="618" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <w wc="s" msa="xNC" A="M" id="619" Σ="2"/>
+                    <s m="2" wt="h">mô</s>
+                    <s m="1" wt="l">da</s>
+                </v>
+            </vg>
+            <vg type="line" cid="314" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="Þ" id="620" Σ="2"/>
+                    <s m="2" wt="h">then</s>
+                    <s m="2" wt="h">kean</s>
+                    <w wc="c" msa="xPD" A="Þ" id="621" Σ="2"/>
+                    <s m="1" wt="l">the</s>
+                    <s m="1" wt="l">ro</s>
+                    <w wc="s" msa="xNC" A="Þ" id="622" Σ="2"/>
+                    <s m="2" wt="h">thin</s>
+                    <s m="1" wt="l">go</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPQ" A="H" id="623" Σ="1"/>
+                    <s m="1" wt="l">huô</s>
+                    <w wc="t" msa="xPE" A="H" id="624" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <w wc="c" msa="xPD" A="Þ" id="625" Σ="1"/>
+                    <s m="1" wt="l">thea</s>
+                    <pb n="5v"/>
+                    <lb n="5v;1"/>
+                    <w wc="s" msa="xNC" A="Þ" id="626" Σ="2"/>
+                    <s m="2" wt="h">thior</s>
+                    <s m="2" wt="h">nun</s>
+                    <w wc="t" msa="xAV" A="Þ" id="627" Σ="1"/>
+                    <s m="2" wt="h">thô</s>
+                </v>
+            </vg>
+            <vg type="line" cid="315" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="L" id="628" Σ="2"/>
+                    <s m="2" wt="h">lis</s>
+                    <s m="2" wt="h">tiun</s>
+                    <w wc="c" msa="xPX" p="1" A="F" id="629" Σ="1"/>
+                    <s m="2" wt="h">for</s>
+                    <w wc="t" msa="xVB fF" p="2" A="L" id="630" Σ="2"/>
+                    <s m="2" wt="h">lê</s>
+                    <s m="1" wt="l">ti</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Þ" id="631" Σ="1"/>
+                    <s m="2" wt="h">Thô</s>
+                    <w wc="t" msa="xNX" A="N" id="632" Σ="1"/>
+                    <s m="1" wt="l">ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="633" Σ="1"/>
+                    <s m="2" wt="h">uuas</s>
+                    <w wc="t" msa="xAV" A="L" id="634" Σ="1"/>
+                    <s m="3" wt="o">lang</s>
+                    <w wc="c" msa="xAP" A="T" id="635" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="t" msa="xAV" A="Þ" id="636" Σ="1"/>
+                    <s m="1" wt="l">thiu</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="316" A="">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="Þ" id="637" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="Ø" id="638" Σ="1"/>
+                    <s m="2" wt="h">im</s>
+                    <w wc="t" msa="xAV" A="Þ" id="639" Σ="1"/>
+                    <s m="2" wt="h">thar</s>
+                    <lb n="5v;2"/>
+                    <w wc="c" msa="xAP" A="Ø" id="640" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="s" msa="xNC" A="D" id="641" Σ="2"/>
+                    <s m="2" wt="h">drô</s>
+                    <s m="1" wt="l">ma</s>
+                    <w wc="t" msa="xVB fF" A="Q" id="642" Σ="1"/>
+                    <s m="2" wt="h">quam</s>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="D" id="643" Σ="3"/>
+                    <s m="2" wt="h">droh</s>
+                    <s m="1" wt="l">ti</s>
+                    <s m="2" wt="h">nes</s>
+                    <w wc="s" msa="xNC" A="Ø" id="644" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="2" wt="h">gil</s>
+                </v>
+            </vg>
+            <v>
+                <w wc="s" msa="xnC" c="1" A="H" id="645" Σ="2"/>
+                <s m="1" wt="l">he</s>
+                <s m="2" wt="h">ƀan</s>
+                <w wc="s" msa="xNC" c="2" A="K" id="646" Σ="3"/>
+                <s m="1" wt="l">cu</s>
+                <s m="2" wt="h">nin</s>
+                <s m="2" wt="h">ges</s>
+                <w wc="s" msa="xNC" A="B" id="647" Σ="2"/>
+                <s m="1" wt="l">bo</s>
+                <s m="1" wt="l">do</s>
+            </v>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="317" A="">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="Ø" id="648" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">di</s>
+                    <w wc="t" msa="xVB fF" A="H" id="649" Σ="1"/>
+                    <s m="3" wt="o">hêt</s>
+                    <lb n="5v;3"/>
+                    <w wc="t" msa="xPE" A="S" id="650" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="t" msa="xPE" A="Ø" id="651" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">na</s>
+                    <w wc="t" msa="xVB fI" A="H" id="652" Σ="2"/>
+                    <s m="2" wt="h">hal</s>
+                    <s m="2" wt="h">dan</s>
+                    <w wc="t" msa="xAV" A="W" id="653" Σ="1"/>
+                    <s m="2" wt="h">uuel</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="318" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="M" id="654" Σ="2"/>
+                    <s m="2" wt="h">min</s>
+                    <s m="2" wt="h">nion</s>
+                    <w wc="t" msa="xPE" A="S" id="655" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="c" msa="xAP" A="Ø" id="656" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="t" msa="xPE" A="Ø" id="657" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <w wc="s" msa="xNC" A="M" id="658" Σ="2"/>
+                    <s m="2" wt="h">mô</s>
+                    <s m="1" wt="l">de</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="659" Σ="1"/>
+                    <s m="1" wt="l">Ni</s>
+                    <w wc="t" msa="xVB fF" A="W" id="660" Σ="1"/>
+                    <s m="2" wt="h">uuis</s>
+                    <w wc="t" msa="xPE" A="Þ" id="661" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <cb/>
+                    <w wc="t" msa="xVB fF" A="Q" id="662" Σ="1"/>
+                    <s m="2" wt="h">quað</s>
+                    <w wc="t" msa="xPE" A="H" id="663" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <lb n="5v;4"/>
+                    <cb/>
+                    <w wc="s" msa="xNP" A="M" id="664" Σ="2"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="2" wt="h">riun</s>
+                    <w wc="t" msa="xVB fF" A="W" id="665" Σ="1"/>
+                    <s m="3" wt="o">uurêð</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="319" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Þ" id="666" Σ="2"/>
+                    <s m="2" wt="h">thior</s>
+                    <s m="2" wt="h">nun</s>
+                    <w wc="s" msa="xPE" A="Þ" id="667" Σ="3"/>
+                    <s m="2" wt="h">thî</s>
+                    <s m="1" wt="l">na</s>
+                    <s m="1" wt="l">ro</s>
+                </v>
+                <!-- displaced particle stressed -->
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="S" id="668" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="t" msa="xVB fF" A="Ø" id="669" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="670" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xAJ" p="2" A="Þ" id="671" Σ="2"/>
+                    <s m="2" wt="h">thun</s>
+                    <s m="2" wt="h">gan</s>
+                    <w wc="s" msa="xNC" A="W" id="672" Σ="1"/>
+                    <s m="3" wt="o">uuîf</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="320" A="">
+                <v role="on">
+                    <w wc="t" msa="xNX" A="N" id="673" Σ="1"/>
+                    <s m="1" wt="l">ne</s>
+                    <lb n="5v;5"/>
+                    <w wc="c" msa="xPX" p="1" A="F" id="674" Σ="1"/>
+                    <s m="2" wt="h">for</s>
+                    <w wc="s" msa="xVB fF" p="2" A="H" id="675" Σ="2"/>
+                    <s m="1" wt="l">hu</s>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xPE" A="Þ" id="676" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="t" msa="xPE" A="S" id="677" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="t" msa="xAV" A="T" id="678" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="t" msa="xAV" A="H" id="679" Σ="2"/>
+                    <s m="2" wt="h">har</s>
+                    <s m="1" wt="l">do</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Þ" id="680" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="681" Σ="1"/>
+                    <s m="3" wt="o">scalt</s>
+                    <w wc="t" msa="xPE" A="S" id="682" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="t" msa="xVB fI" A="H" id="683" Σ="2"/>
+                    <s m="2" wt="h">hal</s>
+                    <s m="2" wt="h">dan</s>
+                    <w wc="t" msa="xAV" A="W" id="684" Σ="1"/>
+                    <s m="2" wt="h">uuel</s>
+                </v>
+            </vg>
+            <cb/>
+            <pc>·</pc>
+            <vg type="line" cid="321" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="W" id="685" Σ="2"/>
+                    <s m="2" wt="h">uuar</s>
+                    <s m="2" wt="h">don</s>
+                    <w wc="t" msa="xPE" A="Ø" id="686" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ra</s>
+                    <w wc="c" msa="xAP" A="Ø" id="687" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <lb n="5v;6"/>
+                    <w wc="c" msa="xPD" A="Þ" id="688" Σ="3"/>
+                    <s m="1" wt="l">the</s>
+                    <s m="1" wt="l">sa</s>
+                    <s m="1" wt="l">ro</s>
+                    <w wc="s" msa="xNC" A="W" id="689" Σ="3"/>
+                    <s m="1" wt="l">uue</s>
+                    <s m="2" wt="h">rol</s>
+                    <s m="1" wt="l">di</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="L" id="690" Σ="2"/>
+                    <s m="2" wt="h">Lê</s>
+                    <s m="1" wt="l">sti</s>
+                    <w wc="t" msa="xPE" emends="" A="Þ" id="691" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="c" msa="xPE" A="Ø" id="692" Σ="2"/>
+                    <s m="2" wt="h">in</s>
+                    <s m="1" wt="l">ca</s>
+                    <w wc="s" msa="xNC" c="1" A="W" id="693" Σ="2"/>
+                    <s m="1" wt="l">uui</s>
+                    <s m="1" wt="l">ni</s>
+                    <w wc="s" msa="xNC" c="2" A="T" id="694" Σ="2"/>
+                    <s m="1" wt="l">tre</s>
+                    <s m="1" wt="l">uua</s>
+                </v>
+            </vg>
+            <vg type="line" cid="322" A="">
+                <v role="on">
+                    <w wc="t" msa="xAV" A="F" id="695" Σ="1"/>
+                    <s m="3" wt="o">forð</s>
+                    <pc>·</pc>
+                    <cb/>
+                    <w wc="t" msa="xAV" A="S" id="696" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="t" msa="xPD" A="Þ" id="697" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="s" msa="xNC" A="D" id="698" Σ="2"/>
+                    <s m="2" wt="h">dâ</s>
+                    <s m="1" wt="l">di</s>
+                </v>
+                <pc>·</pc>
+                <v role="off">
+                    <w wc="c" msa="xCC" A="Ø" id="699" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">di</s>
+                    <lb n="5v;7"/>
+                    <w wc="t" msa="xVB fF" A="H" id="700" Σ="1"/>
+                    <s m="3" wt="o">hald</s>
+                    <w wc="c" msa="xPE" A="Ø" id="701" Σ="2"/>
+                    <s m="2" wt="h">in</s>
+                    <s m="2" wt="h">can</s>
+                    <w wc="s" msa="xNC" c="1" A="F" id="702" Σ="1"/>
+                    <s m="3" wt="o">friund</s>
+                    <w wc="s" msa="xNC" c="2" A="SK" id="703" Σ="2"/>
+                    <s m="1" wt="l">ske</s>
+                    <s m="1" wt="l">pi</s>
+                    <w wc="t" msa="xAV" A="W" id="704" Σ="1"/>
+                    <s m="2" wt="h">uuel</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="323" A="">
+                <v role="on">
+                    <w wc="t" msa="xNX" A="N" id="705" Σ="1"/>
+                    <s m="1" wt="l">Ne</s>
+                    <w wc="t" msa="xVB fF" A="L" id="706" Σ="1"/>
+                    <s m="3" wt="o">lât</s>
+                    <w wc="t" msa="xPE" A="Þ" id="707" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="t" msa="xPE" A="S" id="708" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="t" msa="xPE" A="Þ" id="709" Σ="1"/>
+                    <s m="1" wt="l">thi</s>
+                    <w wc="t" msa="xPE" A="Þ" id="710" Σ="1"/>
+                    <s m="1" wt="l">thiu</s>
+                    <w wc="t" msa="xVB fI" A="L" id="711" Σ="3"/>
+                    <s m="2" wt="h">lê</s>
+                    <s m="1" wt="l">ða</s>
+                    <s m="2" wt="h">ron</s>
+                </v>
+                <lb n="5v;8"/>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ" id="712" Σ="1"/>
+                    <s m="2" wt="h">thoh</s>
+                    <w wc="t" msa="xPE" A="S" id="713" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="c" msa="xAP" A="Ø" id="714" Σ="2"/>
+                    <s m="2" wt="h">un</s>
+                    <s m="2" wt="h">dar</s>
+                    <w wc="c" msa="xPE" A="Ø" id="715" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ra</s>
+                    <w wc="s" msa="xNC" A="L" id="716" Σ="2"/>
+                    <s m="1" wt="l">li</s>
+                    <s m="2" wt="h">ðon</s>
+                    <w wc="t" msa="xVB fF" A="Ê" id="717" Σ="2"/>
+                    <s m="2" wt="h">ê</s>
+                    <s m="1" wt="l">gi</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="324" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="B" id="718" Σ="1"/>
+                    <s m="3" wt="o">barn</s>
+                    <w wc="c" msa="xAP" A="Ø" id="719" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="c" msa="xPE" A="Ø" id="720" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">ra</s>
+                    <w wc="s" msa="xNC" A="B" id="721" Σ="2"/>
+                    <s m="2" wt="h">bô</s>
+                    <s m="1" wt="l">sma</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Ø" id="722" Σ="1"/>
+                    <s m="2" wt="h">It</s>
+                    <w wc="t" msa="xVB fF" A="K" id="723" Σ="2"/>
+                    <s m="1" wt="l">cu</s>
+                    <s m="2" wt="h">mid</s>
+                    <w wc="c" msa="xAP" A="Þ" id="724" Σ="1"/>
+                    <s m="3" wt="o">thurh</s>
+                    <lb n="5v;9"/>
+                    <w wc="s" msa="xNC" A="G" id="725" Σ="2"/>
+                    <s m="1" wt="l">gi</s>
+                    <s m="2" wt="h">bod</s>
+                    <w wc="s" msa="xNC" A="G" id="726" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="325" A="">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="H" id="727" Σ="3"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="1" wt="l">la</s>
+                    <s m="2" wt="h">ges</s>
+                    <w wc="s" msa="xNC" A="G" id="728" Σ="2"/>
+                    <s m="2" wt="h">gê</s>
+                    <s m="2" wt="h">stes</s>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAJ" A="F" id="729" Σ="1"/>
+                    <s m="2" wt="h">fon</s>
+                    <w wc="s" msa="xNC" c="1" A="H" id="730" Σ="2"/>
+                    <s m="1" wt="l">he</s>
+                    <s m="2" wt="h">ƀan</s>
+                    <w wc="s" msa="xNC" c="2" A="W" id="731" Σ="2"/>
+                    <s m="2" wt="h">uuan</s>
+                    <s m="1" wt="l">ga</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="326" A="">
+                <v role="on">
+                    <w wc="t" msa="xPD" A="Þ" id="732" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xVB fF" A="Ø" id="733" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <w wc="s" msa="xNP" A="Ø" id="734" Σ="2"/>
+                    <s m="1" wt="l">iê</s>
+                    <s m="1" wt="l">su</s>
+                    <w wc="s" msa="xNP" A="K" id="735" Σ="1"/>
+                    <s m="3" wt="o">krist</s>
+                </v>
+                <lb n="5v;10"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="G" id="736" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="s" msa="xAJ" A="Ê" id="737" Σ="2"/>
+                    <s m="2" wt="h">ê</s>
+                    <s m="2" wt="h">gan</s>
+                    <w wc="s" msa="xNC" A="B" id="738" Σ="1"/>
+                    <s m="3" wt="o">barn</s>
+                </v>
+            </vg>
+            <vg type="line" cid="327" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W" id="739" Σ="3"/>
+                    <s m="2" wt="h">uual</s>
+                    <s m="2" wt="h">dan</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="s" msa="xNC" A="S" id="740" Σ="2"/>
+                    <s m="1" wt="l">su</s>
+                    <s m="1" wt="l">nu</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Þ" id="741" Σ="1"/>
+                    <s m="1" wt="l">Thu</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="742" Σ="1"/>
+                    <s m="3" wt="o">scalt</s>
+                    <w wc="t" msa="xPE" A="S" id="743" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="t" msa="xAV" A="W" id="744" Σ="1"/>
+                    <s m="2" wt="h">uuel</s>
+                    <w wc="t" msa="xBN fI" A="H" id="745" Σ="2"/>
+                    <s m="2" wt="h">hal</s>
+                    <s m="2" wt="h">dan</s>
+                </v>
+            </vg>
+            <lb n="5v;11"/>
+            <vg type="line" cid="328" A="">
+                <v role="on">
+                    <w wc="t" msa="xAV" c="1" A="H" id="746" Σ="2"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="2" wt="h">lag</s>
+                    <w wc="t" msa="xAV" c="2" A="L" id="747" Σ="2"/>
+                    <s m="2" wt="h">lî</s>
+                    <s m="1" wt="l">co</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N" id="748" Σ="1"/>
+                    <s m="1" wt="l">Ne</s>
+                    <w wc="t" msa="xVB fF" A="L" id="749" Σ="1"/>
+                    <s m="3" wt="o">lât</s>
+                    <w wc="t" msa="xPE" A="Þ" id="750" Σ="1"/>
+                    <s m="1" wt="l">thu</s>
+                    <w wc="t" msa="xPE" A="Þ" id="751" Σ="1"/>
+                    <s m="1" wt="l">thi</s>
+                    <w wc="t" msa="xPE" A="Þ" id="752" Σ="2"/>
+                    <s m="2" wt="h">thî</s>
+                    <s m="2" wt="h">nan</s>
+                    <w wc="s" msa="xNC" A="H" id="753" Σ="2"/>
+                    <s m="1" wt="l">hu</s>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fI" A="T" id="754" Σ="2"/>
+                    <s m="2" wt="h">tuîf</s>
+                    <s m="2" wt="h">lien</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="329" A="">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="M" id="755" Σ="2"/>
+                    <s m="2" wt="h">mer</s>
+                    <s m="2" wt="h">rean</s>
+                    <w wc="t" msa="xPE" A="Þ" id="756" Σ="2"/>
+                    <s m="2" wt="h">thî</s>
+                    <s m="1" wt="l">na</s>
+                    <lb n="5v;12"/>
+                    <w wc="s" msa="xNC" c="1" A="M" id="757" Σ="1"/>
+                    <s m="3" wt="o">môd</s>
+                    <w c="2" id="760"> </w>
+                    <w wc="c" msa="xPX" p="1" A="G" id="761" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xNC" p="2" A="Þ" id="762" Σ="1"/>
+                    <s m="4" wt="o">thâht</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Þ" id="763" Σ="1"/>
+                    <s m="2" wt="h">Thô</s>
+                    <w wc="t" msa="xVB fF" A="W" id="764" Σ="1"/>
+                    <s m="3" wt="o">uuarð</s>
+                    <w wc="t" msa="xAV" A="Ø" id="765" Σ="1"/>
+                    <s m="3" wt="o">eft</s>
+                    <w wc="c" msa="xPE" A="Þ" id="766" Σ="1"/>
+                    <s m="2" wt="h">thes</s>
+                    <w wc="s" msa="xNC" A="M" id="767" Σ="2"/>
+                    <s m="2" wt="h">man</s>
+                    <s m="2" wt="h">nes</s>
+                    <w wc="s" msa="xNC" A="H" id="768" Σ="2"/>
+                    <s m="1" wt="l">hu</s>
+                    <s m="1" wt="l">gi</s>
+                </v>
+            </vg>
+            <vg type="line" cid="330" A="">
+                <v role="on">
+                    <w wc="c" msa="xPX" p="1" A="G" id="769" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fP" p="2" A="W" id="770" Σ="2"/>
+                    <s m="2" wt="h">uuen</s>
+                    <s m="2" wt="h">did</s>
+                    <lb n="5v;13"/>
+                    <w wc="c" msa="xAP" A="Ø" id="771" Σ="2"/>
+                    <s m="2" wt="h">af</s>
+                    <s m="2" wt="h">tar</s>
+                    <w wc="c" msa="xPD" A="Þ" id="772" Σ="1"/>
+                    <s m="2" wt="h">them</s>
+                    <w wc="s" msa="xNC" A="W" id="773" Σ="2"/>
+                    <s m="2" wt="h">uuor</s>
+                    <s m="2" wt="h">dun</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ" id="774" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="H" id="775" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <w wc="t" msa="xPE" A="Ø" id="776" Σ="1"/>
+                    <s m="2" wt="h">im</s>
+                    <w wc="c" msa="xAP" A="T" id="777" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="c" msa="xPE" A="Þ" id="778" Σ="1"/>
+                    <s m="2" wt="h">them</s>
+                    <w wc="s" msa="xNC" A="W" id="779" Σ="2"/>
+                    <s m="2" wt="h">uuî</s>
+                    <s m="1" wt="l">ƀa</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="780" Σ="1"/>
+                    <s m="1" wt="l">ge</s>
+                    <w wc="t" msa="xVB fF" p="2" A="N" id="781" Σ="1"/>
+                    <s m="2" wt="h">nam</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="331" A="">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="T" id="782" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="c" msa="xPD" A="Þ" id="783" Σ="2"/>
+                    <s m="1" wt="l">the</s>
+                    <s m="1" wt="l">ra</s>
+                    <lb n="5v;14"/>
+                    <w wc="s" msa="xNC" A="M" id="784" Σ="2"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="2" wt="h">gað</s>
+                    <w wc="t" msa="xVB fF" A="M" id="785" Σ="2"/>
+                    <s m="2" wt="h">min</s>
+                    <s m="1" wt="l">nea</s>
+                </v>
+                <pc>·</pc>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="Ø" id="786" Σ="1"/>
+                    <s m="3" wt="o">ant</s>
+                    <w wc="t" msa="xVB fF" p="2" A="K" id="787" Σ="2"/>
+                    <s m="2" wt="h">ken</s>
+                    <s m="1" wt="l">da</s>
+                    <w wc="s" msa="xNC" A="M" id="788" Σ="1"/>
+                    <s m="3" wt="o">maht</s>
+                    <w wc="s" msa="xNC" A="G" id="789" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="332" A="">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W" id="790" Σ="3"/>
+                    <s m="2" wt="h">uual</s>
+                    <s m="2" wt="h">dan</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="s" msa="xNC" A="G" id="791" Σ="2"/>
+                    <s m="1" wt="l">gi</s>
+                    <s m="2" wt="h">bod</s>
+                </v>
+                <pc>·</pc>
+                <lb n="5v;15"/>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="Ø" id="792" Σ="2"/>
+                    <s m="1" wt="l">U</s>
+                    <s m="2" wt="h">uas</s>
+                    <w wc="t" msa="xPE" A="Ø" id="793" Σ="1"/>
+                    <s m="2" wt="h">im</s>
+                    <w wc="s" msa="xNC" A="W" id="794" Σ="2"/>
+                    <s m="2" wt="h">uuil</s>
+                    <s m="1" wt="l">leo</s>
+                    <w wc="s" msa="xAJ" A="M" id="795" Σ="2"/>
+                    <s m="1" wt="l">mi</s>
+                    <s m="2" wt="h">kil</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="333" A="">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="Þ" id="796" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="H" id="797" Σ="1"/>
+                    <s m="1" wt="l">he</s>
+                    <w wc="t" msa="xPE" A="S" id="798" Σ="1"/>
+                    <s m="1" wt="l">sia</s>
+                    <w wc="c" msa="xAV" A="S" id="799" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="s" msa="xAJ" A="H" id="800" Σ="4"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="2" wt="h">lag</s>
+                    <s m="2" wt="h">lî</s>
+                    <s m="1" wt="l">co</s>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="H" id="801" Σ="2"/>
+                    <s m="2" wt="h">hal</s>
+                    <s m="2" wt="h">dan</s>
+                    <w wc="t" msa="xVB fF" A="M" id="802" Σ="2"/>
+                    <s m="2" wt="h">mô</s>
+                    <s m="1" wt="l">sti</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <cb/>
+            <vg type="line" cid="334" A="">
+                <v role="on">
+                    <w wc="c" msa="xPX" p="1" A="B" id="803" Σ="1"/>
+                    <s m="1" wt="l">bi</s>
+                    <lb n="5v;16"/>
+                    <w wc="t" msa="xVB fF" p="2" A="S" id="804" Σ="3"/>
+                    <s m="2" wt="h">sor</s>
+                    <s m="1" wt="l">go</s>
+                    <s m="1" wt="l">da</s>
+                    <w wc="t" msa="xPE" A="S" id="805" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="c" msa="xAP" A="Ø" id="806" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="s" msa="xPE" A="Ø" id="807" Σ="1"/>
+                    <s m="2" wt="h">is</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="808" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xNC" p="2" A="S" id="809" Σ="2"/>
+                    <s m="2" wt="h">sî</s>
+                    <s m="1" wt="l">ðea</s>
+                </v>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCC" A="Ø" id="810" Σ="2"/>
+                    <s m="2" wt="h">en</s>
+                    <s m="1" wt="l">di</s>
+                    <w wc="t" msa="xPE" A="S" id="811" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="t" msa="xAV" A="S" id="812" Σ="1"/>
+                    <s m="2" wt="h">sô</s>
+                    <w wc="t" msa="xAV" A="S" id="813" Σ="2"/>
+                    <s m="2" wt="h">sû</s>
+                    <s m="1" wt="l">ƀro</s>
+                    <w wc="t" msa="xVB fF" A="D" id="814" Σ="1"/>
+                    <s m="3" wt="o">drôg</s>
+                </v>
+            </vg>
+            <vg type="line" cid="335" A="">
+                <v role="on">
+                    <w wc="t" msa="xPI" A="Ø" id="815" Σ="1"/>
+                    <s m="2" wt="h">al</s>
+                    <w wc="c" msa="xAP" A="T" id="816" Σ="1"/>
+                    <s m="1" wt="l">te</s>
+                    <w wc="s" msa="xNC" A="H" id="817" Σ="2"/>
+                    <s m="2" wt="h">hul</s>
+                    <s m="1" wt="l">di</s>
+                    <w wc="s" msa="xNC" A="G" id="818" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                </v>
+                <lb n="5v;17"/>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="H" id="819" Σ="3"/>
+                    <s m="2" wt="h">hê</s>
+                    <s m="2" wt="h">lag</s>
+                    <s m="1" wt="l">na</s>
+                    <w wc="s" msa="xNC" A="G" id="820" Σ="1"/>
+                    <s m="4" wt="o">gêst</s>
+                </v>
+            </vg>
+            <vg type="line" cid="336" A="">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="G" id="821" Σ="3"/>
+                    <s m="2" wt="h">gô</s>
+                    <s m="2" wt="h">dlî</s>
+                    <s m="2" wt="h">can</s>
+                    <w wc="s" msa="xNC" A="G" id="822" Σ="2"/>
+                    <s m="1" wt="l">gu</s>
+                    <s m="2" wt="h">mon</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Ø" id="823" Σ="2"/>
+                    <s m="2" wt="h">ant</s>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="S" id="824" Σ="1"/>
+                    <s m="1" wt="l">sie</s>
+                    <w wc="s" msa="xNC" A="G" id="825" Σ="2"/>
+                    <s m="1" wt="l">go</s>
+                    <s m="2" wt="h">des</s>
+                    <w wc="c" msa="xPX" p="1" A="G" id="826" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="s" msa="xNC" p="2" A="SK" id="827" Σ="2"/>
+                    <s m="1" wt="l">sca</s>
+                    <s m="1" wt="l">pu</s>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="337" A="">
+                <v role="on">
+                    <w wc="t" msa="xAV" A="M" id="828" Σ="2"/>
+                    <s m="2" wt="h">mah</s>
+                    <s m="2" wt="h">tig</s>
+                    <lb n="5v;18"/>
+                    <w wc="c" msa="xPX" p="1" A="G" id="829" Σ="1"/>
+                    <s m="1" wt="l">gi</s>
+                    <w wc="t" msa="xVB fF" p="2" A="M" id="830" Σ="3"/>
+                    <s m="1" wt="l">ma</s>
+                    <s m="1" wt="l">no</s>
+                    <s m="2" wt="h">dun</s>
+                </v>
+                <pc>·</pc>
+                <cb/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ" id="831" Σ="1"/>
+                    <s m="2" wt="h">that</s>
+                    <w wc="t" msa="xPE" A="S" id="832" Σ="1"/>
+                    <s m="1" wt="l">siu</s>
+                    <w wc="t" msa="xAV" A="Ø" id="833" Σ="2"/>
+                    <s m="1" wt="l">i</s>
+                    <s m="1" wt="l">na</s>
+                    <w wc="c" msa="xAP" A="Ø" id="834" Σ="1"/>
+                    <s m="2" wt="h">an</s>
+                    <w wc="s" msa="xNC" A="M" id="835" Σ="2"/>
+                    <s m="2" wt="h">man</s>
+                    <s m="1" wt="l">no</s>
+                    <w wc="s" msa="xNC" A="L" id="836" Σ="1"/>
+                    <s m="3" wt="o">lioht</s>
+                </v>
+            </vg>
+            <vg type="line" cid="338" A="">
+                <v role="on">
+                    <w wc="t" msa="xPI" A="Ø" id="837" Σ="3"/>
+                    <s m="2" wt="h">al</s>
+                    <s m="1" wt="l">la</s>
+                    <s m="1" wt="l">ro</s>
+                    <w wc="s" msa="xNC" A="B" id="838" Σ="2"/>
+                    <s m="2" wt="h">bar</s>
+                    <s m="1" wt="l">no</s>
+                    <w wc="s" msa="xAH" A="B" id="839" Σ="1"/>
+                    <s m="3" wt="o">bezt</s>
+                </v>
+                <lb n="5v;19"/>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="B" id="840" Σ="2"/>
+                    <s m="2" wt="h">bren</s>
+                    <s m="2" wt="h">gean</s>
+                    <w wc="t" msa="xVB fF" A="SK" id="841" Σ="2"/>
+                    <s m="2" wt="h">scol</s>
+                    <s m="1" wt="l">da</s>
+                </v>
+            </vg>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,2521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI[
+<!ENTITY % menotaEntities SYSTEM "http://www.menota.org/menota-entities.txt"> %menotaEntities;
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Beowulf </title>
+                <subtitle> Fitts III-V </subtitle>
+            </titleStmt>
+            <publicationStmt>
+                <p>
+                    <!-- Information about distribution of the resource -->
+                </p>
+            </publicationStmt>
+            <sourceDesc>
+                <p> Cotton MS Vitellius A XV </p>
+                <markupLevel>lineated</markupLevel>
+            </sourceDesc>
+        </fileDesc>
+        <profDesc>
+            <langUsage>
+                <language ident="ang">Old English</language>
+            </langUsage>
+        </profDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="134r"/>
+            <lb n="134r;8"/>
+            <p>·III·</p>
+            <!-- this is the fitt heading centered in the manuscript line -->
+            <lb n="134r;9"/>
+            <vg type="line" cid="189" A="M">
+                <v role="on">
+                    <w wc="t" msa="xAV" A="S">swā</w>
+                    <w wc="c" msa="xPD" A="Þ">ða</w>
+                    <w wc="s" msa="xAJ" c="1" A="M">mǣl</w>
+                    <w wc="s" msa="xNC" c="2" A="K">ċeare</w>
+                    <!-- resolution suspended -->
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="M">maga</w>
+                    <!-- these two syllables resolve -->
+                    <w wc="s" msa="xNP" c="1" A="H">healf</w>
+                    <w wc="s" msa="xNP" c="2" A="D">denes</w>
+                </v>
+            </vg>
+            <lb n="134r;10" after="5"/>
+            <!-- the line break occurs after the first five upcoming letters (singa/la) -->
+            <vg type="line" cid="190" A="S">
+                <v role="on">
+                    <w wc="t" msa="xAV" A="S">singāla</w>
+                    <w wc="t" msa="xVB fF" A="S">sēað</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xNX" A="N">ne</w>
+                    <w wc="t" msa="xVX fF" A="M">mihte</w>
+                    <!--auxiliary verb-->
+                    <w wc="s" msa="xAJ" epen="snotor" A="S">snotr</w>
+                    <w wc="s" msa="xNC" A="H">hæleð</w>
+                </v>
+            </vg>
+            <vg type="line" cid="191" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">wēan</w>
+                    <w wc="c" msa="" c="1" A="Ø">on</w>
+                    <lb n="134r;11"/>
+                    <w wc="t" msa="xVB fI" c="2" A="W">wendan</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                    <w wc="t" msa="xPD" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xNC" p="2" A="W">win</w>
+                    <w wc="c" msa="xAV" A="T">tō</w>
+                    <w wc="s" msa="xAJ" A="S">swȳð</w>
+                </v>
+            </vg>
+            <vg type="line" cid="192" A="A">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="L">lāþ</w>
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="s" msa="xAJ" A="L">longsum</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xRP" A="Þ">þē</w>
+                    <lb n="134r;12"/>
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="c" msa="xPD" A="Þ">ðā</w>
+                    <w wc="s" msa="xNC" A="L">lēode</w>
+                    <w wc="t" msa="xVB fF" A="B">becōm</w>
+                </v>
+            </vg>
+            <vg type="line" cid="193" A="N">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="N">nȳd</w>
+                    <w wc="s" msa="xNC" c="2" A="W">wracu</w>
+                    <w wc="s" msa="xNC" c="1" A="N">nīþ</w>
+                    <w wc="s" msa="sNC" c="2" A="G">grim</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="N">niht</w>
+                    <lb n="134r;13"/>
+                    <w wc="s" msa="xNC" c="2" A="B">bealwa</w>
+                    <w wc="s" msa="xAJ" A="M">mǣst</w>
+                </v>
+            </vg>
+            <vg type="line" cid="194" A="H">
+                <v role="on">
+                    <w wc="c" msa="xPD" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="c" msa="xAP" A="F">fram</w>
+                    <w wc="s" msa="xNC" A="H">hām</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="F">fræġn</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNP" c="1" A="H">hiġe</w>
+                    <lb n="134r;14" after="2"/>
+                    <w wc="s" msa="xNP" c="2" A="L">lāces</w>
+                    <w wc="s" msa="xNC" A="Þ">þeġn</w>
+                </v>
+            </vg>
+            <vg type="line" cid="195" A="G">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="G">god</w>
+                    <w wc="c" msa="xAP" A="M">mid</w>
+                    <w wc="s" msa="xNC" A="G">ġeatum</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNP" A="G">grendles</w>
+                    <w wc="s" msa="xNC" A="D">dǣda</w>
+                </v>
+            </vg>
+            <lb n="134r;15"/>
+            <vg type="line" cid="196" A="M">
+                <v role="on">
+                    <w wc="t" msa="xPD" A="S">se</w>
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                    <w wc="s" msa="xNC" c="1" A="M">mon</w>
+                    <w wc="s" msa="xNC" c="2" A="K">cynnes</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="M">mæġenes</w>
+                    <w wc="s" msa="xNC" A="ST">strenġest</w>
+                </v>
+            </vg>
+            <vg type="line" cid="197" A="Þ">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <lb n="134r;16"/>
+                    <w wc="c" msa="xPD" A="Þ">þǣm</w>
+                    <w wc="s" msa="xNC" A="D">dæġe</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPD" A="Þ">þysses</w>
+                    <w wc="s" msa="xNC" A="L">līfes</w>
+                </v>
+            </vg>
+            <vg type="line" cid="198" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="Ø">æþele</w>
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="s" msa="xAJ" A="Ø">ēacen</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="H">hēt</w>
+                    <lb n="134r;17"/>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="s" msa="xNC" c="1" A="Ø">ȳð</w>
+                    <w wc="s" msa="xNC" c="2" A="L">lidan</w>
+                </v>
+            </vg>
+            <vg type="line" cid="199" A="G">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="G">gōdne</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fI" p="2" A="G">ġyrwan</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="K">cwæð</w>
+                    <w wc="t" msa="xPE" A="H">hē</w>
+                    <w wc="s" msa="xNC" c="1" A="G">gūð</w>
+                    <lb n="134r;18"/>
+                    <w wc="s" msa="xNC" c="2" A="K">cyning</w>
+                </v>
+            </vg>
+            <vg type="line" cid="200" A="S">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <w wc="s" msa="xNC" c="1" A="S">swan</w>
+                    <w wc="s" msa="xNC" c="2" A="R">rāde</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="S">sēċean</w>
+                    <w wc="t" msa="xVB fF" A="W">wolde</w>
+                </v>
+            </vg>
+            <lb n="134r;19" after="3"/>
+            <vg type="line" cid="201" A="M">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="M">mǣrne</w>
+                    <w wc="s" msa="xNC" A="Þ">þēoden</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ">þā</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                    <w wc="s" msa="xNC" A="M">manna</w>
+                    <w wc="s" msa="xNC" A="Þ">þearf</w>
+                </v>
+            </vg>
+            <vg type="line" cid="202" A="S">
+                <v role="on">
+                    <w wc="c" msa="xPD" A="Þ">ðone</w>
+                    <lb n="134r;20"/>
+                    <w wc="s" msa="xNC" c="1" A="S">sīð</w>
+                    <w wc="s" msa="xNC" c="2" A="F">fæt</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="sAJ" A="S">snotere</w>
+                    <w wc="s" msa="xNC" A="K">ċeorlas</w>
+                </v>
+            </vg>
+            <vg type="line" cid="203" A="L">
+                <v role="on">
+                    <w wc="t" msa="xAV" c="1" A="L">lȳt</w>
+                    <w wc="t" msa="xAV" c="2" A="H">hwōn</w>
+                    <w wc="t" msa="xVB" A="L">lōgon</w>
+                </v>
+                <pb n="134v"/>
+                <!-- the top line and top left margin have defects reflected in emendations below-->
+                <lb n="134v;1"/>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ">þēah</w>
+                    <w wc="t" msa="xPE" A="H">hē</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="s" msa="xAJ" A="L">lēof</w>
+                    <w wc="t" msa="xVB fF" A="W">wǣre</w>
+                </v>
+            </vg>
+            <vg type="line" cid="204" A="H">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="H">hwetton</w>
+                    <w wc="s" msa="xNC" c="1" A="H">hige</w>
+                    <w wc="s" msa="xNC" c="2" emends="" A="R">rōfne</w>
+                </v>
+                <lb n="134v;2"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" emends="l" A="H">hǣl</w>
+                    <w wc="t" msa="xVB fF" A="SK">scēawedon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="205" A="G">
+                <v role="on">
+                    <w wc="t" msa="xVX" A="H">hæfde</w>
+                    <w wc="c" msa="xPD" A="S">se</w>
+                    <w wc="s" msa="xNC" A="G">gōda</w>
+                    <!--substantivized adjective-->
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNP" A="G">ġēata</w>
+                    <w wc="s" msa="xNC" A="L">lēoda</w>
+                </v>
+            </vg>
+            <lb n="134v;3"/>
+            <vg type="line" cid="206" A="C">
+                <v role="on">
+                    <w wc="s" msa="xNC" emends="empan" A="K">cempan</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xVB fP" p="2" A="K">corone</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xRP" A="Þ">þāra</w>
+                    <w wc="t" msa="xRP" A="Þ">þe</w>
+                    <w wc="t" msa="xPE" A="H">hē</w>
+                    <w wc="t" msa="xVB fF" A="K">cēnoste</w>
+                </v>
+            </vg>
+            <lb n="134v;4"/>
+            <vg type="line" cid="207" A="F">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="F">findan</w>
+                    <w wc="t" msa="xVX" A="M">mihte</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" expands="·XV·" A="F">fīftȳna</w>
+                    <!-- 'NA' written above numerals -->
+                    <w wc="s" msa="xAJ" A="S">sum</w>
+                </v>
+            </vg>
+            <vg type="line" cid="208" A="S">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="S">sund</w>
+                    <w wc="s" msa="xNC" c="2" A="W">wudu</w>
+                    <w wc="t" msa="xVB fF" A="S">sōhte</w>
+                </v>
+                <lb n="134v;5"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="S">secg</w>
+                    <w wc="t" msa="xVB fF" A="W">wīsade</w>
+                </v>
+            </vg>
+            <vg type="line" cid="209" A="L">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="L">lagu</w>
+                    <w wc="s" msa="xAJ" c="2" A="K">cræftiġ</w>
+                    <w wc="s" msa="xNC" A="M">mon</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="L">land</w>
+                    <!--line begins after first element of compound ('land'), 
+        the prefix of the second element (ge), 
+        and the first three letters of the root (myr)-->
+                    <w c="2" A="L"/>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <lb n="134v;6" after="3"/>
+                    <w wc="s" msa="xNC" p="2" A="M">myrċu</w>
+                </v>
+            </vg>
+            <vg type="line" cid="210" A="F">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="F">fyrst</w>
+                    <w wc="t" msa="xAV" A="F">forð</w>
+                    <w wc="c" msa="xPX" pre="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" pre="2" A="W">wāt</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="F">flota</w>
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" A="Ø">ȳðum</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <!-- interdot -->
+            <lb n="134v;7"/>
+            <vg type="line" cid="211" A="B">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="B">bāt</w>
+                    <w wc="c" msa="xAP" A="Ø">under</w>
+                    <w wc="s" msa="xNC" A="B">beorge</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="B">beornas</w>
+                    <w wc="t" msa="xAJ" A="G">ġearwe</w>
+                </v>
+            </vg>
+            <vg type="line" cid="212" A="S">
+                <v role="on">
+                    <w wc="t" msa="xAP" A="Ø">on</w>
+                    <lb n="134v;8"/>
+                    <w wc="s" msa="xNC" A="ST">stefn</w>
+                    <w wc="t" msa="xVB" A="ST">stigon</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="ST">strēamas</w>
+                    <w wc="t" msa="xVB fF" A="W">wundon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="213" A="S">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="S">sund</w>
+                    <w wc="t" msa="xAP" A="W">wið</w>
+                    <lb n="134v;9" after="3"/>
+                    <w wc="s" msa="xNC" A="S">sande</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="sNC" A="S">secgas</w>
+                    <w wc="t" msa="xVB fF" A="B">bǣron</w>
+                </v>
+            </vg>
+            <vg type="line" cid="214" A="B">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" A="B">bearm</w>
+                    <w wc="s" msa="xNC" A="N">nacan</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="B">beorhte</w>
+                    <lb n="134v;10"/>
+                    <w wc="s" msa="xNC" A="F">frætwe</w>
+                </v>
+            </vg>
+            <vg type="line" cid="215" A="G">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="G">gūð</w>
+                    <w wc="s" msa="xNC" c="2" A="S">searo</w>
+                    <w wc="s" msa="xAJ" A="G">ġeatoliċ</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="G">guman</w>
+                    <w wc="t" msa="xAV" A="Ø">ūt</w>
+                    <lb n="134v;11" after="3"/>
+                    <w wc="t" msa="xVB fF" A="SK">scufon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="216" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">weras</w>
+                    <w wc="t" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" A="W">wilsīð</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="W">wudu</w>
+                    <w wc="s" msa="xVB fP" A="B">bundenne</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="217" A="W">
+                <v role="on">
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="W">wāt</w>
+                    <lb n="134v;12"/>
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <w wc="s" msa="xNC" c="1" A="W">wǣġ</w>
+                    <w wc="s" msa="xNC" c="2" A="H">holm</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="" A="W">winde</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fP" p="2" A="F">fȳsed</w>
+                </v>
+            </vg>
+            <vg type="line" cid="218" A="F">
+                <v role="on">
+                    <w wc="s" msa="" A="F">flota</w>
+                    <lb n="134v;13" after="2"/>
+                    <w wc="s" msa="xAJ" c="1" A="F">fāmī</w>
+                    <w wc="s" msa="xNC" c="2" A="H">heals</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="F">fugle</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xAJ" p="2" A="L">līcost</w>
+                </v>
+            </vg>
+            <vg type="line" cid="219" A="Ø">
+                <v role="on">
+                    <w wc="t" msa="xSC" A="Ø">oð</w>
+                    <w wc="t" msa="xSC" A="Þ">þæt</w>
+                    <w wc="c" msa="xAP" A="Ø">ymb</w>
+                    <w wc="s" msa="xNC" c="1" A="Ø">ān</w>
+                    <w wc="s" msa="xNC" c="2" A="T">tīd</w>
+                </v>
+                <lb n="134v;14"/>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="Ø">ōþres</w>
+                    <w wc="s" msa="xNC" epen="dōgores" A="D">dōgres</w>
+                </v>
+            </vg>
+            <vg type="line" cid="220" A="W">
+                <v role="on">
+                    <w wc="s" msa="xVB fP" c="1" A="W">wunden</w>
+                    <w wc="s" msa="xNC" c="2" A="ST">stefna</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fP" p="2" A="W">waden</w>
+                    <w wc="t" msa="xVB fF" A="H">hæfde</w>
+                </v>
+            </vg>
+            <lb n="134v;15"/>
+            <vg type="line" cid="221" A="L">
+                <v role="on">
+                    <w wc="t" msa="xCS" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="c" msa="xPD" A="Þ">ðā</w>
+                    <w wc="s" msa="" A="L">līðende</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="L">land</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="S">sāwon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="222" A="B">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="B">brim</w>
+                    <w wc="s" msa="xNC" c="2" A="K">clifu</w>
+                    <w wc="s" msa="xVB fI" A="B">blīcan</w>
+                </v>
+                <lb n="134v;16"/>
+                <v role="off">
+                    <w wc="m" msa="xNC" A="B">beorgas</w>
+                    <w wc="m" msa="xAJ" A="ST">stēape</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="223" A="S">
+                <v role="on">
+                    <w wc="t" msa="xAJ" A="S">sīde</w>
+                    <w wc="s" msa="xNC" c="1" A="S">sǣ</w>
+                    <w wc="s" msa="xNC" c="2" A="N">næssas</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                    <w wc="s" msa="xNC" A="S">sund</w>
+                    <lb n="134v;17"/>
+                    <w wc="s" msa="xVB fP" A="L">liden</w>
+                </v>
+            </vg>
+            <vg type="line" cid="224" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø">eoletes</w>
+                    <w wc="c" msa="xAP" A="Ø">æt</w>
+                    <w wc="s" msa="xNC" A="Ø">ende</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Þ">þanon</w>
+                    <w wc="t" msa="xAP" A="Ø">up</w>
+                    <w wc="t" msa="xAV" A="H">hraðe</w>
+                </v>
+            </vg>
+            <lb n="134v;18" after="2"/>
+            <vg type="line" cid="225" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">wedera</w>
+                    <w wc="s" msa="xNC" A="L">lēode</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" A="W">wang</w>
+                    <w wc="t" msa="xVB fF" A="ST">stigon</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="226" A="S">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="S">sǣ</w>
+                    <w wc="s" msa="xNC" c="2" A="W">wudu</w>
+                    <w wc="t" msa="xVB fF" A="S">sǣldon</w>
+                </v>
+                <lb n="134v;19"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="S">syrċan</w>
+                    <w wc="t" msa="xVB fF" A="H">hrysedon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="227" A="G">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="G">gūð</w>
+                    <w c="2" A="G"/>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xNC" p="2" A="W">wǣdo</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="G">gode</w>
+                    <lb n="134v;20" after="3"/>
+                    <w wc="t" msa="xVB fF" A="Þ">þancedon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="228" A="Ø">
+                <v role="on">
+                    <w wc="t" msa="xPD" A="Þ">þæs</w>
+                    <w wc="t" msa="xRP" A="Þ">þe</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="s" msa="xNC" c="1" A="Ø">ȳþ</w>
+                    <w wc="s" msa="xNC" c="2" A="L">lāde</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="Ø">ēaðe</w>
+                    <w wc="t" msa="xVB fF" A="W">wurdon</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <pb n="135r"/>
+            <lb n="135r;1"/>
+            <vg type="line" cid="229" A="W">
+                <v role="on">
+                    <w wc="t" msa="xAV" emends="" A="Þ">þā</w>
+                    <!-- not visible on Electronic Beowulf facscimile -->
+                    <w wc="c" msa="xAP" A="Ø">of</w>
+                    <w wc="s" msa="xNC" A="W">wealle</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="S">seah</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="W">weard</w>
+                    <w wc="s" msa="xNC" A="SK">scildinga</w>
+                </v>
+            </vg>
+            <vg type="line" cid="230" A="H">
+                <v role="on">
+                    <w wc="t" msa="xPD" A="S">sē</w>
+                    <w wc="t" msa="xRP" A="Þ">þe</w>
+                    <w wc="s" msa="xNC" c="1" emends="" A="H">holm</w>
+                    <!-- not visible in EB, 
+             but another hand has 'holm' written under 'sē þe' -->
+                    <lb n="135r;2"/>
+                    <w wc="s" msa="xNC" c="2" A="K">clifu</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="H">healdan</w>
+                    <w wc="t" msa="xVX fF" A="SK">scolde</w>
+                </v>
+            </vg>
+            <vg type="line" cid="231" A="B">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="B">beran</w>
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <w wc="s" msa="xNC" A="B">bolcan</w>
+                </v>
+                <lb n="135r;3"/>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="B">beorhte</w>
+                    <w wc="s" msa="xNC" A="R">randas</w>
+                </v>
+            </vg>
+            <vg type="line" cid="232" A="F">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="F">fyrd</w>
+                    <w wc="s" msa="xNC" c="2" A="S">searu</w>
+                    <w wc="s" msa="xAJ" A="F">fūslicu</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="H">hine</w>
+                    <lb n="135r;4"/>
+                    <w wc="s" msa="xAP" c="1" A="F">fyr</w>
+                    <w wc="s" msa="xNC" c="2" A="W">wyt</w>
+                    <w wc="t" msa="xVB fF" A="B">bræc</w>
+                </v>
+            </vg>
+            <vg type="line" cid="233" A="H">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="M">mōd</w>
+                    <w c="2" A="M"/>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xNC" p="2" A="H">hyġdum</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPI" A="H">hwæt</w>
+                    <w wc="t" msa="xPD" A="Þ">þā</w>
+                    <w wc="s" msa="xNC" A="M">men</w>
+                    <lb n="135r;5"/>
+                    <w wc="t" msa="xVB fF" A="W">wǣron</w>
+                </v>
+            </vg>
+            <vg type="line" cid="234" A="W">
+                <v role="on">
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="W">wāt</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="c" msa="xAP" A="T">tō</w>
+                    <w wc="s" msa="xNC" A="W">waroðe</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="W">wicge</w>
+                    <w wc="t" msa="xVB fF" emends="rīd" A="R">rīdan</w>
+                </v>
+            </vg>
+            <lb n="135r;6"/>
+            <vg type="line" cid="235" A="Þ">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Þ">þeġn</w>
+                    <w wc="s" msa="xNP" c="1" A="H">hrōð</w>
+                    <w wc="s" msa="xNP" c="2" A="G">gāres</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Þ">þrymmum</w>
+                    <w wc="t" msa="xVB fF" A="K">cwehte</w>
+                    <w wc="s" msa="xAJ" c="1" A="K"/>
+                </v>
+            </vg>
+            <vg type="line" cid="236" A="W">
+                <v role="on">
+                    <lb n="135r;7"/>
+                    <w wc="s" msa="xNC" c="2" A="W">wudu</w>
+                    <w wc="s" msa="xNC" A="M">mundum</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="M">meþel</w>
+                    <w wc="s" msa="xNC" c="2" A="W">wordum</w>
+                    <w wc="t" msa="xVB fF" A="F">fræġn</w>
+                </v>
+            </vg>
+            <vg type="line" cid="237" A="S">
+                <v role="on">
+                    <w wc="t" msa="xPQ" A="H">hwæt</w>
+                    <lb n="135r;8"/>
+                    <w wc="t" msa="xVB fF" A="S">syndon</w>
+                    <w wc="t" msa="xPE" A="G">ġē</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="S">searo</w>
+                    <w wc="s" msa="xVB fP" c="2" A="H">hæbbendra</w>
+                </v>
+            </vg>
+            <vg type="line" cid="238" A="B">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="B">byrnum</w>
+                    <lb n="135r;9" after="4"/>
+                    <w wc="s" msa="xVB fP" emends="wer de" A="W">werede</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xRP" A="Þ">þē</w>
+                    <w wc="t" msa="xAV" A="Þ">þus</w>
+                    <w wc="s" msa="xAJ" A="B">brontne</w>
+                    <w wc="s" msa="xNC" A="K">ċēol</w>
+                </v>
+            </vg>
+            <vg type="line" cid="239" A="L">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <w wc="s" msa="xNC" c="1" A="L">lagu</w>
+                    <w wc="s" msa="xNC" c="2" A="ST">strǣte</w>
+                </v>
+                <lb n="135r;10"/>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="L">lǣdan</w>
+                    <w wc="t" msa="xVB fF" A="K">cwōmon</w>
+                </v>
+            </vg>
+            <w wc="t" msa="xAV" A="K"/>
+            <vg type="line" cid="240" A="H">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <w wc="s" msa="xNC" A="H">holmas</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" emends="" A="Ø">iċ</w>
+                    <w wc="t" msa="xAV" emender="le" A="H">hwīle</w>
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                </v>
+            </vg>
+            <lb n="135r;11"/>
+            <vg type="line" cid="241" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="Ø">ende</w>
+                    <w wc="s" msa="xNC" c="2" A="S">sǣta</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="Ø">ǣġ</w>
+                    <w wc="s" msa="xNC" c="2" A="W">wearde</w>
+                    <w wc="t" msa="xVB fF" A="H">hēold</w>
+                </v>
+            </vg>
+            <vg type="line" cid="242" A="L">
+                <v role="on">
+                    <w wc="t" msa="xPD" A="Þ">þē</w>
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNP" c="1" A="L">land</w>
+                    <w wc="s" msa="xNP" c="2" A="D">dena</w>
+                </v>
+                <lb n="135r;12"/>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="L">lāðra</w>
+                    <w wc="t" msa="xPI" A="N">nǣniġ</w>
+                </v>
+            </vg>
+            <vg type="line" cid="243" A="SK">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="M">mid</w>
+                    <w wc="s" msa="xNC" c="1" A="SK">scip</w>
+                    <w wc="s" msa="xNC" c="2" A="H">herġe</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="SK">sceðþan</w>
+                    <w wc="t" msa="xNX" A="N">ne</w>
+                    <lb n="135r;13"/>
+                    <w wc="t" msa="xVX fF" A="M">meahte</w>
+                </v>
+            </vg>
+            <vg type="line" cid="244" A="K">
+                <v role="on">
+                    <w wc="t" msa="xAV" A="N">nō</w>
+                    <w wc="t" msa="xAV" A="H">hēr</w>
+                    <w wc="t" msa="xAV" A="K">cūðlicor</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="K">cuman</w>
+                    <w wc="c" msa="xPX" p="1" A="Ø">on</w>
+                    <w wc="t" msa="xVB fF" p="2" A="G">gunnon</w>
+                </v>
+            </vg>
+            <lb n="135r;14"/>
+            <vg type="line" cid="245" A="L">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="L">lind</w>
+                    <w wc="s" msa="xVB fP" c="2" A="H">hæbbende</w>
+                    <w wc="t" msa="xNX" A="N">nē</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="G">ġe</w>
+                    <w wc="s" msa="xNC" c="1" A="L">lēafnes</w>
+                    <w wc="s" msa="xNC" c="2" A="W">word</w>
+                </v>
+            </vg>
+            <vg type="line" cid="246" A="G">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="G">gūð</w>
+                    <lb n="135r;15"/>
+                    <w wc="s" msa="xNC" c="2" A="F">fremmendra</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="G">ġearwe</w>
+                    <w wc="t" msa="xNX" A="N">ne</w>
+                    <w wc="t" msa="xVB fF" A="W">wisson</w>
+                </v>
+            </vg>
+            <vg type="line" cid="247" A="M">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="M">māga</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <lb n="135r;16"/>
+                    <w wc="s" msa="xNC" p="2" A="M">mēdu</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="N">nǣfre</w>
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="s" msa="xAJ" A="M">māran</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="S">seah</w>
+                </v>
+            </vg>
+            <vg type="line" cid="248" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø">eorla</w>
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <lb n="135r;17"/>
+                    <w wc="s" msa="xNC" A="Ø">eorþan</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ">ðonne</w>
+                    <w wc="t" msa="" A="Ø">is</w>
+                    <w wc="t" msa="xPE" A="Ø">ēower</w>
+                    <w wc="t" msa="xAJ" A="S">sum</w>
+                    <!--treating this like a pronoun-->
+                </v>
+            </vg>
+            <vg type="line" cid="249" A="S">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="S">secg</w>
+                    <w wc="c" msa="sAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" A="S">searwum</w>
+                </v>
+                <lb n="135r;18"/>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="N">nis</w>
+                    <w wc="t" msa="xPD" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="s" msa="xNC" c="1" A="S">seld</w>
+                    <w wc="s" msa="xNC" c="2" A="G">guma</w>
+                </v>
+            </vg>
+            <vg type="line" cid="250" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">wǣpnum</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="W">weorðad</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" emends="næfre" A="N">næfre</w>
+                    <lb n="135r;19"/>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="t" msa="xPE" A="H">his</w>
+                    <w wc="s" msa="xNC" A="W">wlite</w>
+                    <w wc="t" msa="xVB fF" A="L">lēoge</w>
+                </v>
+            </vg>
+            <vg type="line" cid="251" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="Ø">ǣnliċ</w>
+                    <w wc="s" msa="xNC" A="Ø">ansȳn</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="N">nū</w>
+                    <lb n="135r;20"/>
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="t" msa="xPE" A="Ø">ēower</w>
+                    <w wc="t" msa="xVX fF" A="SK">sceal</w>
+                </v>
+            </vg>
+            <vg type="line" cid="252" A="F">
+                <v role="on">
+                    <w wc="s" msa="xAP" c="1" A="F">frum</w>
+                    <w wc="s" msa="xNC" c="2" A="K">cyn</w>
+                    <w wc="t" msa="xVB fI" A="W">witan</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Ø">ǣr</w>
+                    <w wc="t" msa="xPE" A="G">ġē</w>
+                    <w wc="" msa="xAV" A="F">fyr</w>
+                    <pb n="135v"/>
+                    <!-- top of page, esp. left margin, has missing portions, reflected in emendations below-->
+                    <lb n="135v;1"/>
+                    <w wc="t" msa="xAV" emends="an" A="H">heonan</w>
+                    <!--'eonan' visible in a different hand under 'an'-->
+                </v>
+            </vg>
+            <vg type="line" cid="253" A="L">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="L">lēas</w>
+                    <w c="2" A="L"/>
+                    <w wc="s" msa="xNC" c="1" A="SK">scēa</w>
+                    <w wc="s" msa="xNC" c="2" A="W">weras</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" c="1" A="L">land</w>
+                    <w wc="" msa="xNP" c="2" emends="d" A="D">dena</w>
+                </v>
+            </vg>
+            <lb n="135v;2"/>
+            <vg type="line" cid="254" A="F">
+                <v role="on">
+                    <w wc="t" msa="xAV" emends="urþur" A="F">furþur</w>
+                    <w wc="t" msa="xVB fF" A="F">fēran</w>
+                    <w wc="t" msa="xAV" A="F"/>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="G">ġē</w>
+                    <w wc="s" msa="xAJ" c="1" A="F">feor</w>
+                    <w wc="s" msa="xNC" c="2" A="B">būend</w>
+                </v>
+            </vg>
+            <vg type="line" cid="255" A="M">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="M">mere</w>
+                    <lb n="135v;3"/>
+                    <w wc="s" msa="xVB fP" c="2" A="L">līðende</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" emends="mine" A="M">mīnne</w>
+                    <w wc="" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="H">hȳrað</w>
+                </v>
+            </vg>
+            <vg type="line" cid="256" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xAV" c="1" A="Ø">ān</w>
+                    <w wc="s" msa="xAJ" c="1" A="F">fealdne</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <lb n="135v;4"/>
+                    <w wc="s" msa="xNC" p="2" emends="ōht" A="Þ">þōht</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="Ø">ofost</w>
+                    <w wc="t" msa="xVB fF" A="Ø">is</w>
+                    <w wc="s" msa="xAJ" A="S">sēlest</w>
+                </v>
+            </vg>
+            <vg type="line" cid="257" A="K">
+                <v role="on">
+                    <w wc="t" msa="xIM" A="T">tō</w>
+                    <!-- infinitive marker -->
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fI" p="2" A="K">cȳðanne</w>
+                </v>
+                <lb n="135v;5"/>
+                <v role="off">
+                    <w wc="t" msa="xPQ" emends="wanan" A="H">hwanan</w>
+                    <w wc="t" msa="xPE" A="Ø">ēowre</w>
+                    <w wc="s" msa="xNC" A="K">cyme</w>
+                    <w wc="" msa="xVB fF" A="S">syndon</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <lb n="135v;6"/>
+            <p>·IIII·</p>
+            <!-- fitt marker, middle of its own line-->
+            <lb n="135v;7"/>
+            <vg type="line" cid="258" A="Ø">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="H">Him</w>
+                    <w wc="t" msa="xPD" A="S">se</w>
+                    <w wc="s" msa="xNC" A="Ø">yldesta</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAV" c="1" expands="⁊" A="Ø">and</w>
+                    <w wc="s" msa="xVB fF" c="2" A="S">swarode</w>
+                </v>
+            </vg>
+            <vg type="line" cid="259" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">werodes</w>
+                    <w wc="s" msa="xNC" A="W">wīsa</w>
+                </v>
+                <lb n="135v;8"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="W">word</w>
+                    <w wc="s" msa="xNC" c="2" A="H">hord</w>
+                    <w wc="c" msa="xPX" p="1" A="Ø">on</w>
+                    <w wc="t" msa="xVB fF" p="2" A="L">lēac</w>
+                </v>
+            </vg>
+            <vg type="line" cid="260" A="G">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="W">we</w>
+                    <w wc="t" msa="xVB fF" A="S">synt</w>
+                    <w wc="s" msa="xNC" c="1" A="G">gum</w>
+                    <w wc="s" msa="xNC" c="2" A="K">cynnes</w>
+                </v>
+                <lb n="135v;9"/>
+                <v role="off">
+                    <w wc="s" msa="xNP" A="G">ġēata</w>
+                    <w wc="s" msa="xNC" A="L">lēode</w>
+                </v>
+            </vg>
+            <vg type="line" cid="261" A="H">
+                <v role="on">
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="s" msa="xNP" c="1" A="H">hige</w>
+                    <w wc="s" msa="xNP" c="2" A="L">lāces</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="H">heorð</w>
+                    <w c="2" A="H"/>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="" p="2" A="N">nēatas</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <lb n="135v;10"/>
+            <vg type="line" cid="262" A="F">
+                <v role="on">
+                    <w wc="t" msa="xVX fF" A="W">wæs</w>
+                    <!--used as auxiliary-->
+                    <w wc="t" msa="xPE" A="M">mīn</w>
+                    <w wc="s" msa="xNC" A="F">fæder</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="F">folcum</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fP" p="2" A="K">cȳþed</w>
+                </v>
+            </vg>
+            <vg type="line" cid="263" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="Ø">æþele</w>
+                    <lb n="135v;11"/>
+                    <w wc="s" msa="xNC" c="1" A="Ø">ord</w>
+                    <w wc="s" msa="xNC" c="2" A="F">fruma</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNP" c="1" A="Ø">ecg</w>
+                    <w wc="s" msa="xNP" c="2" A="Þ">þēow</w>
+                    <w wc="t" msa="xVB fF" A="H">hāten</w>
+                </v>
+            </vg>
+            <vg type="line" cid="264" A="W">
+                <v role="on">
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="B">bād</w>
+                    <w wc="s" msa="xNC" A="W">wintra</w>
+                    <lb n="135v;12"/>
+                    <w wc="s" msa="xNC" A="W">worn</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="Ø">ǣr</w>
+                    <w wc="t" msa="xPE" A="H">hē</w>
+                    <w wc="s" msa="xNC" A="W">weġ</w>
+                    <w wc="t" msa="xVB fF" A="H">hwurfe</w>
+                </v>
+            </vg>
+            <vg role="on" type="line" cid="265" A="G">
+                <v>
+                    <w wc="s" msa="xAJ" A="G">gamol</w>
+                    <w wc="c" msa="xAP" A="Ø">of</w>
+                    <lb n="135v;13" after="4"/>
+                    <w wc="s" msa="xNC" A="G">ġeardum</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="" A="H">hine</w>
+                    <w wc="t" msa="xAV" A="G">ġearwe</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="M">man</w>
+                </v>
+            </vg>
+            <vg role="on" type="line" cid="266" A="W">
+                <v>
+                    <w wc="s" msa="xNC" A="W">witena</w>
+                    <lb n="135v;14" after="3"/>
+                    <w wc="t" msa="xPI" A="W">wēlhwylċ</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="W">wīde</w>
+                    <w wc="t" msa="xAP" A="G">ġeond</w>
+                    <w wc="s" msa="xNC" A="Ø">eorþan</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="267" A="H">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="W">wē</w>
+                    <w wc="t" msa="xAP" A="Þ">þurh</w>
+                    <w wc="s" msa="xAJ" A="H">holdne</w>
+                    <lb n="135v;15"/>
+                    <w wc="s" msa="xNC" A="H">hiġe</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="H">hlāford</w>
+                    <!--'hlaford' written twice, the second crossed out by the scribe-->
+                    <w wc="t" msa="xPE" A="Þ">þīnne</w>
+                </v>
+            </vg>
+            <vg type="line" cid="268" A="S">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="S">sunu</w>
+                    <w wc="s" msa="xNP" c="1" A="H">healf</w>
+                    <lb n="135v;16"/>
+                    <w wc="s" msa="xNP" c="2" A="D">denes</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="S">sēċean</w>
+                    <w wc="t" msa="xVB fI" A="K">cwōmon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="269" A="L">
+                <v role="on">
+                    <w wc="s" msa="" c="1" A="L">lēod</w>
+                    <w c="2" A="L"/>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xNC" p="2" A="B">byrġean</w>
+                </v>
+                <lb n="135v;17"/>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="W">wes</w>
+                    <w wc="t" msa="xPE" A="Þ">þū</w>
+                    <w wc="t" msa="xPE" A="Ø">ūs</w>
+                    <w wc="s" msa="xNC" A="L">lārena</w>
+                    <w wc="s" msa="xAJ" A="G">gōd</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="270" A="M">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="H">habbað</w>
+                    <w wc="t" msa="xPE" A="W">wē</w>
+                    <w wc="c" msa="xAP" A="T">tō</w>
+                    <w wc="c" msa="xPD" A="Þ">þæm</w>
+                    <lb n="135v;18"/>
+                    <w wc="s" msa="xNC" A="M">mǣran</w>
+                    <!--substantivized-->
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="M">miċel</w>
+                    <w wc="s" msa="xNC" A="Ø">ǣrende</w>
+                </v>
+            </vg>
+            <vg type="line" cid="271" A="D">
+                <v role="on">
+                    <w wc="s" msa="xNP" A="D">deniġa</w>
+                    <w wc="s" msa="xNC" A="F">freân</w>
+                    <!-- have to implement hiatus in the syllable breaker -->
+                </v>
+                <pc>·</pc>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N">ne</w>
+                    <lb n="135v;19"/>
+                    <w wc="t" msa="xVX fF" A="SK">sceal</w>
+                    <w wc="t" msa="xAV" A="Þ">þǣr</w>
+                    <w wc="s" msa="xAJ" A="D">dyrne</w>
+                    <w wc="s" msa="sAJ" A="S">sum</w>
+                </v>
+            </vg>
+            <vg type="line" cid="272" A="W">
+                <v role="on">
+                    <w wc="t" msa="xVB fI" A="W">wesan</w>
+                    <w wc="t" msa="xPD" A="Þ">þæs</w>
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <lb n="135v;20"/>
+                    <w wc="t" msa="xVB fF" A="W">wēne</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Þ">þū</w>
+                    <w wc="t" msa="xVB fF" A="W">wāst</w>
+                    <w wc="t" msa="xCS" A="G">ġif</w>
+                    <w wc="t" msa="xPE" A="H">hit</w>
+                    <w wc="t" msa="xVB fF" A="Ø">is</w>
+                </v>
+            </vg>
+            <vg type="line" cid="273" A="S">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="S">swā</w>
+                    <w wc="t" msa="xPE" A="W">wē</w>
+                    <w wc="t" msa="xAV" A="S">sōþlīċe</w>
+                </v>
+                <pb n="136r"/>
+                <lb n="136r;1"/>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="S">secgan</w>
+                    <w wc="t" msa="xVB fF" A="H">hȳrdon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="274" A="SK">
+                <v role="on">
+                    <w wc="t" msa="xCS" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="c" msa="xAP" A="M">mid</w>
+                    <w wc="s" msa="xNC" A="SK">scyldingum</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" emends="sce" A="SK">sceaðona</w>
+                    <lb n="136r;2"/>
+                    <w wc="t" msa="xPE" emends="iċ" A="SK"/>
+                    <!--nothing to see here -->
+                    <w wc="t" msa="xVB fF" A="N">nāt</w>
+                    <w wc="t" msa="xPQ" A="H">hwylċ</w>
+                </v>
+            </vg>
+            <vg type="line" cid="275" A="D">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="D">dēogol</w>
+                    <w wc="s" msa="xNC" c="1" A="D">dǣd</w>
+                    <w wc="s" msa="xNC" c="2" A="H">hata</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="D">deorcum</w>
+                    <lb n="136r;3"/>
+                    <w wc="s" msa="xNC" A="N">nihtum</w>
+                </v>
+            </vg>
+            <vg type="line" cid="276" A="Ø">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="Ø">ēaweð</w>
+                    <w wc="c" msa="xAP" A="Þ">þurh</w>
+                    <w wc="s" msa="xNC" A="Ø">eġsan</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="Ø">uncūðne</w>
+                    <w wc="s" msa="xNC" A="N">nīð</w>
+                </v>
+            </vg>
+            <lb n="136r;4"/>
+            <vg type="line" cid="277" A="H">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="H">hȳnðu</w>
+                    <w wc="t" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="s" msa="xNC" c="1" A="H">hrā</w>
+                    <w wc="s" msa="xNC" c="2" A="F">fyl</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="t" msa="xPD" A="Þ">þæs</w>
+                    <w wc="s" msa="xNP" c="1" A="H">hrōð</w>
+                    <w wc="s" msa="xNP" c="2" A="G">gār</w>
+                    <w wc="t" msa="xVX fF" A="M">mæġ</w>
+                </v>
+            </vg>
+            <vg type="line" cid="278" A="R">
+                <v role="on">
+                    <w wc="c" msa="xAP" emends="þur" A="Þ">þurh</w>
+                    <lb n="136r;5"/>
+                    <w wc="s" msa="xAJ" A="R">rūmne</w>
+                    <w wc="s" msa="xNC" A="S">sefan</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="R">rǣd</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fI" p="2" A="L">lǣran</w>
+                </v>
+            </vg>
+            <pc>.</pc>
+            <vg type="line" cid="279" A="F">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="H">hū</w>
+                    <w wc="t" msa="xPE" A="H">hē</w>
+                    <w wc="s" msa="xAJ" A="F">frōd</w>
+                    <w wc="t" msa="xCC" emends="" expands="⁊" A="Ø">ond</w>
+                    <!--'⁊' not visible in EB-->
+                    <lb n="136r;6"/>
+                    <w wc="s" msa="xAJ" A="G">gōd</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="F">fēond</w>
+                    <w wc="c" msa="xAP" c="1" A="Ø">ofer</w>
+                    <w wc="t" msa="xVB fF" c="2" A="S">swȳðeþ</w>
+                </v>
+            </vg>
+            <vg type="line" cid="280" A="Ø">
+                <v role="on">
+                    <w wc="t" msa="xCS" A="G">ġyf</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="t" msa="xVB fI" emends="edwend" A="Ø">edwenden</w>
+                </v>
+                <lb n="136r;7"/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Ø">ǣfre</w>
+                    <w wc="t" msa="xVX fF" A="SK">scolde</w>
+                </v>
+            </vg>
+            <pc>.</pc>
+            <vg type="line" cid="281" A="B">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="B">bealuwa</w>
+                    <w wc="s" msa="xNC" A="B">bisigu</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xC" A="B">bōt</w>
+                    <w wc="t" msa="xAV" A="Ø">eft</w>
+                    <lb n="136r;8"/>
+                    <w wc="t" msa="xVB fI" A="K">cuman</w>
+                </v>
+            </vg>
+            <vg type="line" cid="282" A="K">
+                <v role="on">
+                    <w wc="t" msa="xCC" emends="⁊" A="Ø">ond</w>
+                    <w wc="c" msa="xPD" A="Þ">þā</w>
+                    <w wc="s" msa="xNC" c="1" A="K">ċear</w>
+                    <w wc="s" msa="xNC" c="2" A="W">wylmas</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="K">cōlran</w>
+                    <w wc="t" msa="xVB fF" A="W">wurðaþ</w>
+                </v>
+            </vg>
+            <lb n="136r;9"/>
+            <vg type="line" cid="283" A="Ø">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="Ø">oððe</w>
+                    <w wc="t" msa="xAV" A="Ø">ā</w>
+                    <w wc="t" msa="xAV" A="S">syþðan</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="Ø">earfoð</w>
+                    <w wc="s" msa="xNC" c="2" A="Þ">þrāge</w>
+                </v>
+            </vg>
+            <vg type="line" cid="284" A="Þ">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="Þ">þrēa</w>
+                    <w wc="s" msa="xNC" c="2" A="N">nȳd</w>
+                    <lb n="136r;10"/>
+                    <w wc="t" msa="xVB fI" A="Þ">þolað</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ">þenden</w>
+                    <w wc="t" msa="xAV" A="Þ">þǣr</w>
+                    <w wc="t" msa="xVB fF" A="W">wunað</w>
+                </v>
+            </vg>
+            <vg type="line" cid="285" A="H">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xAJ" c="1" A="H">hēah</w>
+                    <w wc="s" msa="xNC" c="2" A="ST">stede</w>
+                </v>
+                <lb n="136r;11"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="H">hūsa</w>
+                    <w wc="s" msa="xAJ" A="S">sēlest</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="286" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">weard</w>
+                    <w wc="t" msa="xVB fF" A="M">maþelode</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xRP" A="Þ">ðǣr</w>
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" A="W">wicge</w>
+                    <lb n="136r;12"/>
+                    <w wc="t" msa="xVB fF" A="S">sæt</w>
+                </v>
+            </vg>
+            <vg type="line" cid="287" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø">ombeht</w>
+                    <w wc="s" msa="xAJ" A="Ø">unforht</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPI" A="Ø">ǣġhwæþres</w>
+                    <w wc="t" msa="xVX fF" A="SK">sceal</w>
+                </v>
+            </vg>
+            <lb n="136r;13"/>
+            <vg type="line" cid="288" A="SK">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="SK">scearp</w>
+                    <w wc="s" msa="xNC" c="1" A="SK">scyld</w>
+                    <w wc="s" msa="xNC" c="2" A="W">wiga</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xNC" p="2" A="SK">scād</w>
+                    <w wc="t" msa="xVB fI" A="W">witan</w>
+                </v>
+            </vg>
+            <vg type="line" cid="289" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">worda</w>
+                    <lb n="136r;14"/>
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="s" msa="xNC" A="W">worca</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPD" A="S">sē</w>
+                    <w wc="t" msa="xRP" A="Þ">þe</w>
+                    <w wc="t" msa="xAV" A="W">wēl</w>
+                    <w wc="t" msa="xVB fF" A="Þ">þenċeð</w>
+                </v>
+            </vg>
+            <vg type="line" cid="290" A="H">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="t" msa="xPD" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="H">hȳre</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ">þæt</w>
+                    <lb n="136r;15"/>
+                    <w wc="t" msa="xPD" A="Þ">þis</w>
+                    <w wc="t" msa="xVB fF" A="Ø">is</w>
+                    <w wc="s" msa="xAJ" A="H">hold</w>
+                    <w wc="s" msa="xNC" A="W">weorod</w>
+                </v>
+            </vg>
+            <vg type="line" cid="291" A="F">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="F">frēan</w>
+                    <w wc="s" msa="xNP" A="SK">scyldinga</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="" msa="xVB" p="2" A="W">wītaþ</w>
+                    <lb n="136r;16"/>
+                    <w wc="t" msa="xAV" A="F">forð</w>
+                    <w wc="t" msa="xVB fI" A="B">beran</w>
+                </v>
+            </vg>
+            <vg type="line" cid="292" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">wǣpen</w>
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xNC" p="2" A="W">wǣdu</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="t" msa="xPE" A="Ø">ēow</w>
+                    <w wc="t" msa="xVB fF" A="W">wīsiġe</w>
+                </v>
+            </vg>
+            <lb n="136r;17"/>
+            <vg type="line" cid="293" A="M">
+                <v role="on">
+                    <w wc="t" msa="xAV" A="S">swylċe</w>
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="s" msa="xNC" c="1" A="M">magu</w>
+                    <w wc="s" msa="xNC" c="2" A="Þ">þeġnas</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="M">mīne</w>
+                    <w wc="t" msa="xVB fF" A="H">hāte</w>
+                </v>
+            </vg>
+            <vg type="line" cid="294" A="F">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="W">wið</w>
+                    <lb n="136r;18"/>
+                    <w wc="s" msa="xNC" A="F">fēonda</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xPI" p="2" A="H">hwone</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="F">flotan</w>
+                    <w wc="s" msa="xAJ" A="Ø">ēowerne</w>
+                </v>
+            </vg>
+            <vg type="line" cid="295" A="N">
+                <v role="on">
+                    <w wc="s" msa="xAJ" c="1" A="N">nīw</w>
+                    <lb n="136r;19"/>
+                    <w wc="s" msa="xAJ" c="2" A="T">tyrwydne</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="N">nacan</w>
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" A="S">sande</w>
+                </v>
+            </vg>
+            <vg type="line" cid="296" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø">ārum</w>
+                    <lb n="136r;20" after="4"/>
+                    <w wc="t" msa="xVB fI" A="H">healdan</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Ø">oþ</w>
+                    <w wc="t" msa="xCS" A="Þ">ðæt</w>
+                    <w wc="t" msa="xAV" A="Ø">eft</w>
+                    <w wc="t" msa="xVB fF" A="B">byreð</w>
+                </v>
+            </vg>
+            <vg type="line" cid="297" A="L">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <w wc="s" msa="xNC" c="1" A="L">lagu</w>
+                    <pb n="136v" after="5"/>
+                    <!-- page ends after 'strea'. the top left margin of the next-->
+                    <!-- page is clipped with 'mas' presumably-->
+                    <!-- in the undamaged manuscript-->
+                    <lb n="136v;1" after="5"/>
+                    <w wc="s" msa="xNC" c="2" emends="strea" A="ST">strēamas</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="L">lēofne</w>
+                    <w wc="s" msa="xNC" A="M">mannan</w>
+                </v>
+            </vg>
+            <vg type="line" cid="298" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">wudu</w>
+                    <w wc="s" msa="xVB fP" c="1" A="W">wunden</w>
+                    <w wc="s" msa="xNC" c="2" emends="ha" A="H">hals</w>
+                </v>
+                <lb n="136v;2"/>
+                <v role="off">
+                    <w wc="c" msa="xAP" emends="" A="T">tō</w>
+                    <!--top right corner clipp-->
+                    <w wc="s" msa="xNC" c="1" A="W">weder</w>
+                    <w wc="s" msa="xNC" c="2" A="M">mearce</w>
+                </v>
+            </vg>
+            <vg type="line" cid="299" A="G">
+                <v role="on">
+                    <w wc="s" msa="xAJ" c="1" A="G">gōd</w>
+                    <w wc="s" msa="xVB fP" c="2" A="F">fremmendra</w>
+                </v>
+                <lb n="136v;3"/>
+                <v role="off">
+                    <w wc="t" msa="xPD" A="S">swylcum</w>
+                    <w wc="s" msa="xAJ" A="G">ġifeþe</w>
+                    <w wc="t" msa="xVB fF" A="B">bið</w>
+                </v>
+            </vg>
+            <vg type="line" cid="300" A="H">
+                <v role="on">
+                    <w wc="t" msa="xCS" emends="ꝥ" A="Þ">þæt</w>
+                    <w wc="t" msa="xPD" A="Þ">þone</w>
+                    <w wc="s" msa="xNC" c="1" A="H">hilde</w>
+                    <w wc="s" msa="xNC" c="2" A="R">rǣs</w>
+                </v>
+                <lb n="136v;4"/>
+                <v role="off">
+                    <w wc="s" msa="xAJ" emends="al" A="H">hāl</w>
+                    <w wc="c" msa="xAP" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="D">dīġeð</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="301" A="F">
+                <v role="on">
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="W">witon</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="t" msa="xVB fI" A="F">fēran</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="F">flota</w>
+                    <lb n="136v;5"/>
+                    <w wc="s" msa="xAJ" emends="ille" A="ST">stille</w>
+                    <w wc="t" msa="xVB fF" A="B">bād</w>
+                </v>
+            </vg>
+            <vg type="line" cid="302" A="S">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="S">seomode</w>
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" emends="sole" A="S">sāle</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" c="1" A="S">sīd</w>
+                    <w wc="s" msa="xVB fP" c="2" A="F">fæþmed</w>
+                    <lb n="136v;6"/>
+                    <w wc="s" msa="xNC" emends="ip" A="SK">scip</w>
+                </v>
+            </vg>
+            <vg type="line" cid="303" A="Ø">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" A="Ø">ancre</w>
+                    <w wc="s" msa="xAJ" A="F">fæst</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="Ø">eoforlīċ</w>
+                    <w wc="t" msa="xVB fF" A="SK">scionon</w>
+                </v>
+            </vg>
+            <lb n="136v;7"/>
+            <vg type="line" cid="304" A="H">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <w wc="s" msa="xNC" c="1" A="H">hlēor</w>
+                    <w wc="s" msa="xNC" c="2" emends="beran" A="B">bergan</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xAJ" p="2" A="H">hroden</w>
+                    <w wc="s" msa="xNC" A="G">golde</w>
+                </v>
+            </vg>
+            <vg type="line" cid="305" A="F">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="F">fāh</w>
+                    <lb n="136v;8"/>
+                    <w wc="c" msa="xCC" emends="" expands="⁊" A="Ø">ond</w>
+                    <w wc="s" msa="xNC" c="1" A="F">fȳr</w>
+                    <w wc="s" msa="xAJ" c="2" A="H">heard</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="F">ferh</w>
+                    <w wc="s" msa="xNC" c="2" A="W">wearde</w>
+                    <w wc="t" msa="xVB fF" A="H">hēold</w>
+                </v>
+            </vg>
+            <vg type="line" cid="306" A="G">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="G">gūþ</w>
+                    <w wc="s" msa="xAJ" c="2" A="M">mōd</w>
+                    <lb n="136v;9"/>
+                    <w wc="t" msa="xVB fF" emends="grummon" A="G">grīmmon</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="G">guman</w>
+                    <w wc="t" msa="xVB fF" A="Ø">ōnetton</w>
+                </v>
+            </vg>
+            <vg type="line" cid="307" A="S">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="S">sigon</w>
+                    <lb n="136v;10" after="2"/>
+                    <w wc="t" msa="xAV" A="Ø">ætsomne</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Ø">oþ</w>
+                    <w wc="t" msa="xCS" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="t" msa="xPE" A="H">hȳ</w>
+                    <w wc="s" msa="xNC" c="1" emends="æl" A="S">sæl</w>
+                    <w wc="s" msa="xVB fP" c="2" A="T">timbred</w>
+                </v>
+            </vg>
+            <vg type="line" cid="308" A="G">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="G">ġeatoliċ</w>
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <lb n="136v;11"/>
+                    <w wc="s" msa="xNC" c="1" A="G">gold</w>
+                    <w wc="s" msa="xVB fF" c="2" A="F">fāh</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="Ø">on</w>
+                    <w wc="t" msa="xVB fI" p="2" A="G">ġyton</w>
+                    <w wc="t" msa="xVX fF" A="M">mihton</w>
+                </v>
+            </vg>
+            <vg type="line" cid="309" A="F">
+                <v role="on">
+                    <w wc="t" msa="xPD" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                    <w wc="s" msa="xAV" c="1" A="F">fore</w>
+                    <lb n="136v;12"/>
+                    <w wc="s" msa="xAJ" c="2" A="M">mǣrost</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="F">fold</w>
+                    <w wc="s" msa="xNC" c="2" A="B">būendum</w>
+                </v>
+            </vg>
+            <vg type="line" cid="310" A="R">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="R">reċeda</w>
+                    <w wc="c" msa="xAP" A="Ø">under</w>
+                    <lb n="136v;13"/>
+                    <w wc="s" msa="xNC" A="R">roderum</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="t" msa="xPD" A="Þ">þǣm</w>
+                    <w wc="t" msa="xPD" A="S">se</w>
+                    <w wc="s" msa="xNC" A="R">rīċa</w>
+                    <w wc="t" msa="xVB fF" A="B">bād</w>
+                </v>
+            </vg>
+            <vg type="line" cid="311" A="L">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="L">līxte</w>
+                    <w wc="" msa="" A="S">se</w>
+                    <lb n="136v;14"/>
+                    <w wc="s" msa="xNC" A="L">lēoma</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <w wc="s" msa="xNC" A="L">landa</w>
+                    <w wc="s" msa="xAJ" A="F">fela</w>
+                </v>
+            </vg>
+            <pc>.</pc>
+            <vg type="line" cid="312" A="H">
+                <v role="on">
+                    <w wc="" msa="xPE" A="H">him</w>
+                    <w wc="" msa="xAV" A="Þ">þā</w>
+                    <w wc="" msa="xNC" c="1" A="H">hilde</w>
+                    <lb n="136v;15"/>
+                    <w wc="s" msa="xNC" c="2" A="D">dēor</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" emends="of" A="H">hof</w>
+                    <!--EB, not Klaeber -->
+                    <w wc="s" msa="xAJ" A="M">mōdiġra</w>
+                </v>
+            </vg>
+            <vg type="line" cid="313" A="T">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="T">torht</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="T">tǣhte</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ">þæt</w>
+                    <lb n="136v;16"/>
+                    <w wc="t" msa="xPE" A="H">hīe</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="c" msa="xAP" A="T">tō</w>
+                    <w wc="t" msa="xVX fF" A="M">mihton</w>
+                </v>
+            </vg>
+            <vg type="line" cid="314" A="G">
+                <v role="on">
+                    <w wc="t" msa="xAV" A="G">ġeġnum</w>
+                    <w wc="t" msa="xVB fI" A="G">gangan</w>
+                </v>
+                <lb n="136v;17"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="G">gūð</w>
+                    <w wc="s" msa="xNC" c="2" A="B">beorna</w>
+                    <w wc="s" msa="xAJ" A="S">sum</w>
+                </v>
+            </vg>
+            <vg type="line" cid="315" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">wicg</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="XVB fF" p="2" A="W">wende</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="W">word</w>
+                    <lb n="136v;18"/>
+                    <w wc="t" msa="xAV" A="Ø">æfter</w>
+                    <w wc="t" msa="xVB fF" A="K">cwæð</w>
+                </v>
+            </vg>
+            <vg type="line" cid="316" A="F">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="M">mǣl</w>
+                    <w wc="t" msa="xVB fF" A="Ø">is</w>
+                    <w wc="t" msa="xPE" A="M">mē</w>
+                    <w wc="c" msa="xIM" A="T">to</w>
+                    <w wc="t" msa="xVB fI" A="F">fēran</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="F">fæder</w>
+                    <lb n="136v;19"/>
+                    <w wc="s" msa="sAV" c="1" A="Ø">al</w>
+                    <w wc="s" msa="sAJ" c="2" A="W">walda</w>
+                </v>
+            </vg>
+            <vg type="line" cid="317" A="Ø">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="M">mid</w>
+                    <w wc="s" msa="xNC" c="1" A="Ø">ār</w>
+                    <w wc="s" msa="xNC" c="2" A="ST">stafum</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Ø">ēowiċ</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <lb n="136v;20" after="4"/>
+                    <w wc="t" msa="xVB fF" p="2" A="H">healde</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="318" A="S">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="S">sīða</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xAJ" p="2" A="S">sunde</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="t" msa="xAP" A="T">tō</w>
+                    <w wc="s" msa="xNC" A="S">sǣ</w>
+                    <w wc="t" msa="xVB fF" A="W">wille</w>
+                </v>
+            </vg>
+            <vg type="line" cid="319" A="W">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="W">wið</w>
+                    <pb n="137r"/>
+                    <lb n="137r;1"/>
+                    <w wc="s" msa="xAJ" emends="āð" A="W">wrāð</w>
+                    <w wc="s" msa="xNC" A="W">werod</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="W">wearde</w>
+                    <w wc="t" msa="xVB fF" A="H">healdan</w>
+                </v>
+            </vg>
+            <lb n="137r;2"/>
+            <p>·V·</p>
+            <!-- fitt heading centered on line-->
+            <lb n="137r;3"/>
+            <vg type="line" cid="320" A="S">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="ST">Strǣt</w>
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                    <w wc="s" msa="xNC" c="1" A="ST">stān</w>
+                    <w wc="s" msa="xAJ" c="2" A="F">fāh</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="ST">stīġ</w>
+                    <w wc="t" msa="xVB fF" A="W">wīsode</w>
+                </v>
+            </vg>
+            <vg type="line" cid="321" A="G">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="G">gumum</w>
+                    <lb n="137r;4"/>
+                    <w wc="t" msa="xAP" p="1" A="Ø">æt</w>
+                    <w wc="t" msa="xAV" p="2" A="G">gædere</w>
+                </v>
+                <v role="off">
+                    <w wc="" msa="xNC" c="1" A="G">gūð</w>
+                    <w wc="" msa="xNC" c="2" A="B">byrne</w>
+                    <w wc="" msa="xVB fF" A="SK">scān</w>
+                </v>
+            </vg>
+            <vg type="line" cid="322" A="H">
+                <v role="on">
+                    <w wc="" msa="xAJ" A="H">heard</w>
+                    <lb n="137r;5"/>
+                    <w wc="s" msa="xNC" c="1" A="H">hond</w>
+                    <w wc="s" msa="xAJ" c="2" A="L">locen</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" A="H">hrinġ</w>
+                    <w wc="s" msa="xNC" c="2" A="Ø">īren</w>
+                    <w wc="s" msa="xAJ" A="SK">scīr</w>
+                </v>
+            </vg>
+            <vg type="line" cid="323" A="S">
+                <v role="on">
+                    <w wc="" msa="xVB fF" A="S">song</w>
+                    <w wc="c" msa="xAP" A="Ø">in</w>
+                    <lb n="137r;6" after="4"/>
+                    <w wc="s" msa="xNC" A="S">searwum</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="t" msa="xPE" A="H">hīe</w>
+                    <w wc="c" msa="xAP" A="T">tō</w>
+                    <w wc="s" msa="xNC" A="S">sele</w>
+                    <w wc="t" msa="xAV" A="F">furðum</w>
+                </v>
+            </vg>
+            <vg type="line" cid="324" A="G">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">in</w>
+                    <w wc="t" msa="xPE" A="H">hyra</w>
+                    <lb n="137r;7" after="3"/>
+                    <w wc="s" msa="xAJ" c="1" A="G">gryre</w>
+                    <w wc="s" msa="xNC" c="2" A="G">ġeatwum</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="G">gangan</w>
+                    <w wc="t" msa="xVB fF" A="K">cwōmon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="325" A="S">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="S">setton</w>
+                    <lb n="137r;8"/>
+                    <w wc="s" msa="xNC" c="1" A="S">sǣ</w>
+                    <w wc="s" msa="xAJ" c="2" A="M">mēþe</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="S">sīde</w>
+                    <w wc="s" msa="xNC" A="SK">scyldas</w>
+                </v>
+            </vg>
+            <vg type="line" cid="326" A="R">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="R">rondas</w>
+                    <w wc="s" msa="xAJ" c="1" A="R">reġn</w>
+                    <w wc="s" msa="xAJ" c="2" A="H">hearde</w>
+                </v>
+                <lb n="137r;9"/>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="W">wið</w>
+                    <w wc="t" msa="xPD" A="Þ">þæs</w>
+                    <w wc="s" msa="xNC" A="R">reċedes</w>
+                    <w wc="s" msa="xNC" A="W">weal</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="327" A="B">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="B">bugon</w>
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="c" msa="xAP" A="T">tō</w>
+                    <w wc="s" msa="xNC" A="B">benċe</w>
+                </v>
+                <lb n="137r;10"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="B">byrnan</w>
+                    <w wc="t" msa="xVB fF" A="H">hringdon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="328" A="G">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="G">gūð</w>
+                    <w wc="s" msa="xNC" c="2" A="S">searo</w>
+                    <w wc="s" msa="xNC" A="G">gumena</w>
+                </v>
+                <lb n="137r;11"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="G">gāras</w>
+                    <w wc="t" msa="xVB fF" A="ST">stōdon</w>
+                </v>
+            </vg>
+            <vg type="line" cid="329" A="S">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="S">sǣ</w>
+                    <w wc="s" msa="xNC" c="2" A="M">manna</w>
+                    <w wc="s" msa="xNC" A="S">searo</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="S">samod</w>
+                    <lb n="137r;12"/>
+                    <w wc="c" msa="xPX" p="1" A="Ø">æt</w>
+                    <w wc="t" msa="xAV" p="2" A="G">gædere</w>
+                </v>
+            </vg>
+            <vg type="line" cid="330" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="Ø">æsc</w>
+                    <w wc="s" msa="xNC" c="2" A="H">holt</w>
+                    <w wc="c" msa="xAV" A="Ø">ufan</w>
+                    <w wc="s" msa="xAJ" A="G">grǣġ</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                    <w wc="t" msa="xPD" A="S">se</w>
+                    <lb n="137r;13"/>
+                    <w wc="s" msa="xNC" c="1" A="Ø">īren</w>
+                    <w wc="s" msa="xNC" c="2" A="Þ">þrēat</w>
+                </v>
+            </vg>
+            <vg type="line" cid="331" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">wǣpnum</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="W">wurþad</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="c" msa="xPD" A="Þ">ðǣr</w>
+                    <lb n="137r;14"/>
+                    <w wc="s" msa="xAJ" A="W">wlonc</w>
+                    <w wc="s" msa="xNC" A="H">hæleð</w>
+                </v>
+            </vg>
+            <vg type="line" cid="332" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="Ø">ōret</w>
+                    <w wc="s" msa="xNC" c="2" A="M">mecgas</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="Ø">æfter</w>
+                    <!--line break begins after four letters of the un-emended upcoming word, after 'hæle'-->
+                    <lb n="137r;15" after="4"/>
+                    <w wc="s" msa="xAJ" emends="hæleþum" A="Ø">æþelum</w>
+                    <w wc="t" msa="xVB fF" A="F">fræġn</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="333" A="F">
+                <v role="on">
+                    <w wc="t" msa="xPQ" A="H">hwanon</w>
+                    <w wc="t" msa="xVB fF" A="F">feriġeað</w>
+                    <w wc="t" msa="xPE" A="G">ġē</w>
+                </v>
+                <v role="off">
+                    <lb n="137r;16" after="3"/>
+                    <w wc="s" msa="xAJ" A="F">fǣtte</w>
+                    <w wc="s" msa="xNC" A="SK">scyldas</w>
+                </v>
+            </vg>
+            <vg type="line" cid="334" A="G">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="G">grǣġe</w>
+                    <w wc="s" msa="xNC" A="S">syrċan</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="s" msa="xAJ" c="1" A="G">grīm</w>
+                    <w wc="s" msa="xNC" c="2" A="H">helmas</w>
+                </v>
+            </vg>
+            <lb n="137r;17"/>
+            <vg type="line" cid="335" A="H">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="H">here</w>
+                    <w wc="s" msa="xNC" c="2" A="SK">sceafta</w>
+                    <w wc="s" msa="xNC" A="H">hēap</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xOE" A="Ø">iċ</w>
+                    <w wc="t" msa="xVB fF" A="Ø">eom</w>
+                    <w wc="s" msa="xNP" c="1" A="H">hrōð</w>
+                    <w wc="s" msa="xNP" c="1" A="G">gāres</w>
+                </v>
+            </vg>
+            <lb n="137r;18"/>
+            <vg type="line" cid="336" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø">ār</w>
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="a" msa="xNC" A="Ø">ombiht</w>
+                </v>
+                <pc>·</pc>
+                <v role="off">
+                    <w wc="t" msa="xNX" A="N">ne</w>
+                    <w wc="t" msa="xB fF" A="S">seah</w>
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="s" msa="xNC" c="1" A="Ø">el</w>
+                    <w wc="s" msa="xNC" c="2" epen="þēodige" A="Þ">þēodġe</w>
+                </v>
+            </vg>
+            <vg type="line" cid="337" A="M">
+                <v role="on">
+                    <w wc="t" msa="xAV" A="Þ">þus</w>
+                    <lb n="137r;19"/>
+                    <w wc="s" msa="xAJ" A="M">maniġe</w>
+                    <w wc="s" msa="xNC" A="M">men</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" c="1" A="M">mōdiġ</w>
+                    <w wc="s" msa="xAJ" c="2" A="L">līcran</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="338" A="W">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="W">wēn</w>
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="t" msa="xCS" expands="ꝥ" A="Þ">þæt</w>
+                    <pc>·</pc>
+                    <w wc="t" msa="xPE" A="G">ġe</w>
+                    <w wc="c" msa="xPA" A="F">for</w>
+                    <lb n="137r;20"/>
+                    <w wc="s" msa="xNC" A="W">wlenċo</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="N">nalles</w>
+                    <w wc="c" msa="xAP" A="F">for</w>
+                    <w wc="s" msa="xNC" c="1" A="W">wræc</w>
+                    <w wc="s" msa="xNC" c="2" A="S">sīðum</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="339" A="H">
+                <v role="on">
+                    <w wc="t" msa="xCC" A="Ø">ac</w>
+                    <w wc="c" msa="xAP" A="F">for</w>
+                    <w wc="s" msa="xNC" c="1" A="H">hiġe</w>
+                    <pb n="137v"/>
+                    <!-- as with preceding pages, some of top left margin is gone and other defects-->
+                    <lb n="137v;1"/>
+                    <w wc="s" msa="xNC" c="2" emends="mum" A="Þ">þrymmum</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNP" c="1" A="H">hrōð</w>
+                    <w wc="s" msa="xNP" c="2" A="G">gār</w>
+                    <w wc="t" msa="xVB fF" A="S">sōhton</w>
+                </v>
+            </vg>
+            <vg type="line" cid="340" A="Ø">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="s" msa="xAJ" c="1" emends="ell" A="Ø">ellen</w>
+                    <lb n="137v;2"/>
+                    <w wc="s" msa="xAJ" c="2" A="R">rōf</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPX" c="1" A="Ø">and</w>
+                    <w wc="t" msa="xVB fF" c="2" A="S">swarode</w>
+                </v>
+            </vg>
+            <vg type="line" cid="341" A="W">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="W">wlanc</w>
+                    <w wc="s" msa="xNC" A="W">wedera</w>
+                    <w wc="s" msa="xNC" A="L">lēod</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="W">word</w>
+                    <lb n="137v;3"/>
+                    <w wc="t" msa="xAV" A="Ø">æfter</w>
+                    <w wc="t" msa="xVB fF" A="SP">spræc</w>
+                </v>
+            </vg>
+            <vg type="line" cid="342" A="H">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="H">heard</w>
+                    <w wc="c" msa="xAP" A="Ø">under</w>
+                    <w wc="s" msa="xNC" A="H">helme</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="W">wē</w>
+                    <w wc="t" msa="xVB sF" A="S">synt</w>
+                    <lb n="137v;4"/>
+                    <w wc="s" msa="xNP" c="1" A="H">hiġe</w>
+                    <w wc="s" msa="xNP" c="2" A="L">lāces</w>
+                </v>
+            </vg>
+            <vg type="line" cid="343" A="B">
+                <v role="on">
+                    <w wc="s" msa="xNC" c="1" A="B">bēod</w>
+                    <w c="2" A="B"/>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xNC" p="2" A="N">nēatas</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNP" c="1" A="B">bēo</w>
+                    <w wc="s" msa="xNP" c="2" A="W">wulf</w>
+                    <w wc="t" msa="xVB fF" A="Ø">is</w>
+                    <lb n="137v;5"/>
+                    <w wc="t" msa="xPE" A="M">mīn</w>
+                    <w wc="s" msa="xNC" A="N">nama</w>
+                </v>
+            </vg>
+            <vg type="line" cid="344" A="S">
+                <v role="on">
+                    <w wc="t" msa="xVB xF" A="W">wille</w>
+                    <w wc="t" msa="" A="Ø">iċ</w>
+                    <w wc="c" msa="xPX" p="1" A="Ø">ā</w>
+                    <w wc="r" msa="xVB fI" p="2" A="S">secgan</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="S">sunu</w>
+                    <w wc="s" msa="xNP" c="1" A="H">healf</w>
+                    <lb n="137v;6"/>
+                    <w wc="s" msa="xNP" c="2" A="D">denes</w>
+                </v>
+            </vg>
+            <vg type="line" cid="345" A="M">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="M">mǣrum</w>
+                    <w wc="s" msa="xNC" A="Þ">þēodne</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPE" A="M">min</w>
+                    <w wc="s" msa="xNC" A="Ø">ǣrende</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <lb n="137v;7"/>
+            <vg type="line" cid="346" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø">aldre</w>
+                    <w wc="t" msa="xPE" A="Þ">þīnum</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="G">ġif</w>
+                    <w wc="t" msa="" A="H">hē</w>
+                    <w wc="t" msa="" A="Ø">ūs</w>
+                    <w wc="c" msa="" p="1" A="G">ġe</w>
+                    <w wc="" msa="xVB fI" p="2" A="Ø">unnan</w>
+                    <w wc="t" msa="xVX fF" A="W">wile</w>
+                </v>
+            </vg>
+            <lb n="137v;8"/>
+            <vg type="line" cid="347" A="G">
+                <v role="on">
+                    <w wc="t" msa="xCS" emends="ꝥ" A="Þ">þæt</w>
+                    <w wc="t" msa="xPE" A="W">wē</w>
+                    <w wc="t" msa="xPE" A="H">hine</w>
+                    <w wc="t" msa="sAV" A="S">swā</w>
+                    <w wc="s" msa="sAJ" A="G">gōdne</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="G">grētan</w>
+                    <w wc="t" msa="xVX fF" A="M">mōton</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <lb n="137v;9"/>
+            <vg type="line" cid="348" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNP" c="1" A="W">wulf</w>
+                    <w wc="s" msa="xNP" c="2" A="G">gār</w>
+                    <w wc="t" msa="xVB fD" A="M">maþelode</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPD" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="t" msa="xVB fF" A="W">wæs</w>
+                    <w wc="s" msa="xNC" A="W">wendla</w>
+                    <w wc="s" msa="xNC" A="L">lēod</w>
+                </v>
+            </vg>
+            <lb n="137v;10"/>
+            <vg type="line" cid="349" A="M">
+                <v role="on">
+                    <w wc="t" msa="xVX fF" A="W">wæs</w>
+                    <w wc="t" msa="xPE" A="H">his</w>
+                    <w wc="s" msa="xNC" c="1" A="M">mōd</w>
+                    <w wc="s" msa="xNC" c="2" A="S">sefa</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAJ" A="M">manegum</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fP" p="2" A="K">cȳðed</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <lb n="137v;11"/>
+            <vg type="line" cid="350" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">wīġ</w>
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="s" msa="xNC" c="1" A="W">wīs</w>
+                    <w wc="s" msa="xNC" c="2" A="D">dōm</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="Ø">iċ</w>
+                    <w wc="t" msa="xPD" A="Þ">þæs</w>
+                    <w wc="s" msa="xNC" A="W">wine</w>
+                    <w wc="s" msa="xNP" A="D">deniga</w>
+                </v>
+            </vg>
+            <vg type="line" cid="351" A="F">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="F">frēan</w>
+                    <lb n="137v;12"/>
+                    <w wc="s" msa="xNC" A="SK">scildinga</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fI" A="F">frīnan</w>
+                    <w wc="t" msa="xVX fF" A="W">wille</w>
+                </v>
+            </vg>
+            <vg type="line" cid="352" A="B">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="B">bēaga</w>
+                    <lb n="137v;13" after="4"/>
+                    <w wc="s" msa="xNC" A="B">bryttan</w>
+                </v>
+                <v role="off">
+                    <w wc="xCS" msa="" A="S">swā</w>
+                    <w wc="t" msa="" A="Þ">þū</w>
+                    <w wc="s" msa="xNC" A="B">bēna</w>
+                    <w wc="t" msa="xVB fF" A="Ø">eart</w>
+                </v>
+            </vg>
+            <vg type="line" cid="353" A="Þ">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Þ">þēoden</w>
+                    <lb n="137v;14" after="3"/>
+                    <w wc="s" msa="xAJ" A="M">mǣrne</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="Ø">ymb</w>
+                    <w wc="t" msa="xPE" A="Þ">þīnne</w>
+                    <w wc="s" msa="xNC" A="S">sīð</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="354" A="Ø">
+                <v role="on">
+                    <w wc="t" msa="cCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="t" msa="xAV" A="Þ">þē</w>
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="c" msa="xPX" c="1" expands="⁊" A="Ø">and</w>
+                    <w wc="t" msa="xVB fF" c="2" A="S">sware</w>
+                </v>
+                <lb n="137v;15"/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="Ø">ǣdre</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB xI" p="2" A="K">cȳðan</w>
+                </v>
+            </vg>
+            <vg type="line" cid="355" A="G">
+                <v role="on">
+                    <w wc="t" msa="xRP" A="Þ">ðē</w>
+                    <w wc="t" msa="xPE" A="M">mē</w>
+                    <w wc="t" msa="xPD" A="S">se</w>
+                    <w wc="s" msa="xAJ" A="G">gōda</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xPX" p="1" A="Ø">ā</w>
+                    <w wc="t" msa="xVB xI" p="2" A="G">ġifan</w>
+                    <lb n="137v;16"/>
+                    <w wc="t" msa="xVB fF" A="Þ">þenċeð</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="356" A="H">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="H">hwearf</w>
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="t" msa="xAV" A="H">hrædlīċe</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" A="Þ">þǣr</w>
+                    <w wc="s" msa="xNP" c="1" A="H">hrōð</w>
+                    <lb n="137v;17"/>
+                    <w wc="s" msa="xNP" c="2" A="G">gār</w>
+                    <w wc="t" msa="xVB fF" A="S">sæt</w>
+                </v>
+            </vg>
+            <vg type="line" cid="357" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xAJ" A="Ø">eald</w>
+                    <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
+                    <w wc="s" msa="xAJ" emends="unhār" A="Ø">anhār</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="M">mid</w>
+                    <w wc="t" msa="xPE" A="H">his</w>
+                    <w wc="s" msa="xNC" A="Ø">eorla</w>
+                    <lb n="137v;18"/>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="S" msa="xNC" p="2" A="D">driht</w>
+                </v>
+            </vg>
+            <vg type="line" cid="358" A="Ø">
+                <v role="on">
+                    <w wc="t" msa="xVB fF" A="Ø">ēode</w>
+                    <w wc="s" msa="xNC" c="1" A="Ø">ellen</w>
+                    <w wc="s" msa="xNC" c="2" A="R">rōf</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xCS" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="t" msa="xPE" A="H">hē</w>
+                    <w wc="c" msa="xAP" A="F">for</w>
+                    <lb n="137v;19" after="3"/>
+                    <w wc="s" msa="xNC" A="Ø">eaxlum</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xVB fF" p="2" A="ST">stōd</w>
+                </v>
+            </vg>
+            <vg type="line" cid="359" A="D">
+                <v role="on">
+                    <w wc="s" msa="xNP" A="D">deniġa</w>
+                    <w wc="s" msa="xNC" A="F">freân</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xVB fF" A="K">cūþe</w>
+                    <w wc="t" msa="xPE" A="H">hē</w>
+                    <lb n="137v;20"/>
+                    <w wc="s" msa="xNC" A="D">duguðe</w>
+                    <w wc="s" msa="xNC" A="Þ">þēaw</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="360" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNP" c="1" A="W">wulf</w>
+                    <w wc="s" msa="xNP" c="2" A="G">gār</w>
+                    <w wc="t" msa="xVB fF" A="M">maðelode</w>
+                </v>
+                <pb n="138r"/>
+                <lb n="138r;1"/>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="T">tō</w>
+                    <w wc="t" msa="xPE" A="H">his</w>
+                    <w wc="s" msa="xAJ" c="1" A="W">wine</w>
+                    <w wc="s" msa="xNC" c="2" A="D">drihtne</w>
+                </v>
+            </vg>
+            <vg type="line" cid="361" A="F">
+                <v role="on">
+                    <w wc="t" msa="xAV" A="H">hēr</w>
+                    <w wc="t" msa="xVB fF" A="S">syndon</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <lb n="138r;2"/>
+                    <w wc="t" msa="xVB fF" p="2" emends="de" A="F">ferede</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="F">feorran</w>
+                    <w wc="t" msa="xVB fF" A="K">cumene</w>
+                </v>
+            </vg>
+            <vg type="line" cid="362" A="G">
+                <v role="on">
+                    <w wc="c" msa="xAP" A="Ø">ofer</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xAJ" p="2" A="Ø">ofenes</w>
+                    <w wc="c" msa="xPX" p="1" A="B">be</w>
+                    <lb n="138r;3"/>
+                    <w wc="s" msa="xNC" p="2" A="G">gang</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xNC" A="G">ġēata</w>
+                    <w wc="s" msa="xNC" A="L">lēode</w>
+                </v>
+            </vg>
+            <vg type="line" cid="363" A="Ø">
+                <v role="on">
+                    <w wc="c" msa="xPD" A="Þ">þone</w>
+                    <w wc="s" msa="xAJ" A="Ø">yldestan</w>
+                </v>
+                <lb n="138r;4"/>
+                <v role="off">
+                    <w wc="s" msa="xNC" c="1" emends="ore" A="Ø">ōret</w>
+                    <w wc="s" msa="xNC" c="2" A="M">mecgas</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="364" A="B">
+                <v role="on">
+                    <w wc="s" msa="xNP" c="1" A="B">bēo</w>
+                    <w wc="s" msa="xNP" c="2" A="W">wulf</w>
+                    <w wc="t" msa="xVB fF" A="N">nemnað</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xPE" A="H">hȳ</w>
+                    <w wc="s" msa="xNC" A="B">bēnan</w>
+                    <lb n="138r;5"/>
+                    <w wc="t" msa="xVB fF" A="S">synt</w>
+                </v>
+            </vg>
+            <vg type="line" cid="365" A="Þ">
+                <v role="on">
+                    <w wc="t" msa="xCS" expands="ꝥ" A="Þ">þæt</w>
+                    <w wc="t" msa="xPE" A="H">hīe</w>
+                    <w wc="s" msa="xNC" A="Þ">þēoden</w>
+                    <w wc="t" msa="xPE" A="M">mīn</w>
+                </v>
+                <v role="off">
+                    <w wc="c" msa="xAP" A="W">wið</w>
+                    <w wc="t" msa="xPE" A="Þ">þē</w>
+                    <w wc="t" msa="xAX fX" A="M">mōton</w>
+                </v>
+            </vg>
+            <lb n="138r;6"/>
+            <vg type="line" cid="366" A="W">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="W">wordum</w>
+                    <w wc="t" msa="xVB fI" A="W">wrixlan</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="N">nō</w>
+                    <w wc="t" msa="xPE" A="Þ">ðū</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="t" msa="xVB xF" A="W">wearne</w>
+                    <lb n="138r;7"/>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="t" msa="xVB fF" p="2" A="T">tēoh</w>
+                </v>
+            </vg>
+            <vg type="line" cid="367" A="G">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="Þ">ðīnra</w>
+                    <w wc="s" msa="xAP" c="1" A="G">ġeġn</w>
+                    <w wc="s" msa="xNC" c="2" A="K">cwida</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAJ" A="G">glædman</w>
+                    <lb n="138r;8"/>
+                    <w wc="s" msa="xNP" c="1" A="H">hrōð</w>
+                    <w wc="s" msa="xNP" c="2" A="G">gār</w>
+                </v>
+            </vg>
+            <vg type="line" cid="368" A="W">
+                <v role="on">
+                    <w wc="t" msa="xPE" A="H">hȳ</w>
+                    <w wc="c" msa="xAP" A="Ø">on</w>
+                    <w wc="s" msa="xNC" c="1" A="W">wīġ</w>
+                    <w c="2" A="W"/>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xNC" p="2" A="T">tawum</w>
+                </v>
+                <v role="off">
+                    <w wc="s" msa="xAJ" A="W">wyrðe</w>
+                    <lb n="138r;9"/>
+                    <w wc="t" msa="xVB fF" A="Þ">þinċeað</w>
+                </v>
+            </vg>
+            <pc>·</pc>
+            <vg type="line" cid="369" A="Ø">
+                <v role="on">
+                    <w wc="s" msa="xNC" A="Ø">eorla</w>
+                    <w wc="c" msa="xAP" p="1" A="G">ġe</w>
+                    <w wc="s" msa="xNC" p="2" A="Ø">æhtlan</w>
+                </v>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="H">hūru</w>
+                    <w wc="t" msa="xPD" A="S">se</w>
+                    <lb n="138r;10"/>
+                    <w wc="s" msa="xNC" A="Ø">aldor</w>
+                    <w wc="t" msa="xVB fF" A="D">dēah</w>
+                </v>
+            </vg>
+            <vg type="line" cid="370" A="H">
+                <v role="on">
+                    <w wc="t" msa="xRP" A="S">sē</w>
+                    <w wc="t" msa="xPD" A="Þ">þǣm</w>
+                    <w wc="s" msa="xNC" c="1" A="H">heaðo</w>
+                    <w wc="s" msa="xNC" c="2" A="R">rincum</w>
+                </v>
+                <lb n="138r;11"/>
+                <v role="off">
+                    <w wc="t" msa="xAV" A="H">hider</w>
+                    <w wc="t" msa="xVB fF" A="W">wīsade</w>
+                </v>
+            </vg>
+        </body>
+    </text>
+</TEI>

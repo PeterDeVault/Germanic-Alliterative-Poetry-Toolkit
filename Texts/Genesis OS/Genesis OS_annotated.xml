@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI[
+   <!ENTITY % menotaEntities SYSTEM
+      'http://www.menota.org/menota-entities.txt'>
+   %menotaEntities;
+]>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Old Saxon Genesis</title>
+                <subtitle> Excerpting the overlap with Genesis B</subtitle>
+            </titleStmt>
+            <publicationStmt>
+                <p> Created by Peter DeVault
+                    towards completion of his Masters Degree
+                    at Signum University, 2024
+                </p>
+            </publicationStmt>
+            <sourceDesc>
+                <p> Manuscript - Pal.lat.1447 Bodleian Library MS. Junius 11 </p>
+                <markupLevel>annotated</markupLevel>
+            </sourceDesc>
+        </fileDesc>
+        <profDesc>
+            <langUsage>
+                <language ident="osx">Old Saxon</language>
+            </langUsage>
+        </profDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Old Saxon Genesis</p>
+            <p>Manuscript - Pal.lat.1447</p>
+            <pb n="1r"/>
+            <lb n="1r;1"/>
+            <cb/>
+            <w wc="t" msa="xAV">uuela</w>
+            <w wc="t" msa="xCS">that</w>
+            <w wc="t" msa="xPE">thu</w>
+            <w wc="t" msa="xAV">nu</w>
+            <w wc="s" msa="xNP">eua</w>
+            <w wc="t" msa="xVB fF">habas</w>
+            <cb/>
+            <w wc="t" msa="xVB fF">quađ</w>
+            <w wc="s" msa="xNP">ađam</w>
+            <cb/>
+            <w wc="s" msa="xNC">ubilo</w>
+            <w wc="c" msa="xPX" p="1">gi</w>
+            <w wc="t" msa="xVB fF" p="2">marakot</w>
+            <pc>·</pc>
+            <w wc="c" msa="xPE">unkaro</w>
+            <w wc="s" msa="xPE">selbaro</w>
+            <!-- reflexives get stress -->
+            <w wc="s" msa="xNC">siđ</w>
+            <cb/>
+            <w wc="t" msa="xAV">nu</w>
+            <w wc="t" msa="xVB fF">maht</w>
+            <w wc="t" msa="xPE">thu</w>
+            <w wc="t" msa="xVB fI">sean</w>
+            <w wc="t" msa="xPE">thia</w>
+            <lb n="1r;2"/>
+            <w wc="s" msa="xAJ">suarton</w>
+            <w wc="s" msa="xNX">hell</w>
+            <w wc="t" msa="xVB fI">ginon</w>
+            <w wc="s" msa="xAJ">gradaga</w>
+            <cb/>
+            <w wc="t" msa="xAV">nu</w>
+            <w wc="t" msa="xPE">thu</w>
+            <w wc="c" msa="xPD">sia</w>
+            <w wc="s" msa="xAJ">grimman</w>
+            <w wc="s" msa="xNC">maht</w>
+            <pc>.</pc>
+            <w wc="t" msa="xAV">hinana</w>
+            <w wc="c" msa="xPX" p="1">gi</w>
+            <w wc="t" msa="xVB fF" p="2">horean</w>
+            <pc>.</pc>
+            <cb/>
+            <w wc="t" msa="xVB fF">nis</w>
+            <w wc="s" msa="xNC" c="1">heƀan</w>
+            <w wc="s" msa="xNC" c="2">riki</w>
+            <w wc="c" msa="xPX" p="1">ge</w>
+            <w wc="s" msa="xAJ" p="2">lihc</w>
+            <w wc="s" msa="xAJ">sulicaro</w>
+            <w wc="s" msa="xNC">lognun</w>
+            <lb n="1r;3"/>
+            <cb/>
+            <w wc="t" msa="xPD">thit</w>
+            <w wc="t" msa="xVB fF">uuas</w>
+            <w wc="t" msa="xPI">alloro</w>
+            <w wc="s" msa="xNC">lando</w>
+            <w wc="s" msa="xAJ">sconiust</w>
+            <cb/>
+            <w wc="t" msa="xCS">that</w>
+            <w wc="t" msa="xPE">uuit</w>
+            <w wc="t" msa="xAV">hier</w>
+            <w wc="c" msa="xAP">thuruh</w>
+            <w wc="c" msa="xPD">unkas</w>
+            <w wc="s" msa="xBD">herran</w>
+            <w wc="s" msa="xNC">thank</w>
+            <w wc="t" msa="xVB fI">hebbian</w>
+            <w wc="t" msa="xVB fF">muostun</w>
+            <cb/>
+            <w wc="t" msa="xCS">thar</w>
+            <w wc="t" msa="xPE">thu</w>
+            <w wc="t" msa="xPE">them</w>
+            <w wc="t" msa="xNX">ni</w>
+            <w wc="t" msa="xVB fF">hordis</w>
+            <lb n="1r;4"/>
+            <cb/>
+            <w wc="t" msa="xCS">thie</w>
+            <w wc="t" msa="xPE">unk</w>
+            <w wc="c" msa="xPD">thesan</w>
+            <w wc="s" msa="xNC">haram</w>
+            <w wc="c" msa="xPX" p="1">gi</w>
+            <w wc="t" msa="xVB fF" p="2">ried</w>
+            <cb/>
+            <w wc="t" msa="xCS">that</w>
+            <w wc="t" msa="xPE">uuit</w>
+            <w wc="s" msa="xNC">uualdandas</w>
+            <w wc="s" msa="xNC">uuord</w>
+            <w wc="t" msa="xVB fF">farbrakun</w>
+            <w wc="s" msa="xNC" c="1">heban</w>
+            <w wc="s" msa="xNC" c="2">kuningas</w>
+            <cb/>
+            <w wc="t" msa="xAV">Nu</w>
+            <w wc="t" msa="xPE">uuit</w>
+            <w wc="t" msa="xAV">hriuuig</w>
+            <w wc="t" msa="xVB fF">mugun</w>
+            <w wc="t" msa="xVB fI">sorogon</w>
+            <lb n="1r;5"/>
+            <w wc="c" msa="xAP">for</w>
+            <w wc="c" msa="xPD" emends="the">them</w>
+            <w wc="s" msa="xNC">siđa</w>
+            <cb/>
+            <w wc="t" msa="xCS">uuand</w>
+            <w wc="t" msa="xPE">he</w>
+            <w wc="t" msa="xPE">hunk</w>
+            <w wc="s" msa="xPE">selbo</w>
+            <w wc="c" msa="xPX" p="1">gi</w>
+            <w wc="t" msa="xVB FF" p="2">bood</w>
+            <!-- the second 'o' is written above the word as a correction. different hand? -->
+            <pc>.</pc>
+            <cb/>
+            <w wc="t" msa="xCS">that</w>
+            <w wc="t" msa="xPE">uuit</w>
+            <w wc="t" msa="xPE">hunk</w>
+            <w wc="s" msa="xAJ">sulic</w>
+            <w wc="s" msa="xNC">uuiti</w>
+            <w wc="t" msa="xVB fI">uuardon</w>
+            <w wc="t" msa="xVB fF">scoldin</w>
+            <pc>.</pc>
+            <w wc="t" msa="xNC">haramo</w>
+            <w wc="t" msa="xVB fF">mestan</w>
+            <pc>.</pc>
+            <cb/>
+            <w wc="t" msa="xAV">nu</w>
+            <w wc="t" msa="xVB fF" emends="">thuingit</w>
+            <!-- illegible in the facsimile -->
+            <w wc="t" msa="xPE" emends="">mi</w>
+            <lb n="1r;6"/>
+            <w wc="t" msa="xPE">giu</w>
+            <w wc="s" msa="xNC">hungar</w>
+            <w wc="c" msa="xCC">endi</w>
+            <w wc="s" msa="xNC">thrust</w>
+            <w wc="s" msa="xAJ">bitter</w>
+            <w wc="s" msa="xNC" c="1">balo</w>
+            <w wc="s" msa="xNC" c="2">uuerek</w>
+            <cb/>
+            <w wc="t" msa="xPE">thero</w>
+            <w wc="t" msa="xVB fF">uuaron</w>
+            <w wc="t" msa="xPE">uuit</w>
+            <w wc="t" msa="xAV">er</w>
+            <w wc="s" msa="xAJ">beđero</w>
+            <w wc="s" msa="xAJ">tuom</w>
+            <pc>·</pc>
+            <cb/>
+            <w wc="t" msa="xCS">Hu</w>
+            <w wc="t" msa="xVB fF">sculon</w>
+            <w wc="t" msa="xPE">uuit</w>
+            <w wc="t" msa="xAV">nu</w>
+            <w wc="t" msa="xVB fI">libbian</w>
+            <pc>.</pc>
+            <cb/>
+            <w wc="t" msa="xAV">efto</w>
+            <w wc="t" msa="xCS">hu</w>
+            <w wc="t" msa="xVB fF">sculon</w>
+            <w wc="t" msa="xPE">uuit</w>
+            <lb n="1r;7"/>
+            <w wc="c" msa="xAP">an</w>
+            <w wc="c" msa="xPD">thesum</w>
+            <w wc="s" msa="xNC" emends="liata">liahta</w>
+            <w wc="c" msa="xVB fI">uuesan</w>
+            <cb/>
+            <w wc="t" msa="xAV">nu</w>
+            <w wc="t" msa="xAV">hier</w>
+            <w wc="t" msa="xPQ">huuilum</w>
+            <w wc="s" msa="xNC">uuind</w>
+            <w wc="t" msa="xVB fF">kumit</w>
+            <w wc="s" msa="xNC">uuestan</w>
+            <w wc="c" msa="xCC">efto</w>
+            <w wc="s" msa="xNC">ostan</w>
+            <pc>.</pc>
+            <w wc="s" msa="xNC">suđan</w>
+            <w wc="c" msa="xCC">efto</w>
+            <w wc="s" msa="xNC">nordan</w>
+            <cb/>
+            <w wc="c" msa="xPX" p="1">gi</w>
+            <w wc="s" msa="xNC" p="2">suuerek</w>
+            <w wc="t" msa="xAV">upp</w>
+            <w wc="t" msa="xVB fF">dribit</w>
+            <pc>.</pc>
+            <lb n="1r;8"/>
+            <cb/>
+            <w wc="t" msa="xVB fF">kumit</w>
+            <!-- the k is written in the margin -->
+            <w wc="s" msa="xNC">haglas</w>
+            <w wc="s" msa="xNC">skion</w>
+            <w wc="s" msa="xNC">himile</w>
+            <w wc="s" msa="xAJ">bitengi</w>
+            <pc>.</pc>
+            <cb/>
+            <w wc="t" msa="xVB fF">feriđ</w>
+            <w wc="t" msa="xAV">ford</w>
+            <w wc="c" msa="xAP">an</w>
+            <w wc="c" msa="xPX" p="1">gi</w>
+            <w wc="s" msa="xNC" p="2">mang</w>
+            <cb/>
+            <w wc="t" msa="xPD">that</w>
+            <w wc="t" msa="xVB fF">is</w>
+            <w wc="t" msa="xAV">firinum</w>
+            <w wc="s" msa="xAJ">kald</w>
+            <pc>·</pc>
+            <cb/>
+            <w wc="t" msa="xCS">huilum</w>
+            <w wc="t" msa="xPE">thanne</w>
+            <w wc="c" msa="xAP">fan</w>
+            <w wc="s" msa="xNC">himile</w>
+            <w wc="s" msa="xNC">heto</w>
+            <w wc="t" msa="xVB fF">skinit</w>
+            <pc>.</pc>
+            <lb n="1r;9"/>
+            <cb/>
+            <w wc="t" msa="xVB fF">blikit</w>
+            <w wc="t" msa="xPE">thiu</w>
+            <w wc="s" msa="xAJ">berahto</w>
+            <w wc="s" msa="xNC">sunna</w>
+            <pc>·</pc>
+            <cb/>
+            <w wc="t" msa="xPE">uuit</w>
+            <w wc="t" msa="xAV">hier</w>
+            <w wc="t" msa="xAV">thus</w>
+            <w wc="s" msa="xAJ">bara</w>
+            <w wc="t" msa="xVB fF">standat</w>
+            <cb/>
+            <w wc="s" msa="xAJ">unuuerid</w>
+            <w wc="c" msa="xAP">miđ</w>
+            <w wc="c" msa="xPX" p="1">gi</w>
+            <w wc="s" msa="xNC" p="2">uuadi</w>
+            <cb/>
+            <w wc="t" msa="xVB fF">nis</w>
+            <w wc="t" msa="xPE">unk</w>
+            <w wc="t" msa="xAV">hier</w>
+            <w wc="s" msa="xNC">uuiht</w>
+            <w wc="t" msa="xAV" emends="bi">biuoran</w>
+            <!-- illegible -->
+            <lb n="1r;10"/>
+            <w wc="t" msa="xCC">ni</w>
+            <w wc="c" msa="xIM" emends="t">te</w>
+            <w wc="t" msa="xVB fI" emends="sk">skerema</w>
+            <w wc="t" msa="xCC">ni</w>
+            <w wc="c" msa="xIM">te</w>
+            <w wc="t" msa="xVB fI">scura</w>
+            <pc>·</pc>
+            <cb/>
+            <w wc="t" msa="xPE">unk</w>
+            <w wc="t" msa="xVB fF">nis</w>
+            <!-- negative verb -->
+            <w wc="t" msa="xAV">hier</w>
+            <w wc="s" msa="xNC">scattas</w>
+            <w wc="r" msa="xPI">uuiht</w>
+            <w wc="c" msa="xAP">te</w>
+            <w wc="s" msa="xNC">meti</w>
+            <w wc="c" msa="xPX" p="1">gi</w>
+            <w wc="t" msa="xVB fP" p="2">marcot</w>
+            <pc>·</pc>
+            <cb/>
+            <w wc="t" msa="xPE">uuit</w>
+            <w wc="t" msa="xVB fF">ebbiat</w>
+            <w wc="t" msa="xPE">unk</w>
+            <w wc="c" msa="xPX" p="1">gi</w>
+            <w wc="t" msa="xVB fI" p="2">duan</w>
+            <w wc="s" msa="xAJ">mathigna</w>
+            <w wc="s" msa="xNC">god</w>
+            <w wc="s" msa="xNC">uualdand</w>
+            <w wc="s" msa="xPD" emends="uureda">uuredan</w>
+            <!-- displaced -->
+            <lb n="1r;11"/>
+            <cb/>
+            <w wc="c" msa="xAP">te</w>
+            <w wc="t" msa="xPQ">hui</w>
+            <w wc="t" msa="xVB fF">sculun</w>
+            <w wc="t" msa="xPE">uuit</w>
+            <w wc="t" msa="xVB fI">uuerdan</w>
+            <w wc="t" msa="xAV">nu</w>
+            <cb/>
+            <w wc="t" msa="xAV">Nu</w>
+            <!--N capitalized -->
+            <w wc="t" msa="xVB fF">mag</w>
+            <w wc="t" msa="xPE">mi</w>
+            <w wc="t" msa="xPD">that</w>
+            <w wc="t" msa="xVB fI">hreuuan</w>
+            <cb/>
+            <w wc="t" msa="xCS">that</w>
+            <w wc="t" msa="xPE">ik</w>
+            <w wc="t" msa="xVB fF">is</w>
+            <w wc="t" msa="xPE">io</w>
+            <w wc="t" msa="xVB fF">bad</w>
+            <w wc="s" msa="xNC" c="1">heban</w>
+            <w wc="s" msa="xNC" c="2">rikean</w>
+            <w wc="s" msa="xNC">god</w>
+            <pc>·</pc>
+        </body>
+    </text>
+</TEI>
