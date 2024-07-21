@@ -1,0 +1,8 @@
+The GAP.jpnyb is a good place to interact with the code. You'll typically call 'process' with a function name (as explained in the notebook).
+This will prompt for whatever files are needed (input, output, metrical scan file, etc.) The open and save dialogs don't have file-type safeguards --
+they will open or overwrite anything. 
+
+GAPinterface contains the ix class that deals with the file system and user interaction
+GAPdocumenthelper contains all the code that interacts with the XML structure of a GAP document.
+GAPwordhelper contains code that workds on words, syllables, sounds. It doesn't know anything about the XML structure.
+GAPscanhandler defines the scanhandler class that iterates over metrical scansion records in a tab-delimited scan file.
