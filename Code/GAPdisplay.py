@@ -185,8 +185,12 @@ class displaydriver():
             if len(onscan)>1:
                 ontype=loopdata["scan"][0]
                 oncontour=loopdata["scan"][1]
-            contents += '\n<span class="scan" style="align-left">' + ontype + '&nbsp;&nbsp;' + oncontour + '</scan>' #on verse
-            contents += '\n<span class="scan" style="align-right">' + typ + '&nbsp;&nbsp;' + contour + '</scan>\n' #off verse
+            contents += '\n<div class="scan">\n'
+            contents += '<span class="versetype">' + ontype + '</span>'
+            contents += '<span class="versecontour">' + oncontour + '</span></div>\n'
+            contents += '\n<div class="scan">\n'
+            contents += '<span class="versetype">' + typ + '</span>'
+            contents += '<span class="versecontour">' + contour + '</span></div>\n'
             contents += '</div>' #close the linesummary div
 
             contents += '</div>' #close off the poeticline div
@@ -235,6 +239,9 @@ class displaydriver():
         else: loopdata['prefix']=0
         if 'c' in word.attrib: loopdata['compound']=int(word.get('c'))
         else: loopdata['compound']=0
+        
+        contents +='<span class="wc">' + wc + '</span>'
+                    
         
         return contents 
 
@@ -315,8 +322,11 @@ class displaydriver():
                     contents += '<span class="separator">⚬</span>'
                 else:
                     contents += '<span class="separator">·</span>'
+
             else: #last syllable of the word
+                
                 contents +=loopdata['msa']
+                
                 if loopdata['prefix']==1 or loopdata['compound']==1: contents += '-'
                 # else: contents += ' '
         
@@ -386,8 +396,8 @@ class displaydriver():
         lnum=''
         if 'n' in lb.attrib:
             lnum=lb.get('n')
-            contents += '<span class="linebegin" title="' + lnum + '">♦</span>'
-        else: contents += '<span class="linebegin"/>'
+        else: lnum='?'
+        contents += '<span class="linebegin" title="' + lnum + '">♦</span>'
 
         #we're either going to return the contents or save it for later
         #depending on whether we're currently in a verse context
