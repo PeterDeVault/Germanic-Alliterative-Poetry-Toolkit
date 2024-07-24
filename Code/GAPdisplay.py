@@ -36,7 +36,8 @@ class displaydriver():
                     'syllRemain': 0,    #how many more syllables remain in the current word
                     'z': "",            #the metrical position being processed
                     'x': "",            #the extra-metrical foot being processed
-                    'f': ""             #the word-foot being processed
+                    'f': "",            #the word-foot being processed
+                    'backlog': []       #storage for processed nodes waiting for a verse context
                     }
 
         bodyEl=root.find(".//d:body", self._TEIns)
@@ -57,16 +58,25 @@ class displaydriver():
 
         html += opening + style + pretitle + title + posttitle
         html += header + toggles + contents + footer
-
-        # html += self._gettemplate(0) + self._getstyle() + self._gettemplate(1) + self._getheader(True) + self._gettemplate(2)
-        # html += self._getheader() + self._gettemplate(3) + contents + self._gettemplate(4)
         return html
+
+    #for non-verse-specific nodes like <lb>, <cb>, 
+    # are they located within or outside a verse or line?
+    def _isinversecontext(self, node):
+        parenttype=''
+        if node is None: return False
+        try:
+            tag=node.getparent().tag
+            parenttype=tag[tag.find('}')+1]
+        except Exception as e: return e
+        if parenttype == 'v' or parenttype == 'vg': return True
+        return False
 
     #the loop delegator
     def _renderchild(self, child, loopdata):
         contents=''
         childtype=''
-        fx={'vg':   '_render_line',
+        fx={'vg':   '_render_group',
              'v':   '_render_verse',
              'w':   '_render_word',
             'pb':   '_render_manuscript_page',
@@ -85,19 +95,21 @@ class displaydriver():
             except: return ''
             if childtype !='':
                 try: contents += self.__getattribute__(fx[childtype])(child, loopdata) or ''
-                except Exception as e: 
-                    print(e)
+                except Exception as e: return e
         return contents
     #
     def _render_prose(self, p, loopdata):
         contents=''
-        contents += '<span class="line">' + p.text + '</span>'
+        contents += '<span class="line">' + p.text + '</span>\n'
         return contents
 
-    #the 'line' here is the poetic line, not the manuscript line
-    def _render_line(self, line, loopdata):
+    #the 'group' here is the poetic line
+    def _render_group(self, line, loopdata):
         contents=''
         lnum = 0 #line number
+
+        #open the line container
+        contents +='\n<div class="poeticline">'
 
         #Get the alliteration for this line
         if 'A' in line.attrib: loopdata['A'] = line.get('A')
@@ -106,54 +118,85 @@ class displaydriver():
         #Get the conventional line number; display for every 5th line
         if 'cid' in line.attrib:
             lnum=int(line.get('cid'))
-        contents += "<p/>"
-        if int(lnum) % 5 == 0:
-            contents += '<span class="line">' + str(lnum) + '</span>'
-        else:
-            contents += '<span class="line"></span>'
+        
+        lineclass='lineintro'
+        if int(lnum) % 5 == 0: lineclass='lineintro5'
+        contents += '\n<div class="' + lineclass + '">' + str(lnum) + '</div>'
+
+
+        #start off the middle (content) div
+        contents += '\n<div class="linecontent">'
+
+        # #before we get to any children of this node, go through the backlog of processed nodes, if any
+        # i = len(loopdata['backlog'])
+        # error = False
+        # while not error:
+        #     try:
+        #         item = loopdata['backlog'].pop(0)
+        #     except: 
+        #         error = True
+        #         break
+        #     contents += item
 
         #children of the line will include verses, but also line and page breaks, punctuation, etc.
         for child in line: 
             contents += self._renderchild(child, loopdata)
         return contents
 
+    #when a verse begins, open and close the right divs
     def _render_verse(self, verse, loopdata):
         contents=""
+
          #get the verse scan info
-        if "type" in verse.attrib:
-            typ=verse.get("type")
-        else:
-            typ=""
-        if "contour" in verse.attrib:
-            contour= verse.get("contour")
-        else:
-            contour=""
+        if 'type' in verse.attrib: typ=verse.get("type")
+        else: typ=''
+        if 'contour' in verse.attrib: contour= verse.get("contour")
+        else: contour=''
 
         on=False
         if "role" in verse.attrib:
             role = verse.get("role")
             if role=="on": 
                 on=True
-                contents += "<span class='on-verse'/>" #this has to be there
                 #stuff these into loopdata to use after the off-verse
                 loopdata["scan"]=[typ,contour]
+            #open the verse div
+            contents += '\n<div class="verse">'
+
+        #before we get to any children of this node, go through the backlog of processed nodes, if any
+        i = len(loopdata['backlog'])
+        error = False
+        while not error:
+            try:
+                item = loopdata['backlog'].pop(0)
+            except: 
+                error = True
+                break
+            contents += item
         
         #children of the line will include verses, but also line and page breaks, punctuation, etc.
         for child in verse: 
             contents += self._renderchild(child, loopdata)
     
-        #add a caesura here at the end of the on-verse
+        #close the verse div
+        contents += "</div>"
         if on:
-            contents += "<span class='caesura'>&nbsp;&nbsp;&nbsp;</span>"
-        else:
+            #add a caesura here at the end of the on-verse
+            contents += "\n<div class='caesura'/>"
+        else: #off
+            contents += '</div>' #close the linecontent div
             #time to display things
             #first verse
-            contents += '<span class="scan"/>'
-            try:
-                contents += '<span class="scan">' + loopdata["scan"][0] + "&nbsp;&nbsp;" + loopdata["scan"][1] + '</scan>' 
-            except:
-                contents += '<span class="scan">?</scan>'
-            contents += '<span class="scan">' + typ + '&nbsp;&nbsp;' + contour + '</scan>' 
+            contents += '\n<div class="linesummary">'
+            onscan=loopdata["scan"]
+            if len(onscan)>1:
+                ontype=loopdata["scan"][0]
+                oncontour=loopdata["scan"][1]
+            contents += '\n<span class="scan" style="align-left">' + ontype + '&nbsp;&nbsp;' + oncontour + '</scan>' #on verse
+            contents += '\n<span class="scan" style="align-right">' + typ + '&nbsp;&nbsp;' + contour + '</scan>\n' #off verse
+            contents += '</div>' #close the linesummary div
+
+            contents += '</div>' #close off the poeticline div
        
         return contents
 
@@ -174,17 +217,19 @@ class displaydriver():
             loopdata['wc']=wc
 
         if 'expands' in word.attrib:
-            wc=word.get('expands')
-            loopdata['expands']=wc
+            expands=word.get('expands')
+            loopdata['expands']=expands
 
         if 'emends' in word.attrib:
-            wc=word.get('emends')
-            loopdata['emends']=wc
+            emends=word.get('emends')
+            loopdata['emends']=emends
         
 
-        if 'msa' in word. attrib: msa=word.get('msa')
-        #get the contents ready, but wait to put this after the last syllable of the word
-        loopdata['msa']='<span class="msa">' + self._msa2str(msa) + '</span>'
+        if 'msa' in word. attrib: 
+            msa=word.get('msa')
+            #get the contents ready, but wait to put this after the last syllable of the word
+            loopdata['msa']='<span class="msa">' + self._msa2str(msa) + '</span>'
+
         
         loopdata["firstSyll"]=True
         #get the syllable count
@@ -252,8 +297,7 @@ class displaydriver():
             if hoverstr=='': hoverstr=loopdata['expands']
             
             #we have all the details
-            print(hoverstr)
-            contents += '<span class="syll ' + weight + ' ' + stress + '" title="' + hoverstr + '">' + syll.text + '</span>'
+            contents += '\n<span class="syll ' + weight + ' ' + stress + '" title="' + hoverstr + '">' + syll.text + '</span>'
 
             #now clean up and update loop variables
             #if we figured out above we're in the last syllable of an extra-metrical position, close it out now
@@ -278,7 +322,7 @@ class displaydriver():
             else: #last syllable of the word
                 contents +=loopdata['msa']
                 if loopdata['prefix']==1 or loopdata['compound']==1: contents += '-'
-                else: contents += ' '
+                # else: contents += ' '
         
         #lop off the current toe of the foot -- unless there's a resolved syllable upcoming
         if domain == 'foot' and not resolving:
@@ -328,36 +372,60 @@ class displaydriver():
         pnum=''
         if 'n' in pb.attrib:
             pnum=pb.get('n')
-            contents += '<span class="pagebegin">' + pnum + '</span>'
+            contents += '<span class="pagebegin" title="' + pnum + '">♦</span>'
         else: contents += '<span class="pagebegin"/>'
-        return contents
+
+        #we're either going to return the contents or save it for later
+        #depending on whether we're currently in a verse or line contenxt
+        if self._isinversecontext(pb): 
+            return contents
+        else:
+            loopdata['backlog'].append(contents)
+            return ''
 
     def _render_manuscript_line(self, lb, loopdata):
         contents=''
         lnum=''
         if 'n' in lb.attrib:
-            pnum=lb.get('n')
-            contents += '<span class="linebegin">' + lnum + '</span>'
+            lnum=lb.get('n')
+            contents += '<span class="linebegin" title="' + lnum + '">♦</span>'
         else: contents += '<span class="linebegin"/>'
-        return contents
+
+        #we're either going to return the contents or save it for later
+        #depending on whether we're currently in a verse or line contenxt
+        if self._isinversecontext(lb): 
+            return contents
+        else:
+            loopdata['backlog'].append(contents)
+            return ''
 
     def _render_clause(self, cb, loopdata):
         contents=''
         contents = '<span class="clause">§</span>'
-        return contents
+
+        #we're either going to return the contents or save it for later
+        #depending on whether we're currently in a verse or line contenxt
+        if self._isinversecontext(cb): return contents
+        else:
+            loopdata['backlog'].append(contents)
+            return ''
 
     def _render_punctuation(self, pc, loopdata):
         contents=''
         contents = '<span class="punc">' + pc.text +'</span>'
 
-        return contents
+        #we're either going to return the contents or save it for later
+        #depending on whether we're currently in a verse or line contenxt
+        if self._isinversecontext(pc): return contents
+        else:
+            loopdata['backlog'].append(contents)
+            return ''
 
     #right now these doc parts are just stored in strings; eventually put them in a separate file
     def _gettemplate(self, piece:int=0):
 
         template=["""<!DOCTYPE html>
-        '<!ENTITY % menotaEntities SYSTEM "http://www.menota.org/menota-entities.txt"> %menotaEntities;
-        ]>
+
                     <html>
                         <head>
                             <meta charset="utf-8">
@@ -375,13 +443,14 @@ class displaydriver():
                                     <div class="toggle" data-target="parts"><span class="parts">ᚦ</span>&nbsp;part of speech</div>
                                     <div class="toggle" data-target="alliteration1"><span class="alliteration1">ᚦ</span>&nbsp;alliteration</div>
                                     <div class="toggle" data-target="punctuation"><span class="punctuation">ᚦ</span>&nbsp;punctuation</div>
+                                    <div class="toggle" data-target="meter"><span class="meter">ᚦ</span>&nbsp;meter</div>
+                                    <div class="toggle" data-target="manuscript"><span class="parts">ᚦ</span>&nbsp;manuscript parts</div>
                                 </div>
                             </div>
-                            <div id="content">
+                            <div id="poetry">
                     """,
 
-                    """ 
-                            </div>
+                    """     </div> <!-- close the content div -->
                             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
                             <!-- the following attaches a function to the on-click event of the toggles that adds or
@@ -416,9 +485,11 @@ class displaydriver():
         source=self._dh._root.findtext(".//{http://www.tei-c.org/ns/1.0}sourceDesc/{http://www.tei-c.org/ns/1.0}p")
         if source == None: source="Markup error"
         source=source.strip()
-
-        header += '<div id="title">' + title + '<span id="subtitle">' + subtitle + '</div>'
+        header += '<div id="leftheader">'
+        header += '<div id="title">' + title + '</div>'
+        header += '<div id="subtitle">' + subtitle + '</div>'
         header += '<div id="source">' + source + '</div>'
+        header += '</div>'
         return header
 
     #this map will be used to annotate part of speech from the menota msa attribute on a word <w> element
@@ -443,7 +514,7 @@ class displaydriver():
                 'xIM':'+∞',
                 'xRP':'◦',
                 'xNX':'-',
-                'xPX':'<',
+                'xPX':'&lt;',
                 'xVX fF':'aux'}
         try:
             return msamap[msa]
@@ -454,20 +525,27 @@ class displaydriver():
         if not language in ["OE","ON","OS","OHG"]: language="OE"
         
         style="""   
-                                span     {display: inline-block; margin: 0; font-size: 16pt;}
-                                img      {float:right; width:400px; padding-left: 20px; padding-right: 40px}
+                                span     {font-size: 16pt;}
                                 p        {padding-left: 30px}
-                                p.info   {padding-left: 10px; font-size:80%; color: CadetBlue; float:right; display:block}
-                                .pagebegin    {color:LightSkyBlue; padding-right:4px; padding-left: 10px; display:none}
-                                .linebegin    {color:CadetBlue; width:40px; display: none}
-                                .on-verse {position:absolute; margin-left:30px}
+                                .pagebegin    {color:Brown; font-size:8pt; vertical-align: super; display:none}
+                                .pagebegin:hover {cursor: pointer;}
+                                .linebegin    {color:DarkGoldenrod; font-size:8pt; vertical-align: super; display: none}
+                                .linebegin:hover {cursor: pointer;}
                                 .prose   {color:LightSeaGreen}
                                 .punc    {color:FireBrick; padding-left:2px; padding-right:2px; display:none}
                                 .word    {color:Black}
                                 .allit1  {color:FireBrick; font-size:50%; vertical-align: super; display:none}
                                 .allit2  {color:FireBrick; font-size:50%; vertical-align: super; display:none}
                                 .msa     {color:CadetBlue; font-size:60%; vertical-align: sub; display:none}
-                                .syll    {color:DimGrey}
+                                .syll    {color:DimGrey;}
+                                .lineintro {
+                                        color:DimGrey;
+                                        width: 50px;
+                                        }
+                                .lineintro5 {
+                                        color:Brown;
+                                        width: 50px;
+                                        }
 
                                 .clause  {color:FireBrick}
                                 .grouper {color:Indigo}
@@ -478,54 +556,52 @@ class displaydriver():
                                 body.weight .syll.l          {color:LightBlue}
                                 body.weight .syll.h          {color:DimGrey}
                                 body.weight .syll.o          {color:SteelBlue}
+                                body.meter  .syll.high       {font-size:20pt; font-face: bold}
+                                body.meter  .syll.half       {font-size:18pt}
+                                body.meter  .syll.low        {font-size:14pt}
+                                body.meter  .x_sep           {display:inline-block}
                                 body.parts  .msa             {display:inline-block}
                                 body.alliteration1  .allit1  {display:inline-block}
                                 body.alliteration2  .allit2  {display:inline-block}
                                 body.punctuation   .punc     {display:inline-block}
+                                body.manuscript    .pagebegin   {display:inline-block}
+                                body.manuscript    .linebegin   {display:inline-block}
 
                                 /* header and toggles */
                                 div#header  {
-                                            position: fixed;
-                                            top:0px;
-                                            left: 0px;
-                                            width: 100%;
+                                            display: flex;
+                                            flex-flow: row-end;
                                             background-color: WhiteSmoke;
                                             overflow: hidden;
                                             }
                                 div#title   {
                                             color: SteelBlue;
                                             padding-left: 20px;
-                                            font-size:40pt;
-                                            float:left
+                                            font-size:24pt;
                                             }
-                                span#subtitle {
-                                            padding-left: 10px;
+                                div#subtitle {
+                                            padding-left: 20px;
                                             color:lightSkyBlue;
-                                            font-size: 24pt;
+                                            font-size: 16pt;
                                             }
                                 div#source  {
-                                            color:LightSkyBlue;
+                                            color:DodgerBlue;
                                             padding-left: 20px;
                                             padding-top: 10px;
-                                            font-size: 16pt;
-                                            position: absolute;
-                                            
-                                            top: 50px;
+                                            font-size: 12pt;
                                             }
-                                div#content { height: 100%; padding-top: 140px; overflow: auto}
                                 div.toggles {
-                                            float: right;
-                                            display: inline-block;
+                                            flex-align:end;
                                             background-color: WhiteSmoke;
                                             padding: 10px 20px;
                                             font-family: "Noto Sans", sans-serif;
-                                            font-size: 10pt;
+                                            font-size: 12pt;
                                             color: DarkSlateGrey;
                                             }
                                 div.toggles span { color:LightGrey}
                                 div.toggles h2 {
                                                 margin: 0;
-                                                font-size: 10pt;
+                                                font-size: 12pt;
                                                 color: LightSkyBlue;
                                             }
                                 div.toggle {
@@ -541,8 +617,26 @@ class displaydriver():
                                 body.alliteration1 div.toggle > span.alliteration1,
                                 body.alliteration2 div.toggle > span.alliteration2,
                                 body.punctuation div.toggle > span.punctuation
+                                body.meter div.toggle > span.meter
                                 {
                                     color: DarkSlateGrey;
                                 }
+                                div#poetry  {
+                                            display: inline;
+                                            width: 100%
+                                            overflow: auto
+                                            }
+                                div.poeticline {
+                                            display: inline-block;
+                                            }
+                                .caesura, .linesummary, .verse, .linecontent, .lineintro, .lineintro5, .clause {
+                                    display: inline-block;
+                                    margin-bottom: 10px;
+                                }
+                                .caesura {width:5%}
+                                .verse {width:300px}
+                                .linesummary {float: right}
+                                .scan {width:200px}
+
             """
         return style
