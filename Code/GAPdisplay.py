@@ -1,6 +1,6 @@
 from GAPdocumenthelper import docuhelper as dh
 from lxml import etree as et
-from GAPutility import msa2str, getstyle, gettemplate
+from GAPutility import msa2str, getstyle, gettemplate, gettoggles
 
 #the displaydriver class. Instantiate with a docuhelper object 
 #and it will give you an html string suitable for framing and display.
@@ -54,7 +54,7 @@ class displaydriver():
         title=self._getheader(True)
         posttitle=gettemplate(2)
         header=self._getheader()
-        toggles=gettemplate(3)
+        toggles=gettoggles(self._markuplevel) + gettemplate(3)
         footer=gettemplate(4)
 
         html += opening + style + pretitle + title + posttitle
@@ -68,7 +68,7 @@ class displaydriver():
         if node is None: return False
         try:
             tag=node.getparent().tag
-            parenttype=tag[tag.find('}')+1]
+            parenttype=tag[tag.find('}')+1:]
         except Exception as e: return e
         return parenttype == 'v'
 
@@ -103,6 +103,7 @@ class displaydriver():
         contents += '<span class="prose">' + p.text + '</span>\n'
         return contents
 
+    ####################################################
     #the 'group' here is the poetic line
     def _render_group(self, line, loopdata):
         contents=''
@@ -118,7 +119,7 @@ class displaydriver():
         #Get the conventional line number; display for every 5th line
         if 'cid' in line.attrib:
             lnum=int(line.get('cid'))
-        
+
         lineclass='lineintro'
         if int(lnum) % 5 == 0: lineclass='lineintro5'
         contents += '\n<div class="' + lineclass + '">' + str(lnum) + '</div>'
@@ -127,22 +128,12 @@ class displaydriver():
         #start off the middle (content) div
         contents += '\n<div class="linecontent">'
 
-        # #before we get to any children of this node, go through the backlog of processed nodes, if any
-        # i = len(loopdata['backlog'])
-        # error = False
-        # while not error:
-        #     try:
-        #         item = loopdata['backlog'].pop(0)
-        #     except: 
-        #         error = True
-        #         break
-        #     contents += item
-
         #children of the line will include verses, but also line and page breaks, punctuation, etc.
         for child in line: 
             contents += self._renderchild(child, loopdata)
         return contents
 
+    ###################################################
     #when a verse begins, open and close the right divs
     def _render_verse(self, verse, loopdata):
         contents=""
@@ -160,8 +151,9 @@ class displaydriver():
                 on=True
                 #stuff these into loopdata to use after the off-verse
                 loopdata["scan"]=[typ,contour]
-            #open the verse div
-            contents += '\n<div class="verse">'
+
+        #open the verse div
+        contents += '\n<div class="verse">'
 
         #before we get to any children of this node, go through the backlog of processed nodes, if any
         i = len(loopdata['backlog'])
@@ -173,20 +165,21 @@ class displaydriver():
                 error = True
                 break
             contents += item
-        
-        #children of the line will include verses, but also line and page breaks, punctuation, etc.
+
+        #children of the verse will include words and syllables, but also line and page breaks, punctuation, etc.
         for child in verse: 
             contents += self._renderchild(child, loopdata)
     
         #close the verse div
-        contents += "</div>"
+        contents += "</div>\n"
         if on:
             #add a caesura here at the end of the on-verse
             contents += "\n<div class='caesura'/>"
         else: #off
-            contents += '</div>' #close the linecontent div
+            contents += '</div>\n' #close the linecontent div
             #time to display things
             #first verse
+
             contents += '\n<div class="linesummary">'
             onscan=loopdata["scan"]
             if len(onscan)>1:
@@ -197,9 +190,10 @@ class displaydriver():
             contents += '</div>' #close the linesummary div
 
             contents += '</div>' #close off the poeticline div
-       
+
         return contents
 
+    #######################################################
     def _render_word(self, word, loopdata):
         contents=''
         wc=''
@@ -227,7 +221,9 @@ class displaydriver():
         if 'msa' in word.attrib: 
             msa=word.get('msa')
             #get the contents ready, but wait to put this after the last syllable of the word
-            loopdata['msa']='<span class="msa">' + msa2str(msa) + '</span>'
+            try:
+                loopdata['msa']='<span class="msa">' + msa2str(msa) + '</span>'
+            except: loopdata['msa']=''
 
         
         loopdata["firstSyll"]=True
@@ -242,6 +238,7 @@ class displaydriver():
         
         return contents 
 
+    #####################################################
     def _render_syllable(self, syll, loopdata):
         contents = ''
         allit = ''
@@ -330,6 +327,8 @@ class displaydriver():
 
         return contents
 
+    
+
     #the opening of a metrical position
     def _render_position(self, z, loopdata):
         contents = '' 
@@ -374,8 +373,8 @@ class displaydriver():
             contents += '<span class="pagebegin" title="' + pnum + '">♦</span>'
         else: contents += '<span class="pagebegin"/>'
 
-        #we're either going to return the contents or save it for later
-        #depending on whether we're currently in a verse or line contenxt
+        #we're either going to return the contents now or save it for later
+        #depending on whether we're currently in a verse context
         if self._isinversecontext(pb): 
             return contents
         else:
@@ -391,7 +390,7 @@ class displaydriver():
         else: contents += '<span class="linebegin"/>'
 
         #we're either going to return the contents or save it for later
-        #depending on whether we're currently in a verse or line contenxt
+        #depending on whether we're currently in a verse context
         if self._isinversecontext(lb): 
             return contents
         else:
@@ -403,7 +402,7 @@ class displaydriver():
         contents = '<span class="clause">§</span>'
 
         #we're either going to return the contents or save it for later
-        #depending on whether we're currently in a verse or line contenxt
+        #depending on whether we're currently in a verse contenxt
         if self._isinversecontext(cb): return contents
         else:
             loopdata['backlog'].append(contents)
@@ -414,7 +413,7 @@ class displaydriver():
         contents = '<span class="punc">' + pc.text +'</span>'
 
         #we're either going to return the contents or save it for later
-        #depending on whether we're currently in a verse or line contenxt
+        #depending on whether we're currently in a verse contenxt
         if self._isinversecontext(pc): return contents
         else:
             loopdata['backlog'].append(contents)
