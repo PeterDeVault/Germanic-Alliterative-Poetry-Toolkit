@@ -58,6 +58,26 @@ def gettoggles(documentlevel:int=0):
     '''
     return toggles
 
+def getlegend(documentlevel:int=0):
+    legend='''
+    <div class="legend">
+        <h2>Legend</h2>
+        <div class="legenditem parts">
+            <span class="key" style="color:Brown">♦</span>
+            <span class="text">new page</span>
+        </div>
+        <div class="legenditem parts">
+            <span class="key" style="color:DarkGoldenrod">♦</span>
+            <span class="text">new line</span>
+        </div>
+        <div class="legenditem clauses">
+            <span class="key" style="color:FireBrick">§</span>
+            <span class="text">new clause</span>
+        </div>
+    </div>
+    '''
+    return legend
+
 
 
 
@@ -141,17 +161,25 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
                 padding-top: 10px;
                 font-size: 12pt;
                 }
-    div.toggles {
+    div.legend  {
                 flex: 0 0 200px;
                 background-color: WhiteSmoke;
                 padding: 10px 20px;
                 font-family: "Noto Sans", sans-serif;
-                font-size: 12pt;
+                font-size: 10pt;
                 color: DarkSlateGrey;
+                }
+    div.legend h2 {
+                margin: 0;
+                font-size: 12pt;
+                color: LightSkyBlue;
+                }
+    div.legenditem span {
+                font-size: 12pt;
+                display:inline-block;
                 }
     div.toggles {
                 flex: 0 0 200px;
-                align-self: flex-end;
                 background-color: WhiteSmoke;
                 padding: 10px 20px;
                 font-family: "Noto Sans", sans-serif;
@@ -159,11 +187,6 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
                 color: DarkSlateGrey;
                 }
     div.toggles span {color:LightGrey}
-    div.toggles h2 {
-                    margin: 0;
-                    font-size: 12pt;
-                    color: LightSkyBlue;
-                }
     div.toggles h2 {
                     margin: 0;
                     font-size: 12pt;
@@ -178,8 +201,10 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
     body.break div.toggle > span.break,
     body.weight div.toggle > span.weight,
     body.parts div.toggle > span.parts,
+    body.parts .legenditem.parts span,
     body.wclass div.toggle > span.wclass,
     body.clauses div.toggle > span.clauses,
+    body.clauses .legenditem.clauses span,
     body.alliteration1 div.toggle > span.alliteration1,
     body.alliteration2 div.toggle > span.alliteration2,
     body.punctuation div.toggle > span.punctuation,
@@ -216,7 +241,7 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
                 width: 400px;
                 display:inline-block;
                 }
-    .verse {width:400px;}
+    .verse {width:520px;}
     .caesura {width:10px;}
     .scan {
             position:relative;

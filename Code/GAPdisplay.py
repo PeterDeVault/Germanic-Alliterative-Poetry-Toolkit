@@ -1,6 +1,8 @@
-from GAPdocumenthelper import docuhelper as dh
 from lxml import etree as et
-from GAPutility import msa2str, getstyle, gettemplate, gettoggles
+
+from GAPdocumenthelper import docuhelper as dh
+from GAPutility import getstyle, gettemplate, gettoggles, msa2str, getlegend
+
 
 #the displaydriver class. Instantiate with a docuhelper object 
 #and it will give you an html string suitable for framing and display.
@@ -54,11 +56,12 @@ class displaydriver():
         title=self._getheader(True)
         posttitle=gettemplate(2)
         header=self._getheader()
+        legend=getlegend(self._markuplevel)
         toggles=gettoggles(self._markuplevel) + gettemplate(3)
         footer=gettemplate(4)
 
         html += opening + style + pretitle + title + posttitle
-        html += header + toggles + contents + footer
+        html += header + legend + toggles + contents + footer
         return html
 
     #for non-verse-specific nodes like <lb>, <cb>, 
