@@ -36,7 +36,7 @@
                     <w wc="t" msa="xNC" A="Ø">Ár</w>
                     <w wc="t" msa="xVB fF" A="V">var</w>
                     <cb/>
-                    <w wc="c" msa="xPD" expands="þ&combcurl;z" A="Þ">þatz</w>
+                    <w wc="t" msa="xCS" expands="þ&combcurl;z" A="Þ">þatz</w>
                     <w wc="s" msa="xNP" expands="Sig&combtilde;þ&combcurl;" A="S">Sigurðr</w>
                 </v>
                 <v role="off">
