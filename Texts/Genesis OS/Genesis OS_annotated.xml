@@ -152,7 +152,7 @@
             <w wc="t" msa="xVB fI">uuardon</w>
             <w wc="t" msa="xVB fF">scoldin</w>
             <pc>.</pc>
-            <w wc="t" msa="xNC">haramo</w>
+            <w wc="s" msa="xNC">haramo</w>
             <w wc="t" msa="xVB fF">mestan</w>
             <pc>.</pc>
             <cb/>
@@ -280,7 +280,7 @@
             <!-- negative verb -->
             <w wc="t" msa="xAV">hier</w>
             <w wc="s" msa="xNC">scattas</w>
-            <w wc="r" msa="xPI">uuiht</w>
+            <w wc="s" msa="xNC">uuiht</w>
             <w wc="c" msa="xAP">te</w>
             <w wc="s" msa="xNC">meti</w>
             <w wc="c" msa="xPX" p="1">gi</w>

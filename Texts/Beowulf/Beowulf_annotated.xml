@@ -302,8 +302,8 @@
             <w wc="s" msa="xNC" c="2">clifu</w>
             <w wc="s" msa="xVB fI">blīcan</w>
             <lb n="134v;16"/>
-            <w wc="m" msa="xNC">beorgas</w>
-            <w wc="m" msa="xAJ">stēape</w>
+            <w wc="s" msa="xNC">beorgas</w>
+            <w wc="s" msa="xAJ">stēape</w>
             <pc>·</pc>
             <w wc="t" msa="xAJ">sīde</w>
             <w wc="s" msa="xNC" c="1">sǣ</w>
@@ -545,7 +545,7 @@
             <cb/>
             <w wc="t" msa="xCS">ǣr</w>
             <w wc="t" msa="xPE">ġē</w>
-            <w wc="" msa="xAV">fyr</w>
+            <w wc="t" msa="xAV">fyr</w>
             <pb n="135v"/><!-- top of page, esp. left margin, has missing portions, reflected in emendations below-->
             <lb n="135v;1"/>
             <w wc="t" msa="xAV" emends="an">heonan</w><!--'eonan' visible in a different hand under 'an'-->
@@ -556,7 +556,7 @@
             </w>
             <w wc="c" msa="xAP">on</w>
             <w wc="s" msa="xNC" c="1">land</w>
-            <w wc="" msa="xNP" c="2" emends="d">dena</w>
+            <w wc="s" msa="xNP" c="2" emends="d">dena</w>
             <lb n="135v;2"/>
             <w wc="t" msa="xAV" emends="urþur">furþur</w>
             <w wc="t" msa="xVB fF">fēran</w>
@@ -569,7 +569,7 @@
             <lb n="135v;3"/>
             <w wc="s" msa="xVB fP" c="2">līðende</w>
             <w wc="t" msa="xPE" emends="mine">mīnne</w>
-            <w wc="" msa="xPX" p="1">ġe</w>
+            <w wc="c" msa="xPX" p="1">ġe</w>
             <w wc="t" msa="xVB fF" p="2">hȳrað</w>
             <w wc="s" msa="xAV" c="1">ān</w>
             <w wc="s" msa="xAJ" c="1">fealdne</w>
@@ -588,7 +588,7 @@
             <w wc="t" msa="xPQ" emends="wanan">hwanan</w>
             <w wc="t" msa="xPE">ēowre</w>
             <w wc="s" msa="xNC">cyme</w>
-            <w wc="" msa="xVB fF">syndon</w>
+            <w wc="t" msa="xVB fF">syndon</w>
             <pc>·</pc>
             <lb n="135v;6"/>
             <p>·IIII·</p><!-- fitt marker, middle of its own line-->
@@ -871,7 +871,7 @@
             <w wc="s" msa="xNP">scyldinga</w>
             <cb/>
             <w wc="c" msa="xPX" p="1">ġe</w>
-            <w wc="" msa="xVB" p="2">wītaþ</w>
+            <w wc="t" msa="xVB" p="2">wītaþ</w>
             <lb n="136r;16"/>
             <w wc="t" msa="xAV">forð</w>
             <w wc="t" msa="xVB fI">beran</w>
@@ -1030,7 +1030,7 @@
             <w wc="t" msa="xVB fF">bād</w>
             <cb/>
             <w wc="t" msa="xVB fF">līxte</w>
-            <w wc="" msa="">se</w>
+            <w wc="t" msa="xNA">se</w>
             <lb n="136v;14"/>
             <w wc="s" msa="xNC">lēoma</w>
             <w wc="c" msa="xAP">ofer</w>
@@ -1038,9 +1038,9 @@
             <w wc="s" msa="xAJ">fela</w>
             <pc>.</pc>
             <cb/>
-            <w wc="" msa="xPE">him</w>
-            <w wc="" msa="xAV">þā</w>
-            <w wc="" msa="xNC" c="1">hilde</w>
+            <w wc="t" msa="xPE">him</w>
+            <w wc="t" msa="xAV">þā</w>
+            <w wc="s" msa="xNC" c="1">hilde</w>
             <lb n="136v;15"/>
             <w wc="s" msa="xNC" c="2">dēor</w>
             <w wc="s" msa="xNC" emends="of">hof</w><!--EB, not Klaeber -->
@@ -1120,10 +1120,10 @@
             <w wc="t" msa="xAP" p="1">æt</w>
             <w wc="t" msa="xAV" p="2">gædere</w>
             <cb/>
-            <w wc="" msa="xNC" c="1">gūð</w>
-            <w wc="" msa="xNC" c="2">byrne</w>
-            <w wc="" msa="xVB fF">scān</w>
-            <w wc="" msa="xAJ">heard</w>
+            <w wc="s" msa="xNC" c="1">gūð</w>
+            <w wc="s" msa="xNC" c="2">byrne</w>
+            <w wc="t" msa="xVB fF">scān</w>
+            <w wc="s" msa="xAJ">heard</w>
             <lb n="137r;5"/>
             <w wc="s" msa="xNC" c="1">hond</w>
             <w wc="s" msa="xAJ" c="2">locen</w>
@@ -1131,7 +1131,7 @@
             <w wc="s" msa="xNC" c="1">hrinġ</w>
             <w wc="s" msa="xNC" c="2">īren</w>
             <w wc="s" msa="xAJ">scīr</w>
-            <w wc="" msa="xVB fF">song</w>
+            <w wc="t" msa="xVB fF">song</w>
             <w wc="c" msa="xAP">in</w>
             <lb n="137r;6" after="4"/>
             <w wc="s" msa="xNC">searwum</w>
@@ -1238,7 +1238,7 @@
             <lb n="137r;18"/>
             <w wc="s" msa="xNC">ār</w>
             <w wc="c" msa="xCC" expands="⁊">ond</w>
-            <w wc="a" msa="xNC">ombiht</w>
+            <w wc="s" msa="xNC">ombiht</w>
             <pc>·</pc>
             <cb/>
             <w wc="t" msa="xNX">ne</w>
@@ -1319,7 +1319,7 @@
             <w wc="t" msa="xVB xF">wille</w>
             <w wc="t" msa="">iċ</w>
             <w wc="c" msa="xPX" p="1">ā</w>
-            <w wc="r" msa="xVB fI" p="2">secgan</w>
+            <w wc="t" msa="xVB fI" p="2">secgan</w>
             <w wc="s" msa="xNC">sunu</w>
             <w wc="s" msa="xNP" c="1">healf</w>
             <lb n="137v;6"/>
@@ -1337,7 +1337,7 @@
             <w wc="t" msa="">hē</w>
             <w wc="t" msa="">ūs</w>
             <w wc="c" msa="" p="1">ġe</w>
-            <w wc="" msa="xVB fI" p="2">unnan</w>
+            <w wc="t" msa="xVB fI" p="2">unnan</w>
             <w wc="t" msa="xVX fF">wile</w>
             <lb n="137v;8"/>
             <cb/>

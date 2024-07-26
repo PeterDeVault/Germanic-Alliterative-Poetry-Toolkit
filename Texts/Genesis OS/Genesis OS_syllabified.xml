@@ -362,7 +362,7 @@
             <pc>.</pc>
             <vg type="line" cid="12" A="H">
                 <v role="on">
-                    <w wc="t" msa="xNC" A="H" id="91" Σ="3"/>
+                    <w wc="s" msa="xNC" A="H" id="91" Σ="3"/>
                     <s m="1" wt="l">ha</s>
                     <s m="1" wt="l">ra</s>
                     <s m="1" wt="l">mo</s>
@@ -706,7 +706,7 @@
                     <w wc="s" msa="xNC" A="SK" id="184" Σ="2"/>
                     <s m="2" wt="h">scat</s>
                     <s m="2" wt="h">tas</s>
-                    <w wc="r" msa="xPI" A="W" id="185" Σ="1"/>
+                    <w wc="s" msa="xNC" A="W" id="185" Σ="1"/>
                     <s m="3" wt="o">uuiht</s>
                 </v>
             </vg>

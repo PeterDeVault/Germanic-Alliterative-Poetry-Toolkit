@@ -486,8 +486,8 @@
                 </v>
                 <lb n="134v;16"/>
                 <v role="off">
-                    <w wc="m" msa="xNC" A="B">beorgas</w>
-                    <w wc="m" msa="xAJ" A="ST">stēape</w>
+                    <w wc="s" msa="xNC" A="B">beorgas</w>
+                    <w wc="s" msa="xAJ" A="ST">stēape</w>
                 </v>
             </vg>
             <pc>·</pc>
@@ -885,7 +885,7 @@
                 <v role="off">
                     <w wc="t" msa="xCS" A="Ø">ǣr</w>
                     <w wc="t" msa="xPE" A="G">ġē</w>
-                    <w wc="" msa="xAV" A="F">fyr</w>
+                    <w wc="t" msa="xAV" A="F">fyr</w>
                     <pb n="135v"/>
                     <!-- top of page, esp. left margin, has missing portions, reflected in emendations below-->
                     <lb n="135v;1"/>
@@ -903,7 +903,7 @@
                 <v role="off">
                     <w wc="c" msa="xAP" A="Ø">on</w>
                     <w wc="s" msa="xNC" c="1" A="L">land</w>
-                    <w wc="" msa="xNP" c="2" emends="d" A="D">dena</w>
+                    <w wc="s" msa="xNP" c="2" emends="d" A="D">dena</w>
                 </v>
             </vg>
             <lb n="135v;2"/>
@@ -927,7 +927,7 @@
                 </v>
                 <v role="off">
                     <w wc="t" msa="xPE" emends="mine" A="M">mīnne</w>
-                    <w wc="" msa="xPX" p="1" A="G">ġe</w>
+                    <w wc="c" msa="xPX" p="1" A="G">ġe</w>
                     <w wc="t" msa="xVB fF" p="2" A="H">hȳrað</w>
                 </v>
             </vg>
@@ -957,7 +957,7 @@
                     <w wc="t" msa="xPQ" emends="wanan" A="H">hwanan</w>
                     <w wc="t" msa="xPE" A="Ø">ēowre</w>
                     <w wc="s" msa="xNC" A="K">cyme</w>
-                    <w wc="" msa="xVB fF" A="S">syndon</w>
+                    <w wc="t" msa="xVB fF" A="S">syndon</w>
                 </v>
             </vg>
             <pc>·</pc>
@@ -1420,7 +1420,7 @@
                 </v>
                 <v role="off">
                     <w wc="c" msa="xPX" p="1" A="G">ġe</w>
-                    <w wc="" msa="xVB" p="2" A="W">wītaþ</w>
+                    <w wc="t" msa="xVB" p="2" A="W">wītaþ</w>
                     <lb n="136r;16"/>
                     <w wc="t" msa="xAV" A="F">forð</w>
                     <w wc="t" msa="xVB fI" A="B">beran</w>
@@ -1684,7 +1684,7 @@
             <vg type="line" cid="311" A="L">
                 <v role="on">
                     <w wc="t" msa="xVB fF" A="L">līxte</w>
-                    <w wc="" msa="" A="S">se</w>
+                    <w wc="c" msa="xNA" A="S">se</w>
                     <lb n="136v;14"/>
                     <w wc="s" msa="xNC" A="L">lēoma</w>
                 </v>
@@ -1697,9 +1697,9 @@
             <pc>.</pc>
             <vg type="line" cid="312" A="H">
                 <v role="on">
-                    <w wc="" msa="xPE" A="H">him</w>
-                    <w wc="" msa="xAV" A="Þ">þā</w>
-                    <w wc="" msa="xNC" c="1" A="H">hilde</w>
+                    <w wc="t" msa="xPE" A="H">him</w>
+                    <w wc="t" msa="xAV" A="Þ">þā</w>
+                    <w wc="s" msa="xNC" c="1" A="H">hilde</w>
                     <lb n="136v;15"/>
                     <w wc="s" msa="xNC" c="2" A="D">dēor</w>
                 </v>
@@ -1828,14 +1828,14 @@
                     <w wc="t" msa="xAV" p="2" A="G">gædere</w>
                 </v>
                 <v role="off">
-                    <w wc="" msa="xNC" c="1" A="G">gūð</w>
-                    <w wc="" msa="xNC" c="2" A="B">byrne</w>
-                    <w wc="" msa="xVB fF" A="SK">scān</w>
+                    <w wc="s" msa="xNC" c="1" A="G">gūð</w>
+                    <w wc="s" msa="xNC" c="2" A="B">byrne</w>
+                    <w wc="t" msa="xVB fF" A="SK">scān</w>
                 </v>
             </vg>
             <vg type="line" cid="322" A="H">
                 <v role="on">
-                    <w wc="" msa="xAJ" A="H">heard</w>
+                    <w wc="s" msa="xAJ" A="H">heard</w>
                     <lb n="137r;5"/>
                     <w wc="s" msa="xNC" c="1" A="H">hond</w>
                     <w wc="s" msa="xAJ" c="2" A="L">locen</w>
@@ -1848,7 +1848,7 @@
             </vg>
             <vg type="line" cid="323" A="S">
                 <v role="on">
-                    <w wc="" msa="xVB fF" A="S">song</w>
+                    <w wc="t" msa="xVB fF" A="S">song</w>
                     <w wc="c" msa="xAP" A="Ø">in</w>
                     <lb n="137r;6" after="4"/>
                     <w wc="s" msa="xNC" A="S">searwum</w>
@@ -2024,7 +2024,7 @@
                 <v role="on">
                     <w wc="s" msa="xNC" A="Ø">ār</w>
                     <w wc="c" msa="xCC" expands="⁊" A="Ø">ond</w>
-                    <w wc="a" msa="xNC" A="Ø">ombiht</w>
+                    <w wc="s" msa="xNC" A="Ø">ombiht</w>
                 </v>
                 <pc>·</pc>
                 <v role="off">
@@ -2144,7 +2144,7 @@
                     <w wc="t" msa="xVB xF" A="W">wille</w>
                     <w wc="t" msa="" A="Ø">iċ</w>
                     <w wc="c" msa="xPX" p="1" A="Ø">ā</w>
-                    <w wc="r" msa="xVB fI" p="2" A="S">secgan</w>
+                    <w wc="t" msa="xVB fI" p="2" A="S">secgan</w>
                 </v>
                 <v role="off">
                     <w wc="s" msa="xNC" A="S">sunu</w>
@@ -2175,7 +2175,7 @@
                     <w wc="t" msa="" A="H">hē</w>
                     <w wc="t" msa="" A="Ø">ūs</w>
                     <w wc="c" msa="" p="1" A="G">ġe</w>
-                    <w wc="" msa="xVB fI" p="2" A="Ø">unnan</w>
+                    <w wc="t" msa="xVB fI" p="2" A="Ø">unnan</w>
                     <w wc="t" msa="xVX fF" A="W">wile</w>
                 </v>
             </vg>

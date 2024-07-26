@@ -808,10 +808,10 @@
                 </v>
                 <lb n="134v;16"/>
                 <v role="off">
-                    <w wc="m" msa="xNC" A="B" id="209" Σ="2"/>
+                    <w wc="s" msa="xNC" A="B" id="209" Σ="2"/>
                     <s m="2" wt="h">beor</s>
                     <s m="2" wt="h">gas</s>
-                    <w wc="m" msa="xAJ" A="ST" id="210" Σ="2"/>
+                    <w wc="s" msa="xAJ" A="ST" id="210" Σ="2"/>
                     <s m="2" wt="h">stēa</s>
                     <s m="1" wt="l">pe</s>
                 </v>
@@ -1500,7 +1500,7 @@
                     <s m="3" wt="o">ǣr</s>
                     <w wc="t" msa="xPE" A="G" id="395" Σ="1"/>
                     <s m="2" wt="h">ġē</s>
-                    <w wc="" msa="xAV" A="F" id="396" Σ="1"/>
+                    <w wc="t" msa="xAV" A="F" id="396" Σ="1"/>
                     <s m="2" wt="h">fyr</s>
                     <pb n="135v"/>
                     <!-- top of page, esp. left margin, has missing portions, reflected in emendations below-->
@@ -1527,7 +1527,7 @@
                     <s m="2" wt="h">on</s>
                     <w wc="s" msa="xNC" c="1" A="L" id="403" Σ="1"/>
                     <s m="3" wt="o">land</s>
-                    <w wc="" msa="xNP" c="2" emends="d" A="D" id="404" Σ="2"/>
+                    <w wc="s" msa="xNP" c="2" emends="d" A="D" id="404" Σ="2"/>
                     <s m="1" wt="l">de</s>
                     <s m="1" wt="l">na</s>
                 </v>
@@ -1567,7 +1567,7 @@
                     <w wc="t" msa="xPE" emends="mine" A="M" id="413" Σ="2"/>
                     <s m="2" wt="h">mī</s>
                     <s m="1" wt="l">nne</s>
-                    <w wc="" msa="xPX" p="1" A="G" id="414" Σ="1"/>
+                    <w wc="c" msa="xPX" p="1" A="G" id="414" Σ="1"/>
                     <s m="1" wt="l">ġe</s>
                     <w wc="t" msa="xVB fF" p="2" A="H" id="415" Σ="2"/>
                     <s m="2" wt="h">hȳ</s>
@@ -1621,7 +1621,7 @@
                     <w wc="s" msa="xNC" A="K" id="428" Σ="2"/>
                     <s m="1" wt="l">cy</s>
                     <s m="1" wt="l">me</s>
-                    <w wc="" msa="xVB fF" A="S" id="429" Σ="2"/>
+                    <w wc="t" msa="xVB fF" A="S" id="429" Σ="2"/>
                     <s m="2" wt="h">syn</s>
                     <s m="2" wt="h">don</s>
                 </v>
@@ -2407,7 +2407,7 @@
                 <v role="off">
                     <w wc="c" msa="xPX" p="1" A="G" id="640" Σ="1"/>
                     <s m="1" wt="l">ġe</s>
-                    <w wc="" msa="xVB" p="2" A="W" id="641" Σ="2"/>
+                    <w wc="t" msa="xVB" p="2" A="W" id="641" Σ="2"/>
                     <s m="2" wt="h">wī</s>
                     <s m="2" wt="h">taþ</s>
                     <lb n="136r;16"/>
@@ -2872,7 +2872,7 @@
                     <w wc="t" msa="xVB fF" A="L" id="762" Σ="2"/>
                     <s m="3" wt="o">līx</s>
                     <s m="1" wt="l">te</s>
-                    <w wc="" msa="" A="S" id="763" Σ="1"/>
+                    <w wc="c" msa="xNA" A="S" id="763" Σ="1"/>
                     <s m="1" wt="l">se</s>
                     <lb n="136v;14"/>
                     <w wc="s" msa="xNC" A="L" id="764" Σ="2"/>
@@ -2894,11 +2894,11 @@
             <pc>.</pc>
             <vg type="line" cid="312" A="H">
                 <v role="on">
-                    <w wc="" msa="xPE" A="H" id="768" Σ="1"/>
+                    <w wc="t" msa="xPE" A="H" id="768" Σ="1"/>
                     <s m="2" wt="h">him</s>
-                    <w wc="" msa="xAV" A="Þ" id="769" Σ="1"/>
+                    <w wc="t" msa="xAV" A="Þ" id="769" Σ="1"/>
                     <s m="2" wt="h">þā</s>
-                    <w wc="" msa="xNC" c="1" A="H" id="770" Σ="2"/>
+                    <w wc="s" msa="xNC" c="1" A="H" id="770" Σ="2"/>
                     <s m="2" wt="h">hil</s>
                     <s m="1" wt="l">de</s>
                     <lb n="136v;15"/>
@@ -3112,18 +3112,18 @@
                     <s m="1" wt="l">re</s>
                 </v>
                 <v role="off">
-                    <w wc="" msa="xNC" c="1" A="G" id="828" Σ="1"/>
+                    <w wc="s" msa="xNC" c="1" A="G" id="828" Σ="1"/>
                     <s m="3" wt="o">gūð</s>
-                    <w wc="" msa="xNC" c="2" A="B" id="829" Σ="2"/>
+                    <w wc="s" msa="xNC" c="2" A="B" id="829" Σ="2"/>
                     <s m="2" wt="h">byr</s>
                     <s m="1" wt="l">ne</s>
-                    <w wc="" msa="xVB fF" A="SK" id="830" Σ="1"/>
+                    <w wc="t" msa="xVB fF" A="SK" id="830" Σ="1"/>
                     <s m="3" wt="o">scān</s>
                 </v>
             </vg>
             <vg type="line" cid="322" A="H">
                 <v role="on">
-                    <w wc="" msa="xAJ" A="H" id="831" Σ="1"/>
+                    <w wc="s" msa="xAJ" A="H" id="831" Σ="1"/>
                     <s m="3" wt="o">heard</s>
                     <lb n="137r;5"/>
                     <w wc="s" msa="xNC" c="1" A="H" id="832" Σ="1"/>
@@ -3144,7 +3144,7 @@
             </vg>
             <vg type="line" cid="323" A="S">
                 <v role="on">
-                    <w wc="" msa="xVB fF" A="S" id="837" Σ="1"/>
+                    <w wc="t" msa="xVB fF" A="S" id="837" Σ="1"/>
                     <s m="3" wt="o">song</s>
                     <w wc="c" msa="xAP" A="Ø" id="838" Σ="1"/>
                     <s m="2" wt="h">in</s>
@@ -3453,7 +3453,7 @@
                     <s m="3" wt="o">ār</s>
                     <w wc="c" msa="xCC" expands="⁊" A="Ø" id="918" Σ="1"/>
                     <s m="3" wt="o">ond</s>
-                    <w wc="a" msa="xNC" A="Ø" id="919" Σ="2"/>
+                    <w wc="s" msa="xNC" A="Ø" id="919" Σ="2"/>
                     <s m="2" wt="h">om</s>
                     <s m="3" wt="o">biht</s>
                 </v>
@@ -3656,7 +3656,7 @@
                     <s m="2" wt="h">iċ</s>
                     <w wc="c" msa="xPX" p="1" A="Ø" id="977" Σ="1"/>
                     <s m="2" wt="h">ā</s>
-                    <w wc="r" msa="xVB fI" p="2" A="S" id="978" Σ="2"/>
+                    <w wc="t" msa="xVB fI" p="2" A="S" id="978" Σ="2"/>
                     <s m="2" wt="h">sec</s>
                     <s m="2" wt="h">gan</s>
                 </v>
@@ -3710,7 +3710,7 @@
                     <s m="3" wt="o">ūs</s>
                     <w wc="c" msa="" p="1" A="G" id="991" Σ="1"/>
                     <s m="1" wt="l">ġe</s>
-                    <w wc="" msa="xVB fI" p="2" A="Ø" id="992" Σ="2"/>
+                    <w wc="t" msa="xVB fI" p="2" A="Ø" id="992" Σ="2"/>
                     <s m="2" wt="h">un</s>
                     <s m="2" wt="h">nan</s>
                     <w wc="t" msa="xVX fF" A="W" id="993" Σ="2"/>

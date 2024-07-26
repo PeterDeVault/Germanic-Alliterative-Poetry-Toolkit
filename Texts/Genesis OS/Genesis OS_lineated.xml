@@ -216,7 +216,7 @@
             <pc>.</pc>
             <vg type="line" cid="" A="H">
                 <v role="on">
-                    <w wc="t" msa="xNC" A="H">haramo</w>
+                    <w wc="s" msa="xNC" A="H">haramo</w>
                     <w wc="t" msa="xVB fF" A="M">mestan</w>
                 </v>
                 <pc>.</pc>
@@ -406,7 +406,7 @@
                     <!-- negative verb -->
                     <w wc="t" msa="xAV" A="H">hier</w>
                     <w wc="s" msa="xNC" A="SK">scattas</w>
-                    <w wc="r" msa="xPI" A="W">uuiht</w>
+                    <w wc="s" msa="xNC" A="W">uuiht</w>
                 </v>
             </vg>
             <vg type="line" cid="" A="M">

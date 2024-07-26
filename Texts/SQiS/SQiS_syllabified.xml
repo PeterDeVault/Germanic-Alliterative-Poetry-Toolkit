@@ -3452,9 +3452,9 @@
                     <s m="2" wt="h">oc</s>
                     <w wc="t" msa="xPE" expands="m&combtilde;" A="M" id="885" Σ="1"/>
                     <s m="3" wt="o">mér</s>
-                    <w wc="s" msa="xAJ" c="1'" A="Ø" id="886" Σ="1"/>
+                    <w wc="s" msa="xAJ" c="1" A="Ø" id="886" Σ="1"/>
                     <s m="2" wt="h">ióð</s>
-                    <w wc="s" msa="xAJ" c="2'" expands="ung&rsup;" A="Ø" id="887" Σ="2"/>
+                    <w wc="s" msa="xAJ" c="2" expands="ung&rsup;" A="Ø" id="887" Σ="2"/>
                     <s m="2" wt="h">ung</s>
                     <s m="1" wt="l">ri</s>
                 </v>
@@ -5716,7 +5716,7 @@
                 <v role="on">
                     <w wc="t" msa="xCC" p="1" expands="þ&combcurl;" A="Þ" id="1457" Σ="1"/>
                     <s m="2" wt="h">því</s>
-                    <w wc="t" msa="xCC" p="2'" A="Ø" id="1458" Σ="1"/>
+                    <w wc="t" msa="xCC" p="2" A="Ø" id="1458" Σ="1"/>
                     <s m="2" wt="h">at</s>
                     <!-- neg suffix -->
                     <w wc="s" msa="xNP" c="1" A="Ø" id="1459" Σ="2"/>
