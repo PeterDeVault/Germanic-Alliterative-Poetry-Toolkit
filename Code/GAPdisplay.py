@@ -114,6 +114,7 @@ class displaydriver():
     ####################################################
     #the 'group' here is the poetic line
     def _render_group(self, line, loopdata):
+        # print(line.get('cid')) ###debug
         contents=''
         lnum = 0 #line number
         #open the line container
@@ -317,16 +318,12 @@ class displaydriver():
         elif loopdata['f'] != '':   domain='foot'
         else:                       domain='xmetrical'
         
-        allit=loopdata['A']
-        if 'A' in syll.attrib:
-            #this should already be set by the word, but if a document only has alliteration on the syllables, here we go.
-            alliterating=loopdata['alliterating'] or (syll.get('A')==loopdata['A'])
+        # alliteration
         ml=self._markuplevel
-        
-        if loopdata["firstSyll"] and alliterating:
+        if loopdata["firstSyll"] and loopdata['alliterating']:
             #in an analyzed document, if the markup doesn't say we're bearing some stress, there's no dominant alliteration
             if ml == self.SYLLABIFIED or (ml == self.ANALYZED and ictus(domain, loopdata)):
-                contents +='<span class="allit1">' + allit + '</span>'
+                contents +='<span class="allit1">' + loopdata['A'] + '</span>'
             
         
         #deal with extra-metrical syllables
@@ -372,14 +369,16 @@ class displaydriver():
             if 'sus' in syll.attrib:
                 if syll.get('sus')=='1': suspending = True
             
+            #how shall we separate the syllables? here are the choices.
             loopdata['syllRemain'] -= 1
             if loopdata['syllRemain']>0:
                 if resolving:
-                    contents += '<span class="separator">•</span>'
+                    symbol='•'
                 elif suspending:
-                    contents += '<span class="separator">⚬</span>'
+                    symbol='⚬'
                 else:
-                    contents += '<span class="separator">·</span>'
+                    symbol='·'
+                contents += '<span class="separator">' + symbol + '</span>'
 
             else: #last syllable of the word
                 contents +=loopdata['msa']
@@ -459,6 +458,7 @@ class displaydriver():
             return ''
 
     def _render_manuscript_line(self, lb, loopdata):
+        # print(lb.get('n')) ###debug
         contents=''
         lnum=''
 
