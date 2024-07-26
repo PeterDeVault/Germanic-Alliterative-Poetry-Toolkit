@@ -1,4 +1,14 @@
-def gettemplate(piece:int=0):
+def gettemplate(doctype:int=0, piece:int=0):
+    docstring=''
+    if doctype==0:
+        docstring="annotated"
+    elif doctype==1:
+        docstring="lineated"
+    elif doctype==3:
+        docstring="syllabified"
+    elif doctype==4:
+        docstring="analyzed"
+    
     template=["""<!DOCTYPE html>
     <html>
         <head>
@@ -8,7 +18,7 @@ def gettemplate(piece:int=0):
 """                 </style>
             <title>""","""</title>
         </head>
-        <body>
+        <body class='""" + docstring + """'>
             <div id="header">""",
                 """
             </div>
@@ -29,6 +39,8 @@ def gettemplate(piece:int=0):
                 return false;
                 });
             });
+            
+            $(document).tooltip({show: null});
             </script>
         </body>
     </html>"""]
@@ -62,24 +74,28 @@ def getlegend(documentlevel:int=0):
     legend='''
     <div class="legend">
         <h2>Legend</h2>
-        <div class="legenditem parts">
-            <span class="key" style="color:Brown">♦</span>
+        <div class="legenditem manuscript">
+            <span class="key" style="font-size: 10pt; color:Brown">♦</span>
             <span class="text">new page</span>
         </div>
-        <div class="legenditem parts">
-            <span class="key" style="color:DarkGoldenrod">♦</span>
+        <div class="legenditem manuscript">
+            <span class="key" style="font-size: 10pt; color:DarkGoldenrod">♦</span>
             <span class="text">new line</span>
         </div>
         <div class="legenditem clauses">
-            <span class="key" style="color:FireBrick">§</span>
-            <span class="text">new clause</span>
+            <span class="key" style="font-size: 10pt; color:FireBrick">&nbsp;§</span>
+            <span class="text" style="position:relative; left:2px">new clause</span>
         </div>
+        <div class="legenditem parts" style:"margin-top:20px">
+            <span class="key text" style="font-size: 10pt; color:Olive">word class ⇀</span>
+        </div>
+        <div class="legenditem parts" style:"margin-top:20px">
+            <span class="key text" style="font-size: 10pt; color:CadetBlue">↼ morphosyntactic info</span>
+        </div>
+        
     </div>
     '''
     return legend
-
-
-
 
 def getstyle(language="OE", options={}):    #css code for the HTML output
     if not language in ["OE","ON","OS","OHG"]: language="OE"
@@ -89,23 +105,27 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
                 overflow: hidden; 
                 width: 100%; 
     }
-    span     {font-size: 16pt;}
+    span     {font-size: 16pt; display:inline}
     p        {padding-left: 30px}
     .prose   {color:LightSeaGreen}
     .clause  {color:FireBrick; display:none}
     .punc    {color:FireBrick; padding-left:2px; padding-right:2px; display:none}
     .word    {color:Black}
-    .allit1  {color:FireBrick; font-size:70%; vertical-align: super; position:relative; left:4px; display:none}
-    .allit2  {color:FireBrick; font-size:70%; vertical-align: super; display:none}
+    .allit1  {color:FireBrick; font-size:8pt; vertical-align: super; position:relative; left:4px; display:none; visibility:hidden}
+    .allit2  {color:FireBrick; font-size:8pt; vertical-align: super; display:none; visibility:hidden}
+    .allit3  {color:FireBrick; font-size:8pt; vertical-align: super; display:none; visibility:hidden}
     .msa     {color:CadetBlue; font-size:80%; vertical-align: sub; display:none}
+    .msa:hover {cursor: pointer}
     .wc      {color:Olive; font-size:80%; vertical-align:sub; position:relative; left:4px; display:none}
-    .syll    {color:DimGrey; margin:0}
+    .wc:hover {cursor: pointer}
+    .syll, .word    {color:DimGrey; margin:0; padding:0; font-size:16pt; display:inline}
 
-    .pagebegin          {color:Brown; font-size:8pt; vertical-align: super; display:none}
-    .pagebegin:hover    {cursor: pointer;}
-    .linebegin          {color:DarkGoldenrod; font-size:8pt; vertical-align: super; display: none}
-    .linebegin:hover    {cursor: pointer;}
-
+    span.pagebegin         {color:Brown; font-size:10pt; display:none} /* spans and divs */
+    div.pagebegin          {color:Brown; font-size:10pt; margin-left:5px; display:block}            /* just the divs */*/
+    span.pagebegin:hover   {cursor: pointer}
+    span.linebegin         {color:DarkGoldenrod; font-size:10pt; display: none}
+    div.linebegin          {color:DarkGoldenrod; font-size:10pt; margin-left:15px; display:block} /*removed display:block here and above */
+    span.linebegin:hover   {cursor: pointer}
     
     .grouper {color:Indigo}
     .separator {color:Grey ;font-size:70%; display:none}
@@ -121,12 +141,20 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
     body.meter  .syll.low           {font-size:14pt}
     body.meter  .x_sep              {display:inline-block}
     body.parts  .msa                {display:inline-block}
+    body.lineated.parts .msa        {position:relative; left:-5px;}
     body.parts  .wc                 {display:inline-block}
-    body.alliteration1  .allit1     {display:inline-block}
-    body.alliteration2  .allit2     {display:inline-block}
+    body.lineated.parts .wc         {position:relative; left:0px}
+    body.alliteration1  .allit1     {display:inline-block; left:1px; display:inline; visibility:visible}
+    body.alliteration1  .allit2     {display:inline-block; left:1px; display:inline; visibility:hidden}
+    body.alliteration1  .allit3     {display:inline-block; left:1px; display:inline; visibility:hidden}
+    body.alliteration2  .allit2     {display:inline-block; left:1px; display:inline; visibility:visible}
+    body.alliteration2  .allit3     {display:inline-block; left:1px; display:inline; visibility:hidden}
+    body.alliteration3  .allit3     {display:inline-block; left:1px; display:inline; visibility:visible}
+    body.alliterations1.parts .wc   {left:-8px}
+    body.lineated.alliteration1.parts .wc    {left:4px}
     body.punctuation   .punc        {display:inline-block}
-    body.manuscript    .pagebegin   {display:inline-block}
-    body.manuscript    .linebegin   {display:inline-block}
+    body.manuscript    .pagebegin   {display:inline}
+    body.manuscript    .linebegin   {display:inline}
 
     /* header and toggles */
     div#header  {
@@ -156,13 +184,28 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
                 }
     div#source  {
                 display: block;
-                color:DodgerBlue;
+                color:DarkOrange;
                 padding-left: 20px;
                 padding-top: 10px;
                 font-size: 12pt;
                 }
+    div#source > .caption {
+                font-size: 12pt;
+                color:DodgerBlue;
+                }
+    div#markuplevel {
+                display: block;
+                color:DarkOrange;
+                padding-left: 20px;
+                padding-top: 10px;
+                font-size: 12pt;
+                }
+    div#markuplevel > .caption {
+                font-size: 12pt;
+                color: DodgerBlue;
+                }
     div.legend  {
-                flex: 0 0 200px;
+                flex: 0 0 150px;
                 background-color: WhiteSmoke;
                 padding: 10px 20px;
                 font-family: "Noto Sans", sans-serif;
@@ -174,9 +217,11 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
                 font-size: 12pt;
                 color: LightSkyBlue;
                 }
+    div.legenditem {
+                margin-top:2px;
+                }
     div.legenditem span {
                 font-size: 12pt;
-                display:inline-block;
                 }
     div.toggles {
                 flex: 0 0 200px;
@@ -198,6 +243,7 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
     div.toggle:hover {
                     color: Grey;
                 }
+    /* turn the toggle bullet to the selected color appropriately */
     body.break div.toggle > span.break,
     body.weight div.toggle > span.weight,
     body.parts div.toggle > span.parts,
@@ -214,7 +260,7 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
         color: DarkSlateGrey;
     }
                     
-    .caesura, .linesummary, .verse, .linecontent, .lineintro, .lineintro5, .scan, .verse {
+    .caesura, .linesummary, .verse, .linecontent, .lineintro, .scan, .verse {
         display: inline-block;
     }
 
@@ -264,7 +310,7 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
             color:DimGrey;
             width: 100px;
             }
-    .lineintro5 {
+    .lineintro.five {
             margin-left:10px;
             color:Brown;
             width: 100px;
@@ -274,31 +320,34 @@ def getstyle(language="OE", options={}):    #css code for the HTML output
     return style
 
 #this map will be used to annotate part of speech from the menota msa attribute on a word <w> element
-def msa2str(msa):
-    msamap={'xNC': 'n',
-            'xNP':'N',
-            'xAJ':'aj',
-            'xPE':'pr',
-            'xPQ':'?',
-            'xDP':'d''',
-            'xDD':'d',
-            'xPD':'pd',
-            'xVB fF':'fv',
-            'xVB fI':'∞',
-            'xVB fP':'vp',
-            'xAV':'av',
-            'xAR':'ar',
-            'xAP':'→',
-            'xCC':'ccj',
-            'xCS':'scj',
-            'xIT':'ix',
-            'xIM':'+∞',
-            'xRP':'◦',
-            'xNX':'-',
-            'xPX':'&lt;',
-            'xVX fF':'aux'}
+def msa2str(msa,text:bool=False):
+    if text: piece=1
+    else: piece=0
+    msamap={'xNC': ['n', 'common noun'],
+            'xNP': ['N', 'proper noun'],
+            'xAJ': ['aj', 'adjective'],
+            'xPE': ['pr', 'personal pronoun'],
+            'xPQ': ['?', 'interrogative pronoun'],
+            'xPI': ['<>', 'indefinite pronoun'],
+            'xDP': ['dp', 'possessive determiner'],
+            'xDD': ['dd', 'definite determiner'],
+            'xPD': ['pd', 'pronoun/determiner'],
+            'xVB fF': ['fv', 'finite verb'],
+            'xVB fI': ['∞', 'infinitive'],
+            'xVB fP': ['vp', 'participle'],
+            'xAV': ['av', 'adverb'],
+            'xAR': ['ar', 'article'],
+            'xAP': ['→', 'preposition'],
+            'xCC': ['ccj', 'coordinating conjunction'],
+            'xCS': ['scj', 'subordinating conjunction'],
+            'xIT': ['it', 'interjection'],
+            'xIM': ['+∞','infinitive marker'],
+            'xRP': ['◦', 'relative particle'],
+            'xNX': ['-', 'negative particle'],
+            'xPX': ['&lt;', 'unstressed prefix'],
+            'xVX fF':['aux','auxiliary verb']}
     try:
-        return msamap[msa]
+        return msamap[msa][piece]
     except:
         return ''
 

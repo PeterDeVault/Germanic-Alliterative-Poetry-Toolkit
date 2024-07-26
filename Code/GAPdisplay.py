@@ -1,8 +1,6 @@
 from lxml import etree as et
-
 from GAPdocumenthelper import docuhelper as dh
 from GAPutility import getstyle, gettemplate, gettoggles, msa2str, getlegend
-
 
 #the displaydriver class. Instantiate with a docuhelper object 
 #and it will give you an html string suitable for framing and display.
@@ -31,34 +29,39 @@ class displaydriver():
         root = self._dh._root
 
         #the main loop. renderchild will delegate to various element and markup handlers.
-        #loopdata is the place to store any data that needs to persist over iterations of the loop
-        loopdata=   {'prefix': False,   #a prefix turns this True, the subsequent syllable/word sets it to False
-                    'compound': False,  #a compounding word turns this True, the subsequent syllable sets it to False
-                    'emends': '',       #un-emended text for the current word
-                    'expands': '',      #the abbreviation expanded by the current word
-                    'syllRemain': 0,    #how many more syllables remain in the current word
-                    'z': "",            #the metrical position being processed
-                    'x': "",            #the extra-metrical foot being processed
-                    'f': "",            #the word-foot being processed
-                    'backlog': []       #storage for processed nodes waiting for a verse context
+        #loopdata is the place to store any data that needs to persist over iterations of the loop.
+        loopdata=   {'prefix': False,      #a prefix turns this True, the subsequent syllable/word sets it to False
+                    'compound': False,     #a compounding word turns this True, the subsequent syllable sets it to False
+                    'emends':'',           #un-emended text for the current word
+                    'expands':'',          #the abbreviation expanded by the current word
+                    'syllRemain': 0,       #how many more syllables remain in the current word
+                    'manuscriptpage': '',  #for annotated documents, the current page domain
+                    'manuscriptline': '',  #for annotated documents, the current line domain
+                    'verselinenumber': 0,  #on the fly line number counter if none in the document
+                    'A': '',               #alliterating symbol
+                    'alliterating': False, #in an alliterating domain if True
+                    'z': "",               #the metrical position being processed
+                    'x': "",               #the extra-metrical foot being processed
+                    'f': "",               #the word-foot being processed
+                    'backlog':[]           #storage for processed nodes waiting for a verse context
                     }
 
         bodyEl=root.find(".//d:body", self._TEIns)
         if bodyEl is not None:
             for child in bodyEl:
                 contents += self._renderchild(child, loopdata)
-
-        html="" #clear the slate
+        html='' #clear the slate
+        ml=self._markuplevel
         #assemble the pieces
-        opening=gettemplate(0) 
+        opening=gettemplate(ml,0) 
         style=getstyle()
-        pretitle=gettemplate(1)
+        pretitle=gettemplate(ml,1)
         title=self._getheader(True)
-        posttitle=gettemplate(2)
+        posttitle=gettemplate(ml,2)
         header=self._getheader()
         legend=getlegend(self._markuplevel)
-        toggles=gettoggles(self._markuplevel) + gettemplate(3)
-        footer=gettemplate(4)
+        toggles=gettoggles(self._markuplevel) + gettemplate(ml,3)
+        footer=gettemplate(ml,4)
 
         html += opening + style + pretitle + title + posttitle
         html += header + legend + toggles + contents + footer
@@ -93,6 +96,7 @@ class displaydriver():
              'x':   '_render_xtrametric'
             }
         if child.tag != et.Comment:
+            # print(child.tag) ###debug
             try:
                 childtype=child.tag[child.tag.find('}')+1:] #strip namespace
             except: return ''
@@ -100,6 +104,7 @@ class displaydriver():
                 try: contents += self.__getattribute__(fx[childtype])(child, loopdata) or ''
                 except Exception as e: return e
         return contents
+
     #
     def _render_prose(self, p, loopdata):
         contents=''
@@ -111,22 +116,26 @@ class displaydriver():
     def _render_group(self, line, loopdata):
         contents=''
         lnum = 0 #line number
-
         #open the line container
-        contents +='\n<div class="poeticline">'
+        contents +='<div class="poeticline">'
 
         #Get the alliteration for this line
-        if 'A' in line.attrib: loopdata['A'] = line.get('A')
-        else: loopdata['A'] = '' #make sure we're not using an old value 
+        if 'A' in line.attrib:
+            loopdata['A'] = line.get('A')
+        # else: loopdata['A'] = '' #make sure we're not using an old value 
 
         #Get the conventional line number; display for every 5th line
+        #if there isn't one, create one
         if 'cid' in line.attrib:
-            lnum=int(line.get('cid'))
-
+            try:
+                lnum=int(line.get('cid'))
+            except: error=True
+        if lnum==0:
+            lnum=int(loopdata['verselinenumber']) + 1
+            loopdata['verselinenumber'] = lnum
         lineclass='lineintro'
-        if int(lnum) % 5 == 0: lineclass='lineintro5'
+        if lnum % 5 == 0: lineclass='lineintro five'
         contents += '\n<div class="' + lineclass + '">' + str(lnum) + '</div>'
-
 
         #start off the middle (content) div
         contents += '\n<div class="linecontent">'
@@ -211,11 +220,22 @@ class displaydriver():
         loopdata['msa']=''
         loopdata['expands']=''
         loopdata['emends']=''
+        allit=''
 
         #Unpack the contents of the <w/>, which is entirely attributes
         if 'wc' in word.attrib:
             wc=word.get('wc')
             loopdata['wc']=wc
+        else: return contents #it's not a real word
+
+        if 'A' in word.attrib:
+            allit=word.get('A')
+            #this is only the responsibility of the word in an annotated document, after that it becomes the vg's job
+            if self._markuplevel == self.ANNOTATED:
+                loopdata['A']=allit
+
+            #are we in an alliterating domain? (in a >= lineated document)
+            loopdata['alliterating']=(allit==loopdata['A'])
 
         if 'expands' in word.attrib:
             expands=word.get('expands')
@@ -229,10 +249,10 @@ class displaydriver():
             msa=word.get('msa')
             #get the contents ready, but wait to put this after the last syllable of the word
             try:
-                loopdata['msa']='<span class="msa">' + msa2str(msa) + '</span>'
+                # loopdata['msa']='<span class="msa">' + msa2str(msa) + '</span>'
+                loopdata['msa']='<span class="msa" title="' + msa2str(msa,True) + '">' + msa2str(msa) + '</span>'
             except: loopdata['msa']=''
 
-        
         loopdata["firstSyll"]=True
         #get the syllable count
         if 'Σ' in word.attrib: syllables=int(word.get("Σ"))
@@ -242,16 +262,46 @@ class displaydriver():
         else: loopdata['prefix']=0
         if 'c' in word.attrib: loopdata['compound']=int(word.get('c'))
         else: loopdata['compound']=0
-        
-        contents +='<span class="wc">' + wc + '</span>'
-                    
-        
+
+        #attach the word class
+        hoverstr=''
+        if wc=='s': hoverstr="stress word"
+        elif wc=='t': hoverstr="particle"
+        elif wc=='c': hoverstr="clitic"
+
+        else:hoverstr=''
+        contents +='<span class="wc" title="' + hoverstr + '">' + wc + '</span>'
+
+        ### here's where we handle alliteration for annotated and lineated docoments (other types are handled in the syllable)
+        ml=self._markuplevel
+        if allit !='':
+            if ml == self.ANNOTATED or (ml == self.LINEATED and loopdata['alliterating']):
+                if ml==self.ANNOTATED: allitstrength={'s':'allit1','t':'allit2', 'c':'allit3'}[wc] or ''
+                else: allitstrength='allit1'
+                contents +='<span class="' + allitstrength + '">' + allit + '</span>'
+
+                
+        #if this is part of compound word that has words underneath it, bail
+        if len(word)>0: return contents
+
+        #if this document is annotated or lineated, all the text is in the <w> element; no syllables
+        if self._markuplevel in (self.ANNOTATED, self.LINEATED) and word.text!='':
+            #we will place any abbreviations or unemended text for the word in the hover title
+            hoverstr=loopdata['emends']
+            if hoverstr=='': hoverstr=loopdata['expands']
+            try:
+                contents += '<span class="word" title="' + hoverstr + '">' + word.text + '&nbsp;</span>'
+            except: 
+                contents +=''
+            contents +=loopdata['msa']
+
         return contents 
 
     #####################################################
     def _render_syllable(self, syll, loopdata):
+        # try: print('\nsyllable:', syll.text, loopdata)  ###debug
+        # except: print('\nempty', loopdata,'\n')
         contents = ''
-        allit = ''
         #given the foot or position domain, look at the loop data to see what the stress level is for the current syllable
         def ictus(domain,loopdata):
             if (domain == 'position' and loopdata['z']=='l') or \
@@ -266,13 +316,18 @@ class displaydriver():
         if loopdata['z'] != '':     domain='position'
         elif loopdata['f'] != '':   domain='foot'
         else:                       domain='xmetrical'
-
-        if "A" in syll.attrib: allit=syll.get("A")
-
-        #annotate the alliterating syllables, but only if they bear ictus
-        stress=ictus(domain, loopdata)
-        if loopdata["firstSyll"] and allit==loopdata["A"] and (stress=="high" or stress=="half"):
-            contents +='<span class="allit1">' + allit + '</span>'
+        
+        allit=loopdata['A']
+        if 'A' in syll.attrib:
+            #this should already be set by the word, but if a document only has alliteration on the syllables, here we go.
+            alliterating=loopdata['alliterating'] or (syll.get('A')==loopdata['A'])
+        ml=self._markuplevel
+        
+        if loopdata["firstSyll"] and alliterating:
+            #in an analyzed document, if the markup doesn't say we're bearing some stress, there's no dominant alliteration
+            if ml == self.SYLLABIFIED or (ml == self.ANALYZED and ictus(domain, loopdata)):
+                contents +='<span class="allit1">' + allit + '</span>'
+            
         
         #deal with extra-metrical syllables
         #if this is the first syllable of an extrametrical position, open it with a '('
@@ -327,7 +382,6 @@ class displaydriver():
                     contents += '<span class="separator">·</span>'
 
             else: #last syllable of the word
-                
                 contents +=loopdata['msa']
                 
                 if loopdata['prefix']==1 or loopdata['compound']==1: contents += '-'
@@ -378,17 +432,27 @@ class displaydriver():
         loopdata['x']= xsylls + "/" + xsylls
         return contents
 
+    #if in an annotated document, these need to be divs, otherwise spans
     def _render_manuscript_page(self, pb, loopdata):
         contents=''
         pnum=''
+        if self._markuplevel==self.ANNOTATED and loopdata['manuscriptpage'] !='':
+            contents+="</div>" #close the pagebegin div
         if 'n' in pb.attrib:
             pnum=pb.get('n')
-            contents += '<span class="pagebegin" title="' + pnum + '">♦</span>'
-        else: contents += '<span class="pagebegin"/>'
+        else:
+            pnum='?'
+        loopdata['manuscriptpage'] = pnum
+
+
+        if self._markuplevel==self.ANNOTATED:
+            contents += '<div class="pagebegin">♦<span title="' + pnum +'"/>' #leave the div open to collect the <span>s to come
+        else:
+            contents += '<span class="pagebegin">♦<span title="' + pnum +'"/></span>'
 
         #we're either going to return the contents now or save it for later
-        #depending on whether we're currently in a verse context
-        if self._isinversecontext(pb): 
+        #depending on whether we're currently in a verse context and the level of document markup
+        if self._isinversecontext(pb) or self._markuplevel == self.ANNOTATED: 
             return contents
         else:
             loopdata['backlog'].append(contents)
@@ -397,14 +461,23 @@ class displaydriver():
     def _render_manuscript_line(self, lb, loopdata):
         contents=''
         lnum=''
+
+        if self._markuplevel==self.ANNOTATED and loopdata['manuscriptline'] !='':
+            contents+="</div>" #close the linebegin div
         if 'n' in lb.attrib:
             lnum=lb.get('n')
         else: lnum='?'
-        contents += '<span class="linebegin" title="' + lnum + '">♦</span>'
+        loopdata['manuscriptline'] = lnum
+
+        if self._markuplevel==self.ANNOTATED:
+            contents += '<div class="linebegin" style="margin-bottom:15px">♦<span title="' + lnum +'"/>' #leave the div open to collect the <span>s to to come
+        else:
+            contents += '<span class="linebegin">♦<span title="' + lnum +'"/></span>'
+            # contents += '<span class="linebegin">♦'
 
         #we're either going to return the contents or save it for later
-        #depending on whether we're currently in a verse context
-        if self._isinversecontext(lb): 
+        #depending on whether we're currently in a verse context and the level of document markup
+        if self._isinversecontext(lb) or self._markuplevel == self.ANNOTATED: 
             return contents
         else:
             loopdata['backlog'].append(contents)
@@ -415,8 +488,9 @@ class displaydriver():
         contents = '<span class="clause">§</span>'
 
         #we're either going to return the contents or save it for later
-        #depending on whether we're currently in a verse contenxt
-        if self._isinversecontext(cb): return contents
+        #depending on whether we're currently in a verse context and the level of document markup
+        if self._isinversecontext(cb) or self._markuplevel == self.ANNOTATED:
+             return contents
         else:
             loopdata['backlog'].append(contents)
             return ''
@@ -426,8 +500,9 @@ class displaydriver():
         contents = '<span class="punc">' + pc.text +'</span>'
 
         #we're either going to return the contents or save it for later
-        #depending on whether we're currently in a verse contenxt
-        if self._isinversecontext(pc): return contents
+        #depending on whether we're currently in a verse context and the level of document markup
+        if self._isinversecontext(pc) or self._markuplevel == self.ANNOTATED: 
+            return contents
         else:
             loopdata['backlog'].append(contents)
             return ''
@@ -446,9 +521,12 @@ class displaydriver():
         source=self._dh._root.findtext(".//{http://www.tei-c.org/ns/1.0}sourceDesc/{http://www.tei-c.org/ns/1.0}p")
         if source == None: source="Markup error"
         source=source.strip()
-        header += '<div id="leftheader">'
-        header += '<div id="title">' + title + '</div>'
-        header += '<div id="subtitle">' + subtitle + '</div>'
-        header += '<div id="source">' + source + '</div>'
-        header += '</div>'
+        header += '\n<div id="leftheader">'
+        header += '\n<div id="title">' + title + '</div>'
+        header += '\n<div id="subtitle">' + subtitle + '</div>'
+        header += '\n<div id="source"><span class="caption">Manuscript reference: </span>' + source + '</div>'
+
+        markuplevel= str(self._markuplevel) + '-' + ["none", "annotated", "lineated", "syllabified", "analyzed"][self._markuplevel]
+        header += '\n<div id="markuplevel"><span class="caption">Document markup level: </span>'
+        header += markuplevel + '</div></div>' #one for the markup level, one for the header div
         return header
