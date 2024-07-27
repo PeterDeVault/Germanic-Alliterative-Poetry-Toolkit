@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <style>
+            /* defaults */
+    body     {
+                overflow: hidden; 
+                width: 100%; 
+    }
+    span     {font-size: 16pt; display:inline}
+    p        {padding-left: 30px}
+    .prose   {color:LightSeaGreen}
+    .clause  {color:FireBrick; display:none}
+    .punc    {color:FireBrick; padding-left:2px; padding-right:2px; display:none}
+    .word    {color:Black}
+    .allit1  {color:FireBrick; font-size:8pt; vertical-align: super; position:relative; left:4px; display:none; visibility:hidden}
+    .allit2  {color:FireBrick; font-size:8pt; vertical-align: super; display:none; visibility:hidden}
+    .allit3  {color:FireBrick; font-size:8pt; vertical-align: super; display:none; visibility:hidden}
+    .msa     {color:CadetBlue; font-size:80%; vertical-align: sub; display:none}
+    .msa:hover {cursor: pointer}
+    .wc      {color:Olive; font-size:80%; vertical-align:sub; position:relative; left:4px; display:none}
+    .wc:hover {cursor: pointer}
+    .syll, .word    {color:DimGrey; margin:0; padding:0; font-size:16pt; display:inline}
+
+    span.pagebegin         {color:Brown; font-size:10pt; display:none} /* spans and divs */
+    div.pagebegin          {color:Brown; font-size:10pt; margin-left:5px; display:block}            /* just the divs */*/
+    span.pagebegin:hover   {cursor: pointer}
+    span.linebegin         {color:DarkGoldenrod; font-size:10pt; display: none}
+    div.linebegin          {color:DarkGoldenrod; font-size:10pt; margin-left:15px; display:block} /*removed display:block here and above */
+    span.linebegin:hover   {cursor: pointer}
+    
+    .grouper {color:Indigo}
+    .separator {color:Grey ;font-size:70%; display:none}
+
+    /* toggle effects */
+    body.break  .separator          {display:inline-block}
+    body.weight .syll.l             {color:LightBlue}
+    body.weight .syll.h             {color:DimGrey}
+    body.weight .syll.o             {color:SteelBlue}
+    body.clauses .clause            {display:inline-block}
+    body.meter  .syll.high          {font-size:20pt; font-face: bold}
+    body.meter  .syll.half          {font-size:18pt}
+    body.meter  .syll.low           {font-size:14pt}
+    body.meter  .x_sep              {display:inline-block}
+    body.parts  .msa                {display:inline-block}
+    body.lineated.parts .msa        {position:relative; left:-5px;}
+    body.parts  .wc                 {display:inline-block}
+    body.lineated.parts .wc         {position:relative; left:0px}
+    body.alliteration1  .allit1     {display:inline-block; left:1px; display:inline; visibility:visible}
+    body.alliteration1  .allit2     {display:inline-block; left:1px; display:inline; visibility:hidden}
+    body.alliteration1  .allit3     {display:inline-block; left:1px; display:inline; visibility:hidden}
+    body.alliteration2  .allit2     {display:inline-block; left:1px; display:inline; visibility:visible}
+    body.alliteration2  .allit3     {display:inline-block; left:1px; display:inline; visibility:hidden}
+    body.alliteration3  .allit3     {display:inline-block; left:1px; display:inline; visibility:visible}
+    body.alliterations1.parts .wc   {left:-8px}
+    body.lineated.alliteration1.parts .wc    {left:4px}
+    body.punctuation   .punc        {display:inline-block}
+    body.manuscript    .pagebegin   {display:inline}
+    body.manuscript    .linebegin   {display:inline}
+
+    /* header and toggles */
+    div#header  {
+                display: flex;
+                flex-flow: row;
+                align-items: flex-start;
+                position: absolute;
+                top:0; left:0; right:0;
+                background-color: WhiteSmoke;
+                overflow: hidden;
+                }
+    div#leftheader {
+                flex-grow:1;
+                align-self: stretch;
+    }
+    div#title   {
+                display: inline-block;
+                color: SteelBlue;
+                padding-left: 20px;
+                font-size:24pt;
+                }
+    div#subtitle {
+                display: inline-block;
+                padding-left: 20px;
+                color:lightSkyBlue;
+                font-size: 16pt;
+                }
+    div#source  {
+                display: block;
+                color:DarkOrange;
+                padding-left: 20px;
+                padding-top: 10px;
+                font-size: 12pt;
+                }
+    div#source > .caption {
+                font-size: 12pt;
+                color:DodgerBlue;
+                }
+    div#markuplevel {
+                display: block;
+                color:DarkOrange;
+                padding-left: 20px;
+                padding-top: 10px;
+                font-size: 12pt;
+                }
+    div#markuplevel > .caption {
+                font-size: 12pt;
+                color: DodgerBlue;
+                }
+    div.legend  {
+                flex: 0 0 150px;
+                background-color: WhiteSmoke;
+                padding: 10px 20px;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 10pt;
+                color: DarkSlateGrey;
+                }
+    div.legend h2 {
+                margin: 0;
+                font-size: 12pt;
+                color: LightSkyBlue;
+                }
+    div.legenditem {
+                margin-top:2px;
+                }
+    div.legenditem span {
+                font-size: 12pt;
+                }
+    div.toggles {
+                flex: 0 0 200px;
+                background-color: WhiteSmoke;
+                padding: 10px 20px;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 12pt;
+                color: DarkSlateGrey;
+                }
+    div.toggles span {color:LightGrey}
+    div.toggles h2 {
+                    margin: 0;
+                    font-size: 12pt;
+                    color: LightSkyBlue;
+                }
+    div.toggle {
+                    cursor: pointer;
+                }
+    div.toggle:hover {
+                    color: Grey;
+                }
+    /* turn the toggle bullet to the selected color appropriately */
+    body.break div.toggle > span.break,
+    body.weight div.toggle > span.weight,
+    body.parts div.toggle > span.parts,
+    body.parts .legenditem.parts span,
+    body.wclass div.toggle > span.wclass,
+    body.clauses div.toggle > span.clauses,
+    body.clauses .legenditem.clauses span,
+    body.alliteration1 div.toggle > span.alliteration1,
+    body.alliteration2 div.toggle > span.alliteration2,
+    body.punctuation div.toggle > span.punctuation,
+    body.manuscript div.toggle > span.manuscript,
+    body.meter div.toggle > span.meter
+    {
+        color: DarkSlateGrey;
+    }
+                    
+    .caesura, .linesummary, .verse, .linecontent, .lineintro, .scan, .verse {
+        display: inline-block;
+    }
+
+    div#poetry  {
+                position:fixed;
+                display:inline-block;
+                top:140px;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                }
+
+    div.poeticline {
+                display:inline-block;
+                width: 100%
+                overflow: hidden;
+                }
+
+    div.linecontent {
+                margin-bottom: 15px;
+                }
+
+    div.linesummary {
+                width: 400px;
+                display:inline-block;
+                }
+    .verse {width:520px;}
+    .caesura {width:10px;}
+    .scan {
+            position:relative;
+
+            left:400px;
+            display:inline-block;
+            color:DarkSlateGrey
+            }
+    .scan > span {
+        margin-right:20px;
+    }
+    .versetype {
+            color:SteelBlue;
+    }
+    .versecontour {
+            color:Turquiose;
+    }
+    .lineintro {
+            margin-left:10px;
+            color:DimGrey;
+            width: 100px;
+            }
+    .lineintro.five {
+            margin-left:10px;
+            color:Brown;
+            width: 100px;
+            }
+
+                         </style>
+            <title>Old Saxon Genesis</title>
+        </head>
+        <body class='analyzed'>
+            <div id="header">
+<div id="leftheader">
+<div id="title">Old Saxon Genesis</div>
+<div id="subtitle">Excerpting the overlap with Genesis B</div>
+<div id="source"><span class="caption">Manuscript reference: </span>Manuscript - Pal.lat.1447 Bodleian Library MS. Junius 11</div>
+<div id="markuplevel"><span class="caption">Document markup level: </span>4-analyzed</div></div>
+    <div class="legend">
+        <h2>Legend</h2>
+        <div class="legenditem manuscript">
+            <span class="key" style="font-size: 10pt; color:Brown">♦</span>
+            <span class="text">new page</span>
+        </div>
+        <div class="legenditem manuscript">
+            <span class="key" style="font-size: 10pt; color:DarkGoldenrod">♦</span>
+            <span class="text">new line</span>
+        </div>
+        <div class="legenditem clauses">
+            <span class="key" style="font-size: 10pt; color:FireBrick">&nbsp;§</span>
+            <span class="text" style="position:relative; left:2px">new clause</span>
+        </div>
+        <div class="legenditem parts" style:"margin-top:20px">
+            <span class="key text" style="font-size: 10pt; color:Olive">word class ⇀</span>
+        </div>
+        <div class="legenditem parts" style:"margin-top:20px">
+            <span class="key text" style="font-size: 10pt; color:CadetBlue">↼ morphosyntactic info</span>
+        </div>
+        
+    </div>
+    
+    <div class="toggles">
+        <h2>Toggle manuscript info</h2>
+        <div class="toggle" data-target="manuscript"> <span class="manuscript">ᚦ</span> &nbsp;lines and pages</div>
+        <div class="toggle" data-target="punctuation"> <span class="punctuation">ᚦ</span> &nbsp;punctuation</div>
+        <div class="toggle" data-target="clauses"> <span class="clauses">ᚦ</span> &nbsp;clause beginnings</div>
+        <div class="toggle" data-target="break"> <span class="break">ᚦ</span> &nbsp;syllable breaks</div>
+    </div>
+
+    <div class="toggles">
+        <h2>Language and meter</h2>
+        <div class="toggle" data-target="parts"> <span class="parts">ᚦ</span> &nbsp;POS and word class</div>
+        <div class="toggle" data-target="alliteration1"> <span class="alliteration1">ᚦ</span> &nbsp;alliteration</div>
+        <div class="toggle" data-target="weight"> <span class="weight">ᚦ</span> &nbsp;syllable weight</div>
+        <div class="toggle" data-target="meter"> <span class="meter">ᚦ</span> &nbsp;stress contour</div>
+        
+    </div>
+    
+            </div>
+            <div id="poetry">
+    <div class="poeticline">
+<div class="lineintro">1</div>
+<div class="linecontent">
+<div class="verse"><span class="pagebegin">♦<span title="1r"/></span><span class="linebegin">♦<span title="1r;1"/></span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">uue</span><span class="separator">·</span>
+<span class="syll l low" title="">la</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">that</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">thu</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">nu</span><span class="msa" title="adverb">av</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span>
+<span class="syll l high" title="">e</span><span class="separator">·</span>
+<span class="syll l low" title="">ua</span><span class="msa" title="proper noun">N</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">ha</span><span class="separator">·</span>
+<span class="syll h low" title="">bas</span><span class="msa" title="finite verb">fv</span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">quađ</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span>
+<span class="syll l high" title="">a</span><span class="separator">⚬</span>
+<span class="syll h low" title="">đam</span><span class="msa" title="proper noun">N</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span>
+<span class="syll l high" title="">u</span><span class="separator">•</span>
+<span class="syll l high" title="">bi</span><span class="separator">·</span>
+<span class="syll l low" title="">lo</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="particle">t</span>
+<span class="syll l high" title="">ma</span><span class="separator">•</span>
+<span class="syll l high" title="">ra</span><span class="separator">·</span>
+<span class="syll h low" title="">kot</span><span class="msa" title="finite verb">fv</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">F</span><span class="versecontour">xxxxxPxxxxpx</span></div>
+
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">pxxxpxx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">2</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">·</span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">un</span><span class="separator">·</span>
+<span class="syll l low" title="">ka</span><span class="separator">·</span>
+<span class="syll l low" title="">ro</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">S</span>
+<span class="syll h high" title="">sel</span><span class="separator">·</span>
+<span class="syll l low" title="">ba</span><span class="separator">·</span>
+<span class="syll l low" title="">ro</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">S</span>
+<span class="syll h high" title="">siđ</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">nu</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll o low" title="">maht</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">thu</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit1">S</span>
+<span class="syll h low" title="">sean</span><span class="msa" title="infinitive">∞</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">thia</span><span class="msa" title="personal pronoun">pr</span><span class="linebegin">♦<span title="1r;2"/></span><span class="wc" title="stress word">s</span><span class="allit1">S</span>
+<span class="syll h high" title="">suar</span><span class="separator">·</span>
+<span class="syll h low" title="">ton</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span>
+<span class="syll o high" title="">hell</span><span class="msa" title="negative particle">-</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxPxxP</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxxxPxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">3</div>
+<div class="linecontent">
+<div class="verse"><span class="wc" title="particle">t</span><span class="allit1">G</span>
+<span class="syll l high" title="">gi</span><span class="separator">•</span>
+<span class="syll h high" title="">non</span><span class="msa" title="infinitive">∞</span><span class="wc" title="stress word">s</span><span class="allit1">G</span>
+<span class="syll l high" title="">gra</span><span class="separator">·</span>
+<span class="syll l low" title="">da</span><span class="separator">·</span>
+<span class="syll l low" title="">ga</span><span class="msa" title="adjective">aj</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">nu</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">thu</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">sia</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">G</span>
+<span class="syll h high" title="">grim</span><span class="separator">·</span>
+<span class="syll h low" title="">man</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span>
+<span class="syll o high" title="">maht</span><span class="msa" title="common noun">n</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">D</span><span class="versecontour">pxPxx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxPxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">4</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">.</span><span class="wc" title="particle">t</span><span class="allit1">H</span>
+<span class="syll l high" title="">hi</span><span class="separator">•</span>
+<span class="syll l high" title="">na</span><span class="separator">·</span>
+<span class="syll l low" title="">na</span><span class="msa" title="adverb">av</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="particle">t</span><span class="allit1">H</span>
+<span class="syll l high" title="">ho</span><span class="separator">·</span>
+<span class="syll h low" title="">rean</span><span class="msa" title="finite verb">fv</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">nis</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll l high" title="">he</span><span class="separator">•</span>
+<span class="syll h high" title="">ƀan</span><span class="msa" title="common noun">n</span>-<span class="wc" title="stress word">s</span>
+<span class="syll l half" title="">ri</span><span class="separator">·</span>
+<span class="syll l low" title="">ki</span><span class="msa" title="common noun">n</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">pxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">C</span><span class="versecontour">xpXSx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro five">5</div>
+<div class="linecontent">
+<div class="verse"><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">ge</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="stress word">s</span><span class="allit1">L</span>
+<span class="syll o high" title="">lihc</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span>
+<span class="syll l low" title="">su</span><span class="separator">·</span>
+<span class="syll l low" title="">li</span><span class="separator">·</span>
+<span class="syll l low" title="">ca</span><span class="separator">·</span>
+<span class="syll l low" title="">ro</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span><span class="allit1">L</span>
+<span class="syll h high" title="">log</span><span class="separator">·</span>
+<span class="syll h low" title="">nun</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="linebegin">♦<span title="1r;3"/></span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">thit</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">uuas</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">al</span><span class="separator">·</span>
+<span class="syll l low" title="">lo</span><span class="separator">·</span>
+<span class="syll l low" title="">ro</span><span class="msa" title="indefinite pronoun"><></span><span class="wc" title="stress word">s</span><span class="allit1">L</span>
+<span class="syll h high" title="">lan</span><span class="separator">·</span>
+<span class="syll l low" title="">do</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span>
+<span class="syll l high" title="">sco</span><span class="separator">·</span>
+<span class="syll o low" title="">niust</span><span class="msa" title="adjective">aj</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">xPxxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">xxxxxPxPX</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">6</div>
+<div class="linecontent">
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">that</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit1">H</span>
+<span class="syll h low" title="">hier</span><span class="msa" title="adverb">av</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">thu</span><span class="separator">·</span>
+<span class="syll h low" title="">ruh</span><span class="msa" title="preposition">→</span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">un</span><span class="separator">·</span>
+<span class="syll h low" title="">kas</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll h high" title="">her</span><span class="separator">·</span>
+<span class="syll h low" title="">ran</span><span class="msa" title=""></span><span class="wc" title="stress word">s</span>
+<span class="syll o high" title="">thank</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="wc" title="particle">t</span><span class="allit1">H</span>
+<span class="syll h high" title="">heb</span><span class="separator">·</span>
+<span class="syll h low" title="">bian</span><span class="msa" title="infinitive">∞</span><span class="wc" title="particle">t</span>
+<span class="syll h high" title="">muos</span><span class="separator">·</span>
+<span class="syll h low" title="">tun</span><span class="msa" title="finite verb">fv</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxxxxxPxP</span></div>
+
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">PxPx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">7</div>
+<div class="linecontent">
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">thar</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">thu</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">them</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">ni</span><span class="msa" title="negative particle">-</span><span class="wc" title="particle">t</span><span class="allit1">H</span>
+<span class="syll h high" title="">hor</span><span class="separator">·</span>
+<span class="syll h low" title="">dis</span><span class="msa" title="finite verb">fv</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="linebegin">♦<span title="1r;4"/></span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">thie</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span>
+<span class="syll o low" title="">unk</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">the</span><span class="separator">·</span>
+<span class="syll h low" title="">san</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll l high" title="">ha</span><span class="separator">•</span>
+<span class="syll h high" title="">ram</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="particle">t</span>
+<span class="syll h high" title="">ried</span><span class="msa" title="finite verb">fv</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A3</span><span class="versecontour">xxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxxpxxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">8</div>
+<div class="linecontent">
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">that</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit1">W</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">W</span>
+<span class="syll h high" title="">uual</span><span class="separator">·</span>
+<span class="syll h low" title="">dan</span><span class="separator">·</span>
+<span class="syll h low" title="">das</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="wc" title="stress word">s</span><span class="allit1">W</span>
+<span class="syll o high" title="">uuord</span><span class="msa" title="common noun">n</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">far</span><span class="separator">·</span>
+<span class="syll l high" title="">bra</span><span class="separator">·</span>
+<span class="syll h low" title="">kun</span><span class="msa" title="finite verb">fv</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">C</span><span class="versecontour">xxPXx</span></div>
+
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">PxPx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">9</div>
+<div class="linecontent">
+<div class="verse"><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll l high" title="">he</span><span class="separator">•</span>
+<span class="syll h high" title="">ban</span><span class="msa" title="common noun">n</span>-<span class="wc" title="stress word">s</span>
+<span class="syll l half" title="">ku</span><span class="separator">•</span>
+<span class="syll h half" title="">nin</span><span class="separator">·</span>
+<span class="syll h low" title="">gas</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">Nu</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit1">H</span>
+<span class="syll l high" title="">hri</span><span class="separator">·</span>
+<span class="syll h low" title="">uuig</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll l high" title="">mu</span><span class="separator">⚬</span>
+<span class="syll h low" title="">gun</span><span class="msa" title="finite verb">fv</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">D</span><span class="versecontour">pXsXx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxPxpx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro five">10</div>
+<div class="linecontent">
+<div class="verse"><span class="wc" title="particle">t</span><span class="allit1">S</span>
+<span class="syll l high" title="">so</span><span class="separator">•</span>
+<span class="syll l high" title="">ro</span><span class="separator">·</span>
+<span class="syll h low" title="">gon</span><span class="msa" title="infinitive">∞</span><span class="linebegin">♦<span title="1r;5"/></span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">for</span><span class="msa" title="preposition">→</span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="the">them</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">S</span>
+<span class="syll l high" title="">si</span><span class="separator">·</span>
+<span class="syll l low" title="">đa</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll o low" title="">uuand</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">he</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll o low" title="">hunk</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">S</span>
+<span class="syll h high" title="">sel</span><span class="separator">·</span>
+<span class="syll l low" title="">bo</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="particle">t</span>
+<span class="syll h high" title="">bood</span><span class="msa" title=""></span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">pxxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxPxxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">11</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">that</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit1">W</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll o low" title="">hunk</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span>
+<span class="syll l low" title="">su</span><span class="separator">·</span>
+<span class="syll h low" title="">lic</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span><span class="allit1">W</span>
+<span class="syll l high" title="">uui</span><span class="separator">·</span>
+<span class="syll l low" title="">ti</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="wc" title="particle">t</span><span class="allit1">W</span>
+<span class="syll h high" title="">uuar</span><span class="separator">·</span>
+<span class="syll h low" title="">don</span><span class="msa" title="infinitive">∞</span><span class="wc" title="particle">t</span>
+<span class="syll h high" title="">scol</span><span class="separator">·</span>
+<span class="syll h low" title="">din</span><span class="msa" title="finite verb">fv</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A3</span><span class="versecontour">xxxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">PxPx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">12</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">.</span><span class="wc" title="particle">t</span><span class="allit1">H</span>
+<span class="syll l high" title="">ha</span><span class="separator">•</span>
+<span class="syll l high" title="">ra</span><span class="separator">·</span>
+<span class="syll l low" title="">mo</span><span class="msa" title="common noun">n</span><span class="wc" title="particle">t</span>
+<span class="syll h high" title="">mes</span><span class="separator">·</span>
+<span class="syll h low" title="">tan</span><span class="msa" title="finite verb">fv</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">nu</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">thuin</span><span class="separator">·</span>
+<span class="syll h low" title="">git</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">mi</span><span class="msa" title="personal pronoun">pr</span><span class="linebegin">♦<span title="1r;6"/></span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">giu</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll h high" title="">hun</span><span class="separator">·</span>
+<span class="syll h low" title="">gar</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">en</span><span class="separator">·</span>
+<span class="syll l low" title="">di</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="stress word">s</span>
+<span class="syll o high" title="">thrust</span><span class="msa" title="common noun">n</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">pxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxxxPxxxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">13</div>
+<div class="linecontent">
+<div class="verse"><span class="wc" title="stress word">s</span><span class="allit1">B</span>
+<span class="syll h high" title="">bit</span><span class="separator">·</span>
+<span class="syll h low" title="">ter</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span><span class="allit1">B</span>
+<span class="syll l high" title="">ba</span><span class="separator">•</span>
+<span class="syll l high" title="">lo</span><span class="msa" title="common noun">n</span>-<span class="wc" title="stress word">s</span>
+<span class="syll l half" title="">uue</span><span class="separator">•</span>
+<span class="syll h half" title="">rek</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">the</span><span class="separator">·</span>
+<span class="syll l low" title="">ro</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">uua</span><span class="separator">·</span>
+<span class="syll h low" title="">ron</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">er</span><span class="msa" title="adverb">av</span><span class="wc" title="stress word">s</span><span class="allit1">B</span>
+<span class="syll l high" title="">be</span><span class="separator">·</span>
+<span class="syll l low" title="">đe</span><span class="separator">·</span>
+<span class="syll l low" title="">ro</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span>
+<span class="syll h high" title="">tuom</span><span class="msa" title="adjective">aj</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A2</span><span class="versecontour">Pxpxsx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxxxxPxxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">14</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">Hu</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">scu</span><span class="separator">·</span>
+<span class="syll h low" title="">lon</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">nu</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit1">L</span>
+<span class="syll h high" title="">lib</span><span class="separator">·</span>
+<span class="syll h low" title="">bian</span><span class="msa" title="infinitive">∞</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">ef</span><span class="separator">·</span>
+<span class="syll l low" title="">to</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">hu</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">scu</span><span class="separator">·</span>
+<span class="syll h low" title="">lon</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="linebegin">♦<span title="1r;7"/></span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">an</span><span class="msa" title="preposition">→</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">the</span><span class="separator">·</span>
+<span class="syll h low" title="">sum</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">L</span>
+<span class="syll h high" title="liata">liah</span><span class="separator">·</span>
+<span class="syll l low" title="liata">ta</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span>
+<span class="syll l high" title="">uue</span><span class="separator">•</span>
+<span class="syll h high" title="">san</span><span class="msa" title="infinitive">∞</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A3</span><span class="versecontour">xxxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxxxxxxxPxpx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro five">15</div>
+<div class="linecontent">
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">nu</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">hier</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">huui</span><span class="separator">·</span>
+<span class="syll h low" title="">lum</span><span class="msa" title="interrogative pronoun">?</span><span class="wc" title="stress word">s</span><span class="allit1">W</span>
+<span class="syll o high" title="">uuind</span><span class="msa" title="common noun">n</span><span class="wc" title="particle">t</span>
+<span class="syll l high" title="">ku</span><span class="separator">⚬</span>
+<span class="syll h low" title="">mit</span><span class="msa" title="finite verb">fv</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="wc" title="stress word">s</span><span class="allit1">W</span>
+<span class="syll h high" title="">uues</span><span class="separator">·</span>
+<span class="syll h low" title="">tan</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">ef</span><span class="separator">·</span>
+<span class="syll l low" title="">to</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="stress word">s</span>
+<span class="syll h high" title="">os</span><span class="separator">·</span>
+<span class="syll h low" title="">tan</span><span class="msa" title="common noun">n</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">C</span><span class="versecontour">xxxxPpx</span></div>
+
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">PxxxPx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">16</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">.</span><span class="wc" title="stress word">s</span><span class="allit1">S</span>
+<span class="syll l high" title="">su</span><span class="separator">·</span>
+<span class="syll h low" title="">đan</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">ef</span><span class="separator">·</span>
+<span class="syll l low" title="">to</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="stress word">s</span>
+<span class="syll h high" title="">nor</span><span class="separator">·</span>
+<span class="syll h low" title="">dan</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="stress word">s</span><span class="allit1">S</span>
+<span class="syll l high" title="">suue</span><span class="separator">•</span>
+<span class="syll h high" title="">rek</span><span class="msa" title="common noun">n</span><span class="wc" title="particle">t</span>
+<span class="syll o high" title="">upp</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll l high" title="">dri</span><span class="separator">·</span>
+<span class="syll h low" title="">bit</span><span class="msa" title="finite verb">fv</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">PxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">D</span><span class="versecontour">xpxPPx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">17</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">.</span><span class="linebegin">♦<span title="1r;8"/></span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">ku</span><span class="separator">·</span>
+<span class="syll h low" title="">mit</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll h high" title="">hag</span><span class="separator">·</span>
+<span class="syll h low" title="">las</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span>
+<span class="syll h high" title="">skion</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll l high" title="">hi</span><span class="separator">•</span>
+<span class="syll l high" title="">mi</span><span class="separator">·</span>
+<span class="syll l low" title="">le</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span>
+<span class="syll l low" title="">bi</span><span class="separator">·</span>
+<span class="syll h high" title="">ten</span><span class="separator">·</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="adjective">aj</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxPxP</span></div>
+
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">pxxxPx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">18</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit1">F</span>
+<span class="syll l high" title="">fe</span><span class="separator">•</span>
+<span class="syll h high" title="">riđ</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit1">F</span>
+<span class="syll o high" title="">ford</span><span class="msa" title="adverb">av</span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">an</span><span class="msa" title="preposition">→</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="stress word">s</span>
+<span class="syll o high" title="">mang</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">that</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">is</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit1">F</span>
+<span class="syll l high" title="">fi</span><span class="separator">•</span>
+<span class="syll l high" title="">ri</span><span class="separator">·</span>
+<span class="syll h low" title="">num</span><span class="msa" title="adverb">av</span><span class="wc" title="stress word">s</span>
+<span class="syll o high" title="">kald</span><span class="msa" title="adjective">aj</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">D</span><span class="versecontour">pxPxxP</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxpxxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">19</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit1">H</span>
+<span class="syll l high" title="">hui</span><span class="separator">·</span>
+<span class="syll h low" title="">lum</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">than</span><span class="separator">·</span>
+<span class="syll l low" title="">ne</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">fan</span><span class="msa" title="preposition">→</span><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll l high" title="">hi</span><span class="separator">•</span>
+<span class="syll l high" title="">mi</span><span class="separator">·</span>
+<span class="syll l low" title="">le</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll l high" title="">he</span><span class="separator">·</span>
+<span class="syll l low" title="">to</span><span class="msa" title="common noun">n</span><span class="wc" title="particle">t</span>
+<span class="syll l high" title="">ski</span><span class="separator">·</span>
+<span class="syll h low" title="">nit</span><span class="msa" title="finite verb">fv</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">Pxxxxpxx</span></div>
+
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">PxPx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro five">20</div>
+<div class="linecontent">
+<div class="verse"><span class="punc">.</span><span class="linebegin">♦<span title="1r;9"/></span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit1">B</span>
+<span class="syll l high" title="">bli</span><span class="separator">·</span>
+<span class="syll h low" title="">kit</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">thiu</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">B</span>
+<span class="syll l high" title="">be</span><span class="separator">•</span>
+<span class="syll h high" title="">rah</span><span class="separator">·</span>
+<span class="syll l low" title="">to</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span>
+<span class="syll h high" title="">sun</span><span class="separator">·</span>
+<span class="syll l low" title="">na</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">hier</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">thus</span><span class="msa" title="adverb">av</span><span class="wc" title="stress word">s</span><span class="allit1">B</span>
+<span class="syll l high" title="">ba</span><span class="separator">•</span>
+<span class="syll l high" title="">ra</span><span class="msa" title="adjective">aj</span><span class="wc" title="particle">t</span>
+<span class="syll h high" title="">stan</span><span class="separator">·</span>
+<span class="syll h low" title="">dat</span><span class="msa" title="finite verb">fv</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1A1</span><span class="versecontour">PxxpXxPx</span></div>
+
+<div class="scan">
+<span class="versetype">C</span><span class="versecontour">xxxpxPx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">21</div>
+<div class="linecontent">
+<div class="verse"><span class="clause">§</span><span class="wc" title="stress word">s</span>
+<span class="syll h low" title="">un</span><span class="separator">·</span>
+<span class="syll l high" title="">uue</span><span class="separator">•</span>
+<span class="syll h high" title="">rid</span><span class="msa" title="adjective">aj</span><span class="wc" title="clitic">c</span>
+<span class="syll h low" title="">miđ</span><span class="msa" title="preposition">→</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="stress word">s</span><span class="allit1">W</span>
+<span class="syll l high" title="">uua</span><span class="separator">·</span>
+<span class="syll l low" title="">di</span><span class="msa" title="common noun">n</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">nis</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll o low" title="">unk</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">hier</span><span class="msa" title="adverb">av</span><span class="wc" title="stress word">s</span><span class="allit1">W</span>
+<span class="syll o high" title="">uuiht</span><span class="msa" title="common noun">n</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="bi">bi</span><span class="separator">·</span>
+<span class="syll l high" title="bi">uo</span><span class="separator">•</span>
+<span class="syll h high" title="bi">ran</span><span class="msa" title="adverb">av</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">xpxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxPxpx</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">22</div>
+<div class="linecontent">
+<div class="verse"><span class="linebegin">♦<span title="1r;10"/></span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">ni</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="t">te</span><span class="msa" title="infinitive marker">+∞</span><span class="wc" title="particle">t</span>
+<span class="syll l high" title="sk">ske</span><span class="separator">•</span>
+<span class="syll l high" title="sk">re</span><span class="separator">·</span>
+<span class="syll l low" title="sk">ma</span><span class="msa" title="infinitive">∞</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">ni</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">te</span><span class="msa" title="infinitive marker">+∞</span><span class="wc" title="particle">t</span>
+<span class="syll l high" title="">scu</span><span class="separator">·</span>
+<span class="syll l low" title="">ra</span><span class="msa" title="infinitive">∞</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll o low" title="">unk</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">nis</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">hier</span><span class="msa" title="adverb">av</span><span class="wc" title="stress word">s</span>
+<span class="syll h high" title="">scat</span><span class="separator">·</span>
+<span class="syll h low" title="">tas</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span>
+<span class="syll o high" title="">uuiht</span><span class="msa" title="indefinite pronoun"><></span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">xxpxxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxPxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">23</div>
+<div class="linecontent">
+<div class="verse"><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">te</span><span class="msa" title="preposition">→</span><span class="wc" title="stress word">s</span><span class="allit1">M</span>
+<span class="syll l high" title="">me</span><span class="separator">•</span>
+<span class="syll l high" title="">ti</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="particle">t</span><span class="allit1">M</span>
+<span class="syll h high" title="">mar</span><span class="separator">·</span>
+<span class="syll h low" title="">cot</span><span class="msa" title="participle">vp</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">eb</span><span class="separator">·</span>
+<span class="syll h low" title="">biat</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll o low" title="">unk</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">gi</span><span class="msa" title="unstressed prefix">&lt;</span>-<span class="wc" title="particle">t</span>
+<span class="syll h low" title="">duan</span><span class="msa" title="infinitive">∞</span><span class="wc" title="stress word">s</span><span class="allit1">M</span>
+<span class="syll h high" title="">mat</span><span class="separator">·</span>
+<span class="syll h low" title="">hig</span><span class="separator">·</span>
+<span class="syll l low" title="">na</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span>
+<span class="syll h high" title="">god</span><span class="msa" title="common noun">n</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">xpxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxxxxPXxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro">24</div>
+<div class="linecontent">
+<div class="verse"><span class="wc" title="stress word">s</span><span class="allit1">W</span>
+<span class="syll h high" title="">uual</span><span class="separator">·</span>
+<span class="syll o low" title="">dand</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">W</span>
+<span class="syll l high" title="uureda">uure</span><span class="separator">·</span>
+<span class="syll h low" title="uureda">dan</span><span class="msa" title="pronoun/determiner">pd</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="linebegin">♦<span title="1r;11"/></span><span class="clause">§</span><span class="wc" title="clitic">c</span>
+<span class="syll l low" title="">te</span><span class="msa" title="preposition">→</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">hui</span><span class="msa" title="interrogative pronoun">?</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">scu</span><span class="separator">·</span>
+<span class="syll h low" title="">lun</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit1">W</span>
+<span class="syll h low" title="">uuit</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit1">W</span>
+<span class="syll h high" title="">uuer</span><span class="separator">·</span>
+<span class="syll h low" title="">dan</span><span class="msa" title="infinitive">∞</span><span class="wc" title="particle">t</span>
+<span class="syll l high" title="">nu</span><span class="msa" title="adverb">av</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A1</span><span class="versecontour">PXPx</span></div>
+
+<div class="scan">
+<span class="versetype">B1</span><span class="versecontour">xxxxxPxP</span></div>
+</div></div><div class="poeticline">
+<div class="lineintro five">25</div>
+<div class="linecontent">
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">Nu</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">mag</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">mi</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">that</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="particle">t</span><span class="allit1">H</span>
+<span class="syll l high" title="">hre</span><span class="separator">·</span>
+<span class="syll h low" title="">uuan</span><span class="msa" title="infinitive">∞</span></div>
+
+<div class='caesura'/>
+<div class="verse"><span class="clause">§</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">that</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">ik</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">is</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span>
+<span class="syll l low" title="">io</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span>
+<span class="syll h low" title="">bad</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">H</span>
+<span class="syll l high" title="">he</span><span class="separator">•</span>
+<span class="syll h high" title="">ban</span><span class="msa" title="common noun">n</span>-<span class="wc" title="stress word">s</span>
+<span class="syll l half" title="">ri</span><span class="separator">·</span>
+<span class="syll h low" title="">kean</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span>
+<span class="syll h high" title="">god</span><span class="msa" title="common noun">n</span></div>
+</div>
+
+<div class="linesummary">
+<div class="scan">
+<span class="versetype">A3</span><span class="versecontour">xxxxPx</span></div>
+
+<div class="scan">
+<span class="versetype">E</span><span class="versecontour">xxxxxpXSxP</span></div>
+</div></div>     </div> <!-- close the content div -->
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+            <!-- the following attaches a function to the on-click event of the toggles that adds or
+                    removes a class corresponding to the toggle to the body element. These body 
+                    classes are referenced in the relevant CSS to turn on and off various annotations.
+            -->
+            <script>
+            $(function() {
+                $(".toggle").on("click", function() {
+                $("body").toggleClass($(this).data("target"));
+                return false;
+                });
+            });
+            
+            $(document).tooltip({show: null});
+            </script>
+        </body>
+    </html>
