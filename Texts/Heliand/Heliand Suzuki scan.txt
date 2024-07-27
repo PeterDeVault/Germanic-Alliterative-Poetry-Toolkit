@@ -1,0 +1,285 @@
+linenumber	verserole	suzuki	type	restr
+243	on	xxxPxxP	B1	0
+243	off	xxxxxPxP	B1	0
+244	on	xxPSx	C	0
+244	off	pxxPx	A1	0
+245	on	PpxSx	D	0
+245	off	xpxPx	C	0
+246	on	xxxpxXP	B1	0
+246	off	pxxpXx	A1	0
+247	on	xPxpx	B1	0
+247	off	PxPx	A1	0
+248	on	xxxxxxPx	A3	0
+248	off	xPSx	C	0
+249	on	pxxPx	A1	0
+249	off	xxxPsx	C	0
+250	on	xpxxP	B	0
+250	off	pxpx	A1	0
+251	on	PxxpxSx	D*	0
+251	off	xxxxpxPx	C	0
+252	on	pxSxpx	E	0
+252	off	pxxxPx	A1	0
+253	on	xxxPxxpx	B1	0
+253	off	xxpxPx	C	0
+254	on	pxxPx	A1	0
+254	off	PxPxP	E*	0
+255	on	xpxxPx	A	0
+255	off	xxxPSP	B1	0
+256	on	pxPSx	D	0
+256	off	xxxPxpx	B1	0
+257	on	xpxxp	B	0
+257	off	xpxPx	C	0
+258	on	PxpXSx	D*	0
+258	off	xxxxpxPx	C	0
+259	on	Pxxpxxx	A1	0
+259	off	xxxxpxP	B1	0
+260	on	PXxPx	A1	0
+260	off	xxxPpx	C	0
+261	on	pxPxP	D	0
+261	off	xxxPxpx	B1	0
+262	on	PxxPx	A1	0
+262	off	xxxxPxpx	B1	0
+263	on	xPxxxxPx	A1	0
+263	off	xxxxxxxxPxpx	B1	0
+264	on	xpxxxxpxS	A2	0
+264	off	xxxxPxxpx	B1	0
+265	on	PxxPx	A1	0
+265	off	xxxxxpxPx	C	0
+266	on	xPxpXsXxpx	D*E	0
+266	off	xxPXxpx	B1	0
+267	on	PxxPx	A1	0
+267	off	xPxxpx	B1	0
+268	on	xPxPxxP	E8	0
+268	off	xxxPxP	B1	0
+269	on	PxPx	A1	0
+269	off	xxxxxpxxpx	B1	0
+270	on	xxxPxpx	B1	0
+270	off	pxxPX	A1	0
+271	on	xxxPxpxX	A1	0
+271	off	xxxxPxPxx	B1	0
+272	on	xxpxPx	C	0
+272	off	xxxPxxP	B1	0
+273	on	PxxxxpXx	A1	0
+273	off	xxxxxPpx	C	0
+274	on	PxxpxSx	D*	0
+274	off	xxpXxxPx	A1	0
+275	on	xxxPxP	B1	0
+275	off	xpXSx	C	0
+276	on	pxxPpx	D*	0
+276	off	xxxxPpx	C	0
+277	on	PxxxxxpXx	A1	0
+277	off	PXxP	E	0
+278	on	xxxxPXx	C	0
+278	off	pXsXx	D	0
+279	on	pxxxpx	E	0
+279	off	xxPxxxP	B1	0
+280	on	xxPxxPx	A1	0
+280	off	xxxxxPpx	C	0
+281	on	xxxPxpX	B1	0
+281	off	xxxxPxpx	B1	0
+282	on	PxxPXx	D*	0
+282	off	PxPx	A1	0
+283	on	xpxPx	C	0
+283	off	xxxpxPxxx	C	0
+284	on	xxxxPXsx	B1	0
+284	off	xxxPxpx	B1	0
+285	on	xxxPsx	C	0
+285	off	xxxxPxxPx	A1	0
+286	on	PxxxxxxPx	A1	0
+286	off	xxxPxP	B1	0
+287	on	PxPx	A1	0
+287	off	xxpxPx	C	0
+288	on	xPxPx	A1	0
+288	off	xxxxxxPxP	B1	0
+289	on	xpxPXx	D	0
+289	off	PxPx	A1	0
+290	on	xPxpx	B1	0
+290	off	xxxxPxPx	A1	0
+291	on	xxxPxPx	A1	0
+291	off	xxPxxP	B1	0
+292	on	xPxxxPx	A1	0
+292	off	xxxxxPxxP	B1	0
+293	on	xxxxpxPx	C	0
+293	off	PxxxPx	A1	0
+294	on	xxxxxPxx	C	0
+294	off	xpxSxP	E	0
+295	on	Pxxpxx	A1	0
+295	off	xxpxpxx	C	0
+296	on	xPxPx	A1	0
+296	off	xxxxpxPx	C	0
+297	on	xpxPSx	D	0
+297	off	pXSXP	E	0
+298	on	xPxxPx	A1	0
+298	off	xxxxxxxPxxpx	B1	0
+299	on	xPxxxPx	A1	0
+299	off	xxxxPPx	C	0
+300	on	xPxxpxSx	D*	0
+300	off	xxxPXxxP	B1	0
+301	on	PxxPSx	D*	0
+301	off	xxxxxxxPxP	B1	0
+302	on	pxxxxPx	A1	0
+302	off	xxxxxxpxPx	C	0
+303	on	xxxxxPx	A3	0
+303	off	xxxxxxxPxP	B1	0
+304	on	PxPxx	D*	0
+304	off	xxxxPxP	B1	0
+305	on	Pxxpxx	A1	0
+305	off	xxxxPxP	B1	0
+306	on	PxxPx	A1	0
+306	off	xxxxxPxP	B1	0
+307	on	xxPxP	B1	0
+307	off	pxPx	A1	0
+308	on	xxxxxxPS	A3	0
+308	off	pxxPxx	D*	0
+309	on	xxxxxxPsx	C	0
+309	off	PxPx	A1	0
+310	on	PxxxPx	A1	0
+310	off	xxxxPxxP	B1	0
+311	on	xxxxPxP	B1	0
+311	off	PxPx	A1	0
+312	on	pxxxxpxx	A1	0
+312	off	xxxxPxP	B1	0
+313	on	xxPpx	C	0
+313	off	pxxxPx	A1	0
+314	on	PxxxPx	A1	0
+314	off	xxxPxP	B1	0
+315	on	PxxPx	A1	0
+315	off	xxxPxP	B1	0
+316	on	xxxxPxP	B1	0
+316	off	PxxPx	A1	0
+317	on	pXsXxpx	E	0
+317	off	xxxxxxPxP	B1	0
+318	on	PxxxxPx	A1	0
+318	off	xxxxxpxP	B1	0
+319	on	PxPxx	A1	0
+319	off	xxxPxP	B1	0
+320	on	xxpxxxxPx	A1	0
+320	off	xxxPxP	B1	0
+321	on	PxxxxxxxpXx	A1	0
+321	off	xxxxxpxSx	C	0
+322	on	PxxPx	A1	0
+322	off	xxxxxPsxP	B1	0
+323	on	xPxxxxPxx	D*	0
+323	off	xxxxxxpxPx	C	0
+324	on	PxxxPx	A1	0
+324	off	xxxxxPpx	C	0
+325	on	PxxPx	A1	0
+325	off	xpXSx	C	0
+326	on	xxpxP	F	0
+326	off	pxPxP	D	0
+327	on	PXxpx	E	0
+327	off	xxxPPx	C	0
+328	on	PXSx	A1	0
+328	off	xxxxxxpxPx	C	0
+329	on	PxxxPxS	D*	0
+329	off	xxxxPxpx	B1	0
+330	on	xPxxxxPx	A1	0
+330	off	xxxxxPxxP	B1	0
+331	on	xxxpxPx	C	0
+331	off	xxxPpx	C	0
+332	on	PXxxP	E	0
+332	off	xxpxpx	C	0
+333	on	xxxxPXSx	A1	0
+333	off	PxPx	A1	0
+334	on	xPxxxxxxPx	A1	0
+334	off	xxxxPxP	B1	0
+335	on	xxPxpx	B1	0
+335	off	PXxP	E	0
+336	on	PSxpx	E	0
+336	off	xxxpxxpx	B1	0
+337	on	Pxxpxx	A1	0
+337	off	xxxxxPxP	B1	0
+338	on	xxxPxP	B1	0
+338	off	PxPx	A1	0
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
