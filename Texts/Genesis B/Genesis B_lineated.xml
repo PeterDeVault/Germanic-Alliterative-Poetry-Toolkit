@@ -28,11 +28,9 @@
     </teiHeader>
     <text>
         <body>
-            <p>Genesis B</p>
-            <p>Bodleian Library MS. Junius 11</p>
             <pb n="37"/>
             <lb n="37;19"/>
-            <vg type="line" cid="" A="Ø">
+            <vg type="line" cid="790" A="Ø">
                 <v role="on">
                     <w wc="s" msa="xNP" A="Ø">adam</w>
                     <w wc="c" msa="xPX" p="1" A="G">ġe</w>
@@ -48,7 +46,7 @@
             <pc>·</pc>
             <!-- interdot -->
             <cb/>
-            <vg type="line" cid="" A="Ø">
+            <vg type="line" cid="791" A="Ø">
                 <v role="on">
                     <w wc="t" msa="xIT" A="H">hwæt</w>
                     <!-- interjection -->
@@ -65,7 +63,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="S">
+            <vg type="line" cid="792" A="S">
                 <v role="on">
                     <w wc="t" msa="xPE" A="Ø">uncer</w>
                     <w wc="s" msa="xPE" A="S">sylfra</w>
@@ -85,7 +83,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="G">
+            <vg type="line" cid="793" A="G">
                 <v role="on">
                     <w wc="s" msa="xAJ" A="G">grædige</w>
                     <w wc="c" msa="xCC" A="Ø">and</w>
@@ -103,7 +101,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="H">
+            <vg type="line" cid="794" A="H">
                 <v role="on">
                     <w wc="t" msa="xAV" A="H">heonana</w>
                     <w wc="c" msa="xPX" p="1" A="G">ġe</w>
@@ -118,7 +116,7 @@
                     <w wc="s" msa="xNC" c="2" A="R">rice</w>
                 </v>
             </vg>
-            <vg type="line" cid="" A="L">
+            <vg type="line" cid="795" A="L">
                 <v role="on">
                     <w wc="c" msa="xPX" p="1" A="G">ġe</w>
                     <w wc="s" msa="xAJ" p="2" A="L">lic</w>
@@ -137,7 +135,7 @@
             </vg>
             <pc>.</pc>
             <cb/>
-            <vg type="line" cid="" A="H">
+            <vg type="line" cid="796" A="H">
                 <v role="on">
                     <w wc="t" msa="xCS" expands="ꝥ" A="Þ">þæt</w>
                     <w wc="t" msa="xPE" A="W">wit</w>
@@ -155,7 +153,7 @@
             </vg>
             <pc>·</pc>
             <cb/>
-            <vg type="line" cid="" A="H">
+            <vg type="line" cid="797" A="H">
                 <v role="on">
                     <w wc="t" msa="xPD" A="Þ">þær</w>
                     <w wc="t" msa="xPE" A="Þ">þu</w>
@@ -177,7 +175,7 @@
             </vg>
             <pc>·</pc>
             <cb/>
-            <vg type="line" cid="" A="W">
+            <vg type="line" cid="798" A="W">
                 <v role="on">
                     <w wc="t" msa="xCS" expands="ꝥ" A="Þ">þæt</w>
                     <w wc="t" msa="xPE" A="W">wit</w>
@@ -191,7 +189,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="H">
+            <vg type="line" cid="799" A="H">
                 <v role="on">
                     <w wc="s" msa="xNC" c="1" A="H">heofon</w>
                     <w wc="s" msa="xNC" c="2" A="K">cyninges</w>
@@ -208,7 +206,7 @@
             <pc>·</pc>
             <pb n="38"/>
             <lb n="38;1"/>
-            <vg type="line" cid="" A="S">
+            <vg type="line" cid="800" A="S">
                 <v role="on">
                     <w wc="t" msa="xVB fI" A="S">sorgian</w>
                     <w wc="c" msa="xAP" A="F">for</w>
@@ -228,7 +226,7 @@
             </vg>
             <pc>·</pc>
             <cb/>
-            <vg type="line" cid="" A="W">
+            <vg type="line" cid="801" A="W">
                 <v role="on">
                     <w wc="t" msa="xCS" expands="ꝥ" A="Þ">þæt</w>
                     <w wc="t" msa="xPE" A="W">wit</w>
@@ -243,7 +241,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="H">
+            <vg type="line" cid="802" A="H">
                 <v role="on">
                     <w wc="s" msa="xNC" A="H">hearma</w>
                     <w wc="s" msa="xAJ" A="M">mæstne</w>
@@ -262,7 +260,7 @@
                 </v>
             </vg>
             <pc>.</pc>
-            <vg type="line" cid="" A="B">
+            <vg type="line" cid="803" A="B">
                 <v role="on">
                     <w wc="s" msa="xAJ" A="B">bitre</w>
                     <w wc="c" msa="xAP" A="Ø">on</w>
@@ -278,7 +276,7 @@
                     <w wc="t" msa="xAV" A="Ø">ær</w>
                 </v>
             </vg>
-            <vg type="line" cid="" A="Ø">
+            <vg type="line" cid="804" A="Ø">
                 <v role="on">
                     <w wc="t" msa="xVB fF" A="W">wæron</w>
                     <w wc="s" msa="xPX" c="1" A="Ø">or</w>
@@ -293,7 +291,7 @@
             </vg>
             <pc>·</pc>
             <cb/>
-            <vg type="line" cid="" A="L">
+            <vg type="line" cid="805" A="L">
                 <v role="on">
                     <w wc="t" msa="xPQ" A="H">hu</w>
                     <w wc="t" msa="xVB fF" A="SK">sculon</w>
@@ -314,7 +312,7 @@
                 </v>
             </vg>
             <cb/>
-            <vg type="line" cid="" A="W">
+            <vg type="line" cid="806" A="W">
                 <v role="on">
                     <w wc="t" msa="xCS" A="G">ġif</w>
                     <w wc="t" msa="xAV" A="H">her</w>
@@ -330,7 +328,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="S">
+            <vg type="line" cid="807" A="S">
                 <v role="on">
                     <w wc="s" msa="xNC" A="S">suðan</w>
                     <w wc="c" msa="xCC" A="Ø">oððe</w>
@@ -348,7 +346,7 @@
             </vg>
             <pc>·</pc>
             <cb/>
-            <vg type="line" cid="" A="H">
+            <vg type="line" cid="808" A="H">
                 <v role="on">
                     <w wc="t" msa="xVB fF" A="K">cymeð</w>
                     <w wc="s" msa="xNC" A="H">hæġles</w>
@@ -363,7 +361,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="F">
+            <vg type="line" cid="809" A="F">
                 <v role="on">
                     <w wc="t" msa="xVB fF" A="F">færeð</w>
                     <lb n="38;8"/>
@@ -385,7 +383,7 @@
             </vg>
             <pc>·</pc>
             <cb/>
-            <vg type="line" cid="" A="H">
+            <vg type="line" cid="810" A="H">
                 <v role="on">
                     <w wc="t" msa="xCS" A="H">hwilum</w>
                     <w wc="c" msa="xAP" A="Ø">of</w>
@@ -399,7 +397,7 @@
             </vg>
             <pc>·</pc>
             <cb/>
-            <vg type="line" cid="" A="B">
+            <vg type="line" cid="811" A="B">
                 <v role="on">
                     <w wc="t" msa="xVB fF" A="B">blicð</w>
                     <w wc="c" msa="xPD" A="Þ">þeos</w>
@@ -418,7 +416,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="W">
+            <vg type="line" cid="812" A="W">
                 <v role="on">
                     <w wc="c" msa="xPX" p="1" A="Ø">un</w>
                     <w wc="t" msa="xVB fP" p="2" A="W">wered</w>
@@ -436,7 +434,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="SK">
+            <vg type="line" cid="813" A="SK">
                 <v role="on">
                     <w wc="c" msa="xAP" A="T">to</w>
                     <w wc="s" msa="xNC" c="1" A="SK">scur</w>
@@ -451,7 +449,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="M">
+            <vg type="line" cid="814" A="M">
                 <v role="on">
                     <w wc="c" msa="xAP" A="T">to</w>
                     <w wc="s" msa="xNC" A="M">mete</w>
@@ -470,7 +468,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="W">
+            <vg type="line" cid="815" A="W">
                 <v role="on">
                     <w wc="s" msa="xNC" A="W">waldend</w>
                     <w wc="s" msa="xNC" c="1" A="W">wrað</w>
@@ -490,7 +488,7 @@
             </vg>
             <pc>·</pc>
             <cb/>
-            <vg type="line" cid="" A="H">
+            <vg type="line" cid="816" A="H">
                 <v role="on">
                     <w wc="t" msa="xAV" A="N">Nu</w>
                     <!-- capital N -->
@@ -510,7 +508,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="W">
+            <vg type="line" cid="817" A="W">
                 <v role="on">
                     <w wc="s" msa="xNC" A="W">waldend</w>
                     <w wc="c" msa="xPD" A="Þ">þone</w>
@@ -530,7 +528,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="L">
+            <vg type="line" cid="818" A="L">
                 <v role="on">
                     <w wc="c" msa="xAP" A="Ø">of</w>
                     <w wc="s" msa="xNC" A="L">liðum</w>
@@ -548,7 +546,7 @@
                     <w wc="t" msa="xVB fF" A="H">hæfst</w>
                 </v>
             </vg>
-            <vg type="line" cid="" A="H">
+            <vg type="line" cid="819" A="H">
                 <v role="on">
                     <w wc="c" msa="xAP" A="Ø">on</w>
                     <w wc="c" msa="xPD" A="M">mines</w>
@@ -567,7 +565,7 @@
                 </v>
             </vg>
             <pc>·</pc>
-            <vg type="line" cid="" A="Ø">
+            <vg type="line" cid="820" A="Ø">
                 <v role="on">
                     <w wc="t" msa="xAV" A="Ø">æfre</w>
                     <w wc="c" msa="xAP" A="T">to</w>

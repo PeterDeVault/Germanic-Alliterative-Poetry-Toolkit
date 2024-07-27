@@ -1,0 +1,285 @@
+linenumber	verserole	suzuki	type	restr
+790	on	pxxPx	A1	
+790	off	xxpxp	B	
+791	on	xxpxp	B	
+791	off	pxxxPx	A1	
+792	on	xxPxP	B	
+792	off	xPxxxPxpx	A1hyper	
+793	on	pxxxPx	A*1	
+793	off	xxxPxP	B1	
+794	on	pxxxpx	A1	
+794	off	xpxpx	d2a	
+795	on	xpxpx	a1c	
+795	off	xxxPxP	B1	
+796	on	xxxxxpxP	B1	
+796	off	PxPx	A1	
+797	on	xxxxpx	A3	
+797	off	xxxxPxP	B1	
+798	on	xPSxx	D1	
+798	off	Pxpx	A1	
+799	on	pxsxx	A1	
+799	off	xxpxxpx	B	
+800	on	Pxxxpx	A*1	
+800	off	xxxxPxP	B1	
+801	on	xpxpx	A	
+801	off	PxPx	A1	
+802	on	PxPx	A1	
+802	off	xxxPxxP	B*1	
+803	on	PxxPx	A*1	
+803	off	xxPxP	B1	
+804	on	xxPSx	C	
+804	off	xpxP	B1	
+805	on	xxxxxpx	A3	
+805	off	xxxxPpx	C	
+806	on	xxPP	C-	
+806	off	pxxxPx	A*1	
+807	on	pxxxPx	A*1	
+807	off	xPxpx	B1	
+808	on	xxpxP	B1	
+808	off	pxxxPx	A*1	
+809	on	xxPxxP	B1	
+809	off	xxPxP	B1	
+810	on	xxxPx	A3	
+810	off	pxpx	A1	
+811	on	PxPxPx	A1hyper	
+811	off	xxxpxPx	C1	
+812	on	xpxpx	C1	
+812	off	xxPxpx	B1	
+813	on	xPsx	d3	
+813	off	xPxP	B1	
+814	on	xpxxPx	A1a	
+814	off	xxxPxP	B1	
+815	on	PxPx	A1	
+815	off	xxxxxPxp	B1	
+816	on	xxxpx	A3	
+816	off	xxxPxP	B1	
+817	on	PxxxPx	A*1	
+817	off	xxxxPxxp	B1	
+818	on	xpxpx	B1	
+818	off	xxxxpxP	B1	
+819	on	xxxPxpx	B1	
+819	off	xxxpxx	A3	
+820	on	PxxPx	A*1	
+820	off	xxxxxpxxP	B1	
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
