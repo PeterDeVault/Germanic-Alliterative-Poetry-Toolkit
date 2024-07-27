@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <style>
+            /* defaults */
+    body     {
+                overflow: hidden; 
+                width: 100%; 
+    }
+    span     {font-size: 16pt; display:inline}
+    p        {padding-left: 30px}
+    .prose   {color:LightSeaGreen}
+    .clause  {color:FireBrick; display:none}
+    .punc    {color:FireBrick; padding-left:2px; padding-right:2px; display:none}
+    .word    {color:Black}
+    .allit1  {color:FireBrick; font-size:8pt; vertical-align: super; position:relative; left:4px; display:none; visibility:hidden}
+    .allit2  {color:FireBrick; font-size:8pt; vertical-align: super; display:none; visibility:hidden}
+    .allit3  {color:FireBrick; font-size:8pt; vertical-align: super; display:none; visibility:hidden}
+    .msa     {color:CadetBlue; font-size:80%; vertical-align: sub; display:none}
+    .msa:hover {cursor: pointer}
+    .wc      {color:Olive; font-size:80%; vertical-align:sub; position:relative; left:4px; display:none}
+    .wc:hover {cursor: pointer}
+    .syll, .word    {color:DimGrey; margin:0; padding:0; font-size:16pt; display:inline}
+
+    span.pagebegin         {color:Brown; font-size:10pt; display:none} /* spans and divs */
+    div.pagebegin          {color:Brown; font-size:10pt; margin-left:5px; display:block}            /* just the divs */*/
+    span.pagebegin:hover   {cursor: pointer}
+    span.linebegin         {color:DarkGoldenrod; font-size:10pt; display: none}
+    div.linebegin          {color:DarkGoldenrod; font-size:10pt; margin-left:15px; display:block} /*removed display:block here and above */
+    span.linebegin:hover   {cursor: pointer}
+    
+    .grouper {color:Indigo}
+    .separator {color:Grey ;font-size:70%; display:none}
+
+    /* toggle effects */
+    body.break  .separator          {display:inline-block}
+    body.weight .syll.l             {color:LightBlue}
+    body.weight .syll.h             {color:DimGrey}
+    body.weight .syll.o             {color:SteelBlue}
+    body.clauses .clause            {display:inline-block}
+    body.meter  .syll.high          {font-size:20pt; font-face: bold}
+    body.meter  .syll.half          {font-size:18pt}
+    body.meter  .syll.low           {font-size:14pt}
+    body.meter  .x_sep              {display:inline-block}
+    body.parts  .msa                {display:inline-block}
+    body.lineated.parts .msa        {position:relative; left:-5px;}
+    body.parts  .wc                 {display:inline-block}
+    body.lineated.parts .wc         {position:relative; left:0px}
+    body.alliteration1  .allit1     {display:inline-block; left:1px; display:inline; visibility:visible}
+    body.alliteration1  .allit2     {display:inline-block; left:1px; display:inline; visibility:hidden}
+    body.alliteration1  .allit3     {display:inline-block; left:1px; display:inline; visibility:hidden}
+    body.alliteration2  .allit2     {display:inline-block; left:1px; display:inline; visibility:visible}
+    body.alliteration2  .allit3     {display:inline-block; left:1px; display:inline; visibility:hidden}
+    body.alliteration3  .allit3     {display:inline-block; left:1px; display:inline; visibility:visible}
+    body.alliterations1.parts .wc   {left:-8px}
+    body.lineated.alliteration1.parts .wc    {left:4px}
+    body.punctuation   .punc        {display:inline-block}
+    body.manuscript    .pagebegin   {display:inline}
+    body.manuscript    .linebegin   {display:inline}
+
+    /* header and toggles */
+    div#header  {
+                display: flex;
+                flex-flow: row;
+                align-items: flex-start;
+                position: absolute;
+                top:0; left:0; right:0;
+                background-color: WhiteSmoke;
+                overflow: hidden;
+                }
+    div#leftheader {
+                flex-grow:1;
+                align-self: stretch;
+    }
+    div#title   {
+                display: inline-block;
+                color: SteelBlue;
+                padding-left: 20px;
+                font-size:24pt;
+                }
+    div#subtitle {
+                display: inline-block;
+                padding-left: 20px;
+                color:lightSkyBlue;
+                font-size: 16pt;
+                }
+    div#source  {
+                display: block;
+                color:DarkOrange;
+                padding-left: 20px;
+                padding-top: 10px;
+                font-size: 12pt;
+                }
+    div#source > .caption {
+                font-size: 12pt;
+                color:DodgerBlue;
+                }
+    div#markuplevel {
+                display: block;
+                color:DarkOrange;
+                padding-left: 20px;
+                padding-top: 10px;
+                font-size: 12pt;
+                }
+    div#markuplevel > .caption {
+                font-size: 12pt;
+                color: DodgerBlue;
+                }
+    div.legend  {
+                flex: 0 0 150px;
+                background-color: WhiteSmoke;
+                padding: 10px 20px;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 10pt;
+                color: DarkSlateGrey;
+                }
+    div.legend h2 {
+                margin: 0;
+                font-size: 12pt;
+                color: LightSkyBlue;
+                }
+    div.legenditem {
+                margin-top:2px;
+                }
+    div.legenditem span {
+                font-size: 12pt;
+                }
+    div.toggles {
+                flex: 0 0 200px;
+                background-color: WhiteSmoke;
+                padding: 10px 20px;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 12pt;
+                color: DarkSlateGrey;
+                }
+    div.toggles span {color:LightGrey}
+    div.toggles h2 {
+                    margin: 0;
+                    font-size: 12pt;
+                    color: LightSkyBlue;
+                }
+    div.toggle {
+                    cursor: pointer;
+                }
+    div.toggle:hover {
+                    color: Grey;
+                }
+    /* turn the toggle bullet to the selected color appropriately */
+    body.break div.toggle > span.break,
+    body.weight div.toggle > span.weight,
+    body.parts div.toggle > span.parts,
+    body.parts .legenditem.parts span,
+    body.wclass div.toggle > span.wclass,
+    body.clauses div.toggle > span.clauses,
+    body.clauses .legenditem.clauses span,
+    body.alliteration1 div.toggle > span.alliteration1,
+    body.alliteration2 div.toggle > span.alliteration2,
+    body.punctuation div.toggle > span.punctuation,
+    body.manuscript div.toggle > span.manuscript,
+    body.meter div.toggle > span.meter
+    {
+        color: DarkSlateGrey;
+    }
+                    
+    .caesura, .linesummary, .verse, .linecontent, .lineintro, .scan, .verse {
+        display: inline-block;
+    }
+
+    div#poetry  {
+                position:fixed;
+                display:inline-block;
+                top:140px;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                }
+
+    div.poeticline {
+                display:inline-block;
+                width: 100%
+                overflow: hidden;
+                }
+
+    div.linecontent {
+                margin-bottom: 15px;
+                }
+
+    div.linesummary {
+                width: 400px;
+                display:inline-block;
+                }
+    .verse {width:520px;}
+    .caesura {width:10px;}
+    .scan {
+            position:relative;
+
+            left:400px;
+            display:inline-block;
+            color:DarkSlateGrey
+            }
+    .scan > span {
+        margin-right:20px;
+    }
+    .versetype {
+            color:SteelBlue;
+    }
+    .versecontour {
+            color:Turquiose;
+    }
+    .lineintro {
+            margin-left:10px;
+            color:DimGrey;
+            width: 100px;
+            }
+    .lineintro.five {
+            margin-left:10px;
+            color:Brown;
+            width: 100px;
+            }
+
+                         </style>
+            <title>Genesis B</title>
+        </head>
+        <body class='lineated'>
+            <div id="header">
+<div id="leftheader">
+<div id="title">Genesis B</div>
+<div id="subtitle">Excerpting the overlap with the OS Genesis</div>
+<div id="source"><span class="caption">Manuscript reference: </span>Bodleian Library MS. Junius 11</div>
+<div id="markuplevel"><span class="caption">Document markup level: </span>1-annotated</div></div>
+    <div class="legend">
+        <h2>Legend</h2>
+        <div class="legenditem manuscript">
+            <span class="key" style="font-size: 10pt; color:Brown">♦</span>
+            <span class="text">new page</span>
+        </div>
+        <div class="legenditem manuscript">
+            <span class="key" style="font-size: 10pt; color:DarkGoldenrod">♦</span>
+            <span class="text">new line</span>
+        </div>
+        <div class="legenditem clauses">
+            <span class="key" style="font-size: 10pt; color:FireBrick">&nbsp;§</span>
+            <span class="text" style="position:relative; left:2px">new clause</span>
+        </div>
+        <div class="legenditem parts" style:"margin-top:20px">
+            <span class="key text" style="font-size: 10pt; color:Olive">word class ⇀</span>
+        </div>
+        <div class="legenditem parts" style:"margin-top:20px">
+            <span class="key text" style="font-size: 10pt; color:CadetBlue">↼ morphosyntactic info</span>
+        </div>
+        
+    </div>
+    
+    <div class="toggles">
+        <h2>Toggle manuscript info</h2>
+        <div class="toggle" data-target="manuscript"> <span class="manuscript">ᚦ</span> &nbsp;lines and pages</div>
+        <div class="toggle" data-target="punctuation"> <span class="punctuation">ᚦ</span> &nbsp;punctuation</div>
+        <div class="toggle" data-target="clauses"> <span class="clauses">ᚦ</span> &nbsp;clause beginnings</div>
+        <div class="toggle" data-target="break"> <span class="break">ᚦ</span> &nbsp;syllable breaks</div>
+    </div>
+
+    <div class="toggles">
+        <h2>Language and meter</h2>
+        <div class="toggle" data-target="parts"> <span class="parts">ᚦ</span> &nbsp;POS and word class</div>
+        <div class="toggle" data-target="alliteration1"> <span class="alliteration1">ᚦ</span> &nbsp;alliteration</div>
+        <div class="toggle" data-target="weight"> <span class="weight">ᚦ</span> &nbsp;syllable weight</div>
+        <div class="toggle" data-target="meter"> <span class="meter">ᚦ</span> &nbsp;stress contour</div>
+        
+    </div>
+    
+            </div>
+            <div id="poetry">
+    <div class="pagebegin">♦<span title="37"/><div class="linebegin" style="margin-bottom:15px">♦<span title="37;19"/><span class="wc" title="stress word">s</span><span class="allit1">Ø</span><span class="word" title="">adam&nbsp;</span><span class="msa" title="proper noun">N</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">mælde&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">and&nbsp;</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="clitic">c</span><span class="allit3">T</span><span class="word" title="">to&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span><span class="word" title="">euan&nbsp;</span><span class="msa" title="proper noun">N</span><span class="wc" title="particle">t</span><span class="allit2">SP</span><span class="word" title="">spræc&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hwæt&nbsp;</span><span class="msa" title="interjection">it</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="37;20"/><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þu&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span><span class="word" title="">eue&nbsp;</span><span class="msa" title="proper noun">N</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hæfst&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span><span class="word" title="">yfele&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">mearcod&nbsp;</span><span class="msa" title="participle">vp</span><span class="punc">·</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">uncer&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">S</span><span class="word" title="">sylfra&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">S</span><span class="word" title="">sið&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="37;21"/><span class="wc" title="particle">t</span><span class="allit2">S</span><span class="word" title="">syhst&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þu&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">nu&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="clitic">c</span><span class="allit3">Þ</span><span class="word" title="">þa&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">S</span><span class="word" title="">sweartan&nbsp;</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">helle&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="wc" title="stress word">s</span><span class="allit1">G</span><span class="word" title="">grædige&nbsp;</span><span class="msa" title="adjective">aj</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">and&nbsp;</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="stress word">s</span><span class="allit1">G</span><span class="word" title="">gifre&nbsp;</span><span class="msa" title="adjective">aj</span><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">nu&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þu&nbsp;</span><span class="msa" title="personal pronoun">pr</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="37;22"/><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hie&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="particle">t</span><span class="allit2">G</span><span class="word" title="">grimman&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">meaht&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">heonana&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hyran&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">nis&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">heofon&nbsp;</span><span class="msa" title="common noun">n</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="37;23"/><span class="wc" title="stress word">s</span><span class="allit1">R</span><span class="word" title="">rice&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="stress word">s</span><span class="allit1">L</span><span class="word" title="">lic&nbsp;</span><span class="msa" title="adjective">aj</span><span class="wc" title="clitic">c</span><span class="allit3">Þ</span><span class="word" title="">þam&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">L</span><span class="word" title="">lige&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">ac&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þis&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">is&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">L</span><span class="word" title="">landa&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">B</span><span class="word" title="">betst&nbsp;</span><span class="msa" title="adjective">aj</span><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="ꝥ">þæt&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wit&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="clitic">c</span><span class="allit3">Þ</span><span class="word" title="">þurh&nbsp;</span><span class="msa" title="preposition">→</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="37;24"/><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">uncres&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">hearran&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">Þ</span><span class="word" title="">þanc&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">habban&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">moston&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þær&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þu&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þam&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="clitic">c</span><span class="allit3">N</span><span class="word" title="">ne&nbsp;</span><span class="msa" title="negative particle">-</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="37;25"/><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hierde&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þe&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">unc&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þisne&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">hearm&nbsp;</span><span class="msa" title="negative particle">-</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="particle">t</span><span class="allit2">R</span><span class="word" title="">ræd&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="ꝥ">þæt&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wit&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">waldendes&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">word&nbsp;</span><span class="msa" title="common noun">n</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="37;26"/><span class="wc" title="clitic">c</span><span class="allit3">F</span><span class="word" title="">for&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="particle">t</span><span class="allit2">B</span><span class="word" title="">bræcon&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">heofon&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">K</span><span class="word" title="">cyninges&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">nu&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wit&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hreowige&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">magon&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span></div><div class="pagebegin">♦<span title="38"/></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;1"/><span class="wc" title="particle">t</span><span class="allit2">S</span><span class="word" title="">sorgian&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="wc" title="clitic">c</span><span class="allit3">F</span><span class="word" title="">for&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="clitic">c</span><span class="allit3">Þ</span><span class="word" title="">þis&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">S</span><span class="word" title="">siðe&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">F</span><span class="word" title="">forþon&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">he&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">unc&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">S</span><span class="word" title="">self&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="clitic">c</span><span class="allit3">B</span><span class="word" title="">be&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="particle">t</span><span class="allit2">B</span><span class="word" title="">bead&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="ꝥ">þæt&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wit&nbsp;</span><span class="msa" title="personal pronoun">pr</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;2"/><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">unc&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">wite&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">warian&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="wc" title="particle">t</span><span class="allit2">SK</span><span class="word" title="">sceolden&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="punc">·</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">hearma&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">M</span><span class="word" title="">mæstne&nbsp;</span><span class="msa" title="adjective">aj</span><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">nu&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">S</span><span class="word" title="">slit&nbsp;</span><span class="msa" title="finite verb">fv</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;3"/><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">me&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">hunger&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="⁊">and&nbsp;</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="stress word">s</span><span class="allit1">Þ</span><span class="word" title="">þurst&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">.</span><span class="wc" title="stress word">s</span><span class="allit1">B</span><span class="word" title="">bitre&nbsp;</span><span class="msa" title="adjective">aj</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">on&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="stress word">s</span><span class="allit1">B</span><span class="word" title="">breostum&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þæs&nbsp;</span><span class="msa" title=""></span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wit&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">B</span><span class="word" title="">begra&nbsp;</span><span class="msa" title="adjective">aj</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;4"/><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">ær&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wæron&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span><span class="word" title="">or&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="stress word">s</span><span class="allit1">S</span><span class="word" title="">sorge&nbsp;</span><span class="msa" title="adjective">aj</span><span class="punc">.</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">on&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">ealle&nbsp;</span><span class="msa" title="indefinite pronoun"><></span><span class="wc" title="stress word">s</span><span class="allit1">T</span><span class="word" title="">tid&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hu&nbsp;</span><span class="msa" title="interrogative pronoun">?</span><span class="wc" title="particle">t</span><span class="allit2">SK</span><span class="word" title="">sculon&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wit&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">nu&nbsp;</span><span class="msa" title="adverb">av</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;5"/><span class="wc" title="particle">t</span><span class="allit2">L</span><span class="word" title="">libban&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">oððe&nbsp;</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">on&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="clitic">c</span><span class="allit3">Þ</span><span class="word" title="">þis&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">L</span><span class="word" title="">land&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wesan&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">G</span><span class="word" title="">ġif&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">her&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">wind&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="particle">t</span><span class="allit2">K</span><span class="word" title="">cymð&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;6"/><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">westan&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">oððe&nbsp;</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span><span class="word" title="">eastan&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="wc" title="stress word">s</span><span class="allit1">S</span><span class="word" title="">suðan&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">oððe&nbsp;</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="stress word">s</span><span class="allit1">N</span><span class="word" title="">norðan&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="stress word">s</span><span class="allit1">S</span><span class="word" title="">sweorc&nbsp;</span><span class="msa" title="common noun">n</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;7"/><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">up&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">F</span><span class="word" title="">færeð&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">K</span><span class="word" title="">cymeð&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">hæġles&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">SK</span><span class="word" title="">scur&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">heofone&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="stress word">s</span><span class="allit1">T</span><span class="word" title="">tenġe&nbsp;</span><span class="msa" title="adjective">aj</span><span class="punc">·</span><span class="wc" title="particle">t</span><span class="allit2">F</span><span class="word" title="">færeð&nbsp;</span><span class="msa" title="finite verb">fv</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;8"/><span class="wc" title="stress word">s</span><span class="allit1">F</span><span class="word" title="">forst&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">on&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">S</span><span class="word" title="">se&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">B</span><span class="word" title="">byð&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit2">F</span><span class="word" title="">fyrnum&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="stress word">s</span><span class="allit1">K</span><span class="word" title="">ceald&nbsp;</span><span class="msa" title="adjective">aj</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hwilum&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">of&nbsp;</span><span class="msa" title="preposition">→</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;9"/><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">heofnum&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">hate&nbsp;</span><span class="msa" title="adjective">aj</span><span class="wc" title="particle">t</span><span class="allit2">SK</span><span class="word" title="">scineð&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">B</span><span class="word" title="">blicð&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="clitic">c</span><span class="allit3">Þ</span><span class="word" title="">þeos&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">B</span><span class="word" title="">beorhte&nbsp;</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span><span class="allit1">S</span><span class="word" title="">sunne&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="⁊">and&nbsp;</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wit&nbsp;</span><span class="msa" title="personal pronoun">pr</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;10"/><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">her&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="stress word">s</span><span class="allit1">B</span><span class="word" title="">baru&nbsp;</span><span class="msa" title="adjective">aj</span><span class="wc" title="particle">t</span><span class="allit2">ST</span><span class="word" title="">standað&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">un&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wered&nbsp;</span><span class="msa" title="participle">vp</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">wædo&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="ne is">nys&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">unc&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">wuht&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">B</span><span class="word" title="">be&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;11"/><span class="wc" title="stress word">s</span><span class="allit1">F</span><span class="word" title="">foran&nbsp;</span><span class="msa" title="preposition">→</span><span class="punc">·</span><span class="wc" title="clitic">c</span><span class="allit3">T</span><span class="word" title="">to&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="stress word">s</span><span class="allit1">SK</span><span class="word" title="">scur&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">SK</span><span class="word" title="">sceade&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">ne&nbsp;</span><span class="msa" title="coordinating conjunction">ccj</span><span class="wc" title="stress word">s</span><span class="allit1">SK</span><span class="word" title="">sceattes&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">wiht&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="wc" title="clitic">c</span><span class="allit3">T</span><span class="word" title="">to&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="stress word">s</span><span class="allit1">M</span><span class="word" title="">mete&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;12"/><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">mearcod&nbsp;</span><span class="msa" title="participle">vp</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">ac&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">unc&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">is&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">M</span><span class="word" title="">mihtig&nbsp;</span><span class="msa" title="adjective">aj</span><span class="wc" title="stress word">s</span><span class="allit1">G</span><span class="word" title="">god&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">waldend&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">wrað&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">M</span><span class="word" title="">mod&nbsp;</span><span class="msa" title="adjective">aj</span><span class="punc">·</span><span class="clause">§</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;13"/><span class="wc" title="clitic">c</span><span class="allit3">T</span><span class="word" title="">to&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hwon&nbsp;</span><span class="msa" title="interrogative pronoun">?</span><span class="wc" title="particle">t</span><span class="allit2">SK</span><span class="word" title="">sculon&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">wit&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">weorðan&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">nu&nbsp;</span><span class="msa" title="adverb">av</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">Nu&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">me&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">mæg&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hreowan&nbsp;</span><span class="msa" title="infinitive">∞</span><span class="punc">·</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;14"/><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="ꝥ">þæt&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">ic&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">B</span><span class="word" title="">bæd&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">hoefnes&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">G</span><span class="word" title="">god&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="wc" title="stress word">s</span><span class="allit1">W</span><span class="word" title="">waldend&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">Þ</span><span class="word" title="">þone&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">G</span><span class="word" title="">godan&nbsp;</span><span class="msa" title="adjective">aj</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="ꝥ">þæt&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">he&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þe&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">her&nbsp;</span><span class="msa" title="adverb">av</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;15"/><span class="wc" title="particle">t</span><span class="allit2">W</span><span class="word" title="">worhte&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="clitic">c</span><span class="allit3">T</span><span class="word" title="">to&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">me&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="punc">·</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">of&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="stress word">s</span><span class="allit1">L</span><span class="word" title="">liðum&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">minum&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">nu&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þu&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">me&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="clitic">c</span><span class="allit3">F</span><span class="word" title="">for&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="particle">t</span><span class="allit2">L</span><span class="word" title="">læred&nbsp;</span><span class="msa" title="participle">vp</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;16"/><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hæfst&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="wc" title="clitic">c</span><span class="allit3">Ø</span><span class="word" title="">on&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="clitic">c</span><span class="allit3">M</span><span class="word" title="">mines&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">herran&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="stress word">s</span><span class="allit1">H</span><span class="word" title="">hete&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">·</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">S</span><span class="word" title="">swa&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">me&nbsp;</span><span class="msa" title=""></span><span class="wc" title="particle">t</span><span class="allit2">N</span><span class="word" title="">nu&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="particle">t</span><span class="allit2">H</span><span class="word" title="">hreowan&nbsp;</span><span class="msa" title="infinitive">∞</span></div><div class="linebegin" style="margin-bottom:15px">♦<span title="38;17"/><span class="wc" title="particle">t</span><span class="allit2">M</span><span class="word" title="">mæg&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">·</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">æfre&nbsp;</span><span class="msa" title="adverb">av</span><span class="wc" title="clitic">c</span><span class="allit3">T</span><span class="word" title="">to&nbsp;</span><span class="msa" title="preposition">→</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span><span class="word" title="">aldre&nbsp;</span><span class="msa" title="common noun">n</span><span class="punc">.</span><span class="clause">§</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="ꝥ">þæt&nbsp;</span><span class="msa" title="subordinating conjunction">scj</span><span class="wc" title="particle">t</span><span class="allit2">Ø</span><span class="word" title="">ic&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="particle">t</span><span class="allit2">Þ</span><span class="word" title="">þe&nbsp;</span><span class="msa" title="personal pronoun">pr</span><span class="wc" title="clitic">c</span><span class="allit3">M</span><span class="word" title="minũ">minum&nbsp;</span><span class="msa" title="pronoun/determiner">pd</span><span class="wc" title="stress word">s</span><span class="allit1">Ø</span><span class="word" title="">eagum&nbsp;</span><span class="msa" title="common noun">n</span><span class="wc" title="clitic">c</span><span class="allit3">G</span><span class="word" title="">ġe&nbsp;</span><span class="msa" title="unstressed prefix">&lt;</span><span class="wc" title="particle">t</span><span class="allit2">S</span><span class="word" title="">seah&nbsp;</span><span class="msa" title="finite verb">fv</span><span class="punc">⁖</span>     </div> <!-- close the content div -->
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+            <!-- the following attaches a function to the on-click event of the toggles that adds or
+                    removes a class corresponding to the toggle to the body element. These body 
+                    classes are referenced in the relevant CSS to turn on and off various annotations.
+            -->
+            <script>
+            $(function() {
+                $(".toggle").on("click", function() {
+                $("body").toggleClass($(this).data("target"));
+                return false;
+                });
+            });
+            
+            $(document).tooltip({show: null});
+            </script>
+        </body>
+    </html>
