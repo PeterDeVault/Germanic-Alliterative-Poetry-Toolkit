@@ -36,7 +36,7 @@
                     <w wc="t" msa="xNC" A="Ø">Ár</w>
                     <w wc="t" msa="xVB fF" A="V">var</w>
                     <cb/>
-                    <w wc="t" msa="xCS" expands="þ&combcurl;z" A="Þ">þatz</w>
+                    <w wc="c" msa="xPD" expands="þ&combcurl;z" A="Þ">þatz</w>
                     <w wc="s" msa="xNP" expands="Sig&combtilde;þ&combcurl;" A="S">Sigurðr</w>
                 </v>
                 <v role="off">
@@ -128,10 +128,10 @@
                     <w wc="c" msa="xCC" expands="z" A="Ø">oc</w>
                     <w wc="s" msa="xNC" expands="ss" A="S">synir</w>
                     <pc>.</pc>
-                    <cb/>
                     <w wc="s" msa="xNP" A="G">Giúca</w>
                 </v>
             </vg>
+            <cb/>
             <vg type="line" cid="9" A="B">
                 <v role="on">
                     <w wc="t" msa="xCC" emends="VNZ" A="Ø">Unz</w>
@@ -550,7 +550,7 @@
             <cb/>
             <vg type="line" cid="39" A="Ø">
                 <v role="on">
-                    <w wc="t" msa="xVB fF" expnds="mū" A="M">mun</w>
+                    <w wc="t" msa="xVB fF" expands="mū" A="M">mun</w>
                     <w wc="t" msa="xPE" A="Ø">ec</w>
                     <w wc="t" msa="xVB fI" A="Ø">una</w>
                     <w wc="t" msa="xAV" expands="ald&combcurl;" A="Ø">aldri</w>
@@ -570,7 +570,7 @@
                     <w wc="t" msa="xVB fI" A="F">fara</w>
                 </v>
                 <v role="off">
-                    <w wc="" msa="xPD" A="Þ">þars</w>
+                    <w wc="t" msa="xPD" A="Þ">þars</w>
                     <lb n="68;21"/>
                     <w wc="t" msa="xPE" A="Ø">ec</w>
                     <w wc="t" msa="xAV" A="Ø">áðan</w>
@@ -816,13 +816,13 @@
             </vg>
             <cb/>
             <vg type="line" cid="59" A="H">
-                <v>
+                <v role="on">
                     <w wc="t" msa="xVB fF" expands="nā" A="N">nam</w>
                     <w wc="t" msa="xPE" expands="h&combcurl;" A="H">hann</w>
                     <w wc="t" msa="xPE" expands="s&combcurl;" A="S">sér</w>
                     <w wc="s" msa="xNP" A="H">Hǫgna</w>
                 </v>
-                <v>
+                <v role="off">
                     <w wc="s" msa="xVB fP" A="H">heita</w>
                     <w wc="c" msa="xAP" A="Ø">at</w>
                     <w wc="s" msa="xNC" expands="runō" A="R">rúnom</w>
@@ -909,7 +909,7 @@
                 <v role="on">
                     <w wc="t" msa="xVB fF" A="V">Vildu</w>
                     <w wc="s" msa="xNC" A="Ø">ocr</w>
-                    <w wc="t" msa="xVB fI" A="F">fylc</w>
+                    <w wc="t" msa="xVB fI" A="F">fylci</w>
                 </v>
                 <v role="off">
                     <w wc="c" msa="xAP" expands="t&combcurl;" A="T">til</w>
@@ -1228,12 +1228,12 @@
                 </v>
             </vg>
             <vg type="line" cid="90" A="K">
-                <v>
+                <v role="on">
                     <w wc="s" msa="xAJ" c="1" A="K">kyn</w>
                     <w wc="s" msa="xAJ" c="2" A="B">birt</w>
                     <w wc="s" msa="xNC" A="Ø">iárn</w>
                 </v>
-                <v>
+                <v role="off">
                     <w wc="c" msa="xAP" A="Ø">ór</w>
                     <w wc="s" msa="xNC" expands="k&combcurl;s" A="K">konungs</w>
                     <w wc="s" msa="xNC" A="H">hendi</w>
@@ -1405,14 +1405,14 @@
             </vg>
             <cb/>
             <vg type="line" cid="103" A="F">
-                <v>
+                <v role="on">
                     <w wc="t" msa="xVB fF" p="1" expands="ka&nscap;" A="K">kann</w>
                     <w wc="t" msa="xVB fF" p="2" A="Ø">at</w>
                     <!--negative suffix -->
                     <w wc="t" msa="xPE" expands="h&combcurl;" A="H">hann</w>
                     <w wc="t" msa="xVB fF" expands="fi&rscap;az" A="F">firraz</w>
                 </v>
-                <v>
+                <v role="off">
                     <w wc="c" msa="xAP" A="Ø">ór</w>
                     <w wc="s" msa="xNC" c="1" A="F">fiánd</w>
                     <w wc="s" msa="xNC" c="2" A="G">garði</w>
@@ -1449,10 +1449,10 @@
                 <v role="on">
                     <w wc="t" msa="xVB fI" A="R">Ríðra</w>
                     <w wc="t" msa="xPD" expands="þeī" A="Þ">þeim</w>
-                    <w wc="r" msa="xAV" expands="siþ&combcurl;" A="S">síðan</w>
+                    <w wc="t" msa="xAV" expands="siþ&combcurl;" A="S">síðan</w>
                 </v>
                 <v role="off">
-                    <w wc="r" msa="xCS" expands="þot&combdot;" A="Þ">þótt</w>
+                    <w wc="t" msa="xCS" expands="þot&combdot;" A="Þ">þótt</w>
                     <w wc="s" msa="xAJ" expands="vii" A="S">siau</w>
                     <pc>.</pc>
                     <lb n="69;17"/>
@@ -1725,12 +1725,12 @@
                 </v>
             </vg>
             <vg type="line" cid="126" A="F">
-                <v>
+                <v role="on">
                     <w wc="s" msa="xNC" A="F">feicna</w>
                     <w wc="s" msa="xNC" expands="feþ&combcurl;" A="F">fæðir</w>
                 </v>
                 <cb/>
-                <v>
+                <v role="off">
                     <w wc="t" msa="xVB fF" expands="hy&gscap;" A="H">hygg</w>
                     <w wc="t" msa="xPE" A="Ø">ec</w>
                     <w wc="t" msa="xCS" A="Ø">at</w>
@@ -1770,7 +1770,7 @@
                 <v role="on">
                     <w wc="t" msa="xVB fF" A="S">sæir</w>
                     <w wc="s" msa="xNC" expands="bræþ&combcurl;" A="B">bræðr</w>
-                    <w wc="c" msa="xPE" expands="þinō" A="Þ">þínom</w>
+                    <w wc="s" msa="xPE" expands="þinō" A="Þ">þínom</w>
                 </v>
                 <v role="off">
                     <w wc="s" msa="xAJ" A="B">blóðuct</w>
@@ -1971,23 +1971,25 @@
             <pc>.</pc>
             <cb/>
             <vg type="line" cid="143" A="Þ">
-                <!-- there is no off-verse in this line -->
                 <v role="on">
-                    <w wc="c" msa="xPD" expands="Þeī" A="Þ">Þeim</w>
+                    <w wc="s" msa="xPD" expands="Þeī" A="Þ">Þeim</w>
                     <lb n="69;35"/>
                     <w wc="t" msa="xVB fF" expands="hetōc" A="H">hétomc</w>
                     <w wc="t" msa="xAV" A="Þ">þá</w>
                 </v>
+                <v role="off">
+                    <!-- there is no off-verse in this line -->
+                    <w wc="s" msa="xNC" c="1" emends="" A="Þ">þióð</w>
+                    <!--editorial insertion. manuscript has a single space between þa and er-->
+                    <w wc="s" msa="xNC" c="2" emends="" A="K">konungi</w>
+                </v>
             </vg>
-            <w wc="s" msa="xNC" c="1" emends="" A="Þ">þióð</w>
-            <!--editorial insertion. manuscript has a single space between þa and er-->
-            <w wc="s" msa="xNC" c="2" emends="" A="K">konungi</w>
             <cb/>
             <vg type="line" cid="144" A="G">
                 <v role="on">
                     <w wc="t" msa="xRP" expands="e&combcurl;" A="Ø">er</w>
                     <w wc="c" msa="xAP" expands="m;" A="M">með</w>
-                    <w wc="s" msa="x" A="G">gulli</w>
+                    <w wc="s" msa="xNC" A="G">gulli</w>
                     <w wc="t" msa="xVB fF" A="S">sat</w>
                 </v>
                 <v role="off">
@@ -2120,8 +2122,8 @@
                     <!-- again, it seems that ióðungri may alliterate vocalically, not with G! -->
                     <w wc="t" msa="xCC" expands="⁊" A="Ø">oc</w>
                     <w wc="t" msa="xPE" expands="m&combtilde;" A="M">mér</w>
-                    <w wc="s" msa="xAJ" c="1'" A="Ø">ióð</w>
-                    <w wc="s" msa="xAJ" c="2'" expands="ung&rsup;" A="Ø">ungri</w>
+                    <w wc="s" msa="xAJ" c="1" A="Ø">ióð</w>
+                    <w wc="s" msa="xAJ" c="2" expands="ung&rsup;" A="Ø">ungri</w>
                 </v>
                 <v role="off">
                     <w wc="s" msa="xNC" emends="ara" A="Ø">aura</w>
@@ -2244,16 +2246,14 @@
             <cb/>
             <vg type="line" cid="162" A="Ø">
                 <v role="on">
-                    <v role="off">
-                        <w wc="t" msa="xNX" A="N">né</w>
-                        <w wc="t" msa="xPE" A="Ø">ec</w>
-                        <w wc="s" msa="xAJ" expands="a&nscap;ars" A="Ø">annars</w>
-                        <w wc="s" msa="xNC" expands="ma&nscap;z" A="M">mannz</w>
-                    </v>
-                    <w wc="s" msa="xNC" A="Ø">aura</w>
+                    <w wc="t" msa="xNX" A="N">né</w>
+                    <w wc="t" msa="xPE" A="Ø">ec</w>
+                    <w wc="s" msa="xAJ" expands="a&nscap;ars" A="Ø">annars</w>
+                    <w wc="s" msa="xNC" expands="ma&nscap;z" A="M">mannz</w>
                 </v>
-                <lb n="70;9"/>
                 <v role="off">
+                    <w wc="s" msa="xNC" A="Ø">aura</w>
+                    <lb n="70;9"/>
                     <w wc="t" msa="xVB fF" p="1" emends="villdac" A="V">vild</w>
                     <w wc="t" msa="xVB fF" p="2">ac</w>
                 </v>
@@ -2348,7 +2348,7 @@
                 </v>
                 <v role="off">
                     <w wc="s" msa="xNC" A="H">harma</w>
-                    <w wc="" msa="xPE" expands="mi&nscap;a" A="M">minna</w>
+                    <w wc="s" msa="xPE" expands="mi&nscap;a" A="M">minna</w>
                 </v>
             </vg>
             <pc>.</pc>
@@ -2382,10 +2382,8 @@
             <cb/>
             <vg type="line" cid="172" A="Ø">
                 <v role="on">
-                    <v role="off">
-                        <w wc="t" msa="xVB FF" A="G">gengo</w>
-                        <w wc="s" msa="xPI" A="Ø">allir</w>
-                    </v>
+                    <w wc="t" msa="xVB FF" A="G">gengo</w>
+                    <w wc="s" msa="xPI" A="Ø">allir</w>
                 </v>
                 <v role="off">
                     <w wc="t" msa="xCC" expands="ƶ" A="Ø">oc</w>
@@ -2563,9 +2561,9 @@
             <vg type="line" cid="185" A="K">
                 <v role="on">
                     <w wc="t" msa="xPE" expands="Hō" A="H">Hon</w>
-                    <w wc="" msa="xVB fF" A="K">krǫng</w>
-                    <w wc="" msa="xAP" A="Ø">of</w>
-                    <w wc="" msa="xNC" expands="kōz" A="K">komz</w>
+                    <w wc="t" msa="xVB fF" A="K">krǫng</w>
+                    <w wc="c" msa="xAP" A="Ø">of</w>
+                    <w wc="s" msa="xNC" expands="kōz" A="K">komz</w>
                 </v>
                 <lb n="70;20"/>
                 <v role="off">
@@ -2632,7 +2630,7 @@
             <vg type="line" cid="190" A="Ø">
                 <v role="on">
                     <w wc="t" msa="xVB fF" A="L">Leit</w>
-                    <w wc="r" msa="xPE" expands="hō" A="H">hon</w>
+                    <w wc="t" msa="xPE" expands="hō" A="H">hon</w>
                     <w wc="c" msa="xAP" expands="ū" A="Ø">um</w>
                     <w wc="s" msa="xPI" A="Ø">alla</w>
                 </v>
@@ -3048,12 +3046,12 @@
             </vg>
             <cb/>
             <vg type="line" cid="220" A="S">
-                <v>
+                <v role="on">
                     <w wc="s" msa="xNP" c="1" A="S">Svan</w>
                     <w wc="s" msa="xNP" c="2" A="H">hildr</w>
                     <w wc="t" msa="xVB fI" expands="v&combcurl;a" A="V">vera</w>
                 </v>
-                <v>
+                <v role="off">
                     <w wc="s" msa="xNC" A="S">sólar</w>
                     <w wc="s" msa="xNC" A="G">geisla</w>
                 </v>
@@ -3391,14 +3389,14 @@
             <cb/>
             <vg type="line" cid="245" A="Ø">
                 <!-- not sure about the alliteration. Could be M. -->
-                <v>
+                <v role="on">
                     <w wc="t" msa="xAV" A="Ø">Óǫrt</w>
                     <w wc="t" msa="xVB fF" expands="ml&combcurl;i" A="M">mæli</w>
                     <w wc="t" msa="xPE" A="Ø">ec</w>
                     <w wc="t" msa="xAV" A="N">nú</w>
                 </v>
                 <cb/>
-                <v>
+                <v role="off">
                     <w wc="t" msa="xCS" expands="e&nscap;" A="Ø">enn</w>
                     <w wc="t" msa="xPE" expands="hō" A="H">hon</w>
                     <w wc="t" msa="xNX" expands="eg&combmacr;" A="Ø">eigi</w>
@@ -3406,12 +3404,12 @@
                 </v>
             </vg>
             <vg type="line" cid="246" A="Ø">
-                <v>
+                <v role="on">
                     <w wc="c" msa="xAP" A="Ø">of</w>
                     <w wc="c" msa="xPE" A="Ø">óra</w>
                     <w wc="s" msa="xNC" A="S">sǫc</w>
                 </v>
-                <v role="on">
+                <v role="off">
                     <w wc="s" msa="xNC" expands="ald&combcurl;" A="Ø">aldri</w>
                     <w wc="t" msa="xVB fI" A="T">týna</w>
                 </v>
@@ -3497,7 +3495,7 @@
             <vg type="line" cid="253" A="Ø">
                 <v role="on">
                     <w wc="t" msa="xCC" p="1" expands="þ&combcurl;" A="Þ">því</w>
-                    <w wc="t" msa="xCC" p="2'" A="Ø">at</w>
+                    <w wc="t" msa="xCC" p="2" A="Ø">at</w>
                     <!-- neg suffix -->
                     <w wc="s" msa="xNP" c="1" A="Ø">Iormun</w>
                     <w wc="s" msa="xNP" c="2" expands="re&cscap;&combgrave;" A="R">reccr</w>
