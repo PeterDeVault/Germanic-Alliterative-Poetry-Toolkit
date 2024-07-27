@@ -1,0 +1,285 @@
+linenumber	verserole	suzuki	type	restr
+1	on	xxxxxPxxxxpx	F	
+1	off	pxxxpxx	A1	
+2	on	xxxPxxP	B1	
+2	off	xxxxxPxP	B1	
+3	on	pxPxx	D	
+3	off	xxxPxP	B1	
+4	on	pxxxPx	A1	
+4	off	xpXSx	C	
+5	on	xPxxxxPx	A1	
+5	off	xxxxxPxPX	A1	
+6	on	xxxxxxxPxP	B1	
+6	off	PxPx	A1	
+7	on	xxxxPx	A3	
+7	off	xxxxpxxP	B1	
+8	on	xxPXx	C	
+8	off	PxPx	A1	
+9	on	pXsXx	D	
+9	off	xxPxpx	B1	
+10	on	pxxxxPx	A1	
+10	off	xxxPxxP	B1	
+11	on	xxxxxPx	A3	
+11	off	PxPx	A1	
+12	on	pxxPx	A1	
+12	off	xxxxxPxxxP	B1	
+13	on	Pxpxsx	A2	
+13	off	xxxxxxPxxP	B1	
+14	on	xxxxxPx	A3	
+14	off	xxxxxxxxxPxpx	B1	
+15	on	xxxxPpx	C	
+15	off	PxxxPx	A1	
+16	on	PxxxPx	A1	
+16	off	xpxPPx	D	
+17	on	xxPxP	B1	
+17	off	pxxxPx	A1	
+18	on	pxPxxP	D	
+18	off	xxpxxP	B1	
+19	on	Pxxxxpxx	A1	
+19	off	PxPx	A1	
+20	on	PxxpXxPx	A1A1	
+20	off	xxxpxPx	C	
+21	on	xpxxxPx	A1	
+21	off	xxxPxpx	B1	
+22	on	xxpxxxxPx	A1	
+22	off	xxxPxP	B1	
+23	on	xpxxPx	A1	
+23	off	xxxxxxPXxP	B1	
+24	on	PXPx	A1	
+24	off	xxxxxPxP	B1	
+25	on	xxxxPx	A3	
+25	off	xxxxxpXSxP	E	
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				

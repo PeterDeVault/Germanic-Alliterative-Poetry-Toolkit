@@ -17,7 +17,7 @@
             </publicationStmt>
             <sourceDesc>
                 <p> Manuscript - Pal.lat.1447 Bodleian Library MS. Junius 11 </p>
-                <markupLevel>syllabified</markupLevel>
+                <markupLevel>analyzed</markupLevel>
             </sourceDesc>
         </fileDesc>
         <profDesc>
@@ -32,9 +32,9 @@
             <lb n="1r;1"/>
             <cb/>
             <vg type="line" cid="1" A="Ø">
-                <v role="on">
+                <v role="on" type="F" restr="" contour="xxxxxPxxxxpx">
                     <w wc="t" msa="xAV" A="W" id="0" Σ="2"/>
-                    <s m="1" wt="l">uue</s>
+                    <z h="d"/><s m="1" wt="l">uue</s>
                     <s m="1" wt="l">la</s>
                     <w wc="t" msa="xCS" A="Þ" id="1" Σ="1"/>
                     <s m="2" wt="h">that</s>
@@ -43,8 +43,8 @@
                     <w wc="t" msa="xAV" A="N" id="3" Σ="1"/>
                     <s m="1" wt="l">nu</s>
                     <w wc="s" msa="xNP" A="Ø" id="4" Σ="2"/>
-                    <s m="1" wt="l">e</s>
-                    <s m="1" wt="l">ua</s>
+                    <z h="l"/><s m="1" wt="l">e</s>
+                    <z h="d"/><s m="1" wt="l">ua</s>
                     <w wc="t" msa="xVB fF" A="H" id="5" Σ="2"/>
                     <s m="1" wt="l">ha</s>
                     <s m="2" wt="h">bas</s>
@@ -52,42 +52,42 @@
                     <w wc="t" msa="xVB fF" A="Q" id="6" Σ="1"/>
                     <s m="2" wt="h">quađ</s>
                     <w wc="s" msa="xNP" A="Ø" id="7" Σ="2"/>
-                    <s m="1" wt="l">a</s>
-                    <s m="2" wt="h">đam</s>
+                    <z h="l"/><s m="1" wt="l" sus="1">a</s>
+                    <z h="d"/><s m="2" wt="h" sus="2">đam</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="A1" restr="" contour="pxxxpxx">
                     <w wc="s" msa="xNC" A="Ø" id="8" Σ="3"/>
-                    <s m="1" wt="l">u</s>
-                    <s m="1" wt="l">bi</s>
-                    <s m="1" wt="l">lo</s>
+                    <z h="l"/><s m="1" wt="l" res="1">u</s>
+                    <s m="1" wt="l" res="2">bi</s>
+                    <z h="d"/><s m="1" wt="l">lo</s>
                     <w wc="c" msa="xPX" p="1" A="G" id="9" Σ="1"/>
                     <s m="1" wt="l">gi</s>
                     <w wc="t" msa="xVB fF" p="2" A="M" id="10" Σ="3"/>
-                    <s m="1" wt="l">ma</s>
-                    <s m="1" wt="l">ra</s>
-                    <s m="2" wt="h">kot</s>
+                    <z h="l"/><s m="1" wt="l" res="1">ma</s>
+                    <s m="1" wt="l" res="2">ra</s>
+                    <z h="d"/><s m="2" wt="h">kot</s>
                 </v>
             </vg>
             <pc>·</pc>
             <vg type="line" cid="2" A="S">
-                <v role="on">
+                <v role="on" type="B1" restr="" contour="xxxPxxP">
                     <w wc="c" msa="xPE" A="Ø" id="11" Σ="3"/>
-                    <s m="2" wt="h">un</s>
+                    <z h="d"/><s m="2" wt="h">un</s>
                     <s m="1" wt="l">ka</s>
                     <s m="1" wt="l">ro</s>
                     <w wc="s" msa="xPE" A="S" id="12" Σ="3"/>
-                    <s m="2" wt="h">sel</s>
-                    <s m="1" wt="l">ba</s>
+                    <z h="l"/><s m="2" wt="h">sel</s>
+                    <z h="d"/><s m="1" wt="l">ba</s>
                     <s m="1" wt="l">ro</s>
                     <!-- reflexives get stress -->
                     <w wc="s" msa="xNC" A="S" id="13" Σ="1"/>
-                    <s m="2" wt="h">siđ</s>
+                    <z h="l"/><s m="2" wt="h">siđ</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxxxPxP">
                     <w wc="t" msa="xAV" A="N" id="14" Σ="1"/>
-                    <s m="1" wt="l">nu</s>
+                    <z h="d"/><s m="1" wt="l">nu</s>
                     <w wc="t" msa="xVB fF" A="M" id="15" Σ="1"/>
                     <s m="3" wt="o">maht</s>
                     <w wc="t" msa="xPE" A="Þ" id="16" Σ="1"/>
@@ -98,83 +98,83 @@
                     <s m="1" wt="l">thia</s>
                     <lb n="1r;2"/>
                     <w wc="s" msa="xAJ" A="S" id="19" Σ="2"/>
-                    <s m="2" wt="h">suar</s>
-                    <s m="2" wt="h">ton</s>
+                    <z h="l"/><s m="2" wt="h">suar</s>
+                    <z h="d"/><s m="2" wt="h">ton</s>
                     <w wc="s" msa="xNX" A="H" id="20" Σ="1"/>
-                    <s m="3" wt="o">hell</s>
+                    <z h="l"/><s m="3" wt="o">hell</s>
                 </v>
             </vg>
             <vg type="line" cid="3" A="G">
-                <v role="on">
+                <v role="on" type="D" restr="" contour="pxPxx">
                     <w wc="t" msa="xVB fI" A="G" id="21" Σ="2"/>
-                    <s m="1" wt="l">gi</s>
-                    <s m="2" wt="h">non</s>
+                    <z h="l"/><s m="1" wt="l" res="1">gi</s>
+                    <s m="2" wt="h" res="2">non</s>
                     <w wc="s" msa="xAJ" A="G" id="22" Σ="3"/>
-                    <s m="1" wt="l">gra</s>
-                    <s m="1" wt="l">da</s>
+                    <z h="l"/><s m="1" wt="l">gra</s>
+                    <z h="d"/><s m="1" wt="l">da</s>
                     <s m="1" wt="l">ga</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxPxP">
                     <w wc="t" msa="xAV" A="N" id="23" Σ="1"/>
-                    <s m="1" wt="l">nu</s>
+                    <z h="d"/><s m="1" wt="l">nu</s>
                     <w wc="t" msa="xPE" A="Þ" id="24" Σ="1"/>
                     <s m="1" wt="l">thu</s>
                     <w wc="c" msa="xPD" A="S" id="25" Σ="1"/>
                     <s m="1" wt="l">sia</s>
                     <w wc="s" msa="xAJ" A="G" id="26" Σ="2"/>
-                    <s m="2" wt="h">grim</s>
-                    <s m="2" wt="h">man</s>
+                    <z h="l"/><s m="2" wt="h">grim</s>
+                    <z h="d"/><s m="2" wt="h">man</s>
                     <w wc="s" msa="xNC" A="M" id="27" Σ="1"/>
-                    <s m="3" wt="o">maht</s>
+                    <z h="l"/><s m="3" wt="o">maht</s>
                 </v>
             </vg>
             <pc>.</pc>
             <vg type="line" cid="4" A="H">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="pxxxPx">
                     <w wc="t" msa="xAV" A="H" id="28" Σ="3"/>
-                    <s m="1" wt="l">hi</s>
-                    <s m="1" wt="l">na</s>
-                    <s m="1" wt="l">na</s>
+                    <z h="l"/><s m="1" wt="l" res="1">hi</s>
+                    <s m="1" wt="l" res="2">na</s>
+                    <z h="d"/><s m="1" wt="l">na</s>
                     <w wc="c" msa="xPX" p="1" A="G" id="29" Σ="1"/>
                     <s m="1" wt="l">gi</s>
                     <w wc="t" msa="xVB fF" p="2" A="H" id="30" Σ="2"/>
-                    <s m="1" wt="l">ho</s>
-                    <s m="2" wt="h">rean</s>
+                    <z h="l"/><s m="1" wt="l">ho</s>
+                    <z h="d"/><s m="2" wt="h">rean</s>
                 </v>
                 <pc>.</pc>
                 <cb/>
-                <v role="off">
+                <v role="off" type="C" restr="" contour="xpXSx">
                     <w wc="t" msa="xVB fF" A="N" id="31" Σ="1"/>
-                    <s m="2" wt="h">nis</s>
+                    <z h="d"/><s m="2" wt="h">nis</s>
                     <w wc="s" msa="xNC" c="1" A="H" id="32" Σ="2"/>
-                    <s m="1" wt="l">he</s>
-                    <s m="2" wt="h">ƀan</s>
+                    <z h="l"/><s m="1" wt="l" res="1">he</s>
+                    <s m="2" wt="h" res="2">ƀan</s>
                     <w wc="s" msa="xNC" c="2" A="R" id="33" Σ="2"/>
-                    <s m="1" wt="l">ri</s>
-                    <s m="1" wt="l">ki</s>
+                    <z h="h"/><s m="1" wt="l">ri</s>
+                    <z h="d"/><s m="1" wt="l">ki</s>
                 </v>
             </vg>
             <vg type="line" cid="5" A="L">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="xPxxxxPx">
                     <w wc="c" msa="xPX" p="1" A="G" id="34" Σ="1"/>
-                    <s m="1" wt="l">ge</s>
+                    <z h="d"/><s m="1" wt="l">ge</s>
                     <w wc="s" msa="xAJ" p="2" A="L" id="35" Σ="1"/>
-                    <s m="3" wt="o">lihc</s>
+                    <z h="l"/><s m="3" wt="o">lihc</s>
                     <w wc="s" msa="xAJ" A="S" id="36" Σ="4"/>
-                    <s m="1" wt="l">su</s>
+                    <z h="d"/><s m="1" wt="l">su</s>
                     <s m="1" wt="l">li</s>
                     <s m="1" wt="l">ca</s>
                     <s m="1" wt="l">ro</s>
                     <w wc="s" msa="xNC" A="L" id="37" Σ="2"/>
-                    <s m="2" wt="h">log</s>
-                    <s m="2" wt="h">nun</s>
+                    <z h="l"/><s m="2" wt="h">log</s>
+                    <z h="d"/><s m="2" wt="h">nun</s>
                 </v>
                 <lb n="1r;3"/>
                 <cb/>
-                <v role="off">
+                <v role="off" type="A1" restr="" contour="xxxxxPxPX">
                     <w wc="t" msa="xPD" A="Þ" id="38" Σ="1"/>
-                    <s m="2" wt="h">thit</s>
+                    <z h="d"/><s m="2" wt="h">thit</s>
                     <w wc="t" msa="xVB fF" A="W" id="39" Σ="1"/>
                     <s m="2" wt="h">uuas</s>
                     <w wc="t" msa="xPI" A="Ø" id="40" Σ="3"/>
@@ -182,18 +182,18 @@
                     <s m="1" wt="l">lo</s>
                     <s m="1" wt="l">ro</s>
                     <w wc="s" msa="xNC" A="L" id="41" Σ="2"/>
-                    <s m="2" wt="h">lan</s>
-                    <s m="1" wt="l">do</s>
+                    <z h="l"/><s m="2" wt="h">lan</s>
+                    <z h="d"/><s m="1" wt="l">do</s>
                     <w wc="s" msa="xAJ" A="SK" id="42" Σ="2"/>
-                    <s m="1" wt="l">sco</s>
-                    <s m="3" wt="o">niust</s>
+                    <z h="l"/><s m="1" wt="l">sco</s>
+                    <z h="d"/><s m="3" wt="o">niust</s>
                 </v>
             </vg>
             <cb/>
             <vg type="line" cid="6" A="H">
-                <v role="on">
+                <v role="on" type="B1" restr="" contour="xxxxxxxPxP">
                     <w wc="t" msa="xCS" A="Þ" id="43" Σ="1"/>
-                    <s m="2" wt="h">that</s>
+                    <z h="d"/><s m="2" wt="h">that</s>
                     <w wc="t" msa="xPE" A="W" id="44" Σ="1"/>
                     <s m="2" wt="h">uuit</s>
                     <w wc="t" msa="xAV" A="H" id="45" Σ="1"/>
@@ -205,25 +205,25 @@
                     <s m="2" wt="h">un</s>
                     <s m="2" wt="h">kas</s>
                     <w wc="s" msa="xBD" A="H" id="48" Σ="2"/>
-                    <s m="2" wt="h">her</s>
-                    <s m="2" wt="h">ran</s>
+                    <z h="l"/><s m="2" wt="h">her</s>
+                    <z h="d"/><s m="2" wt="h">ran</s>
                     <w wc="s" msa="xNC" A="Þ" id="49" Σ="1"/>
-                    <s m="3" wt="o">thank</s>
+                    <z h="l"/><s m="3" wt="o">thank</s>
                 </v>
-                <v role="off">
+                <v role="off" type="A1" restr="" contour="PxPx">
                     <w wc="t" msa="xVB fI" A="H" id="50" Σ="2"/>
-                    <s m="2" wt="h">heb</s>
-                    <s m="2" wt="h">bian</s>
+                    <z h="l"/><s m="2" wt="h">heb</s>
+                    <z h="d"/><s m="2" wt="h">bian</s>
                     <w wc="t" msa="xVB fF" A="M" id="51" Σ="2"/>
-                    <s m="2" wt="h">muos</s>
-                    <s m="2" wt="h">tun</s>
+                    <z h="l"/><s m="2" wt="h">muos</s>
+                    <z h="d"/><s m="2" wt="h">tun</s>
                 </v>
             </vg>
             <cb/>
             <vg type="line" cid="7" A="H">
-                <v role="on">
+                <v role="on" type="A3" restr="" contour="xxxxPx">
                     <w wc="t" msa="xCS" A="Þ" id="52" Σ="1"/>
-                    <s m="2" wt="h">thar</s>
+                    <z h="d"/><s m="2" wt="h">thar</s>
                     <w wc="t" msa="xPE" A="Þ" id="53" Σ="1"/>
                     <s m="1" wt="l">thu</s>
                     <w wc="t" msa="xPE" A="Þ" id="54" Σ="1"/>
@@ -231,112 +231,112 @@
                     <w wc="t" msa="xNX" A="N" id="55" Σ="1"/>
                     <s m="1" wt="l">ni</s>
                     <w wc="t" msa="xVB fF" A="H" id="56" Σ="2"/>
-                    <s m="2" wt="h">hor</s>
-                    <s m="2" wt="h">dis</s>
+                    <z h="l"/><s m="2" wt="h">hor</s>
+                    <z h="d"/><s m="2" wt="h">dis</s>
                 </v>
                 <lb n="1r;4"/>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxxpxxP">
                     <w wc="t" msa="xCS" A="Þ" id="57" Σ="1"/>
-                    <s m="1" wt="l">thie</s>
+                    <z h="d"/><s m="1" wt="l">thie</s>
                     <w wc="t" msa="xPE" A="Ø" id="58" Σ="1"/>
                     <s m="3" wt="o">unk</s>
                     <w wc="c" msa="xPD" A="Þ" id="59" Σ="2"/>
                     <s m="1" wt="l">the</s>
                     <s m="2" wt="h">san</s>
                     <w wc="s" msa="xNC" A="H" id="60" Σ="2"/>
-                    <s m="1" wt="l">ha</s>
-                    <s m="2" wt="h">ram</s>
+                    <z h="l"/><s m="1" wt="l" res="1">ha</s>
+                    <s m="2" wt="h" res="2">ram</s>
                     <w wc="c" msa="xPX" p="1" A="G" id="61" Σ="1"/>
-                    <s m="1" wt="l">gi</s>
+                    <z h="d"/><s m="1" wt="l">gi</s>
                     <w wc="t" msa="xVB fF" p="2" A="R" id="62" Σ="1"/>
-                    <s m="2" wt="h">ried</s>
+                    <z h="l"/><s m="2" wt="h">ried</s>
                 </v>
             </vg>
             <cb/>
             <vg type="line" cid="8" A="W">
-                <v role="on">
+                <v role="on" type="C" restr="" contour="xxPXx">
                     <w wc="t" msa="xCS" A="Þ" id="63" Σ="1"/>
-                    <s m="2" wt="h">that</s>
+                    <z h="d"/><s m="2" wt="h">that</s>
                     <w wc="t" msa="xPE" A="W" id="64" Σ="1"/>
                     <s m="2" wt="h">uuit</s>
                     <w wc="s" msa="xNC" A="W" id="65" Σ="3"/>
-                    <s m="2" wt="h">uual</s>
-                    <s m="2" wt="h">dan</s>
+                    <z h="l"/><s m="2" wt="h">uual</s>
+                    <z h="d"/><s m="2" wt="h">dan</s>
                     <s m="2" wt="h">das</s>
                 </v>
-                <v role="off">
+                <v role="off" type="A1" restr="" contour="PxPx">
                     <w wc="s" msa="xNC" A="W" id="66" Σ="1"/>
-                    <s m="3" wt="o">uuord</s>
+                    <z h="l"/><s m="3" wt="o">uuord</s>
                     <w wc="t" msa="xVB fF" A="F" id="67" Σ="3"/>
-                    <s m="2" wt="h">far</s>
-                    <s m="1" wt="l">bra</s>
-                    <s m="2" wt="h">kun</s>
+                    <z h="d"/><s m="2" wt="h">far</s>
+                    <z h="l"/><s m="1" wt="l">bra</s>
+                    <z h="d"/><s m="2" wt="h">kun</s>
                 </v>
             </vg>
             <vg type="line" cid="9" A="H">
-                <v role="on">
+                <v role="on" type="D" restr="" contour="pXsXx">
                     <w wc="s" msa="xNC" c="1" A="H" id="68" Σ="2"/>
-                    <s m="1" wt="l">he</s>
-                    <s m="2" wt="h">ban</s>
+                    <z h="l"/><s m="1" wt="l" res="1">he</s>
+                    <s m="2" wt="h" res="2">ban</s>
                     <w wc="s" msa="xNC" c="2" A="K" id="69" Σ="3"/>
-                    <s m="1" wt="l">ku</s>
-                    <s m="2" wt="h">nin</s>
-                    <s m="2" wt="h">gas</s>
+                    <z h="h"/><s m="1" wt="l" res="1">ku</s>
+                    <s m="2" wt="h" res="2">nin</s>
+                    <z h="d"/><s m="2" wt="h">gas</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxPxpx">
                     <w wc="t" msa="xAV" A="N" id="70" Σ="1"/>
-                    <s m="1" wt="l">Nu</s>
+                    <z h="d"/><s m="1" wt="l">Nu</s>
                     <w wc="t" msa="xPE" A="W" id="71" Σ="1"/>
                     <s m="2" wt="h">uuit</s>
                     <w wc="t" msa="xAV" A="H" id="72" Σ="2"/>
-                    <s m="1" wt="l">hri</s>
-                    <s m="2" wt="h">uuig</s>
+                    <z h="l"/><s m="1" wt="l">hri</s>
+                    <z h="d"/><s m="2" wt="h">uuig</s>
                     <w wc="t" msa="xVB fF" A="M" id="73" Σ="2"/>
-                    <s m="1" wt="l">mu</s>
-                    <s m="2" wt="h">gun</s>
+                    <z h="l"/><s m="1" wt="l" sus="1">mu</s>
+                    <z h="d"/><s m="2" wt="h" sus="2">gun</s>
                 </v>
             </vg>
             <vg type="line" cid="10" A="S">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="pxxxxPx">
                     <w wc="t" msa="xVB fI" A="S" id="74" Σ="3"/>
-                    <s m="1" wt="l">so</s>
-                    <s m="1" wt="l">ro</s>
-                    <s m="2" wt="h">gon</s>
+                    <z h="l"/><s m="1" wt="l" res="1">so</s>
+                    <s m="1" wt="l" res="2">ro</s>
+                    <z h="d"/><s m="2" wt="h">gon</s>
                     <lb n="1r;5"/>
                     <w wc="c" msa="xAP" A="F" id="75" Σ="1"/>
                     <s m="2" wt="h">for</s>
                     <w wc="c" msa="xPD" emends="the" A="Þ" id="76" Σ="1"/>
                     <s m="2" wt="h">them</s>
                     <w wc="s" msa="xNC" A="S" id="77" Σ="2"/>
-                    <s m="1" wt="l">si</s>
-                    <s m="1" wt="l">đa</s>
+                    <z h="l"/><s m="1" wt="l">si</s>
+                    <z h="d"/><s m="1" wt="l">đa</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxPxxP">
                     <w wc="t" msa="xCS" A="W" id="78" Σ="1"/>
-                    <s m="3" wt="o">uuand</s>
+                    <z h="d"/><s m="3" wt="o">uuand</s>
                     <w wc="t" msa="xPE" A="H" id="79" Σ="1"/>
                     <s m="1" wt="l">he</s>
                     <w wc="t" msa="xPE" A="H" id="80" Σ="1"/>
                     <s m="3" wt="o">hunk</s>
                     <w wc="s" msa="xPE" A="S" id="81" Σ="2"/>
-                    <s m="2" wt="h">sel</s>
-                    <s m="1" wt="l">bo</s>
+                    <z h="l"/><s m="2" wt="h">sel</s>
+                    <z h="d"/><s m="1" wt="l">bo</s>
                     <w wc="c" msa="xPX" p="1" A="G" id="82" Σ="1"/>
                     <s m="1" wt="l">gi</s>
                     <w wc="t" msa="xVB FF" p="2" A="B" id="83" Σ="1"/>
-                    <s m="2" wt="h">bood</s>
+                    <z h="l"/><s m="2" wt="h">bood</s>
                 </v>
             </vg>
             <!-- the second 'o' is written above the word as a correction. different hand? -->
             <pc>.</pc>
             <cb/>
             <vg type="line" cid="11" A="W">
-                <v role="on">
+                <v role="on" type="A3" restr="" contour="xxxxxPx">
                     <w wc="t" msa="xCS" A="Þ" id="84" Σ="1"/>
-                    <s m="2" wt="h">that</s>
+                    <z h="d"/><s m="2" wt="h">that</s>
                     <w wc="t" msa="xPE" A="W" id="85" Σ="1"/>
                     <s m="2" wt="h">uuit</s>
                     <w wc="t" msa="xPE" A="H" id="86" Σ="1"/>
@@ -345,34 +345,34 @@
                     <s m="1" wt="l">su</s>
                     <s m="2" wt="h">lic</s>
                     <w wc="s" msa="xNC" A="W" id="88" Σ="2"/>
-                    <s m="1" wt="l">uui</s>
-                    <s m="1" wt="l">ti</s>
+                    <z h="l"/><s m="1" wt="l">uui</s>
+                    <z h="d"/><s m="1" wt="l">ti</s>
                 </v>
-                <v role="off">
+                <v role="off" type="A1" restr="" contour="PxPx">
                     <w wc="t" msa="xVB fI" A="W" id="89" Σ="2"/>
-                    <s m="2" wt="h">uuar</s>
-                    <s m="2" wt="h">don</s>
+                    <z h="l"/><s m="2" wt="h">uuar</s>
+                    <z h="d"/><s m="2" wt="h">don</s>
                     <w wc="t" msa="xVB fF" A="SK" id="90" Σ="2"/>
-                    <s m="2" wt="h">scol</s>
-                    <s m="2" wt="h">din</s>
+                    <z h="l"/><s m="2" wt="h">scol</s>
+                    <z h="d"/><s m="2" wt="h">din</s>
                 </v>
             </vg>
             <pc>.</pc>
             <vg type="line" cid="12" A="H">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="pxxPx">
                     <w wc="t" msa="xNC" A="H" id="91" Σ="3"/>
-                    <s m="1" wt="l">ha</s>
-                    <s m="1" wt="l">ra</s>
-                    <s m="1" wt="l">mo</s>
+                    <z h="l"/><s m="1" wt="l" res="1">ha</s>
+                    <s m="1" wt="l" res="2">ra</s>
+                    <z h="d"/><s m="1" wt="l">mo</s>
                     <w wc="t" msa="xVB fF" A="M" id="92" Σ="2"/>
-                    <s m="2" wt="h">mes</s>
-                    <s m="2" wt="h">tan</s>
+                    <z h="l"/><s m="2" wt="h">mes</s>
+                    <z h="d"/><s m="2" wt="h">tan</s>
                 </v>
                 <pc>.</pc>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxxxPxxxP">
                     <w wc="t" msa="xAV" A="N" id="93" Σ="1"/>
-                    <s m="1" wt="l">nu</s>
+                    <z h="d"/><s m="1" wt="l">nu</s>
                     <w wc="t" msa="xVB fF" emends="" A="Þ" id="94" Σ="2"/>
                     <s m="2" wt="h">thuin</s>
                     <s m="2" wt="h">git</s>
@@ -383,31 +383,31 @@
                     <w wc="t" msa="xPE" A="G" id="96" Σ="1"/>
                     <s m="1" wt="l">giu</s>
                     <w wc="s" msa="xNC" A="H" id="97" Σ="2"/>
-                    <s m="2" wt="h">hun</s>
-                    <s m="2" wt="h">gar</s>
+                    <z h="l"/><s m="2" wt="h">hun</s>
+                    <z h="d"/><s m="2" wt="h">gar</s>
                     <w wc="c" msa="xCC" A="Ø" id="98" Σ="2"/>
                     <s m="2" wt="h">en</s>
                     <s m="1" wt="l">di</s>
                     <w wc="s" msa="xNC" A="Þ" id="99" Σ="1"/>
-                    <s m="3" wt="o">thrust</s>
+                    <z h="l"/><s m="3" wt="o">thrust</s>
                 </v>
             </vg>
             <vg type="line" cid="13" A="B">
-                <v role="on">
+                <v role="on" type="A2" restr="" contour="Pxpxsx">
                     <w wc="s" msa="xAJ" A="B" id="100" Σ="2"/>
-                    <s m="2" wt="h">bit</s>
-                    <s m="2" wt="h">ter</s>
+                    <z h="l"/><s m="2" wt="h">bit</s>
+                    <z h="d"/><s m="2" wt="h">ter</s>
                     <w wc="s" msa="xNC" c="1" A="B" id="101" Σ="2"/>
-                    <s m="1" wt="l">ba</s>
-                    <s m="1" wt="l">lo</s>
+                    <z h="l"/><s m="1" wt="l" res="1">ba</s>
+                    <s m="1" wt="l" res="2">lo</s>
                     <w wc="s" msa="xNC" c="2" A="W" id="102" Σ="2"/>
-                    <s m="1" wt="l">uue</s>
-                    <s m="2" wt="h">rek</s>
+                    <z h="h"/><s m="1" wt="l" res="1">uue</s>
+                    <s m="2" wt="h" res="2">rek</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxxxxPxxP">
                     <w wc="t" msa="xPE" A="Þ" id="103" Σ="2"/>
-                    <s m="1" wt="l">the</s>
+                    <z h="d"/><s m="1" wt="l">the</s>
                     <s m="1" wt="l">ro</s>
                     <w wc="t" msa="xVB fF" A="W" id="104" Σ="2"/>
                     <s m="1" wt="l">uua</s>
@@ -417,19 +417,19 @@
                     <w wc="t" msa="xAV" A="Ø" id="106" Σ="1"/>
                     <s m="2" wt="h">er</s>
                     <w wc="s" msa="xAJ" A="B" id="107" Σ="3"/>
-                    <s m="1" wt="l">be</s>
-                    <s m="1" wt="l">đe</s>
+                    <z h="l"/><s m="1" wt="l">be</s>
+                    <z h="d"/><s m="1" wt="l">đe</s>
                     <s m="1" wt="l">ro</s>
                     <w wc="s" msa="xAJ" A="T" id="108" Σ="1"/>
-                    <s m="2" wt="h">tuom</s>
+                    <z h="l"/><s m="2" wt="h">tuom</s>
                 </v>
             </vg>
             <pc>·</pc>
             <cb/>
             <vg type="line" cid="14" A="L">
-                <v role="on">
+                <v role="on" type="A3" restr="" contour="xxxxxPx">
                     <w wc="t" msa="xCS" A="H" id="109" Σ="1"/>
-                    <s m="1" wt="l">Hu</s>
+                    <z h="d"/><s m="1" wt="l">Hu</s>
                     <w wc="t" msa="xVB fF" A="SK" id="110" Σ="2"/>
                     <s m="1" wt="l">scu</s>
                     <s m="2" wt="h">lon</s>
@@ -438,14 +438,14 @@
                     <w wc="t" msa="xAV" A="N" id="112" Σ="1"/>
                     <s m="1" wt="l">nu</s>
                     <w wc="t" msa="xVB fI" A="L" id="113" Σ="2"/>
-                    <s m="2" wt="h">lib</s>
-                    <s m="2" wt="h">bian</s>
+                    <z h="l"/><s m="2" wt="h">lib</s>
+                    <z h="d"/><s m="2" wt="h">bian</s>
                 </v>
                 <pc>.</pc>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxxxxxxxPxpx">
                     <w wc="t" msa="xAV" A="Ø" id="114" Σ="2"/>
-                    <s m="2" wt="h">ef</s>
+                    <z h="d"/><s m="2" wt="h">ef</s>
                     <s m="1" wt="l">to</s>
                     <w wc="t" msa="xCS" A="H" id="115" Σ="1"/>
                     <s m="1" wt="l">hu</s>
@@ -461,271 +461,271 @@
                     <s m="1" wt="l">the</s>
                     <s m="2" wt="h">sum</s>
                     <w wc="s" msa="xNC" emends="liata" A="L" id="120" Σ="2"/>
-                    <s m="2" wt="h">liah</s>
-                    <s m="1" wt="l">ta</s>
+                    <z h="l"/><s m="2" wt="h">liah</s>
+                    <z h="d"/><s m="1" wt="l">ta</s>
                     <w wc="c" msa="xVB fI" A="W" id="121" Σ="2"/>
-                    <s m="1" wt="l">uue</s>
-                    <s m="2" wt="h">san</s>
+                    <z h="l"/><s m="1" wt="l" res="1">uue</s>
+                    <s m="2" wt="h" res="2">san</s>
                 </v>
             </vg>
             <cb/>
             <vg type="line" cid="15" A="W">
-                <v role="on">
+                <v role="on" type="C" restr="" contour="xxxxPpx">
                     <w wc="t" msa="xAV" A="N" id="122" Σ="1"/>
-                    <s m="1" wt="l">nu</s>
+                    <z h="d"/><s m="1" wt="l">nu</s>
                     <w wc="t" msa="xAV" A="H" id="123" Σ="1"/>
                     <s m="2" wt="h">hier</s>
                     <w wc="t" msa="xPQ" A="H" id="124" Σ="2"/>
                     <s m="1" wt="l">huui</s>
                     <s m="2" wt="h">lum</s>
                     <w wc="s" msa="xNC" A="W" id="125" Σ="1"/>
-                    <s m="3" wt="o">uuind</s>
+                    <z h="l"/><s m="3" wt="o">uuind</s>
                     <w wc="t" msa="xVB fF" A="K" id="126" Σ="2"/>
-                    <s m="1" wt="l">ku</s>
-                    <s m="2" wt="h">mit</s>
+                    <z h="l"/><s m="1" wt="l" sus="1">ku</s>
+                    <z h="d"/><s m="2" wt="h" sus="2">mit</s>
                 </v>
-                <v role="off">
+                <v role="off" type="A1" restr="" contour="PxxxPx">
                     <w wc="s" msa="xNC" A="W" id="127" Σ="2"/>
-                    <s m="2" wt="h">uues</s>
-                    <s m="2" wt="h">tan</s>
+                    <z h="l"/><s m="2" wt="h">uues</s>
+                    <z h="d"/><s m="2" wt="h">tan</s>
                     <w wc="c" msa="xCC" A="Ø" id="128" Σ="2"/>
                     <s m="2" wt="h">ef</s>
                     <s m="1" wt="l">to</s>
                     <w wc="s" msa="xNC" A="Ø" id="129" Σ="2"/>
-                    <s m="2" wt="h">os</s>
-                    <s m="2" wt="h">tan</s>
+                    <z h="l"/><s m="2" wt="h">os</s>
+                    <z h="d"/><s m="2" wt="h">tan</s>
                 </v>
             </vg>
             <pc>.</pc>
             <vg type="line" cid="16" A="S">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="PxxxPx">
                     <w wc="s" msa="xNC" A="S" id="130" Σ="2"/>
-                    <s m="1" wt="l">su</s>
-                    <s m="2" wt="h">đan</s>
+                    <z h="l"/><s m="1" wt="l">su</s>
+                    <z h="d"/><s m="2" wt="h">đan</s>
                     <w wc="c" msa="xCC" A="Ø" id="131" Σ="2"/>
                     <s m="2" wt="h">ef</s>
                     <s m="1" wt="l">to</s>
                     <w wc="s" msa="xNC" A="N" id="132" Σ="2"/>
-                    <s m="2" wt="h">nor</s>
-                    <s m="2" wt="h">dan</s>
+                    <z h="l"/><s m="2" wt="h">nor</s>
+                    <z h="d"/><s m="2" wt="h">dan</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="D" restr="" contour="xpxPPx">
                     <w wc="c" msa="xPX" p="1" A="G" id="133" Σ="1"/>
-                    <s m="1" wt="l">gi</s>
+                    <z h="d"/><s m="1" wt="l">gi</s>
                     <w wc="s" msa="xNC" p="2" A="S" id="134" Σ="2"/>
-                    <s m="1" wt="l">suue</s>
-                    <s m="2" wt="h">rek</s>
+                    <z h="l"/><s m="1" wt="l" res="1">suue</s>
+                    <s m="2" wt="h" res="2">rek</s>
                     <w wc="t" msa="xAV" A="Ø" id="135" Σ="1"/>
-                    <s m="3" wt="o">upp</s>
+                    <z h="l"/><s m="3" wt="o">upp</s>
                     <w wc="t" msa="xVB fF" A="D" id="136" Σ="2"/>
-                    <s m="1" wt="l">dri</s>
-                    <s m="2" wt="h">bit</s>
+                    <z h="l"/><s m="1" wt="l">dri</s>
+                    <z h="d"/><s m="2" wt="h">bit</s>
                 </v>
             </vg>
             <pc>.</pc>
             <lb n="1r;8"/>
             <cb/>
             <vg type="line" cid="17" A="H">
-                <v role="on">
+                <v role="on" type="B1" restr="" contour="xxPxP">
                     <w wc="t" msa="xVB fF" A="K" id="137" Σ="2"/>
-                    <s m="1" wt="l">ku</s>
+                    <z h="d"/><s m="1" wt="l">ku</s>
                     <s m="2" wt="h">mit</s>
                     <!-- the k is written in the margin -->
                     <w wc="s" msa="xNC" A="H" id="138" Σ="2"/>
-                    <s m="2" wt="h">hag</s>
-                    <s m="2" wt="h">las</s>
+                    <z h="l"/><s m="2" wt="h">hag</s>
+                    <z h="d"/><s m="2" wt="h">las</s>
                     <w wc="s" msa="xNC" A="SK" id="139" Σ="1"/>
-                    <s m="2" wt="h">skion</s>
+                    <z h="l"/><s m="2" wt="h">skion</s>
                 </v>
-                <v role="off">
+                <v role="off" type="A1" restr="" contour="pxxxPx">
                     <w wc="s" msa="xNC" A="H" id="140" Σ="3"/>
-                    <s m="1" wt="l">hi</s>
-                    <s m="1" wt="l">mi</s>
-                    <s m="1" wt="l">le</s>
+                    <z h="l"/><s m="1" wt="l" res="1">hi</s>
+                    <s m="1" wt="l" res="2">mi</s>
+                    <z h="d"/><s m="1" wt="l">le</s>
                     <w wc="s" msa="xAJ" A="B" id="141" Σ="3"/>
                     <s m="1" wt="l">bi</s>
-                    <s m="2" wt="h">ten</s>
-                    <s m="1" wt="l">gi</s>
+                    <z h="l"/><s m="2" wt="h">ten</s>
+                    <z h="d"/><s m="1" wt="l">gi</s>
                 </v>
             </vg>
             <pc>.</pc>
             <cb/>
             <vg type="line" cid="18" A="F">
-                <v role="on">
+                <v role="on" type="D" restr="" contour="pxPxxP">
                     <w wc="t" msa="xVB fF" A="F" id="142" Σ="2"/>
-                    <s m="1" wt="l">fe</s>
-                    <s m="2" wt="h">riđ</s>
+                    <z h="l"/><s m="1" wt="l" res="1">fe</s>
+                    <s m="2" wt="h" res="2">riđ</s>
                     <w wc="t" msa="xAV" A="F" id="143" Σ="1"/>
-                    <s m="3" wt="o">ford</s>
+                    <z h="l"/><s m="3" wt="o">ford</s>
                     <w wc="c" msa="xAP" A="Ø" id="144" Σ="1"/>
-                    <s m="2" wt="h">an</s>
+                    <z h="d"/><s m="2" wt="h">an</s>
                     <w wc="c" msa="xPX" p="1" A="G" id="145" Σ="1"/>
                     <s m="1" wt="l">gi</s>
                     <w wc="s" msa="xNC" p="2" A="M" id="146" Σ="1"/>
-                    <s m="3" wt="o">mang</s>
+                    <z h="l"/><s m="3" wt="o">mang</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxpxxP">
                     <w wc="t" msa="xPD" A="Þ" id="147" Σ="1"/>
-                    <s m="2" wt="h">that</s>
+                    <z h="d"/><s m="2" wt="h">that</s>
                     <w wc="t" msa="xVB fF" A="Ø" id="148" Σ="1"/>
                     <s m="2" wt="h">is</s>
                     <w wc="t" msa="xAV" A="F" id="149" Σ="3"/>
-                    <s m="1" wt="l">fi</s>
-                    <s m="1" wt="l">ri</s>
-                    <s m="2" wt="h">num</s>
+                    <z h="l"/><s m="1" wt="l" res="1">fi</s>
+                    <s m="1" wt="l" res="2">ri</s>
+                    <z h="d"/><s m="2" wt="h">num</s>
                     <w wc="s" msa="xAJ" A="K" id="150" Σ="1"/>
-                    <s m="3" wt="o">kald</s>
+                    <z h="l"/><s m="3" wt="o">kald</s>
                 </v>
             </vg>
             <pc>·</pc>
             <cb/>
             <vg type="line" cid="19" A="H">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="Pxxxxpxx">
                     <w wc="t" msa="xCS" A="H" id="151" Σ="2"/>
-                    <s m="1" wt="l">hui</s>
-                    <s m="2" wt="h">lum</s>
+                    <z h="l"/><s m="1" wt="l">hui</s>
+                    <z h="d"/><s m="2" wt="h">lum</s>
                     <w wc="t" msa="xPE" A="Þ" id="152" Σ="2"/>
                     <s m="2" wt="h">than</s>
                     <s m="1" wt="l">ne</s>
                     <w wc="c" msa="xAP" A="F" id="153" Σ="1"/>
                     <s m="2" wt="h">fan</s>
                     <w wc="s" msa="xNC" A="H" id="154" Σ="3"/>
-                    <s m="1" wt="l">hi</s>
-                    <s m="1" wt="l">mi</s>
-                    <s m="1" wt="l">le</s>
+                    <z h="l"/><s m="1" wt="l" res="1">hi</s>
+                    <s m="1" wt="l" res="2">mi</s>
+                    <z h="d"/><s m="1" wt="l">le</s>
                 </v>
-                <v role="off">
+                <v role="off" type="A1" restr="" contour="PxPx">
                     <w wc="s" msa="xNC" A="H" id="155" Σ="2"/>
-                    <s m="1" wt="l">he</s>
-                    <s m="1" wt="l">to</s>
+                    <z h="l"/><s m="1" wt="l">he</s>
+                    <z h="d"/><s m="1" wt="l">to</s>
                     <w wc="t" msa="xVB fF" A="SK" id="156" Σ="2"/>
-                    <s m="1" wt="l">ski</s>
-                    <s m="2" wt="h">nit</s>
+                    <z h="l"/><s m="1" wt="l">ski</s>
+                    <z h="d"/><s m="2" wt="h">nit</s>
                 </v>
             </vg>
             <pc>.</pc>
             <lb n="1r;9"/>
             <cb/>
             <vg type="line" cid="20" A="B">
-                <v role="on">
+                <v role="on" type="A1A1" restr="" contour="PxxpXxPx">
                     <w wc="t" msa="xVB fF" A="B" id="157" Σ="2"/>
-                    <s m="1" wt="l">bli</s>
-                    <s m="2" wt="h">kit</s>
+                    <z h="l"/><s m="1" wt="l">bli</s>
+                    <z h="d"/><s m="2" wt="h">kit</s>
                     <w wc="t" msa="xPE" A="Þ" id="158" Σ="1"/>
                     <s m="1" wt="l">thiu</s>
                     <w wc="s" msa="xAJ" A="B" id="159" Σ="3"/>
-                    <s m="1" wt="l">be</s>
-                    <s m="2" wt="h">rah</s>
-                    <s m="1" wt="l">to</s>
+                    <z h="l"/><s m="1" wt="l" res="1">be</s>
+                    <s m="2" wt="h" res="2">rah</s>
+                    <z h="d"/><s m="1" wt="l">to</s>
                     <w wc="s" msa="xNC" A="S" id="160" Σ="2"/>
-                    <s m="2" wt="h">sun</s>
-                    <s m="1" wt="l">na</s>
+                    <z h="l"/><s m="2" wt="h">sun</s>
+                    <z h="d"/><s m="1" wt="l">na</s>
                 </v>
                 <pc>·</pc>
                 <cb/>
-                <v role="off">
+                <v role="off" type="C" restr="" contour="xxxpxPx">
                     <w wc="t" msa="xPE" A="W" id="161" Σ="1"/>
-                    <s m="2" wt="h">uuit</s>
+                    <z h="d"/><s m="2" wt="h">uuit</s>
                     <w wc="t" msa="xAV" A="H" id="162" Σ="1"/>
                     <s m="2" wt="h">hier</s>
                     <w wc="t" msa="xAV" A="Þ" id="163" Σ="1"/>
                     <s m="2" wt="h">thus</s>
                     <w wc="s" msa="xAJ" A="B" id="164" Σ="2"/>
-                    <s m="1" wt="l">ba</s>
-                    <s m="1" wt="l">ra</s>
+                    <z h="l"/><s m="1" wt="l" res="1">ba</s>
+                    <s m="1" wt="l" res="2">ra</s>
                     <w wc="t" msa="xVB fF" A="ST" id="165" Σ="2"/>
-                    <s m="2" wt="h">stan</s>
-                    <s m="2" wt="h">dat</s>
+                    <z h="l"/><s m="2" wt="h">stan</s>
+                    <z h="d"/><s m="2" wt="h">dat</s>
                 </v>
             </vg>
             <cb/>
             <vg type="line" cid="21" A="W">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="xpxxxPx">
                     <w wc="s" msa="xAJ" A="Ø" id="166" Σ="3"/>
-                    <s m="2" wt="h">un</s>
-                    <s m="1" wt="l">uue</s>
-                    <s m="2" wt="h">rid</s>
+                    <z h="d"/><s m="2" wt="h">un</s>
+                    <z h="l"/><s m="1" wt="l" res="1">uue</s>
+                    <s m="2" wt="h" res="2">rid</s>
                     <w wc="c" msa="xAP" A="M" id="167" Σ="1"/>
-                    <s m="2" wt="h">miđ</s>
+                    <z h="d"/><s m="2" wt="h">miđ</s>
                     <w wc="c" msa="xPX" p="1" A="G" id="168" Σ="1"/>
                     <s m="1" wt="l">gi</s>
                     <w wc="s" msa="xNC" p="2" A="W" id="169" Σ="2"/>
-                    <s m="1" wt="l">uua</s>
-                    <s m="1" wt="l">di</s>
+                    <z h="l"/><s m="1" wt="l">uua</s>
+                    <z h="d"/><s m="1" wt="l">di</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxPxpx">
                     <w wc="t" msa="xVB fF" A="N" id="170" Σ="1"/>
-                    <s m="2" wt="h">nis</s>
+                    <z h="d"/><s m="2" wt="h">nis</s>
                     <w wc="t" msa="xPE" A="Ø" id="171" Σ="1"/>
                     <s m="3" wt="o">unk</s>
                     <w wc="t" msa="xAV" A="H" id="172" Σ="1"/>
                     <s m="2" wt="h">hier</s>
                     <w wc="s" msa="xNC" A="W" id="173" Σ="1"/>
-                    <s m="3" wt="o">uuiht</s>
+                    <z h="l"/><s m="3" wt="o">uuiht</s>
                     <w wc="t" msa="xAV" emends="bi" A="B" id="174" Σ="3"/>
-                    <s m="1" wt="l">bi</s>
-                    <s m="1" wt="l">uo</s>
-                    <s m="2" wt="h">ran</s>
+                    <z h="d"/><s m="1" wt="l">bi</s>
+                    <z h="l"/><s m="1" wt="l" res="1">uo</s>
+                    <s m="2" wt="h" res="2">ran</s>
                 </v>
             </vg>
             <!-- illegible -->
             <lb n="1r;10"/>
             <vg type="line" cid="22" A="K">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="xxpxxxxPx">
                     <w wc="t" msa="xCC" A="N" id="175" Σ="1"/>
-                    <s m="1" wt="l">ni</s>
+                    <z h="d"/><s m="1" wt="l">ni</s>
                     <w wc="c" msa="xIM" emends="t" A="T" id="176" Σ="1"/>
                     <s m="1" wt="l">te</s>
                     <w wc="t" msa="xVB fI" emends="sk" A="SK" id="177" Σ="3"/>
-                    <s m="1" wt="l">ske</s>
-                    <s m="1" wt="l">re</s>
-                    <s m="1" wt="l">ma</s>
+                    <z h="l"/><s m="1" wt="l" res="1">ske</s>
+                    <s m="1" wt="l" res="2">re</s>
+                    <z h="d"/><s m="1" wt="l">ma</s>
                     <w wc="t" msa="xCC" A="N" id="178" Σ="1"/>
                     <s m="1" wt="l">ni</s>
                     <w wc="c" msa="xIM" A="T" id="179" Σ="1"/>
                     <s m="1" wt="l">te</s>
                     <w wc="t" msa="xVB fI" A="SK" id="180" Σ="2"/>
-                    <s m="1" wt="l">scu</s>
-                    <s m="1" wt="l">ra</s>
+                    <z h="l"/><s m="1" wt="l">scu</s>
+                    <z h="d"/><s m="1" wt="l">ra</s>
                 </v>
                 <pc>·</pc>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxPxP">
                     <w wc="t" msa="xPE" A="Ø" id="181" Σ="1"/>
-                    <s m="3" wt="o">unk</s>
+                    <z h="d"/><s m="3" wt="o">unk</s>
                     <w wc="t" msa="xVB fF" A="N" id="182" Σ="1"/>
                     <s m="2" wt="h">nis</s>
                     <!-- negative verb -->
                     <w wc="t" msa="xAV" A="H" id="183" Σ="1"/>
                     <s m="2" wt="h">hier</s>
                     <w wc="s" msa="xNC" A="SK" id="184" Σ="2"/>
-                    <s m="2" wt="h">scat</s>
-                    <s m="2" wt="h">tas</s>
+                    <z h="l"/><s m="2" wt="h">scat</s>
+                    <z h="d"/><s m="2" wt="h">tas</s>
                     <w wc="s" msa="xPI" A="W" id="185" Σ="1"/>
-                    <s m="3" wt="o">uuiht</s>
+                    <z h="l"/><s m="3" wt="o">uuiht</s>
                 </v>
             </vg>
             <vg type="line" cid="23" A="M">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="xpxxPx">
                     <w wc="c" msa="xAP" A="T" id="186" Σ="1"/>
-                    <s m="1" wt="l">te</s>
+                    <z h="d"/><s m="1" wt="l">te</s>
                     <w wc="s" msa="xNC" A="M" id="187" Σ="2"/>
-                    <s m="1" wt="l">me</s>
-                    <s m="1" wt="l">ti</s>
+                    <z h="l"/><s m="1" wt="l" res="1">me</s>
+                    <s m="1" wt="l" res="2">ti</s>
                     <w wc="c" msa="xPX" p="1" A="G" id="188" Σ="1"/>
-                    <s m="1" wt="l">gi</s>
+                    <z h="d"/><s m="1" wt="l">gi</s>
                     <w wc="t" msa="xVB fP" p="2" A="M" id="189" Σ="2"/>
-                    <s m="2" wt="h">mar</s>
-                    <s m="2" wt="h">cot</s>
+                    <z h="l"/><s m="2" wt="h">mar</s>
+                    <z h="d"/><s m="2" wt="h">cot</s>
                 </v>
                 <pc>·</pc>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxxxxPXxP">
                     <w wc="t" msa="xPE" A="W" id="190" Σ="1"/>
-                    <s m="2" wt="h">uuit</s>
+                    <z h="d"/><s m="2" wt="h">uuit</s>
                     <w wc="t" msa="xVB fF" A="Ø" id="191" Σ="2"/>
                     <s m="2" wt="h">eb</s>
                     <s m="2" wt="h">biat</s>
@@ -736,28 +736,28 @@
                     <w wc="t" msa="xVB fI" p="2" A="D" id="194" Σ="1"/>
                     <s m="2" wt="h">duan</s>
                     <w wc="s" msa="xAJ" A="M" id="195" Σ="3"/>
-                    <s m="2" wt="h">mat</s>
-                    <s m="2" wt="h">hig</s>
+                    <z h="l"/><s m="2" wt="h">mat</s>
+                    <z h="d"/><s m="2" wt="h">hig</s>
                     <s m="1" wt="l">na</s>
                     <w wc="s" msa="xNC" A="G" id="196" Σ="1"/>
-                    <s m="2" wt="h">god</s>
+                    <z h="l"/><s m="2" wt="h">god</s>
                 </v>
             </vg>
             <vg type="line" cid="24" A="W">
-                <v role="on">
+                <v role="on" type="A1" restr="" contour="PXPx">
                     <w wc="s" msa="xNC" A="W" id="197" Σ="2"/>
-                    <s m="2" wt="h">uual</s>
-                    <s m="3" wt="o">dand</s>
+                    <z h="l"/><s m="2" wt="h">uual</s>
+                    <z h="d"/><s m="3" wt="o">dand</s>
                     <w wc="s" msa="xPD" emends="uureda" A="W" id="198" Σ="2"/>
-                    <s m="1" wt="l">uure</s>
-                    <s m="2" wt="h">dan</s>
+                    <z h="l"/><s m="1" wt="l">uure</s>
+                    <z h="d"/><s m="2" wt="h">dan</s>
                 </v>
                 <!-- displaced -->
                 <lb n="1r;11"/>
                 <cb/>
-                <v role="off">
+                <v role="off" type="B1" restr="" contour="xxxxxPxP">
                     <w wc="c" msa="xAP" A="T" id="199" Σ="1"/>
-                    <s m="1" wt="l">te</s>
+                    <z h="d"/><s m="1" wt="l">te</s>
                     <w wc="t" msa="xPQ" A="H" id="200" Σ="1"/>
                     <s m="1" wt="l">hui</s>
                     <w wc="t" msa="xVB fF" A="SK" id="201" Σ="2"/>
@@ -766,17 +766,17 @@
                     <w wc="t" msa="xPE" A="W" id="202" Σ="1"/>
                     <s m="2" wt="h">uuit</s>
                     <w wc="t" msa="xVB fI" A="W" id="203" Σ="2"/>
-                    <s m="2" wt="h">uuer</s>
-                    <s m="2" wt="h">dan</s>
+                    <z h="l"/><s m="2" wt="h">uuer</s>
+                    <z h="d"/><s m="2" wt="h">dan</s>
                     <w wc="t" msa="xAV" A="N" id="204" Σ="1"/>
-                    <s m="1" wt="l">nu</s>
+                    <z h="l"/><s m="1" wt="l">nu</s>
                 </v>
             </vg>
             <cb/>
             <vg type="line" cid="25" A="H">
-                <v role="on">
+                <v role="on" type="A3" restr="" contour="xxxxPx">
                     <w wc="t" msa="xAV" A="N" id="205" Σ="1"/>
-                    <s m="1" wt="l">Nu</s>
+                    <z h="d"/><s m="1" wt="l">Nu</s>
                     <!--N capitalized -->
                     <w wc="t" msa="xVB fF" A="M" id="206" Σ="1"/>
                     <s m="2" wt="h">mag</s>
@@ -785,13 +785,13 @@
                     <w wc="t" msa="xPD" A="Þ" id="208" Σ="1"/>
                     <s m="2" wt="h">that</s>
                     <w wc="t" msa="xVB fI" A="H" id="209" Σ="2"/>
-                    <s m="1" wt="l">hre</s>
-                    <s m="2" wt="h">uuan</s>
+                    <z h="l"/><s m="1" wt="l">hre</s>
+                    <z h="d"/><s m="2" wt="h">uuan</s>
                 </v>
                 <cb/>
-                <v role="off">
+                <v role="off" type="E" restr="" contour="xxxxxpXSxP">
                     <w wc="t" msa="xCS" A="Þ" id="210" Σ="1"/>
-                    <s m="2" wt="h">that</s>
+                    <z h="d"/><s m="2" wt="h">that</s>
                     <w wc="t" msa="xPE" A="Ø" id="211" Σ="1"/>
                     <s m="2" wt="h">ik</s>
                     <w wc="t" msa="xVB fF" A="Ø" id="212" Σ="1"/>
@@ -801,13 +801,13 @@
                     <w wc="t" msa="xVB fF" A="B" id="214" Σ="1"/>
                     <s m="2" wt="h">bad</s>
                     <w wc="s" msa="xNC" c="1" A="H" id="215" Σ="2"/>
-                    <s m="1" wt="l">he</s>
-                    <s m="2" wt="h">ban</s>
+                    <z h="l"/><s m="1" wt="l" res="1">he</s>
+                    <s m="2" wt="h" res="2">ban</s>
                     <w wc="s" msa="xNC" c="2" A="R" id="216" Σ="2"/>
-                    <s m="1" wt="l">ri</s>
-                    <s m="2" wt="h">kean</s>
+                    <z h="h"/><s m="1" wt="l">ri</s>
+                    <z h="d"/><s m="2" wt="h">kean</s>
                     <w wc="s" msa="xNC" A="G" id="217" Σ="1"/>
-                    <s m="2" wt="h">god</s>
+                    <z h="l"/><s m="2" wt="h">god</s>
                 </v>
             </vg>
             <pc>·</pc>
