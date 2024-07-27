@@ -35,7 +35,7 @@ class wordhelper:
 
         #now lets set up our vowels according to length
         shortvowels=["aeiouyæœŒǫǪAEIOUYÆ",self.SHORT]
-        longvowels=['âáāêēéīíîôōóöūúûȳýǣœĀÁĒÉĪÍŌÓŪÚÜȲÝǢŒ',self.LONG]
+        longvowels=['âáāêēéīíîôōóöūúûȳýǣĀÁĒÉĪÍŌÓŪÚÜȲÝǢ',self.LONG]
 
         lengths=[shortvowels,longvowels]
         for length in lengths:  
@@ -52,7 +52,7 @@ class wordhelper:
         return self._vowels.get(sound,-1)!=-1
 
     #returns length of a vowel sound, -1 if the sound is not a vowel.
-    def vowel_length(self,sound):
+    def vowellength(self,sound):
         return self._vowels.get(sound,-1) #this will either be SHORT or LONG
 
     def isconsonant(self,sound):
@@ -239,7 +239,7 @@ class wordhelper:
                 #all the vowels in the cluster belong to the syllable as well. Look at the first vowel for length. 
             if len(Vs)>0:
                 currentsyl += Vs
-                moras += 1 + self.vowel_length(Vs[0])
+                moras += 1 + self.vowellength(Vs[0])
                 
             #if we are at the end of the word, then the syllable is complete
             if len(letters)==0:

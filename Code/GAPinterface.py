@@ -54,9 +54,10 @@ class ix:
         if fout=="":
             fout = self._getoutfilename("htm")
         if len(fout)>0:
-            f =open(fout, 'w')
+            f = open(fout, 'w')
             f.write(html)
             f.close
+            print("Out: ", '/' + fout)
             return 0
         return -1
    
@@ -86,14 +87,13 @@ class ix:
         docin=self._parsein(fin)
         if docin is not None:
             dh=self.docuhelper(docin)
-            if dh is not None:
+            try:
                 dd=self.displaydriver(dh, options)
-                try:
-                    html=dd.generatehtml()
-                except Exception as e: return e
-                #now save the result to another file
-                self._savehtmlfile(html, fout)
-                return 0
+                html=dd.generatehtml()
+            except Exception as e: return e
+            #now save the result to another file
+            self._savehtmlfile(html, fout)
+            return 0
         return -1
 
 

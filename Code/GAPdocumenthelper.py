@@ -272,7 +272,13 @@ class docuhelper:
         record = sh.nextscan()
         while isinstance(record, list): #loop until the iterator through the scan file is done
             #unpack the current verse-scan record
-            (lineid, verse, scanstr, type, restr)=record
+            print('[[[[',record,']]]]') ###debug
+            lineid=record[0]
+            verse=record[1]
+            scanstr=record[2]
+            type=record[3]
+            restr=record[4]
+        
             #dictionary to hold attributes to set on a verse or whatever
             atts={'type': type, 'restr':restr, 'contour':scanstr}
             #find the verse line corresponding to lineid
@@ -284,6 +290,7 @@ class docuhelper:
                         lineEl=node
                         break
             if lineEl != None: 
+                # print('we have a line') ###debug
                 # we have the verse line. now let's get the right verse, on or off
                 verseEl=None
                 nodes=lineEl.findall("./d:v", self._TEIns)
@@ -293,15 +300,20 @@ class docuhelper:
                             verseEl=node
                             break
                 if verseEl != None:
+                    # print('we have a verse') ###debug
                     #before we get to the syllables, remove any previous analysis
                     znf=verseEl.findall(".//d:z", self._TEIns) + verseEl.findall(".//d:f", self._TEIns)
                     for zf in znf: zf.getparent().remove(zf)
                     #we have the verse. get the <s> (syllables) inside it
                     syllables=verseEl.findall("./d:s", self._TEIns)
                     if syllables != None:
+                        # print('we have', str(len(syllables)), 'syllables') ###debug
                         #we have the target list of syllables; now prepare
                         #the scansion data from the 'scanstr'
                         scanstructions=self._preparescansion(scanstr,atts)
+
+                        # print(scanstructions) ###debug
+
                         #make it happen
                         self._doscan(syllables, scanstructions)
                     
@@ -317,17 +329,18 @@ class docuhelper:
 
         #here we branch based on the scan type
         scantype=self._sh.scantype
+        # print(scantype, scanstr)
         #now create the scan-type-specific instructions and append them
         if scantype=="suzuki":
-            scanstructions+=self._prepsuzuki(scanstr, atts)
+            scanstructions+=self._prepsuzuki(scanstr)
         elif scantype=="sievers":
-           scanstructions+=self._prepsievers(scanstr, atts)
+           scanstructions+=self._prepsievers(scanstr)
         elif scantype=="russom":
-            scanstructions+=self._preprussom(scanstr, atts)
+            scanstructions+=self._preprussom(scanstr)
         return scanstructions
 
     ##notation specific methods for preparing the scan instructions
-    def _prepsuzuki(self, scanstr:str, atts:list):
+    def _prepsuzuki(self, scanstr:str):
         scansion=list(scanstr)
         scanstructions=[]
         # print(syllables[0].getparent().getparent().get('cid')) ##debug
@@ -341,8 +354,9 @@ class docuhelper:
         #if there's a mismatch between the scan and the number of syllables in
         #this verse, then log the error and bail. Attributes will still be
         #applied
+        # print(len(scansion), len(syllables)) ###debug
         if len(scansion) != len(syllables): 
-            verse=syllables[0].getparent()
+            verse=syllables[0].getparent() #they all have the same parent verse
             line=verse.getparent()
             print(line.get('cid'), verse.get('role'), "Syllable count / scan mismatch")
             return scanstructions
@@ -359,14 +373,14 @@ class docuhelper:
         #now let's look for other tokens
         while len(scansion) > 0:
             token=scansion[0]
-            #check for a resolved lift of any kind
+            #check for a resolvable lift of any kind
             if token in ['p', 's']:
                 scansion=advance(scansion)
 
                 if token == 'p':
-                    scanstructions.append(['l']) # resolved primary stress -> lift
+                    scanstructions.append(['l']) # primary stress -> lift
                 if token == 's':
-                    scanstructions.append(['h']) # resolved secondary stress -> half lift
+                    scanstructions.append(['h']) # secondary stress -> half lift
 
                 #Process the dip
                 dip=0
@@ -425,12 +439,12 @@ class docuhelper:
                     scanstructions.append(['d',dip])
         return scanstructions
     
-    def _prepsievers(self, scanstr:str, atts:list):
+    def _prepsievers(self, scanstr:str):
         scansion=list(scanstr)
         scanstructions=[] #for now
         return scanstructions
 
-    def _preprussom(self, scanstr:str, atts:list):
+    def _preprussom(self, scanstr:str):
         scansion=list(scanstr)
         scanstructions=[] #for now
         return scanstructions
@@ -438,15 +452,22 @@ class docuhelper:
     # implement the instructions by placing either <z> or <f>
     # elements between syllables and filling out attributes, etc.
     def _doscan(self,syllables:list,scanstructions:list):
+        # print('doing the scan',scanstructions) ###debug
         scursor=0
-        verse=syllables[scursor].getparent()
+        verse=syllables[scursor].getparent() #they all have the same parent verse
         for i in scanstructions:
             cmd=i[0]
+            # print('command', cmd) ###debug
             if cmd=='a': #set an attribute value
-                verse.set(i[1][0], i[1][1])
+                # print(i) ###debug
+                key=i[1][0]
+                value=i[1][1]
+                verse.set(key, value)
 
+            
             #metrical positions --> <z>
             elif cmd in ['d','h','l']: 
+                # print('command', cmd) ###debug
                 if len(syllables)>scursor-1:
                     s=syllables[scursor]
                     z=self._et.Element('z')
@@ -458,11 +479,13 @@ class docuhelper:
                     else: scursor += 1
             
             elif cmd=='r': #mark syllables as resolved
+                # print('command', cmd) ###debug
                 syllables[scursor-1].set('res','1')
                 syllables[scursor].set('res','2')
                 scursor +=1 #advance the cursor
 
             elif cmd=='s': #mark suspended resolution
+                # print('command', cmd) ###debug
                 syllables[scursor-1].set('sus','1')
                 syllables[scursor].set('sus','2')
                 #do not advance the syllable cursor

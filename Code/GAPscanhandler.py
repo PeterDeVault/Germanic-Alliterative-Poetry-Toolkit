@@ -11,7 +11,6 @@ class scanhandler():
     _reader=None #this will become the tab-separated-value scanfile reader
     scantype=""
 
-
     def __init__(self,filename:str=""):
         root = self.tk.Tk()
         root.withdraw()
@@ -19,11 +18,11 @@ class scanhandler():
         if filename=="":
             print('get scan file')
             filename=self.filedialog.askopenfilename()
-            print('Scan: ', '/' + filename)
         
         self._scanfile=open(filename, 'r', encoding="utf8")
         self._reader=csv.reader(self._scanfile, delimiter="\t")
         self.scantype=next(self._reader)[2] #get the scan type heading the scan column
+        print(self.scantype)
         
     #public method to return the next scan record in the file
     #it will be a list containing: [line #, "on"/"off", contour, note]
@@ -31,5 +30,7 @@ class scanhandler():
         try:
             record=next(self._reader)
             return record
-        except Exception as e: return e
+        except Exception as e: 
+            print('end of file')
+            return e
 
