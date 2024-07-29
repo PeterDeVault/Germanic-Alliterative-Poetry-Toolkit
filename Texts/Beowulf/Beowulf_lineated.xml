@@ -268,7 +268,7 @@
                 </v>
             </vg>
             <lb n="134v;3"/>
-            <vg type="line" cid="206" A="C">
+            <vg type="line" cid="206" A="K">
                 <v role="on">
                     <w wc="s" msa="xNC" emends="empan" A="K">cempan</w>
                     <w wc="c" msa="xPX" p="1" A="G">ġe</w>
@@ -717,7 +717,6 @@
                     <w wc="t" msa="xVB fF" A="K">cwōmon</w>
                 </v>
             </vg>
-            <w wc="t" msa="xAV" A="K"/>
             <vg type="line" cid="240" A="H">
                 <v role="on">
                     <w wc="c" msa="xAP" A="Ø">ofer</w>
@@ -1684,7 +1683,7 @@
             <vg type="line" cid="311" A="L">
                 <v role="on">
                     <w wc="t" msa="xVB fF" A="L">līxte</w>
-                    <w wc="c" msa="xNA" A="S">se</w>
+                    <w wc="c" msa="NA" A="S">se</w>
                     <lb n="136v;14"/>
                     <w wc="s" msa="xNC" A="L">lēoma</w>
                 </v>
